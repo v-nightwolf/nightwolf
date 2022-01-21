@@ -1,6 +1,5 @@
 [<h1 style="text-align: center;font-family: cursive;">nightWolf <img src="img/favi.png" height="70" /></h1>](index.md)
-<h3 style="text-align: center;font-family: serif;"> **** Let's make IT easy **** </h3>
-<br/><br/>
+<br/>
 
 ## [System Performance](performance.md)
 

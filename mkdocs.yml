@@ -13,6 +13,9 @@ nav:
     - Home: index.md
     - Performance-Troubleshooting: performance.md
     - Interview Preparation: interview.md
+    - Linux: linux.md
+    - Network: network.md
+    - Database: db.md
 
 #        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
 #        - 'Networking Interview Questions': 'network.md'
