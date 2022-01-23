@@ -1,4 +1,4 @@
-[<h1 style="text-align: center;font-family: cursive;">nightWolf <img src="img/favi.png" height="70" /></h1>](index.md)
+[<h1 style="text-align: center;font-family: cursive;"><img src="img/favi.png" height="70" /> nightWolf </h1>](index.md)
 <br/>
 
 ## [System Performance](performance.md)
