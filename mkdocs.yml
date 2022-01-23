@@ -1,6 +1,6 @@
 site_name: nightWolf
-site_url: http://nightwolf.in/
-site_favicon: 'img/wolf.png'
+site_url: https://www.nightwolf.in/
+site_favicon: 'img/favi.png'
 theme:
     name: mkdocs 
     nav_style: dark
@@ -12,7 +12,7 @@ copyright: 'Copyright &copy; 2022 nightWolf'
 nav:
     - Home: index.md
     - Performance-Troubleshooting: performance.md
-    - Interview Preparation: interview.md
+    - Interview-Preparation: interview.md
     - Linux: linux.md
     - Network: network.md
     - Database: db.md
