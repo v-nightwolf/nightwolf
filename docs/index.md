@@ -32,4 +32,4 @@
 
 ## [Database]()
 
-## [Contribute](contribute.md)
+## [Contribute to nightWolf](contribute.md)
