@@ -32,6 +32,7 @@ load_check() {
 		elif [ "$loadcheck15test" -le 0 ]; then
 		echo -e "Load Average: 15min Average$RED "$loadnow$RESET
 	fi
+	echo -e "\n#### Printing CPU stats: ####" ; /bin/mpstat | grep -v Linux
 }
 ram_data() {
         totalc=$( grep MemTotal /proc/meminfo | awk '{print $2 / 1024 }') #gets the total available ram from /proc/meminfo
