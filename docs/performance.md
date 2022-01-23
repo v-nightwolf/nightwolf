@@ -39,6 +39,13 @@ You can install these tools  very easily using below command:
 `      yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
 
 
+<br>
+<br>
+
+- You can start your investigation by executing small script, which will gather a lot of system stats for you:
+
+ 
+
 ## Perfomance isssues due to high CPU Usage
 
 

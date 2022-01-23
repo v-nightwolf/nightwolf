@@ -7,7 +7,8 @@ You can contribute through [our github repo](https://github.com/v-nightwolf/nigh
 	git clone git@github.com:v-nightwolf/nightwolf.git
 
 You will start seeing multiple files there. Contribute in appropriate file and commit & push your changes back to git repo. 
-
+<br> To read more about how to work with remote repost, please read the [Article](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories).
+<br><br>
 #####Otherwise you can submit your suggestions through below form. 
 
 <br>
