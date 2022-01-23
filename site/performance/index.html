@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://nightwolf.in/performance/">
-        <link rel="shortcut icon" href="../img/wolf.png">
+        <link rel="canonical" href="https://www.nightwolf.in/performance/">
+        <link rel="shortcut icon" href="../img/favi.png">
         
         <title>Performance-Troubleshooting - nightWolf</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,16 @@
                                 <a href="./" class="nav-link">Performance-Troubleshooting</a>
                             </li>
                             <li class="navitem">
-                                <a href="../interview/" class="nav-link">Interview Preparation</a>
+                                <a href="../interview/" class="nav-link">Interview-Preparation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../linux.md" class="nav-link">Linux</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../network/" class="nav-link">Network</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../db.md" class="nav-link">Database</a>
                             </li>
                         </ul>
 
@@ -84,6 +93,11 @@
               </ul>
             </li>
             
+            <li class="nav-item" data-level="2"><a href="#tools-helpful-in-your-investigation" class="nav-link">Tools helpful in your investigation:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-level="2"><a href="#perfomance-isssues-due-to-high-cpu-usage" class="nav-link">Perfomance isssues due to high CPU Usage</a>
               <ul class="nav flex-column">
               </ul>
@@ -118,7 +132,86 @@
 <p><code>OS/CPU Load:</code> The average amount of processes using or waiting for CPU allocation over a period of time.</p>
 </li>
 </ul>
+<p>Usually System Performance issues can be identified by observing slowness in services offered by OS and it mostly happen due to any of the below reasons. </p>
+<pre><code>    - high CPU Usage 
+    - high Memory Usage
+    - high Disk IO Usage
+    - Network Performance Issues
+    - Software Bugs like memory leaks, Kernel bugs etc.
+</code></pre>
+<p>We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. </p>
+<h2 id="tools-helpful-in-your-investigation">Tools helpful in your investigation:</h2>
+<p><img alt="!image" src="../img/TroubleShooting.jpg" /></p>
+<ul>
+<li><a href="https://linux.die.net/man/1/top" target="_blank">top</a></li>
+<li><a href="https://linux.die.net/man/1/mpstat" target="_blank">mpstat</a></li>
+<li><a href="https://linux.die.net/man/1/sar" target="_blank">sar</a></li>
+<li><a href="https://linux.die.net/man/1/free" target="_blank">free</a></li>
+<li><a href="https://linux.die.net/man/1/strace" target="_blank">strace</a></li>
+<li><a href="https://linux.die.net/man/1/iotop" target="_blank">iotop</a></li>
+<li><a href="https://www.thegeekstuff.com/2011/07/iostat-vmstat-mpstat-examples/" target="_blank">iostat</a></li>
+<li><a href="https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html" target="_blank">netstat</a></li>
+<li><a href="https://www.thegeekstuff.com/2014/11/pidstat-examples/" target="_blank">pidstat</a></li>
+<li><a href="https://www.thegeekstuff.com/2011/07/iostat-vmstat-mpstat-examples/" target="_blank">vmstat</a></li>
+<li><a href="https://www.tcpdump.org/manpages/tcpdump.1.html" target="_blank">tcpdump</a></li>
+<li><a href="http://iptraf.seul.org/about.html" target="_blank">iptraf</a></li>
+<li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/axboe/blktrace.git/tree/README" target="_blank">blktrace</a></li>
+<li><a href="https://www.tecmint.com/10-lsof-command-examples-in-linux/" target="_blank">lsof</a></li>
+<li><a href="https://www.networkworld.com/article/3633889/looking-at-your-linux-systems-network-interface-with-ethtool.html" target="_blank">ethtool</a></li>
+</ul>
+<p><br>
+You can install these tools  very easily using below command:</p>
+<p><code>yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace</code></p>
+<p><br></p>
+<h4 id="you-can-start-your-investigation-by-executing-small-script-which-will-gather-a-lot-of-system-stats-for-you">You can start your investigation by executing small script, which will gather a lot of system stats for you:</h4>
+<pre><code>bash &lt;(curl -s https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/server_stats.sh)
+</code></pre>
+<p>The output of above script will look like this: </p>
+<pre><code>############################################
+
+Server Uptime: 1days 6:43:23
+
+Load Average: Current 0.26
+Load Average: 15min Average 0.26
+
+#### Printing CPU stats: ####
+01:15:26 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+01:15:26 PM  all    1.47    0.00    0.48    0.02    0.00    0.12    0.00    0.00    0.00   97.91
+
+
+###RAM usage###
+Free Ram: 569.93MB
+Used RAM: 3171.23MB
+
+15% ram left
+RAM ALERT: Low!
+
+TOP RAM CONSUMER: /opt/mongodb/mms/jdk/bin/mms-app
+RAM Usage (RSS): 1857.43 MB
+Total Number of RAM Processes: 2
+Total RAM Usage for all /opt/mongodb/mms/jdk/bin/mms-app processes =  2287.56 MB
+61.15% used by /opt/mongodb/mms/jdk/bin/mms-app
+
+
+###CPU usage###
+Top Process:  /opt/mongodb/mms/jdk/bin/mms-app
+CPU % for SINGLE Top Process =  4.2
+number of processes this is running: 2
+Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
+
+############################################
+</code></pre>
 <h2 id="perfomance-isssues-due-to-high-cpu-usage">Perfomance isssues due to high CPU Usage</h2>
+<pre><code>   As a default, percentages for these individual categories are displayed.  Where two labels are shown below, those for more recent kernel versions are shown first.
+       us, user    : time running un-niced user processes
+       sy, system  : time running kernel processes
+       ni, nice    : time running niced user processes
+       id, idle    : time spent in the kernel idle handler
+       wa, IO-wait : time waiting for I/O completion
+       hi : time spent servicing hardware interrupts
+       si : time spent servicing software interrupts
+       st : time stolen from this vm by the hypervisor
+</code></pre>
 <h2 id="performance-issues-due-to-high-memory-usage">Performance issues due to high Memory Usage</h2>
 <h2 id="performance-issues-due-to-high-disk-io-usage">Performance issues due to high Disk IO Usage</h2>
 <h2 id="network-performance-issues">Network Performance Issues</h2></div>

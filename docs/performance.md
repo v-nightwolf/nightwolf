@@ -38,13 +38,48 @@ You can install these tools  very easily using below command:
 
 `      yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
 
-
-<br>
 <br>
 
-- You can start your investigation by executing small script, which will gather a lot of system stats for you:
+#### You can start your investigation by executing small script, which will gather a lot of system stats for you:
+	
+	
+	bash <(curl -s https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/server_stats.sh)
 
- 
+The output of above script will look like this: 
+
+	############################################
+
+	Server Uptime: 1days 6:43:23
+
+	Load Average: Current 0.26
+	Load Average: 15min Average 0.26
+
+	#### Printing CPU stats: ####
+	01:15:26 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+	01:15:26 PM  all    1.47    0.00    0.48    0.02    0.00    0.12    0.00    0.00    0.00   97.91
+
+
+	###RAM usage###
+	Free Ram: 569.93MB
+	Used RAM: 3171.23MB
+
+	15% ram left
+	RAM ALERT: Low! 
+
+	TOP RAM CONSUMER: /opt/mongodb/mms/jdk/bin/mms-app
+	RAM Usage (RSS): 1857.43 MB
+	Total Number of RAM Processes: 2
+	Total RAM Usage for all /opt/mongodb/mms/jdk/bin/mms-app processes =  2287.56 MB
+	61.15% used by /opt/mongodb/mms/jdk/bin/mms-app
+
+
+	###CPU usage###
+	Top Process:  /opt/mongodb/mms/jdk/bin/mms-app
+	CPU % for SINGLE Top Process =  4.2
+	number of processes this is running: 2
+	Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
+
+	############################################
 
 ## Perfomance isssues due to high CPU Usage
 

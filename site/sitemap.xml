@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://nightwolf.in/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/interview/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/contribute/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/linux_questionairs/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/interview/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/network/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/linux_questionairs/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/new/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/network/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/performance/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/new/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://nightwolf.in/reference/</loc>
-         <lastmod>2022-01-21</lastmod>
+         <loc>https://www.nightwolf.in/performance/</loc>
+         <lastmod>2022-01-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/reference/</loc>
+         <lastmod>2022-01-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
