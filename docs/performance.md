@@ -33,10 +33,10 @@ We will try to break your investigation steps into major bullet points and helps
   - <a href="https://www.tecmint.com/10-lsof-command-examples-in-linux/" target="_blank">lsof</a>
   - <a href="https://www.networkworld.com/article/3633889/looking-at-your-linux-systems-network-interface-with-ethtool.html" target="_blank">ethtool</a>
 
+<br>
+You can install these tools  very easily using below command:
 
-	You can install these tools  very easily using below command:
-
-		yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace
+`      yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace       `
 
 
 ## Perfomance isssues due to high CPU Usage
