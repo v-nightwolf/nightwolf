@@ -5,9 +5,6 @@ theme:
     name: mkdocs 
     nav_style: dark
     logo: wolf.png
-    static_templates:
-        - sitemap.html
-
 
 # Copyright
 copyright: 'Copyright &copy; 2022 nightWolf'
