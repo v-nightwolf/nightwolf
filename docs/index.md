@@ -9,7 +9,7 @@
 `This Article includes:`
 
 * [Perfomance isssues due to high CPU Usage](performance.md#perfomance-isssues-due-to-high-cpu-usage)
-* [Performance issues due to high Memory Usage](performance.md##performance-issues-due-to-high-memory-usage)
+* [Performance issues due to high Memory Usage](performance.md#performance-issues-due-to-high-memory-usage)
 * [Performance issues due to high Disk IO Usage](performance.md#performance-issues-due-to-high-disk-io-usage)
 * [Network Performance Issues](performance.md#network-performance-issues)
 
