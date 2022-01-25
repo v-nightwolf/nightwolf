@@ -142,7 +142,7 @@
 	47. What can be done to improve the performance of an I/O-heavy system?
 	    Hints =>
 		a). Check RAID Level, if server using any.
-		b).Partition aligned, i.e. starting a partition on sector 2048.
+		b). Partition aligned, i.e. starting a partition on sector 2048.
 		c). Mount Options like: noatime - (covers norelatime/nodiratime) Can be enabled only via fstab.
 		d). RAID Controller settings - read/write policy, e.g. write-through(good to ensure data has been changed on disk.
 		    write-back(relys on cache, battery).
@@ -207,7 +207,9 @@
 		b). Backup is taken whenever we make change to LVM (create/remove LV/VG) and we can use it to restore 
 		    to the prior state.
 
-
+	51. What is default signal sent by KILL command ?
+	    Hint =>
+		a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type. 
 
 ##Questions from Github  
 A lot more Questions from my [Github page](https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/linux_question_db)
