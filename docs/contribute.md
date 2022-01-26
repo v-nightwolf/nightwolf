@@ -1,6 +1,6 @@
 #### Your contributions and feedbacks are highly appreciated. This will help us to help people like you to enhance their knowledge and score in their current and future roles.  
 <br>
-You can contribute through <a href="https://github.com/v-nightwolf/nightwolf-cotribution.git" target="_blank">nightwolf-cotribution github repo</a> page by updating the content and creating a pull request. That pull request will be reviewd thoroughly and then committed, which will display on our website nightwolf.in. 
+You can contribute through <a href="https://github.com/v-nightwolf/nightwolf-cotribution.git" target="_blank">nightwolf-cotribution github repo</a> page by updating the content and creating a pull request. That pull request will be reviewd thoroughly and then committed, which will display on our website nightwolf.in. You can use below command to contribute through git cli: 
 
 	mkdir nightwolf
 	cd nightwolf
