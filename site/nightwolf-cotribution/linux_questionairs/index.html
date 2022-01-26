@@ -6,17 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://www.nightwolf.in/linux_questionairs/">
-        <link rel="shortcut icon" href="../img/favi.png">
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/linux_questionairs/">
+        <link rel="shortcut icon" href="../../img/favi.png">
         
         <title>Linux questionairs - nightWolf</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="..">nightWolf</a>
+                <a class="navbar-brand" href="../..">nightWolf</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
                                 <a href="../performance/" class="nav-link">Performance-Troubleshooting</a>
                             </li>
                             <li class="navitem">
-                                <a href="../interview/" class="nav-link">Interview-Preparation</a>
+                                <a href="../../interview/" class="nav-link">Interview-Preparation</a>
                             </li>
                             <li class="navitem">
-                                <a href="../linux.md" class="nav-link">Linux</a>
+                                <a href="../../linux.md" class="nav-link">Linux</a>
                             </li>
                             <li class="navitem">
-                                <a href="../network/" class="nav-link">Network</a>
+                                <a href="../../network.md" class="nav-link">Network</a>
                             </li>
                             <li class="navitem">
-                                <a href="../db.md" class="nav-link">Database</a>
+                                <a href="../../db.md" class="nav-link">Database</a>
                             </li>
                         </ul>
 
@@ -233,7 +233,7 @@
 47. What can be done to improve the performance of an I/O-heavy system?
     Hints =&gt;
     a). Check RAID Level, if server using any.
-    b).Partition aligned, i.e. starting a partition on sector 2048.
+    b). Partition aligned, i.e. starting a partition on sector 2048.
     c). Mount Options like: noatime - (covers norelatime/nodiratime) Can be enabled only via fstab.
     d). RAID Controller settings - read/write policy, e.g. write-through(good to ensure data has been changed on disk.
         write-back(relys on cache, battery).
@@ -297,6 +297,10 @@
     a). To restore VG configuration.
     b). Backup is taken whenever we make change to LVM (create/remove LV/VG) and we can use it to restore 
         to the prior state.
+
+51. What is default signal sent by KILL command ?
+    Hint =&gt;
+    a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type.
 </code></pre>
 <h2 id="questions-from-github">Questions from Github</h2>
 <p>A lot more Questions from my <a href="https://raw.githubusercontent.com/v-nightwolf/nightwolf/main/linux_question_db">Github page</a></p>
@@ -581,11 +585,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "..",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
