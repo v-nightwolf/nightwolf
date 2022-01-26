@@ -1,17 +1,17 @@
 [<h1 style="text-align: center;font-family: cursive;"><img src="img/favi.png" height="70" /> nightWolf </h1>](index.md)
 <br/>
 
-## [System Performance](performance.md)
+## [System Performance](nightwolf-cotribution/performance.md)
 
   System performance is one of the major and reoccurring issue in IT infrastructure. 
   We have consolidated few major issues and bottlenecks for you to understand the root cause of the performance issues.
 
 `This Article includes:`
 
-* [Perfomance isssues due to high CPU Usage](performance.md#perfomance-isssues-due-to-high-cpu-usage)
-* [Performance issues due to high Memory Usage](performance.md#performance-issues-due-to-high-memory-usage)
-* [Performance issues due to high Disk IO Usage](performance.md#performance-issues-due-to-high-disk-io-usage)
-* [Network Performance Issues](performance.md#network-performance-issues)
+* [Perfomance isssues due to high CPU Usage](nightwolf-cotribution/performance.md#perfomance-isssues-due-to-high-cpu-usage)
+* [Performance issues due to high Memory Usage](nightwolf-cotribution/performance.md#performance-issues-due-to-high-memory-usage)
+* [Performance issues due to high Disk IO Usage](nightwolf-cotribution/performance.md#performance-issues-due-to-high-disk-io-usage)
+* [Network Performance Issues](nightwolf-cotribution/performance.md#network-performance-issues)
 
 
 ## [Interview Preparations](interview.md)
@@ -21,8 +21,8 @@
 
 `This Article include:`
 
-* [Linux Interview Questions](linux_questionairs.md)
-* [Network Interview Questions](network.md)
+* [Linux Interview Questions](nightwolf-cotribution/linux_questionairs.md)
+* [Network Interview Questions](nightwolf-cotribution/network.md)
 * [Interview materials](reference.md) 
 
 ## [Linux]()

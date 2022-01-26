@@ -11,7 +11,7 @@ copyright: 'Copyright &copy; 2022 nightWolf'
 
 nav:
     - Home: index.md
-    - Performance-Troubleshooting: performance.md
+    - Performance-Troubleshooting: nightwolf-cotribution/performance.md
     - Interview-Preparation: interview.md
     - Linux: linux.md
     - Network: network.md
