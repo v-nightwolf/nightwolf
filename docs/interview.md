@@ -1,3 +1,3 @@
-##[Linux Questions DB](linux_questionairs.md)
+##[Linux Questions DB](nightwolf-cotribution/linux_questionairs.md)
 <br></br>
-##[Network Questions DB](network.md)
+##[Network Questions DB](nightwolf-cotribution/network.md)

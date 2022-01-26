@@ -115,7 +115,7 @@ cpu_check() {
 		echo -e "Total CPU % for $BLUE$topprocess$RESET = " "$RED$totalcpu$RESET"
 	fi
 }
-#######################################
+########################################
 echo $neat
 #####Load Average#####
 echo ""
@@ -126,4 +126,4 @@ echo ""
 	cpu_check
 echo ""
 echo $neat
-#######################################
+########################################
