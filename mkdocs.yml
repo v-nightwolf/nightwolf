@@ -6,6 +6,10 @@ theme:
     nav_style: dark
     logo: wolf.png
 
+markdown_extensions:
+    - toc:
+        permalink: ""
+
 # Copyright
 copyright: 'Copyright &copy; 2022 nightWolf'
 
