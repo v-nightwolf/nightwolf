@@ -122,7 +122,7 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="system-performance">System Performance</h2>
+<h2 id="system-performance">System Performance<a class="headerlink" href="#system-performance" title="Permanent link"></a></h2>
 <ul>
 <li>
 <p><code>Definition:</code>
@@ -140,7 +140,7 @@
     - Software Bugs like memory leaks, Kernel bugs etc.
 </code></pre>
 <p>We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. </p>
-<h2 id="tools-helpful-in-your-investigation">Tools helpful in your investigation:</h2>
+<h2 id="tools-helpful-in-your-investigation">Tools helpful in your investigation:<a class="headerlink" href="#tools-helpful-in-your-investigation" title="Permanent link"></a></h2>
 <p><img alt="!image" src="../../img/TroubleShooting.jpg" /></p>
 <ul>
 <li><a href="https://linux.die.net/man/1/top" target="_blank">top</a></li>
@@ -157,13 +157,19 @@
 <li><a href="http://iptraf.seul.org/about.html" target="_blank">iptraf</a></li>
 <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/axboe/blktrace.git/tree/README" target="_blank">blktrace</a></li>
 <li><a href="https://www.tecmint.com/10-lsof-command-examples-in-linux/" target="_blank">lsof</a></li>
-<li><a href="https://www.networkworld.com/article/3633889/looking-at-your-linux-systems-network-interface-with-ethtool.html" target="_blank">ethtool</a></li>
+<li>
+<p><a href="https://www.networkworld.com/article/3633889/looking-at-your-linux-systems-network-interface-with-ethtool.html" target="_blank">ethtool</a></p>
+</li>
+<li>
+<p><a href="https://github.com/v-nightwolf/nightwolf-cotribution/raw/4fc6bb408de57e9776d2d041e5573990928fbecc/TypeClip%20-%201.0.5933.22582.exe">type-clip</a> : A very good tool when you have to paste something into virtual consoles. </p>
+</li>
+<li><a href="https://github.com/rackerlabs/recap#installation" target="_blank">recap</a>
+<br></li>
 </ul>
-<p><br>
-You can install these tools  very easily using below command:</p>
-<p><code>yum install -y  sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace</code></p>
+<p>You can install these tools  very easily using below command:</p>
+<p><code>yum install -y  lsof sysstat iptraf tcpdump procps-ng net-tools strace iotop ethtool blktrace</code></p>
 <p><br></p>
-<h4 id="you-can-start-your-investigation-by-executing-small-script-which-will-gather-a-lot-of-system-stats-for-you">You can start your investigation by executing small script, which will gather a lot of system stats for you:</h4>
+<h4 id="you-can-start-your-investigation-by-executing-small-script-which-will-gather-a-lot-of-system-stats-for-you">You can start your investigation by executing small script, which will gather a lot of system stats for you:<a class="headerlink" href="#you-can-start-your-investigation-by-executing-small-script-which-will-gather-a-lot-of-system-stats-for-you" title="Permanent link"></a></h4>
 <pre><code>bash &lt;(curl -s https://raw.githubusercontent.com/v-nightwolf/nightwolf-cotribution/main/server_stats.sh)
 </code></pre>
 <p>The output of above script will look like this: </p>
@@ -201,7 +207,7 @@ Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
 
 ############################################
 </code></pre>
-<h2 id="perfomance-isssues-due-to-high-cpu-usage">Perfomance isssues due to high CPU Usage</h2>
+<h2 id="perfomance-isssues-due-to-high-cpu-usage">Perfomance isssues due to high CPU Usage<a class="headerlink" href="#perfomance-isssues-due-to-high-cpu-usage" title="Permanent link"></a></h2>
 <pre><code>   As a default, percentages for these individual categories are displayed.  Where two labels are shown below, those for more recent kernel versions are shown first.
        us, user    : time running un-niced user processes
        sy, system  : time running kernel processes
@@ -212,9 +218,9 @@ Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
        si : time spent servicing software interrupts
        st : time stolen from this vm by the hypervisor
 </code></pre>
-<h2 id="performance-issues-due-to-high-memory-usage">Performance issues due to high Memory Usage</h2>
-<h2 id="performance-issues-due-to-high-disk-io-usage">Performance issues due to high Disk IO Usage</h2>
-<h2 id="network-performance-issues">Network Performance Issues</h2></div>
+<h2 id="performance-issues-due-to-high-memory-usage">Performance issues due to high Memory Usage<a class="headerlink" href="#performance-issues-due-to-high-memory-usage" title="Permanent link"></a></h2>
+<h2 id="performance-issues-due-to-high-disk-io-usage">Performance issues due to high Disk IO Usage<a class="headerlink" href="#performance-issues-due-to-high-disk-io-usage" title="Permanent link"></a></h2>
+<h2 id="network-performance-issues">Network Performance Issues<a class="headerlink" href="#network-performance-issues" title="Permanent link"></a></h2></div>
             </div>
         </div>
 
