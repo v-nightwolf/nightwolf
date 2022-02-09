@@ -109,11 +109,39 @@
     [&lt;f7fdb2f0&gt;] ? rpc_wait_bit_killable+0x0/0x80 [sunrpc] 
     -------------------------------------------------------------------------------------------
 
+   Hint =&gt;
+        Above error is kernel dump due to kmalloc buffer exhaustion. The system is out of memory and 
+        cannot satisfy the allocation request at all. This is more likely to happen on swap-less systems
+        that are unable to purge application pages to free up memory.
+        The system may have sufficient free pages in total but not enough that are physically contiguous
+        to satisfy the allocation request. This is referred to as memory fragmentation.
+
+        - The phrase "page allocation failure" - this defines the error message that should be used in a 
+          KCS search.
+        - The process name "find" - often page allocation failures are related to code that gets executed
+          by specific threads, try searching KCS with and without this term. If the allocation request was
+          performed by an interrupt service routine then the process name will be irrelevant.
+        - The order of the allocation "order:5" and mode "mode:0x0" can often be the same for every instance
+          of a particular problem, try searching KCS with and without these terms.
+        - The function requesting the memory allocation "rpc_malloc()" is likely to be the same for every 
+          instance of this particular problem so include that in the KCS search.
+        - Do not search for the CPU number, the process id or function offsets since they will change and
+          may prevent finding a match.
+
+    For more details https://access.redhat.com/articles/1360023
+
 2. What is order:5, mode:0x0 in above output.
 
 3. Difference between kernel panic due to Memory crunch and page allocation failure.
 
 4. Difference between VMalloc and KMalloc
+   Hint =&gt;
+        The kmalloc() &amp; vmalloc() functions are a simple interface for obtaining kernel memory in byte-sized
+        chunks.
+
+        - The kmalloc() function guarantees that the pages are physically contiguous (and virtually contiguous).
+        - The vmalloc() function works in a similar fashion to kmalloc(), except it allocates memory that is 
+          only virtually contiguous and not necessarily physically contiguous.
 
 5. How do you troubleshoot memory performance issue. Please explain the details.
 
@@ -194,11 +222,13 @@
 39. How to troubleshoot a issue where a client not able to access a server?
 
 40. What are outputs when you execute the NATCAT (nc) command  and explain each ?
-    1. Connected 
-    2. Connection timeout 
-    3. Connection refused(if port / server is blocking by the firewall)
-
-41. What are the inodes and how will you free up them?
+    Hint =&gt;
+    - Connected 
+    - Connection timeout 
+    - Connection refused(if port / server is blocking by the firewall)
+</code></pre>
+<hr />
+<pre><code>41. What are the inodes and how will you free up them?
 
 42. How can we check the packet flow in our system?
 
@@ -213,7 +243,6 @@
          processes, like Apache.
         Detrimental: Monolithic, memory-heavy, single processes. May be threaded, example MySQL, Redis,
         Java-everything, Memcached.
-
     Follow-Up Q. - what if there's only a single physical proc.
 
 45. Customer complains that their CPUs aren't running as fast as they're rated. How would you Troubleshoot ?
@@ -294,14 +323,78 @@
 50. In which scenario we need to use vgcfgrestore and vgcfgbackup commands ? When /etc/lvm/archive contents are 
     written (when does backup happen ?)
     Hints =&gt;
-    a). To restore VG configuration.
-    b). Backup is taken whenever we make change to LVM (create/remove LV/VG) and we can use it to restore 
-        to the prior state.
+        a). To restore VG configuration.
+        b). Backup is taken whenever we make change to LVM (create/remove LV/VG) and we can use it to restore 
+            to the prior state.
 
 51. What is default signal sent by KILL command ?
     Hint =&gt;
-    a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type.
+        a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type.
+
+52. What is deadlock ? How to identify if process is in deadlock in Linux/Unix ?
+    Hint =&gt;
+        Deadlock is a situation where a set of processes are blocked because each process is holding a resource
+        and waiting for another resource acquired by some other process
+
+53. How to load kernel module. any commands ?
+    Hint =&gt; 
+        We can use "modprobe" or "insmod" commands to load kernel module.
+
+54. Difference between insmod and modprobe commands in Linux ?
+
+
+55. Different types of file systems?
+    Hint =&gt;
+        ext2, ext3, ext4, xfs, vfat etc.
+
+56. Difference between ext4 and xfs?
+
+57. When v create user which files are referred?
+
+58. Differnce between passwd and shadow file?
+    Hint =&gt; 
+        /etc/passwd contains User's detail like home directory, shell etc.
+        /etc/shadow conatains User's password hashes.
+
+59. What are the contents in passwd file?
+    Hint =&gt;
+        root:x:0:0:root:/root:/bin/bash
+
+           •   login name
+           •   optional encrypted password
+           •   numerical user ID
+           •   numerical group ID
+           •   user name or comment field
+           •   user home directory
+           •   optional user command interpreter
+
+60. List all users who are not given passwd? with cmd
+    Hint =&gt;
+        cat /etc/shadow| awk -F ":" '$2 ~ /[a-z]/ {print $1}'
+
+61. How to check what processess are running on which port?
+    Hint =&gt;
+        Using "netstat" and "ss" command we can relate processes with port.
+
+62. How to extend partition in lvm? and indepth questions in lvm ?
+    Hint =&gt; 
+        1. First attach extra storage/disk to server. 
+        2. Create a new partition on the disk using 'fdisk' or 'parted' command. 
+        3. Create a new Physical Volume(PV) on that new partition. e.g. 'pvcreate /dev/sdb1'        
+        4. Exetend existing Volume Group(VG) using new PV. e.g. 'vgextend vg_name /dev/sdb1'
+        5. Now extend the LV. e.g . 'lvextend -l 100%FREE /dev/mapper/vg_name-lv_name'
+        6. now execute 'resize2fs' or 'xfs_growfs'.
+
+63. What is tcpwrappers?
+    Hint =&gt;
+        tcpwrappers is a host based Network Access Control List, by which we can allow or deny 
+        a host or subnetwork IP addresses,
+
+64. On which port dns works?
+    Hint =&gt;
+        DNS works on port 53.
 </code></pre>
+<hr />
 <h2 id="questions-from-github">Questions from Github<a class="headerlink" href="#questions-from-github" title="Permanent link"></a></h2>
 <p>A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/linux_question_db" target="_blank">nightwolf-cotribution github repo </a></p>
 <p># General Questions:</p>
@@ -569,12 +662,6 @@
 121. What is Huge Tables? Why isn't it enabled by default? Why and when use it?
 
 122. What is LUKS? How to use it?
-
-123. What is deadlock ? How to identify if process is in deadlock in Linux/Unix ?
-
-124. How to load kernel module. any commands ?
-
-125. Difference between insmod and modprobe commands in Linux ?
 </code></pre></div>
             </div>
         </div>
