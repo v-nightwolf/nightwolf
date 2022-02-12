@@ -21,7 +21,9 @@
 
 `This Article include:`
 
-* [Linux Interview Questions](nightwolf-cotribution/linux_questionairs.md)
+* [Linux Level-1 Interview Questions](nightwolf-cotribution/linux_L1.md)
+* [Linux Level-2 Interview Questions](nightwolf-cotribution/linux_L2.md)
+* [Linux Level-3 Interview Questions](nightwolf-cotribution/linux_L3.md)
 * [Network Interview Questions](nightwolf-cotribution/network.md)
 * [Interview materials](reference.md) 
 
@@ -37,7 +39,7 @@
 ## [Database](db.md)
 
 * [mysql](mysql.md)
-* [mongoDB](mongo.db)
+* [mongoDB](mongo.md)
 
 ## [Network]()
 

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/linux_L1/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Linux Questions - L1 - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Performance-Troubleshooting</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../interview/" class="nav-link">Interview-Preparation</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../linux.md" class="nav-link">Linux</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../network.md" class="nav-link">Network</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../db/" class="nav-link">Database</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#linux-questions-l1" class="nav-link">Linux Questions - L1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="linux-questions-l1">Linux Questions - L1<a class="headerlink" href="#linux-questions-l1" title="Permanent link"></a></h1>
+<pre><code>    1. What did you learn yesterday/this week?
+
+    2. Describe the general file system hierarchy of a Linux system.
+
+    3. What is the name and the UID of the administrator user in Linux/Unix?
+    Hint =&gt; 
+        name of user is root and uid is 1.
+
+    4. How to list all files, including hidden ones, in a directory?
+
+    5. What is the Unix/Linux command to remove a directory and its contents?
+    Hint =&gt; 
+        rm -rf DIR_NAME
+
+    6. Which command will show you free/used memory? Does free memory exist on Linux?
+    Hint =&gt; 
+        free -m
+
+    7. How to search for the string "my konfu is the best" in files of a directory recursively?
+    Hint =&gt;
+        grep -rin "my konfu is the best" DIR_NAME
+
+    8. How to connect to a remote server or what is SSH?    
+    Hint =&gt;
+        We can use ssh command to connect to remote server. 
+        command : ssh USER@10.0.0.1
+
+    9. How to get all environment variables and how can you use them?
+    Hint =&gt; 
+        env command print all the environment variables associated with user.
+
+    10. I get "command not found" when I run ifconfig -a. What can be wrong?
+    Hint =&gt;
+        a). Either ifconfig command binary is not present in /usr/sbin/ or /sbin.
+        b). Or PATH environment for user variable do not have /usr/sbin/ and /sbin paths.
+
+    11. What happens if I type TAB-TAB?
+
+    12. What command will show the available disk space on the Unix/Linux system?
+    Hint =&gt;
+        df -h
+
+    13. What commands do you know that can be used to check DNS records?
+    Hint =&gt;
+        a) nslookup
+        b) dig
+        c) host
+
+    14. What Unix/Linux commands will alter a files ownership, files permissions?
+    Hint =&gt;
+        a) To change file ownership: chown
+        b) To change file permissions: chmod
+
+    15. What does chmod +x FILENAME do?
+    Hint =&gt;
+        It will provide shell executable permissions for FILENAME to everybody.
+
+    16. What does the permission 0750 on a file mean?
+
+    17. What does the permission 0750 on a directory mean?
+
+    18. How to add a new system user without login permissions?
+    Hint =&gt;
+        useradd -s /sbin/nologin tony
+        OR
+        useradd -M tony
+        usermod -L tony
+
+    19. How to add/remove a group from a user?
+    Hint =&gt;
+        # gpasswd -d user_name group_name
+
+    20. What is a bash alias?
+    Hint =&gt;
+        An alias is a (usually short) name that the shell translates into another (usually longer) name or 
+        command. Aliases allow you to define new commands by substituting a string for the first token of a
+        simple command
+
+    21. How do you set the mail address of the root/a user?
+    Hint =&gt;
+        The system administrator can define email aliases in the file /etc/aliases. This file contains lines
+        like root: cwd@mailhost.example.com, /root/mailbox; the effect is the same as having cwd@mailhost.example.com,
+        /root/mailbox in ~root/.forward. You may need to run a program such as newaliases after changing /etc/aliases.
+
+    22. What does CTRL-c do?
+    Hint =&gt; 
+        It sends the SIGINT signal to the process, which is technically just a request—most processes will honor
+        it, but some may ignore it.
+
+    23. What does CTRL-d do?
+    Hint =&gt; 
+        Close the bash shell. This sends an EOF (End-of-file) marker to bash, and bash exits.
+
+    24. What does CTRL-z do?
+    Hint =&gt;
+        Suspend the current foreground process running in bash. This sends the SIGTSTP signal to the process.
+        To return the process to the foreground later, use the fg process_name command.
+
+    25. What is in /etc/services?
+    Hint =&gt;
+        /etc/services contains port number mapping with service name.
+
+    26. How to redirect STDOUT and STDERR in bash? 
+    Hint =&gt; 
+        a) for all output : &amp;&gt; /dev/null
+        b) To redirect the standard error (stderr): 2&gt; /dev/null
+        c) To redirect the standard output(stdout): 1&gt; /dev/null
+
+    27. What is the difference between UNIX and Linux.
+
+    28. What is the difference between Telnet and SSH?
+
+    29. Which difference have between public and private SSH keys?
+
+    30. Explain the three load averages and what do they indicate. What command can be used to view the load averages?
+
+    31. Can you name a lower-case letter that is not a valid option for GNU ls?
+
+    32. What is a Linux kernel module?
+
+    33. Walk me through the steps in booting into single user mode to troubleshoot a problem.
+
+    34. Walk me through the steps you'd take to troubleshoot a 404 error on a web application you administer.
+
+    35. What is ICMP protocol? Why do you need to use?
+
+    36. What do the following commands do and how would you use them?
+            tee
+            awk
+            tr
+            cut
+            tac
+            curl
+            wget
+            watch
+            head
+            tail
+            less
+            cat
+            touch
+            sar
+            netstat
+            tcpdump
+            lsof
+
+    37. What does an &amp; after a command do?
+
+    38. What does &amp; disown after a command do?
+
+    39. What is a packet filter and how does it work?
+
+    40. What is Virtual Memory?
+
+    41. What is swap and what is it used for?
+
+    42. What is an A record, an NS record, a PTR record, a CNAME record, an MX record?
+
+    43. Are there any other RRs and what are they used for?
+
+    44. What is a Split-Horizon DNS?
+
+    45. What is the sticky bit?
+
+    46. What does the immutable bit do to a file?
+
+    47. What is the difference between hardlinks and symlinks? What happens when you remove the source to a symlink/hardlink?
+
+    48. What is an inode and what fields are stored in an inode?
+
+    49. How to force/trigger a file system check on next reboot?
+
+    50. What is SNMP and what is it used for?
+
+    51. What is a runlevel and how to get the current runlevel?
+
+    52. What is SSH port forwarding?
+
+    53. What is the difference between local and remote port forwarding?
+
+    54. What are the steps to add a user to a system without using useradd/adduser?
+
+    55. What is MAJOR and MINOR numbers of special files?
+
+    56. Describe the mknod command and when you would use it.
+
+    57. Describe a scenario when you get a "filesystem is full" error, but "df" shows there is free space.
+
+    58. Describe a scenario when deleting a file, but "df" not showing the space being freed.
+
+
+    59. What is default signal sent by KILL command ?
+        Hint =&gt;
+                    a). singnal 15 (SIGTERM) is sent by default if you do not specify the signal type.
+
+    60. Different types of file systems?
+        Hint =&gt;
+                    ext2, ext3, ext4, xfs, vfat etc.
+
+    61. Difference between ext4 and xfs?
+
+    62. When v create user which files are referred?
+
+    63. Differnce between passwd and shadow file?
+        Hint =&gt;
+                    /etc/passwd contains details abou User like home directory, shell etc.
+                    /etc/shadow conatains User password hashes.
+
+    64. What are the contents in passwd file?
+        Hint =&gt;
+                    root:x:0:0:root:/root:/bin/bash
+
+                   •   login name
+                   •   optional encrypted password
+                   •   numerical user ID
+                   •   numerical group ID
+                   •   user name or comment field
+                   •   user home directory
+                   •   optional user command interpreter
+
+    65. List all users who are not given passwd? with cmd
+        Hint =&gt;
+                    cat /etc/shadow| awk -F ":" '$2 ~ /[a-z]/ {print $1}'
+
+    66. How to check what processess are running on which port?
+        Hint =&gt;
+                    Using "netstat" and "ss" command we can relate processes with port.
+
+    67. How to extend partition in lvm? and indepth questions in lvm ?
+        Hint =&gt;
+                    1. First attach extra storage/disk to server.
+                    2. Create a new partition on the disk using "fdisk" or "parted" command.
+                    3. Create a new Physical Volume(PV) on that new partition. e.g. "pvcreate /dev/sdb1"
+                    4. Exetend existing Volume Group(VG) using new PV. e.g. "vgextend vg_name /dev/sdb1"
+                    5. Now extend the LV. e.g . "lvextend -l 100%FREE /dev/mapper/vg_name-lv_name"
+                    6. now execute "resize2fs" or "xfs_growfs".
+
+    68. What is tcpwrappers?
+        Hint =&gt;
+                    tcpwrappers is a host based Network Access Control List, by which we can allow or deny
+                    a host or subnetwork IP addresses,
+
+    69. What function does DNS play on a network?
+
+    70. On which port dns works?
+        Hint =&gt;
+                    DNS works on port 53.
+
+    71. What is HTTP?
+
+    72. What is an HTTP proxy and how does it work?
+
+    73. Describe briefly how HTTPS works.
+
+    74. What is SMTP? Give the basic scenario of how a mail message is delivered via SMTP.
+
+    75. What is RAID? What is RAID0, RAID1, RAID5, RAID10?
+
+    76. What is a level 0 backup? What is an incremental backup?
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

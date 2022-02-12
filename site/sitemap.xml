@@ -2,62 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.nightwolf.in/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/contribute/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/db/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/interview/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/mongo/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/mysql/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/new/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/reference/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_L1/</loc>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_questionairs/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/network/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/performance/</loc>
-         <lastmod>2022-02-09</lastmod>
+         <lastmod>2022-02-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
