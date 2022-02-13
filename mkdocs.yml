@@ -1,7 +1,7 @@
 site_name: nightWolf
 site_url: https://www.nightwolf.in/
 site_favicon: 'img/favi.png'
-google_analytics: ['G-DSYZJFJTEB', 'nightwolf.in']
+google_analytics: ['UA-220186946-1', 'nightwolf.in']
 
 theme:
     name: mkdocs 
@@ -29,4 +29,4 @@ nav:
 extra:
   analytics:
     provider: google
-    property: G-DSYZJFJTEB
+    property: UA-220186946-1 
