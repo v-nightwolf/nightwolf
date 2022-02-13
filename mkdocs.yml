@@ -21,7 +21,7 @@ nav:
     - Interview-Preparation: interview.md
     - Linux: linux.md
     - Network: nightwolf-cotribution/network
-    - Database: db
+    - Database: db/
 
 #        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
 #        - 'Networking Interview Questions': 'network.md'
