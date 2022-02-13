@@ -1,6 +1,8 @@
 site_name: nightWolf
 site_url: https://www.nightwolf.in/
 site_favicon: 'img/favi.png'
+google_analytics: ['G-DSYZJFJTEB', 'nightwolf.in']
+
 theme:
     name: mkdocs 
     nav_style: dark
@@ -18,8 +20,8 @@ nav:
     - Performance-Troubleshooting: nightwolf-cotribution/performance.md
     - Interview-Preparation: interview.md
     - Linux: linux.md
-    - Network: network.md
-    - Database: db.md
+    - Network: nightwolf-cotribution/network
+    - Database: db
 
 #        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
 #        - 'Networking Interview Questions': 'network.md'
