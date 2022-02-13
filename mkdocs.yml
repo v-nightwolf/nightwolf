@@ -24,4 +24,7 @@ nav:
 #        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
 #        - 'Networking Interview Questions': 'network.md'
 
-
+extra:
+  analytics:
+    provider: google
+    property: G-DSYZJFJTEB
