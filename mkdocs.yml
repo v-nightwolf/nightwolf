@@ -18,10 +18,11 @@ copyright: 'Copyright &copy; 2022 nightWolf'
 nav:
     - Home: index.md
     - Performance-Troubleshooting: nightwolf-cotribution/performance.md
-    - Interview-Preparation: interview.md
+    - Interview-Prep: interview.md
     - Linux: linux.md
     - Network: nightwolf-cotribution/network
     - Database: db/
+    - Discussions: https://talks.nightwolf.in
 
 #        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
 #        - 'Networking Interview Questions': 'network.md'

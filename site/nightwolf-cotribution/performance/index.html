@@ -50,7 +50,7 @@
                                 <a href="./" class="nav-link">Performance-Troubleshooting</a>
                             </li>
                             <li class="navitem">
-                                <a href="../../interview/" class="nav-link">Interview-Preparation</a>
+                                <a href="../../interview/" class="nav-link">Interview-Prep</a>
                             </li>
                             <li class="navitem">
                                 <a href="../../linux.md" class="nav-link">Linux</a>
@@ -60,6 +60,9 @@
                             </li>
                             <li class="navitem">
                                 <a href="../../db/" class="nav-link">Database</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
                             </li>
                         </ul>
 
@@ -251,7 +254,7 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
 </code></pre>
 <p>Above stats will guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. </p>
 <pre><code>* If only "%us"(time running un-niced user processes) is high that means your application is consuming more
-  CPU. Now you should deep dive into process stats and process trace. We will discuss thiin more detail soon.
+  CPU. Now you should deep dive into process stats and process trace. We will discuss this in more detail soon.
 
 * If only "%sy"(time running kernel processes) is high that means you kernel level system call are consuming
   the CPU. This usually happens when there is a bug in kernel packages.
