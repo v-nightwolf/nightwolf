@@ -252,7 +252,8 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
        si : time spent servicing software interrupts
        st : time stolen from this vm by the hypervisor
 </code></pre>
-<p>Above stats will guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. </p>
+<p><br>
+    Above stats might guide your investigation into a specific direction. Depending on above CPU stats, you will be able to decide what to check next. </p>
 <pre><code>* If only "%us"(time running un-niced user processes) is high that means your application is consuming more
   CPU. Now you should deep dive into process stats and process trace. We will discuss this in more detail soon.
 
@@ -279,7 +280,42 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
 * "%st"(time stolen from this vm by the hypervisor) means that virtual CPU is being spent waiting for the 
   Hypervisor to allocate CPU to virtual machine. This stat is only applicable to Virtual machines.
 </code></pre>
+<p><br></p>
+<p>If %us is high, that mean some process in user space is consuming the CPU. Next step would be to deep dive into
+    process stats: </p>
+<pre><code>1. First identify the process consuming high CPU. This can be identified using "top" command.
+
+2. Once you have identified the process, note down its process id(pid).
+
+3. Try tracing the process using stace command. This will throw a lot output onto the screen. 
+   starce -t -p PID_OF_PROCESS  =&gt; This will print wall clock time of each system call.
+
+4. Please check if process is getting stuck at any system call and note down system call and the resource system 
+   call is using.
+
+5. If system call is waiting for a File related I/O, then next step is to check file system call is waiting for.
+
+6. Go to /proc/{$PID_OF_PROCESS}/
+</code></pre>
+<p><br></p>
 <h2 id="performance-issues-due-to-high-memory-usage">Performance issues due to high Memory Usage<a class="headerlink" href="#performance-issues-due-to-high-memory-usage" title="Permanent link"></a></h2>
+<pre><code>d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
+    There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
+
+    As a default, line 4 reflects physical memory, classified as:
+       total, free, used and buff/cache
+
+    line 5 reflects mostly virtual memory(swap), classified as:
+       total, free, used and avail
+
+    total: Total size of memory available to system.
+
+    free: Size of memory which in un-utilized.
+
+    used: Size of memory currently utilized by processes+System.
+
+    buff/cache: Size of memory utilized by system for kernel buffers(i.e. buff) and page cache and slabs(i.e. cache)
+</code></pre>
 <h2 id="performance-issues-due-to-high-disk-io-usage">Performance issues due to high Disk IO Usage<a class="headerlink" href="#performance-issues-due-to-high-disk-io-usage" title="Permanent link"></a></h2>
 <h2 id="network-performance-issues">Network Performance Issues<a class="headerlink" href="#network-performance-issues" title="Permanent link"></a></h2></div>
             </div>
