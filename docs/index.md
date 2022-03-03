@@ -21,10 +21,14 @@
 
 `This Article include:`
 
+* [Linux General Interview Questions](nightwolf-cotribution/linux_basic.md)
 * [Linux Level-1 Interview Questions](nightwolf-cotribution/linux_L1.md)
 * [Linux Level-2 Interview Questions](nightwolf-cotribution/linux_L2.md)
 * [Linux Level-3 Interview Questions](nightwolf-cotribution/linux_L3.md)
-* [Network Interview Questions](nightwolf-cotribution/network.md)
+* [OS Network Interview Questions](nightwolf-cotribution/network.md)
+* [AWS Interview Questions](nightwolf-cotribution/aws.md)
+* [GIT Interview Questions](nightwolf-cotribution/git.md)
+* [Jenkins Interview Questions](nightwolf-cotribution/jenkins.md)
 * [Interview materials](reference.md) 
 
 ## [Linux]()

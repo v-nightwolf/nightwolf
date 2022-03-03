@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/network/">
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/git/">
         <link rel="shortcut icon" href="../../img/favi.png">
         
-        <title>OS Networking Interview Questions - nightWolf</title>
+        <title>GIT Interview Questions - nightWolf</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -76,7 +76,7 @@
   </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">OS Networking Interview Questions</a>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
 </li>
                                     
 <li>
@@ -84,7 +84,7 @@
 </li>
                                     
 <li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+    <a href="./" class="dropdown-item active">GIT Interview Questions</a>
 </li>
                                     
 <li>
@@ -96,7 +96,7 @@
                                 <a href="../../linux.md" class="nav-link">Linux</a>
                             </li>
                             <li class="navitem">
-                                <a href="." class="nav-link">Network</a>
+                                <a href="../network" class="nav-link">Network</a>
                             </li>
                             <li class="navitem">
                                 <a href="../../db/" class="nav-link">Database</a>
@@ -113,12 +113,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../linux_L3/" class="nav-link">
+                                <a rel="prev" href="../aws/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../aws/" class="nav-link">
+                                <a rel="next" href="../jenkins/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -140,195 +140,137 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#os-networking-questions" class="nav-link">OS Networking Questions</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#questions-from-github" class="nav-link">Questions from Github</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="os-networking-questions">OS Networking Questions<a class="headerlink" href="#os-networking-questions" title="Permanent link"></a></h2>
-<p><code>General questions about basic Networking + OS Networking + Troubleshooting.</code>   </p>
-<pre><code>1.  How to check if you are receiving connection timeouts when trying to connect to a server.
+<h3 id="git-interview-questions-and-answers">GIT Interview Questions and Answers<a class="headerlink" href="#git-interview-questions-and-answers" title="Permanent link"></a></h3>
+<pre><code>   Q1) What is a version control system (VCS)?
+   Version control systems are software tools that help a team manage changes to source code/documents over
+   time.
+   Q2) Why are version control systems (VCS) necessary?
+   They allow you to
+   1. Keep track of code changes.
+   2. Can help team memembers to synchronize the code to the latest version easily.
+   3. It helps teams to develop products faster.
+   4. Helps teams to collaborate with each other easily.
+   5. It acts as a backup for your code base.
+   Q3) What are distributed version control systems (DVCS)?
+   Distributed revision control synchronizes repositories by transferring patches from peer to peer.
+   There is no single c
+   Hence not requiring to be connected to the server all the time.
+   Example : GIT
+   Q4) What are centralized version control systems (CVCS)?
+   It is a version control where there is a single central repository hosted on a server. This server is expected to
+   have the latest code and expects all its clients to contribute by being connected to the server always.
+   Q5) How does git maintain the data internally.
+   Git mainly uses three different types of objects to hold information about a repository
+   þÿBLOB  binary form of the actual data
+   þÿTREE  It contains pointers to the objects
+   þÿCOMMIT  Commit object contains information about the author, date, haQ6) Can git be used locally without using GIT server or any SAAS providers like
+   þÿgit, bitbucket &amp;etc
+   Yes, if a person is willing to work on the project alone he can use git to maintain the state of the project.
+   However the full potential of git is unutilized.
+   Q7) How do you find a list of files impacted with a particular commit hash?
+   git diff-tree -r {hash}
+   Q8) What is a conflict in git. Is it necessary?
+   A conflict in git arises when branches are merged with new commits which has changes on same file(s). In cases
+   like this git cannot take precendence of changes hen
+   Q9) What is the difference between git pull and git fetch
+   Git fetch will download new commits from a remote repository to a local repository
+   git pull does the same as git fetch and also merges the same into your local working files
+   Q10) How are conflicts solved?
+   The files in conflict must be edited and fixed. Then add the resolved files by running
+   1. git add .
+   2. git commit
+   Q11) What is the command that defines the author email to be used for all the
+   commits performed by the current user?
+   þÿgit config global user.email &lt;email&gt;
+   Q12) GIT belongs to which generation of version control tools
+   3rd
+   Q13) What is GIT stash
+   þÿWhen changes are made to the working directory but you don t want to comattempting to recreate a clean working directory. GIT stash is used where all changes in working directory and
+   Index are are pushed into a stack.
+   Q14) How do you create a new branches
+   git branch &lt;branch name&gt;
+   Q15) How do you checkout to a particular branch
+   git checkout 
+   Q17) What languages were used to build the git?
+   C was the major language althought few parts were also written using shell, perl, tcl and python
+   Q18) What is git config?
+   git config allows you to configure git installation.
+   example includes setting user name , password, email etc
+   Q19) What is git clone?
+   Git clone lets users to copy an exising git repository that resides in the server.
+   It is the easiest way that a new developer can start using and contributing to the project
+   Q20) What is branching?
+   Branching is analogus to a storyline on which changes are made. The changes can resides in different branches
+   so that each branch can make changes independent of each other.
+   Q21) What is the command line environment used to perform git operations?
+   git bash
+   Q22) What is git cherry pick?
+   cherry pick allows you to pick a particular commit from a branch and insert to another branch. This is different
+   from git merge in that, git merge will bring in all commits from branches while cherry pick picks a specific commit
+   only
+   Q23)How to return a commit that has been pushed and made open?
+   git revert HEAD~2.HEAD
+   Q24) What is gitflow workflow?
+   It is a workflow that can be used to maintain large projects and it mainly consists of
+   The master branch is always ready for live release with everything production-ready.
+   The Hotflix branches help in quick patching of production releases.
+   The Develop branch helps in merging of all feature branches and also performs all the tests.
+   The Feature branch implies a unique branch for every new feature. The feature branch could be pushed to the
+   development branch just like their parent branch.
+   Q25) What is the syntax for rebasing ?
+   git rebase [new-commit]
+   Q26)What are git webhooks?
+   When plannning to cascade/notify new activities on git server to a different tool like jenkins, git webhook is used.
+   the webhook contains information about the activity (ex: push on the server).
+   Q27) What is git instaweb
+   Its a command that helps in directing a web browser and running a web server with an interface to the local
+   repository.
+   Q28) What hash is used in git ?
+   sha1
+   Q29) sha1 is now considered unsecured. does that mean git is under threat.
+   þÿNo. since git uses sha1 to only hash data to compare files/maintain state agit
+   Q30) What is the max number of heads can be used in git?
+   unlimited
 
-2.  In what condition you will receive connection refused. Hint: 1. if packets are rejected using 
-    firewall/iptables action "REJECT" 2. If service is not responding or is down.
-
-3.  what will you do/check if customer calls and tells you that there is packet drop when he is trying 
-    to access a remote server.
-
-4.  How will you troubleshoot packet drops?
-
-5.  What is TCP re-transmissions ?
-
-6.  What if there are no Packet drops/loss and high TCP re-transmissions on server. How will this impact 
-    server/services ?
-
-7.  What tools can be used to check bandwidth usage between  2 servers/devices.
-
-8.  When you poweron a laptop, how does it receives IP every time. Explain the process.
-
-9.  What if dhcp lease is over, will IP/connection drop from server.
-
-10. What is APIPA. In what case Server gets APIPA ip? Hint: When server is configured to receive IP from DHCP 
-    and there is no DHCP in that network.
-
-11. What happens in backend why you type google.com in browser and hit enter.
-
-12. Explain recursive and Iterative DNS queries.
-
-13. What can be the reason for receiving Request time outs when trying to resolve rackspace.com.
-
-14. What are HOPs in network. 
-    In a packet-switching network, a hop is the trip a data packet takes from one router or intermediate point 
-    to another in the network. On the Internet (or a network that uses TCP/IP), the number of hops a packet has 
-    taken toward its destination (called the "hop count") is kept in the packet header. A packet with an exceedingly 
-    large hop count is discarded.
-
-15. what is Apache 500 status code (Internel server error) and how to troubleshoot the 500 status code issue.
-
-16. DNS working flow? What happens when we hit www.google.com in browser?
-
-17. What is recursive and iterative query?
-
-18. What are the dns records? Explain each and every record?
-
-19.  What is difference between below 3 domains 
-    www.google.com 
-    Google.com 
-    www.google.com.
-
-20. What is the DORA process ?
-
-21. TCP 3 way handshaking and 4 way termination?
-
-22. SSL/TLS 4 way hand shaking?
-
-23. How to check TCP buffer size in Linux system?
-
-24. How to check packet drops in Linux?
-
-25. Explain the OSI model and working of each and every layer.
-
-26. Difference between TCP and UDP protocol.
-
-27. Why we have only 13 DNS server in the world?
-
-28. A customer complains of website slowness, what will be your troubleshooting approach in network prospective?
-
-29. Difference between Router and switch ?
-
-30. What configuration happens on switch and router?
-
-31. What happens when you open a website in browser?
-
-32. How does a client gets connected to Wifi? or What happens in the backend when client connects to wifi?
-
-33. Remove session layer from the picture and now consider running traceroute on 2 CMD terminals. How does
-    the request differ on both CMD terminals?
-
-34. Can sequence number be duplicate in TCP/IP?
-
-35. How many traceroute hops will be there when you run traceroute from server A to Server B 
-    Server A --&gt; Switch A --&gt; Router R1 --&gt; Router R2 --&gt; Switch B --&gt; Server B
-
-36. Please explain a recent issue that you experienced in your environment and your learning associated with it.
-</code></pre>
-<h2 id="questions-from-github">Questions from Github<a class="headerlink" href="#questions-from-github" title="Permanent link"></a></h2>
-<p>A lot more Questions from <a href="https://github.com/v-nightwolf/nightwolf-cotribution/blob/main/network_questions_db" target="_blank">nightwolf-cotribution github repo</a></p>
-<pre><code> 1. What is localhost and why would ping localhost fail?
-
- 2. What is the similarity between "ping" &amp; "traceroute" ? How is traceroute able to find the hops.
-
- 3. What is the command used to show all open ports and/or socket connections on a machine?
-
- 4. Is 300.168.0.123 a valid IPv4 address?
-
- 5. Which IP ranges/subnets are "private" or "non-routable" (RFC 1918)?
-
- 6. What is a VLAN?
-
- 7. What is ARP and what is it used for?
-
- 8. What is the difference between TCP and UDP?
-
- 9. What is the purpose of a default gateway?
-
-10. What is command used to show the routing table on a Linux box?
-
-11. A TCP connection on a network can be uniquely defined by 4 things. What are those things?
-
-12. When a client running a web browser connects to a web server, what is the source port and what is the 
-    destination port of the connection?
-
-13. How do you add an IPv6 address to a specific interface?
-
-14. You have added an IPv4 and IPv6 address to interface eth0. A ping to the v4 address is working but a ping 
-    to the v6 address gives you the response sendmsg: operation not permitted. What could be wrong?
-
-15. What is SNAT and when should it be used?
-
-16. Explain how could you ssh login into a Linux system that DROPs all new incoming packets using a SSH tunnel.
-
-17. How do you stop a DDoS attack?
-
-18. How can you see content of an ip packet?
-
-19. What is IPoAC (RFC 1149)?
-
-20. What will happen when you bind port 0?
-
-21. Customer changes an A record in their DNS control panel but calls us because they're still seeing the old version 
-    of their web site. How would you troubleshoot?
-
-22. I type "ping nightwolf.in" at a command-line. What things does the Linux OS do to turn "nightwolf.in" into an IP address? 
-    Hints =&gt;
-    a). /etc/hosts - used in name resolution whenever the files source is being defined in the hosts database 
-    b). nameserver – IP (IPv4 or IPv6) of the server that will resolve the queries 
-    c). /etc/resolv.conf - used by the libresolv library that's used by the libnss_dns library, this is when the 
-    source used is DNS.
-
-23. Can you still SSH to a Linux server if its default gateway is set incorrectly? How? 
-    Hints =&gt;  
-    a). You can SSH in, but only from another device in the same subnet, or in a network to which the "broken" 
-        server has a static route defined. 
-    b).some static route is there which can route to destination network.
-
-24. Two servers behind the same firewall are able to communicate by their private IPs, but not via FQDN. 
-    What might be causing this, and what can be done to fix it?
-    Hints =&gt;
-    a). The FQDNs are resolving to public IPs, and public IPs are unrouteable within the private network behind 
-        the firewall.
-    b). Edit /etc/hosts on the all servers behind the firewall to override DNS to point to private IP.
-    c). The "best" fix would be to enable DNS doctoring/translation at the firewall.
-
-25. What are the pros/cons of Load Balancer Health checks?
-
-26. What is persistence (ie: sticky sessions), and what are the pros and cons of it?
-    Hint =&gt;
-    Persistence: If source X went to node Y within the past Z minutes, bypass all balancing algorithms and
-    send directly to node Y again.
-
-    Pros:
-    • Avoids the breakage of per-node session information (ie: /var/lib/php/session files). Shopping
-      carts, active logins, etc.
-    Cons:
-    • In general, persistence can lead to some imbalance of active sessions between nodes. If a node
-      is temporarily unavailable (ie: rebooted), all active sessions become persistent to the remaining
-      node(s).
-    • With LeastConnections, this means the recovering node takes all new sessions, and is potentially 
-      overloaded until sessions equalize.
-    • With RoundRobin, this means the recovering node has significantly fewer sessions than the others 
-      for quite a while.
-    • If one connection is causing a large load, that load is not balanced - persistence keeps it all on
-      one node.
+   It is the message assigned to a commit made. When a commit is made a hash is assigned automatically but for
+   humans it becomes difficult to make anything out of this hash at later point of time. Hence a commit message is
+   assigned along for his future reference
+   Q33)Name few graphical git clients
+   git cola, git gui
+   Q34)What is git diff?
+   Git diff represents the changes between the commits and changes between working tree and commits.
+   Q35)What is git pull origin?
+   The command git pull origin master tells git to perform a pull operation (download a copy of repository) wherer
+   the origin represents the server url (alias) and master is the name of the branch
+   Q36) What is gitlog?
+   It is basically a command that can be executed when it comes to finding the history of a project according to the
+   date, changes made, the developer who handled it and usefulness of the same.
+   Q37) How can a developer update his changes to the git server.
+   Perform git push from the branch he is currently checked out to.
+   Q38) How do you make git not to consider few files/directories track changes.
+   need to add them in .gitignore file
+   Q39)What is the difference between git add . git add -all
+   They are same
+   Q40) What is git bisect?
+   þÿIts the command that uses a binary search algorithm to find which commit þÿa bug.Before the bug is introduced into the commit, the commit is referred
+   Q41) What is git stash drop?
+   Its the command that helps you remove the last entry made to the stash list or it can also help to eliminate any
+   stash entry
+   Q42) How do you delete a branch locally?
+   git branch -d &lt;branch name&gt;
+   Q43) What is git clean?
+   It cleans a repository by removing the files that are not currently tracked by git recursively.
+   Q44) What is git pop?
+   It is the command that helps you retrieve the changes pushed on the stack.
+   Q45) What is git fork?
+   A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without
+   affecting the original project. Generally open source projects follow fork workflow to allow users to contribute to
+   the project.
 </code></pre></div>
             </div>
         </div>

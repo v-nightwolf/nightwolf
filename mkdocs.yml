@@ -18,14 +18,21 @@ copyright: 'Copyright &copy; 2022 nightWolf'
 nav:
     - Home: index.md
     - Performance-Troubleshooting: nightwolf-cotribution/performance.md
-    - Interview-Prep: interview.md
+    - Interview-Prep:
+        - Linux Interview Questions:
+           - 'Linux General Questions': 'nightwolf-cotribution/linux_basic.md'
+           - 'Linux L1  Questions': 'nightwolf-cotribution/linux_L1.md'
+           - 'Linux L2  Questions': 'nightwolf-cotribution/linux_L2.md'
+           - 'Linux L3  Questions': 'nightwolf-cotribution/linux_L3.md'
+        - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
+        - AWS Interview Questions: 'nightwolf-cotribution/aws.md'
+        - GIT Interview Questions: 'nightwolf-cotribution/git.md'
+        - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'     
     - Linux: linux.md
     - Network: nightwolf-cotribution/network
     - Database: db/
     - Discussions: https://talks.nightwolf.in
 
-#        - 'Linux + OS Interview Questions': 'linux_questionairs.md'
-#        - 'Networking Interview Questions': 'network.md'
 
 extra:
   analytics:
