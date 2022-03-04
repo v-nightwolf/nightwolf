@@ -146,199 +146,213 @@
                     <div class="col-md-9" role="main">
 
 <h3 id="aws-certified-sysops-administrator-associate">AWS Certified SysOps Administrator – Associate<a class="headerlink" href="#aws-certified-sysops-administrator-associate" title="Permanent link"></a></h3>
-<pre><code>   QUESTION NO: 1
-   You are currently hosting multiple applications in a VPC and have logged numerous port scans
+<p>QUESTION NO: 1</p>
+<pre><code>   You are currently hosting multiple applications in a VPC and have logged numerous port scans
    coming in from a specific IP address block. Your security team has requested that all access
    from the offending IP address block be denied tor the next 24 hours.
    Which of the following is the best method to quickly and temporarily deny access from
    the specified IP address block?
-   A. Create an AD policy to modify Windows Firewall settings on all hosts in the VPC to
-   deny access from the IP address block
-   B. Modify the Network ACLs associated with all public subnets in the VPC to deny access from
-   the IP address block
+
+   A. Create an AD policy to modify Windows Firewall settings on all hosts in the VPC to deny access 
+      from the IP address block
+   B. Modify the Network ACLs associated with all public subnets in the VPC to deny access from the IP
+      address block
    C. Add a rule to all of the VPC 5 Security Groups to deny access from the IP address block
-   D. Modify the Windows Firewall settings on all Amazon Machine Images (AMIs) that
-   your organization uses in that VPC to deny access from the IP address block
+   D. Modify the Windows Firewall settings on all Amazon Machine Images (AMIs) that your organization 
+      uses in that VPC to deny access from the IP address block
+
    Answer: C
    Reference:
    http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html
-   QUESTION NO: 2
-   When preparing for a compliance assessment of your system built inside of AWS. what are three
-   best-practices for you to prepare for anaudit?
-   Choose 3 answers
+</code></pre>
+<p>QUESTION NO: 2</p>
+<pre><code>   When preparing for a compliance assessment of your system built inside of AWS. what are three best practices
+   for you to prepare for anaudit? Choose any 3 answers.
+
    A. Gather evidence of your IT operational controls
    B. Request and obtain applicable third-party audited AWS compliance reports and certifications
    C. Request and obtain a compliance and security tour of an AWS data center for a
-   pre-assessment security review
-   D. Request and obtain approval from AWS to perform relevant network scans and indepth penetration tests of your system's Instances and endpoints
-   E. Schedule meetings with AWS's third-party auditors to provide evidence of AWS compliance
-   that maps to your control objectives
+      pre-assessment security review
+   D. Request and obtain approval from AWS to perform relevant network scans and indepth penetration tests of
+      your system  and endpoints
+   E. Schedule meetings with AWS third-party auditors to provide evidence of AWS compliance that maps to 
+      your control objectives
    Answer: B,D,E
-   Explanation:
-   23
-   QUESTION NO: 3
-   You have started a new job and are reviewing your company's infrastructure on AWS You notice
-   one web application where they have an Elastic Load Balancer (&amp;B) in front of web instances in an
-   Auto Scaling Group When you check the metrics for the ELB in CloudWatch you see four healthy
-   instances In Availability Zone (AZ) A and zero in AZ B There are zero unhealthy instances.
+</code></pre>
+<p>QUESTION NO: 3</p>
+<pre><code>   You have started a new job and are reviewing your company infrastructure on AWS You notice one web
+   application where they have an Elastic Load Balancer (&amp;B) in front of web instances in an Auto Scaling Group.
+   When you check the metrics for the ELB in CloudWatch you see four healthy instances In Availability Zone (AZ) A 
+   and zero in AZ B There are zero unhealthy instances.
    What do you need to fix to balance the instances across AZs?
+
    A. Set the ELB to only be attached to another AZ
    B. Make sure Auto Scaling is configured to launch in both AZs
    C. Make sure your AMI is available in both AZs
    D. Make sure the maximum size of the Auto Scaling Group is greater than 4
+
    Answer: B
-   Explanation:
-   QUESTION NO: 4
-   You have been asked to leverage Amazon VPC BC2 and SOS to implement an application that
-   submits and receives millions of messages per second to a message queue. You want to ensure
-   your application has sufficient bandwidth between your EC2 instances and SQS
-   Which option will provide (he most scalable solution for communicating between the application
-   and SOS?
-   A. Ensure the application instances are properly configured with an Elastic Load Balancer
-   B. Ensure the application instances are launched in private subnets with the EBS-optimized
-   option enabled
-   C. Ensure the application instances are launched in public subnets with the associate-publicIP-address=true option enabled
-   D. Launch application instances in private subnets with an Auto Scaling group and Auto
-   Scaling triggers configured to watch the SOS queue size
+</code></pre>
+<p>QUESTION NO: 4</p>
+<pre><code>   You have been asked to leverage Amazon VPC BC2 and SOS to implement an application that submits and receives 
+   millions of messages per second to a message queue. You want to ensure your application has sufficient
+   bandwidth between your EC2 instances and SQS Which option will provide (he most scalable solution for
+   bandwidth between the application and SOS?
+
+   A. Ensure the application instances are properly configured with an Elastic Load Balancer.
+   B. Ensure the application instances are launched in private subnets with the EBS-optimized option enabled.
+   C. Ensure the application instances are launched in public subnets with the associate-publicIP-address=true
+      option enabled
+   D. Launch application instances in private subnets with an Auto Scaling group and Auto Scaling triggers 
+      configured to watch the SOS queue size
+
    Answer: C
    Reference:
    http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-2/
-   QUESTION NO: 5
-   You have identified network throughput as a bottleneck on your ml small EC2 instance when
-   uploading data Into Amazon S3 In the same region.
-   How do you remedy this situation?
+</code></pre>
+<p>QUESTION NO: 5</p>
+<pre><code>   You have identified network throughput as a bottleneck on your ml small EC2 instance when uploading data 
+   into Amazon S3 In the same region. How do you remedy this situation?
+
    A. Add an additional ENI
    B. Change to a larger Instance
    C. Use DirectConnect between EC2 and S3
    D. Use EBS PIOPS on the local volume
+
    Answer: B
    Reference:
    https://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf
-   QUESTION NO: 6
-   When attached to an Amazon VPC which two components provide connectivity with external
-   networks? Choose 2 answers
+</code></pre>
+<p>QUESTION NO: 6</p>
+<pre><code>   When attached to an Amazon VPC which two components provide connectivity with external networks? 
+   Choose 2 answers
+
    A. Elastic IPS (EIP)
    B. NAT Gateway (NAT)
    C. Internet Gateway {IGW)
    D. Virtual Private Gateway (VGW)
+
    Answer: C,D
-   Explanation:
-   QUESTION NO: 7
-   Your application currently leverages AWS Auto Scaling to grow and shrink as load Increases'
-   decreases and has been performing well Your marketing team expects a steady ramp up in
-   traffic to follow an upcoming campaign that will result in a 20x growth in traffic over 4 weeks Your
-   forecast for the approximate number of Amazon EC2 instances necessary to meet the peak
-   demand is 175.
+</code></pre>
+<p>QUESTION NO: 7</p>
+<pre><code>   Your application currently leverages AWS Auto Scaling to grow and shrink as load Increases/decreases 
+   and has been performing well. Your marketing team expects a steady ramp up in traffic to follow an upcoming
+   campaign that will result in a 20x growth in traffic over 4 weeks. Your forecast for the approximate number
+   of Amazon EC2 instances necessary to meet the peak demand is 175.
    What should you do to avoid potential service disruptions during the ramp up in traffic? 456789
-   A. Ensure that you have pre-allocated 175 Elastic IP addresses so that each server will be able
-   to obtain one as it launches
-   B. Check the service limits in Trusted Advisor and adjust as necessary so the forecasted
-   count remains within limits.
-   C. Change your Auto Scaling configuration to set a desired capacity of 175 prior to the launch
-   of the marketing campaign
-   D. Pre-warm your Elastic Load Balancer to match the requests per second anticipated during
-   peak demand prior to the marketing campaign
+
+   A. Ensure that you have pre-allocated 175 Elastic IP addresses so that each server will be able to obtain 
+      one as it launches
+   B. Check the service limits in Trusted Advisor and adjust as necessary so the forecasted count remains 
+      within limits.
+   C. Change your Auto Scaling configuration to set a desired capacity of 175 prior to the launch of the 
+      marketing campaign.
+   D. Pre-warm your Elastic Load Balancer to match the requests per second anticipated during peak demand prior
+      to the marketing campaign.
+
    Answer: D
-   Explanation:
-   QUESTION NO: 8
-   You have an Auto Scaling group associated with an Elastic Load Balancer (ELB). You have
-   noticed that instances launched via the Auto Scaling group are being marked unhealthy due to
-   an ELB health check, but these unhealthy instances are not being terminated
-   What do you need to do to ensure trial instances marked unhealthy by the ELB will be
-   terminated and replaced?
+</code></pre>
+<p>QUESTION NO: 8</p>
+<pre><code>   You have an Auto Scaling group associated with an Elastic Load Balancer (ELB). You have noticed that instances
+   launched via the Auto Scaling group are being marked unhealthy due to an ELB health check, but these unhealthy
+   instances are not being terminated. What do you need to do to ensure trial instances marked unhealthy by the 
+   ELB will be terminated and replaced?
+
    A. Change the thresholds set on the Auto Scaling group health check
    B. Add an Elastic Load Balancing health check to your Auto Scaling group
    C. Increase the value for the Health check interval set on the Elastic Load Balancer
-   D. Change the health check set on the Elastic Load Balancer to use TCP rather than
-   HTTP checks
+   D. Change the health check set on the Elastic Load Balancer to use TCP rather than HTTP checks
+
    Answer: B
-   Explanation:
+
    Reference:
    http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/as-add-elb-healthcheck.html
-   Add an Elastic Load Balancing Health Check to your Auto Scaling GroupBy default, an Auto
-   Scaling group periodically reviews the results of EC2 instance status to determine the health
-   state of each instance. However, if you have associated your Auto Scaling group with an Elastic
-   Load Balancing load balancer, you can choose to use the Elastic Load Balancing health check.
-   In this case, Auto Scaling determines the health status of your instances by checking the results
-   of both the EC2 instance status check and the Elastic Load Balancing instance health check.
-   For information about EC2 instance status checks, see Monitor Instances With Status Checks in
-   the Amazon EC2 User Guide for Linux Instances. For information about Elastic Load Balancing
-   health checks, see Health Check in the Elastic Load Balancing Developer Guide.
-   This topic shows you how to add an Elastic Load Balancing health check to your Auto Scaling
-   group, assuming that you have created a load balancer and have registered the load balancer
-   with your Auto Scaling group. If you have not registered the load balancer with your Auto Scaling
-   group, see Set Up a Scaled and Load-Balanced Application.
-   Auto Scaling marks an instance unhealthy if the calls to the Amazon EC2
-   action DescribeInstanceStatus return any state other than running, the system status
-   shows impaired, or the calls to Elastic Load Balancing
-   action DescribeInstanceHealth returns OutOfService in the instance state field.
-   If there are multiple load balancers associated with your Auto Scaling group, Auto Scaling checks
-   the health state of your EC2 instances by making health check calls to each load balancer. For
-   each call, if the Elastic Load Balancing action returns any state other than InService, the instance
-   is marked as unhealthy. After Auto Scaling marks an instance as unhealthy, it remains in that
-   state, even if subsequent calls from other load balancers return an InService state for the same
-   instance.
-   QUESTION NO: 9
-   Which two AWS services provide out-of-the-box user configurable automatic backup-as-a-service
-   and backup rotation options?
-   Choose 2 answers
+
+   Add an Elastic Load Balancing Health Check to your Auto Scaling GroupBy default, an Auto Scaling group
+   periodically reviews the results of EC2 instance status to determine the health state of each instance. However,
+   if you have associated your Auto Scaling group with an Elastic Load Balancing load balancer, you can choose to use
+   the Elastic Load Balancing health check. In this case, Auto Scaling determines the health status of your instances
+   by checking the results of both the EC2 instance status check and the Elastic Load Balancing instance health check.
+   For information about EC2 instance status checks, see Monitor Instances With Status Checks in the Amazon EC2 User 
+   Guide for Linux Instances. For information about Elastic Load Balancing health checks, see Health Check in the
+   Elastic Load Balancing Developer Guide. This topic shows you how to add an Elastic Load Balancing health check to
+   your Auto Scaling group, assuming that you have created a load balancer and have registered the load balancer
+   with your Auto Scaling group. If you have not registered the load balancer with your Auto Scaling group, see Set 
+   Up a Scaled and Load-Balanced Application. Auto Scaling marks an instance unhealthy if the calls to the Amazon EC2
+   action DescribeInstanceStatus return any state other than running, the system status shows impaired, or the calls
+   to Elastic Load Balancing action DescribeInstanceHealth returns OutOfService in the instance state field.
+   If there are multiple load balancers associated with your Auto Scaling group, Auto Scaling checks the health state
+   of your EC2 instances by making health check calls to each load balancer. For each call, if the Elastic Load 
+   Balancing action returns any state other than InService, the instance is marked as unhealthy. After Auto Scaling
+   marks an instance as unhealthy, it remains in that state, even if subsequent calls from other load balancers return
+   an InService state for the same instance.
+</code></pre>
+<p>QUESTION NO: 9</p>
+<pre><code>   Which two AWS services provide out-of-the-box user configurable automatic backup-as-a-service and backup 
+   rotation options? Choose any 2 answers.
+
    A. Amazon S3
    B. Amazon RDS
    C. Amazon EBS
    D. Amazon Red shift
+
    Answer: C,D
-   Explanation:
-   QUESTION NO: 10
-   An organization has configured a VPC with an Internet Gateway (IGW). pairs of public and private
-   subnets (each with one subnet per Availability Zone), and an Elastic Load Balancer (ELB)
-   configured to use the public subnets The application s web tier leverages the ELB. Auto Scaling
-   and a mum-AZ RDS database instance The organization would like to eliminate any potential
-   single points ft failure in this design.
-   What step should you take to achieve this organization's objective?
+</code></pre>
+<p>QUESTION NO: 10</p>
+<pre><code>   An organization has configured a VPC with an Internet Gateway (IGW). pairs of public and private subnets 
+   (each with one subnet per Availability Zone), and an Elastic Load Balancer (ELB) configured to use the public
+   subnets. The application web tier leverages the ELB, Auto Scaling and a mum-AZ RDS database instance.
+   The Organization would like to eliminate any potential single points ft failure in this design. What step 
+   should you take to achieve this organization's objective?
+
    A. Nothing, there are no single points of failure in this architecture.
    B. Create and attach a second IGW to provide redundant internet connectivity.
    C. Create and configure a second Elastic Load Balancer to provide a redundant load balancer.
-   D. Create a second multi-AZ RDS instance in another Availability Zone and configurereplication
-   to provide a redundant database.
+   D. Create a second multi-AZ RDS instance in another Availability Zone and configurereplication to provide 
+      a redundant database.
+
    Answer: C
-   Explanation:
-   QUESTION NO: 11
-   Which of the following are characteristics of Amazon VPC subnets?
-   Choose 2 answers
+</code></pre>
+<p>QUESTION NO: 11</p>
+<pre><code>   Which of the following are characteristics of Amazon VPC subnets? Choose any 2 answers.
+
    A. Each subnet maps to a single Availability Zone
    B. A CIDR block mask of /25 is the smallest range supported
    C. Instances in a private subnet can communicate with the internet only if they have an Elastic IP.
    D. By default, all subnets can route between each other, whether they are private or public
-   E. V Each subnet spans at least 2 Availability zones to provide a high-availability environment
+   E. V Each subnet spans at least 2 Availability zones to provide a high-availability environment.
+
    Answer: C,E
-   Explanation:
-   QUESTION NO: 12
-   You are creating an Auto Scaling group whose Instances need to insert a custom metric
-   into CloudWatch.
+</code></pre>
+<p>QUESTION NO: 12</p>
+<pre><code>   You are creating an Auto Scaling group whose Instances need to insert a custom metric into CloudWatch.
    Which method would be the best way to authenticate your CloudWatch PUT request?
-   A. Create an IAM role with the Put MetricData permission and modify the Auto Scaling
-   launch configuration to launch instances in that role
-   B. Create an IAM user with the PutMetricData permission and modify the Auto Scaling
-   launch configuration to inject the userscredentials into the instance User Data
-   C. Modify the appropriate Cloud Watch metric policies to allow the Put MetricData permission to
-   instances from the Auto Scaling group
-   D. Create an IAM user with the PutMetricData permission and put the credentials in a
-   private repository and have applications on the server pull the credentials as needed
+
+   A. Create an IAM role with the Put MetricData permission and modify the Auto Scaling launch configuration to
+      launch instances in that role.
+   B. Create an IAM user with the PutMetricData permission and modify the Auto Scaling launch configuration to
+      inject the userscredentials into the instance User Data.
+   C. Modify the appropriate Cloud Watch metric policies to allow the Put MetricData permission to instances from
+      the Auto Scaling group.
+   D. Create an IAM user with the PutMetricData permission and put the credentials in a private repository and
+      have applications on the server pull the credentials as needed.
+
    Answer: B
-   Explanation:
-   QUESTION NO: 13
-   When an EC2 instance that is backed by an S3-based AMI Is terminated, what happens to the
-   data on me root volume?
+</code></pre>
+<p>QUESTION NO: 13</p>
+<pre><code>   When an EC2 instance that is backed by an S3-based AMI Is terminated, what happens to the data on me root volume?
    A. Data is automatically saved as an E8S volume.
    B. Data is automatically saved as an ESS snapshot.
    C. Data is automatically deleted.
    D. Data is unavailable until the instance is restarted.
+
    Answer: D
-   Explanation:
+
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html
-   QUESTION NO: 14
-   You have a web application leveraging an Elastic Load Balancer (ELB) In front of the web
+</code></pre>
+<p>QUESTION NO: 14</p>
+<pre><code>   You have a web application leveraging an Elastic Load Balancer (ELB) In front of the web
    servers deployed using an Auto Scaling Group Your database is running on Relational Database
    Service (RDS) The application serves out technical articles and responses to them in general
    there are more views of an article than there are responses to the article. On occasion, an article
@@ -347,19 +361,22 @@
    What could you do to help alleviate the pressure on the infrastructure while maintaining availability
    during these events?
    Choose 3 answers
+
    A. Leverage CloudFront for the delivery of the articles.
    B. Add RDS read-replicas for the read traffic going to your relational database
    C. Leverage ElastiCache for caching the most frequently used data.
    D. Use SOS to queue up the requests for the technical posts and deliver them out of the queue.
    E. Use Route53 health checks to fail over to an S3 bucket for an error page.
+
    Answer: A,C,E
-   Explanation:
-   QUESTION NO: 15
-   The majority of your Infrastructure is on premises and you have a small footprint on AWS Your
+</code></pre>
+<p>QUESTION NO: 15</p>
+<pre><code>   The majority of your Infrastructure is on premises and you have a small footprint on AWS Your
    company has decided to roll out a new application that is heavily dependent on low latency
    connectivity to LOAP for authentication Your security policy requires minimal changes to the
    company's existing application user management processes.
    What option would you implement to successfully launch this application1?
+
    A. Create a second, independent LOAP server in AWS for your application to use
    for authentication
    B. Establish a VPN connection so your applications can authenticate against your existing
@@ -368,15 +385,18 @@
    on AWS and configure your application to use the LDAP replica for authentication
    D. Create a second LDAP domain on AWS establish a VPN connection to establish a trust
    relationship between your new and existing domains and use the new domain for authentication
+
    Answer: D
-   Explanation:
+
    Reference:
    http://msdn.microsoft.com/en-us/library/azure/jj156090.aspx
-   QUESTION NO: 16
-   You need to design a VPC for a web-application consisting of an Elastic Load Balancer (ELB). a
+</code></pre>
+<p>QUESTION NO: 16</p>
+<pre><code>   You need to design a VPC for a web-application consisting of an Elastic Load Balancer (ELB). a
    fleet of web/application servers, and an RDS database The entire Infrastructure must be
    distributed over 2 availability zones.
    Which VPC configuration works while assuring the database is not available from the Internet?
+
    A. One public subnet for ELB one public subnet for the web-servers, and one private subnet for
    the database
    B. One public subnet for ELB two private subnets for the web-servers, two private subnets for
@@ -385,14 +405,16 @@
    for RDS
    D. Two public subnets for ELB two public subnets for the web-servers, and two public subnets
    for RDS
+
    Answer: A
-   Explanation:
-   QUESTION NO: 17
-   An application that you are managing has EC2 instances &amp; Dynamo OB tables deployed to
+</code></pre>
+<p>QUESTION NO: 17</p>
+<pre><code>   An application that you are managing has EC2 instances &amp; Dynamo OB tables deployed to
    several AWS Regions In order to monitor the performance of the application globally, you would
    like to see two graphs 1) Avg CPU Utilization across all EC2 instances and 2) Number of Throttled
    Requests for all DynamoDB tables.
    How can you accomplish this?
+
    A. Tag your resources with the application name, and select the tag name as the dimension in
    the Cloudwatch Management console to view the respective graphs
    B. Use the Cloud Watch CLI tools to pull the respective metrics from each regional
@@ -402,24 +424,27 @@
    graphing.
    D. Add a CloudWatch agent to each instance and attach one to each DynamoDB table. When
    configuring the agent set the appropriate application name &amp; view the graphs in CloudWatch.
+
    Answer: C
-   Explanation:
-   QUESTION NO: 18
-   When assessing an organization s use of AWS API access credentials which of the following three
-   credentials should be evaluated?
-   Choose 3 answers
-   A. Key pairs
+</code></pre>
+<p>QUESTION NO: 18
+       When assessing an organization s use of AWS API access credentials which of the following three
+       credentials should be evaluated?
+       Choose 3 answers</p>
+<pre><code>   A. Key pairs
    B. Console passwords
    10
    C. Access keys
    D. Signing certificates
    E. Security Group memberships
+
    Answer: A,C,D
-   Explanation:
+
    Reference:
    http://media.amazonwebservices.com/AWS_Operational_Checklists.pdf
-   QUESTION NO: 19
-   You have a Linux EC2 web server instance running inside a VPC The instance is In a public
+</code></pre>
+<p>QUESTION NO: 19</p>
+<pre><code>   You have a Linux EC2 web server instance running inside a VPC The instance is In a public
    subnet and has an EIP associated with it so you can connect to It over the Internet via HTTP or
    SSH The instance was also fully accessible when you last logged in via SSH. and was also
    serving web requests on port 80.
@@ -430,6 +455,7 @@
    look at the EC2 console and notice that system status check shows "impaired."
    Which should be your next step in troubleshooting and attempting to get the instance back to a
    healthy state so that you can log in again?
+
    A. Stop and start the instance so that it will be able to be redeployed on a healthy host system
    that most likely will fix the "impaired" system status
    B. Reboot your instance so that the operating system will have a chance to boot in a clean healthy
@@ -440,27 +466,31 @@
    since the networking stack of the OS may be locked up causing the "impaired" system status
    E. un-map and then re-map the EIP to the instance, since the IGWVNAT gateway may not
    be working properly, causing the "impaired" system status
+
    Answer: B
-   Explanation:
-   11
-   QUESTION NO: 20
-   What is a placement group?
+</code></pre>
+<p>QUESTION NO: 20</p>
+<pre><code>   What is a placement group?
+
    A. A collection of Auto Scaling groups in the same Region
    B. Feature that enables EC2 instances to interact with each other via nigh bandwidth, low
    latency connections
    C. A collection of Elastic Load Balancers in the same Region or Availability Zone
    D. A collection of authorized Cloud Front edge locations for a distribution
+
    Answer: C
-   Explanation:
+
    Reference:
    http://aws.amazon.com/ec2/faqs/
-   QUESTION NO: 21
-   Your entire AWS infrastructure lives inside of one Amazon VPC You have an Infrastructure
+</code></pre>
+<p>QUESTION NO: 21</p>
+<pre><code>   Your entire AWS infrastructure lives inside of one Amazon VPC You have an Infrastructure
    monitoring application running on an Amazon instance in Availability Zone (AZ) A of the region,
    and another application instance running in AZ B. The monitoring application needs to make use
    of ICMP ping to confirm network reachability of the instance hosting the application.
    Can you configure the security groups for these instances to only allow the ICMP ping to pass
    from the monitoringinstance to the application instance and nothing else" If so how?
+
    A. No Two instances in two different AZ's can't talk directly to each other via ICMP ping as
    that protocol is not allowed across subnet (iebroadcast) boundaries
    B. Yes Both the monitoring instance and the application instance have to be a part of the
@@ -470,38 +500,42 @@
    D. Yes, Both the monitoring instance's security group and the application instance's security
    group need to allow both inbound and outbound ICMP ping packets since ICMP is not a
    connection-oriented protocol
+
    Answer: D
-   Explanation:
-   12
-   QUESTION NO: 22
-   You have two Elastic Compute Cloud (EC2) instances inside a Virtual Private Cloud (VPC) in the
+</code></pre>
+<p>QUESTION NO: 22</p>
+<pre><code>   You have two Elastic Compute Cloud (EC2) instances inside a Virtual Private Cloud (VPC) in the
    same Availability Zone (AZ) but in different subnets.One instance is running a database and the
    other instance an application that will interface with the database. You want to confirm that they
    can talk to each other for your application to work properly.
    Which two things do we need to confirm in the VPC settings so that these EC2 instances can
    communicate inside the VPC?
    Choose 2 answers
+
    A. A network ACL that allows communication between the two subnets.
    B. Both instances are the same instance class and using the same Key-pair.
    C. That the default route is set to a NAT instance or internet Gateway (IGW) for them
    to communicate.
    D. Security groups are set to allow the application host to talk to the database on the right
    port/protocol.
+
    Answer: A,C
-   Explanation:
-   QUESTION NO: 23
-   Which services allow the customer to retain full administrative privileges of the underlying
+</code></pre>
+<p>QUESTION NO: 23</p>
+<pre><code>   Which services allow the customer to retain full administrative privileges of the underlying
    EC2 instances?
    Choose 2 answers
+
    A. Amazon Elastic Map Reduce
    B. Elastic Load Balancing
    C. AWS Elastic Beanstalk
    D. I" Amazon Elasticache
    E. Amazon Relational Database service
+
    Answer: B,C
-   Explanation:
-   QUESTION NO: 24
-   You have a web-style application with a stateless but CPU and memory-intensive web tier running
+</code></pre>
+<p>QUESTION NO: 24</p>
+<pre><code>   You have a web-style application with a stateless but CPU and memory-intensive web tier running
    on a cc2 8xlarge EC2 instance inside of a VPC The instance when under load is having 134
    problems returning requests within the SLA as defined by your business The application maintains
    its state in a DynamoDB table, but the data tier is properly provisioned and responses are
@@ -511,37 +545,41 @@
    B. Move the cc2 8xlarge to the same Availability Zone as the DynamoDB table
    C. Cache the database responses in ElastiCache for more rapid access
    D. Move the database from DynamoDB to RDS MySQL in scale-out read-replica configuration
+
    Answer: B
-   Explanation:
+
    Reference:
    http://aws.amazon.com/elasticmapreduce/faqs/
-   QUESTION NO: 25
-   You are managing a legacy application Inside VPC with hard coded IP addresses in
-   its configuration.
+</code></pre>
+<p>QUESTION NO: 25</p>
+<pre><code>   You are managing a legacy application Inside VPC with hard coded IP addresses in its configuration.
    Which two mechanisms will allow the application to failover to new instances without the need for
    reconfiguration?
    Choose 2 answers
+
    A. Create an ELB to reroute traffic to a failover instance
    B. Create a secondary ENI that can be moved to a failover instance
    C. Use Route53 health checks to fail traffic over to a failover instance
-   D. Assign a secondary private IP address to the primary ENIO that can De moved to a
-   failover instance
+   D. Assign a secondary private IP address to the primary ENIO that can De moved to a failover instance
+
    Answer: A,D
-   Explanation:
-   QUESTION NO: 26
-   You are designing a system that has a Bastion host. This component needs to be highly available
+</code></pre>
+<p>QUESTION NO: 26</p>
+<pre><code>   You are designing a system that has a Bastion host. This component needs to be highly available
    without human intervention.
    Which of the following approaches would you select?
+
    A. Run the bastion on two instances one in each AZ
    B. Run the bastion on an active Instance in one AZ and have an AMI ready to boot up in the event
    of failure
    C. Configure the bastion instance in an Auto Scaling group Specify the Auto Scaling group
    to include multiple AZs but have a min-size of 1 and max-size of 1
    D. Configure an ELB in front of the bastion instance
+
    Answer: C
-   Explanation:
-   QUESTION NO: 27
-   Which of the following statements about this S3 bucket policy is true?
+</code></pre>
+<p>QUESTION NO: 27</p>
+<pre><code>   Which of the following statements about this S3 bucket policy is true?
    15
 
    A. Denies the server with the IP address 192 168 100 0 full access to the "mybucket" bucket
@@ -549,24 +587,29 @@
    C. Grants all the servers within the 192 168 100 0/24 subnet full access to the "mybucket" bucket
    D. Grants all the servers within the 192 168 100 188/32 subnet full access to the "mybucket"
    bucket
+
    Answer: C
-   Explanation:
-   QUESTION NO: 28
-   Which of the following requires a custom CloudWatch metric to monitor?
+</code></pre>
+<p>QUESTION NO: 28</p>
+<pre><code>   Which of the following requires a custom CloudWatch metric to monitor?
+
    A. Data transfer of an EC2 instance
    B. Disk usage activity of an EC2 instance
    C. Memory Utilization of an EC2 instance
    D. CPU Utilization of an EC2mstance
+
    Answer: B
-   Explanation:
+
    Reference:
    http://aws.amazon.com/cloudwatch/
-   QUESTION NO: 29
-   You run a web application where web servers on EC2 Instances are In an Auto Scaling group
+</code></pre>
+<p>QUESTION NO: 29</p>
+<pre><code>   You run a web application where web servers on EC2 Instances are In an Auto Scaling group
    Monitoring over the last 6 months shows that 6 web servers are necessary to handle the minimum
    load During the day up to 12 servers are needed Five to six days per year, the number of web
    servers required might go up to 15.
    What would you recommend to minimize costs while being able to provide hill availability?
+
    A. 6 Reserved instances (heavy utilization). 6 Reserved instances {medium utilization),
    rest covered by On-Demand instances
    B. 6 Reserved instances (heavy utilization). 6 On-Demand instances, rest covered by
@@ -574,26 +617,29 @@
    C. 6 Reserved instances (heavy utilization) 6 Spot instances, rest covered by OnDemand instances
    D. 6 Reserved instances (heavy utilization) 6 Reserved instances (medium utilization) rest covered
    by Spot instances 1678
+
    Answer: C
-   Explanation:
-   QUESTION NO: 30
-   You have been asked to propose a multi-region deployment of a web-facing application where a
+</code></pre>
+<p>QUESTION NO: 30</p>
+<pre><code>   You have been asked to propose a multi-region deployment of a web-facing application where a
    controlled portion of your traffic is being processed by an alternate region.
    Which configuration would achieve that goal?
+
    A. Route53 record sets with weighted routing policy
    B. Route53 record sets with latency based routing policy
    C. Auto Scaling with scheduled scaling actions set
    D. Elastic Load Balancing with health checks enabled
+
    Answer: D
-   Explanation:
+
    Reference:
-   http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyCo
-   ncepts.html
-   QUESTION NO: 31
-   You have set up Individual AWS accounts for each project. You have been asked to make sure
+   http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html
+</code></pre>
+<p>QUESTION NO: 31</p>
+<pre><code>   You have set up Individual AWS accounts for each project. You have been asked to make sure
    your AWS Infrastructure costs do not exceed the budget set per project for each month.
-   Which of the following approaches can help ensure that you do not exceed the budget each
-   month?
+   Which of the following approaches can help ensure that you do not exceed the budget each month?
+
    A. Consolidate your accounts so you have a single bill for all accounts and projects
    B. Set up auto scaling with CloudWatch alarms using SNS to notify you when you are running too
    many Instances in a given account
@@ -602,50 +648,59 @@
    allocated to the project.
    D. Set up CloudWatch billing alerts for all AWS resources used by each account, with email
    notifications when it hits 50%. 80% and 90% of its budgeted monthly spend
+
    Answer: C
-   Explanation:
-   QUESTION NO: 32
-   When creation of an EBS snapshot Is initiated but not completed the EBS volume?
+</code></pre>
+<p>QUESTION NO: 32</p>
+<pre><code>   When creation of an EBS snapshot Is initiated but not completed the EBS volume?
+
    A. Cannot De detached or attached to an EC2 instance until me snapshot completes
    B. Can be used in read-only mode while me snapshot is in progress
    C. Can be used while me snapshot Is in progress
    D. Cannot be used until the snapshot completes
+
    Answer: C
-   Explanation:
+
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html
-   QUESTION NO: 33
-   You are using ElastiCache Memcached to store session state and cache database queries in your
+</code></pre>
+<p>QUESTION NO: 33</p>
+<pre><code>   You are using ElastiCache Memcached to store session state and cache database queries in your
    infrastructure You notice in Cloud Watch that Evictions and GetMisses are Doth very high.
    What two actions could you take to rectify this?
    Choose 2 answers
+
    A. Increase the number of nodes in your cluster
    B. Tweak the max-item-size parameter
    C. Shrink the number of nodes in your cluster
    D. Increase the size of the nodes in the duster
+
    Answer: B,D
-   Explanation:
-   QUESTION NO: 34
-   You are running a database on an EC2 instance, with the data stored on Elastic Block Store (EBS)
+</code></pre>
+<p>QUESTION NO: 34</p>
+<pre><code>   You are running a database on an EC2 instance, with the data stored on Elastic Block Store (EBS)
    for persistence At times throughout the day, you are seeing large variance in the response times of
    the database queries Looking into the instance with the isolate command you see a lot of wait time
    on the disk volume that the database's data is stored on.
    What two ways can you improve the performance of the database's storage while maintaining the
    current persistence of the data?
    Choose 2 answers
+
    A. Move to an SSD backed instance
    B. Move the database to an EBS-Optimized Instance
    C. T Use Provisioned IOPs EBS
    D. Use the ephemeral storage on an m2 4xiarge Instance Instead
+
    Answer: A,B
-   Explanation:
-   QUESTION NO: 35
-   Your EC2-Based Multi-tier application includes a monitoring instance that periodically makes
+</code></pre>
+<p>QUESTION NO: 35</p>
+<pre><code>   Your EC2-Based Multi-tier application includes a monitoring instance that periodically makes
    application -level read only requests of various application components and if any of those fail
    more than three times 30 seconds calls CloudWatch lo fire an alarm, and the alarm notifies your
    operations team by email and SMS of a possible application health problem. However, you also
    need to watch the watcher -the monitoring instance itself - and be notified if it becomes unhealthy.
    Which of the following Is a simple way to achieve that goal?
+
    A. Run another monitoring instance that pings the monitoring instance and fires a could watch
    alarm mat notifies your operations teamshould the primary monitoring instance become unhealthy.
    B. Set a Cloud Watch alarm based on EC2 system and instance status checks and have the
@@ -660,39 +715,46 @@
    instance and assume (he role of the previous monitoring instance and beginning adding messages
    to the SOSqueue.
    19
+
    Answer: D
-   Explanation:
-   QUESTION NO: 36
-   You have decided to change the Instance type for instances running In your application tier that
+</code></pre>
+<p>QUESTION NO: 36</p>
+<pre><code>   You have decided to change the Instance type for instances running In your application tier that
    are using Auto Scaling.
    In which area below would you change the instance type definition?
+
    A. Auto Scaling launch configuration
    B. Auto Scaling group
    C. Auto Scaling policy
    D. Auto Scaling tags
+
    Answer: B
-   Explanation:
+
    Reference:
    http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html
-   QUESTION NO: 37
-   You are attempting to connect to an instance in Amazon VPC without success You have already
+</code></pre>
+<p>QUESTION NO: 37</p>
+<pre><code>   You are attempting to connect to an instance in Amazon VPC without success You have already
    verified that the VPC has an Internet Gateway (IGW) the instance has an associated Elastic IP
    (EIP) and correct security group rules are in place.
    Which VPC component should you evaluate next?
+
    A. The configuration of a MAT instance
    B. The configuration of the Routing Table
    C. The configuration of the internet Gateway (IGW)
    D. The configuration of SRC'DST checking
+
    Answer: C
-   Explanation:
+
    Reference:
-   http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/UserScenariosForVPC.
-   html 20123
-   QUESTION NO: 38
-   You are tasked with the migration of a highly trafficked Node JS application to AWS In order
+   http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/UserScenariosForVPC.html
+</code></pre>
+<p>QUESTION NO: 38</p>
+<pre><code>   You are tasked with the migration of a highly trafficked Node JS application to AWS In order
    to comply with organizational standards Chef recipes must be used to configure the
    application servers that host this application and to support application lifecycle events.
    Which deployment option meets these requirements while minimizing administrative burden?
+
    A. Create a new stack within Opsworks add the appropriate layers to the stack and deploy
    the application
    B. Create a new application within Elastic Beanstalk and deploy this application to a
@@ -701,102 +763,118 @@
    launched EC2 instance
    D. Launch and configure Chef Server on an EC2 instance and leverage the AWS CLI to
    launch application servers and configure those instances using Chef.
+
    Answer: B
-   Explanation:
+
    Reference:
    http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deployment.html
-   QUESTION NO: 39
-   You have been asked to automate many routine systems administrator backup and recovery
-   activities Your current plan is to leverage AWS-managed solutions as much as possible and
-   automate the rest with the AWS CU and scripts.
-   Which task would be best accomplished with a script?
-   A. Creating daily EBS snapshots with a monthly rotation of snapshots
+</code></pre>
+<p>QUESTION NO: 39
+       You have been asked to automate many routine systems administrator backup and recovery
+       activities Your current plan is to leverage AWS-managed solutions as much as possible and
+       automate the rest with the AWS CU and scripts.
+       Which task would be best accomplished with a script?</p>
+<pre><code>   A. Creating daily EBS snapshots with a monthly rotation of snapshots
    B. Creating daily ROS snapshots with a monthly rotation of snapshots
    C. Automatically detect and stop unused or underutilized EC2 instances
    D. Automatically add Auto Scaled EC2 instances to an Amazon Elastic Load Balancer
+
    Answer: C
-   Explanation:
-   QUESTION NO: 40
-   Your organization's security policy requires that all privileged users either use frequently
+</code></pre>
+<p>QUESTION NO: 40</p>
+<pre><code>   Your organization's security policy requires that all privileged users either use frequently
    rotated passwords or one-time access credentials in addition to username/password.
    Which two of the following options would allow an organization to enforce this policy for
    AWS users?
    Choose 2 answers
+
    A. Configure multi-factor authentication for privileged 1AM users
    B. Create 1AM users for privileged accounts
    C. Implement identity federation between your organization's Identity provider leveraging the
    1AM Security Token Service
    D. Enable the 1AM single-use password policy option for privileged users
+
    Answer: C,D
-   Explanation:
-   QUESTION NO: 41
-   What are characteristics of Amazon S3?
+</code></pre>
+<p>QUESTION NO: 41</p>
+<pre><code>   What are characteristics of Amazon S3?
    Choose 2 answers
+
    A. Objects are directly accessible via a URL
    B. S3 should be used to host a relational database
    C. S3 allows you to store objects or virtually unlimited size
    D. S3 allows you to store virtually unlimited amounts of data
    E. S3 offers Provisioned IOPS
+
    Answer: B,C
-   Explanation:
-   QUESTION NO: 42
-   You receive a frantic call from a new DBA who accidentally dropped a table containing all your
+</code></pre>
+<p>QUESTION NO: 42</p>
+<pre><code>   You receive a frantic call from a new DBA who accidentally dropped a table containing all your
    customers.
    Which Amazon RDS feature will allow you to reliably restore your database to within 5 minutes of
    when the mistake was made?
+
    A. Multi-AZ RDS
    B. RDS snapshots
    C. RDS read replicas
    D. RDS automated backup
+
    Answer: B
-   Explanation:
+
    Reference:
-   http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.BackingUpAndRestoringAm
-   azonRDSInstances.html
-   QUESTION NO: 43
-   A media company produces new video files on-premises every day with a total size of around
+   http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.BackingUpAndRestoringAmazonRDSInstances.html
+</code></pre>
+<p>QUESTION NO: 43</p>
+<pre><code>   A media company produces new video files on-premises every day with a total size of around
    100GBS after compression All files have a size of 1 -2 GB and need to be uploaded to Amazon
    S3 every night in a fixed time window between 3am and 5am Current upload takes almost 3
    hours, although less than half of the available bandwidth is used.
    What step(s) would ensure that the file uploads are able to complete in the allotted time window?
+
    A. Increase your network bandwidth to provide faster throughput to S3
    B. Upload the files in parallel to S3
    C. Pack all files into a single archive, upload it to S3, then extract the files in AWS
    D. Use AWS Import/Export to transfer the video files
+
    Answer: D
-   Explanation:
+
    Reference:
    http://aws.amazon.com/importexport/faqs/
-   QUESTION NO: 44
-   You are running a web-application on AWS consisting of the following components an Elastic
+</code></pre>
+<p>QUESTION NO: 44</p>
+<pre><code>   You are running a web-application on AWS consisting of the following components an Elastic
    Load Balancer (ELB) an Auto-Scaling Group of EC2 instances running Linux/PHP/Apache, and
    Relational DataBase Service (RDS) MySQL.
    Which security measures fall into AWS's responsibility?
+
    A. Protect the EC2 instances against unsolicited access by enforcing the principle of
    least-privilege access
    B. Protect against IP spoofing or packet sniffing
    C. Assure all communication between EC2 instances and ELB is encrypted
    D. Install latest security patches on ELB. RDS and EC2 instances
+
    Answer: B
-   Explanation:
-   QUESTION NO: 45
-   You use S3 to store critical data for your company Several users within your group currently have
-   lull permissions to your S3 buckets You need to come up with a solution mat does not impact
-   your users and also protect against the accidental deletion of objects.
-   Which two options will address this issue?
-   Choose 2 answers
-   A. Enable versioning on your S3 Buckets
+</code></pre>
+<p>QUESTION NO: 45
+       You use S3 to store critical data for your company Several users within your group currently have
+       lull permissions to your S3 buckets You need to come up with a solution mat does not impact
+       your users and also protect against the accidental deletion of objects.
+       Which two options will address this issue?
+       Choose 2 answers</p>
+<pre><code>   A. Enable versioning on your S3 Buckets
    B. Configure your S3 Buckets with MFA delete
    C. Create a Bucket policy and only allow read only permissions to all users at the bucket level
    D. Enable object life cycle policies and configure the data older than 3 months to be archived
    in Glacier
+
    Answer: B,C
-   Explanation:
-   QUESTION NO: 46
-   An organization's security policy requires multiple copies of all critical data to be replicated across
+</code></pre>
+<p>QUESTION NO: 46</p>
+<pre><code>   An organization's security policy requires multiple copies of all critical data to be replicated across
    at least a primary and backup data center. The organization has decided to store some critical
    data on Amazon S3. 245
    Which option should you implement to ensure this requirement is met?
+
    A. Use the S3 copy API to replicate data between two S3 buckets in different regions
    B. You do not need to implement anything since S3 data is automatically replicated
    between regions
@@ -804,38 +882,44 @@
    an AWS Region
    D. You do not need to implement anything since S3 data is automatically replicated
    between multiple facilities within an AWS Region
+
    Answer: C
-   Explanation:
-   QUESTION NO: 47
-   You are tasked with setting up a cluster of EC2 Instances for a NoSOL database The database
-   requires random read 10 disk performance up to a 100.000 IOPS at 4KB block side per node
-   Which of the following EC2 instances will perform the best for this workload?
-   A. A High-Memory Quadruple Extra Large (m2 4xlarge) with EBS-Optimized set to true and
+</code></pre>
+<p>QUESTION NO: 47
+       You are tasked with setting up a cluster of EC2 Instances for a NoSOL database The database
+       requires random read 10 disk performance up to a 100.000 IOPS at 4KB block side per node
+       Which of the following EC2 instances will perform the best for this workload?</p>
+<pre><code>   A. A High-Memory Quadruple Extra Large (m2 4xlarge) with EBS-Optimized set to true and
    a PIOPs EBS volume
    B. A Cluster Compute Eight Extra Large (cc2 8xlarge) using instance storage
    C. High I/O Quadruple Extra Large (hil 4xiarge) using instance storage
    D. A Cluster GPU Quadruple Extra Large (cg1 4xlarge) using four separate 4000 PIOPS
    EBS volumes in a RAID 0 configuration
+
    Answer: B
+
    Reference:
    http://aws.amazon.com/ec2/instance-types/
-   QUESTION NO: 48
-   When an EC2 EBS-backed (EBS root) instance is stopped, what happens to the data on any
-   ephemeral store volumes?
-   A. Data will be deleted and win no longer be accessible
+</code></pre>
+<p>QUESTION NO: 48
+       When an EC2 EBS-backed (EBS root) instance is stopped, what happens to the data on any
+       ephemeral store volumes?</p>
+<pre><code>   A. Data will be deleted and win no longer be accessible
    B. Data Is automatically saved in an EBS volume.
    C. Data Is automatically saved as an E8S snapshot
    D. Data is unavailable until the instance is restarted
+
    Answer: D
-   Explanation:
-   QUESTION NO: 49
-   Your team Is excited about theuse of AWS because now they have access to programmable
+</code></pre>
+<p>QUESTION NO: 49</p>
+<pre><code>   Your team Is excited about theuse of AWS because now they have access to programmable
    Infrastructure" You have been asked to manage your AWS infrastructure In a manner similar to
    the way you might manage application code You want to be able to deploy exact copies of
    different versions of your infrastructure, stage changes into different environments, revert back to
    previous versions, and identify what versions are running at any particular time (development test
    QA. production).
    Which approach addresses this requirement?
+
    A. Use cost allocation reports and AWS Opsworks to deploy and manage your infrastructure.
    B. Use AWS CloudWatch metrics and alerts along with resource tagging to deploy and manage
    your infrastructure.
@@ -843,39 +927,48 @@
    your infrastructure.
    D. Use AWS CloudFormation and a version control system like GIT to deploy and manage your
    infrastructure.
+
    Answer: B
+
    Reference:
    http://aws.amazon.com/opsworks/faqs/
-   QUESTION NO: 50
-   You have a server with a 5O0GB Amazon EBS data volume. The volume is 80% full. You need
+</code></pre>
+<p>QUESTION NO: 50</p>
+<pre><code>   You have a server with a 5O0GB Amazon EBS data volume. The volume is 80% full. You need
    to back up the volume at regular intervals and be able to re-create the volume in a new
    Availability Zone in the shortest time possible. All applications using the volume can be paused
    for a period of a few minutes with no discernible user impact.
    Which of the following backup methods will best fulfill your requirements?
+
    A. Take periodic snapshots of the EBS volume 2678930
    B. Use a third party Incremental backup application to back up to Amazon Glacier
    C. Periodically back up all data to a single compressed archive and archive to Amazon S3 using
    a parallelized multi-part upload
    D. Create another EBS volume in the second Availability Zone attach it to the Amazon
    EC2 instance, and use a disk manager to mirror me two disks
+
    Answer: D
+
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html
-   QUESTION NO: 51
-   Your company Is moving towards tracking web page users with a small tracking Image loaded
+</code></pre>
+<p>QUESTION NO: 51</p>
+<pre><code>   Your company Is moving towards tracking web page users with a small tracking Image loaded
    on each page Currently you are serving this image out of US-East, but are starting to get
    concerned about the time It takes to load the image for users on the west coast.
    What are the two best ways to speed up serving this image?
    Choose 2 answers
+
    A. Use Route 53's Latency Based Routing and serve the image out of US-West-2 as well as
    US-East-1
    B. Serve the image out through CloudFront
    C. Serve the image out of S3 so that it isn't being served oft of your web application tier
    D. Use EBS PIOPs to serve the image faster out of your EC2 instances
+
    Answer: A,B
-   Explanation:
-   QUESTION NO: 52
-   If you want to launch Amazon Elastic Compute Cloud (EC2) Instances and assign each Instance
+</code></pre>
+<p>QUESTION NO: 52</p>
+<pre><code>   If you want to launch Amazon Elastic Compute Cloud (EC2) Instances and assign each Instance
    a predetermined private IP address you should:
    A. Assign a group or sequential Elastic IP address to the instances
    B. Launch the instances in a Placement Group
