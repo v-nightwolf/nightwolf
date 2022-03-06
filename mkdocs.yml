@@ -21,13 +21,14 @@ nav:
     - Interview-Prep:
         - Linux Interview Questions:
            - 'Linux General Questions': 'nightwolf-cotribution/linux_basic.md'
-           - 'Linux L1  Questions': 'nightwolf-cotribution/linux_L1.md'
-           - 'Linux L2  Questions': 'nightwolf-cotribution/linux_L2.md'
-           - 'Linux L3  Questions': 'nightwolf-cotribution/linux_L3.md'
+           - 'Linux L1 interview Questions': 'nightwolf-cotribution/linux_L1.md'
+           - 'Linux L2 interview Questions': 'nightwolf-cotribution/linux_L2.md'
+           - 'Linux L3 interview Questions': 'nightwolf-cotribution/linux_L3.md'
         - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - AWS Interview Questions: 'nightwolf-cotribution/aws.md'
         - GIT Interview Questions: 'nightwolf-cotribution/git.md'
         - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'     
+        - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
     - Linux: linux.md
     - Network: nightwolf-cotribution/network
     - Database: db/

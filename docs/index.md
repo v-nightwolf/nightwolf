@@ -31,6 +31,16 @@
 * [Jenkins Interview Questions](nightwolf-cotribution/jenkins.md)
 * [Interview materials](reference.md) 
 
+
+## [Cheatsheets](cheat.md)
+ 
+ Cheatsheets for different techs for your references: 
+
+`This include:`
+
+* [Kubernetes cheatsheet](nightwolf-cotribution/kubernetes.md)
+* [Linux YUM cheatsheet](nightwolf-cotribution/yum_cheatsheet.pdf)
+
 ## [Linux]()
 
 * [Linux OS Basics]()

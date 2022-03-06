@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/kubernetes/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Kubernetes - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Performance-Troubleshooting</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux General Questions</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux L1 interview Questions</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux L2 interview Questions</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Linux L3 interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../linux.md" class="nav-link">Linux</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../network" class="nav-link">Network</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../db/" class="nav-link">Database</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#creating-objects" class="nav-link">Creating Objects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#monitoring-usage-commands" class="nav-link">Monitoring Usage Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#node-commands" class="nav-link">Node Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#pod-commands" class="nav-link">Pod Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#deployment-commands" class="nav-link">Deployment Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#service-commands" class="nav-link">Service Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#endpoints-commands" class="nav-link">Endpoints Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#ingress-commands" class="nav-link">Ingress Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#daemonset-commands" class="nav-link">DaemonSet Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#statefulset-commands" class="nav-link">StatefulSet Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#configmaps-commands" class="nav-link">ConfigMaps Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#secret-commands" class="nav-link">Secret Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#rollout-commands" class="nav-link">Rollout Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#job-commands" class="nav-link">Job Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#cronjob-commands" class="nav-link">Cronjob Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#network-policy-commands" class="nav-link">Network Policy Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#labels-and-selectors-commands" class="nav-link">Labels and Selectors Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 style="text-align: center;"> Kubernetes Cheatsheet </h1>
+
+<hr />
+<h2 id="creating-objects">Creating Objects<a class="headerlink" href="#creating-objects" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create resource</td>
+<td>kubectl apply -f file_name.yaml</td>
+</tr>
+<tr>
+<td>Create from multiple files</td>
+<td>kubectl apply -f file_name_1.yaml -f file_name_2.yaml</td>
+</tr>
+<tr>
+<td>Create all files in directory</td>
+<td>kubectl apply -f directory_name</td>
+</tr>
+<tr>
+<td>Create from url</td>
+<td>kubectl apply -f https://url/uri</td>
+</tr>
+<tr>
+<td>Create pod</td>
+<td>kubectl run pod_name --image image_name</td>
+</tr>
+<tr>
+<td>Create pod, then expose it as service</td>
+<td>kubectl run pod_name --image image_name --port port --expose</td>
+</tr>
+<tr>
+<td>Create pod yaml file</td>
+<td>kubectl run pod_name --image image_name --dry-run=client -o yaml &gt; file_name.yaml</td>
+</tr>
+<tr>
+<td>Create deployment</td>
+<td>kubectl create deployment deployment_name --image image_name</td>
+</tr>
+<tr>
+<td>Create deployment yaml file</td>
+<td>kubectl create deployment deployment_name --image image_name --dry-run=client -o yaml &gt; file_name.yaml</td>
+</tr>
+<tr>
+<td>Create service</td>
+<td>kubectl create service service-type service_name --tcp=port:target_port</td>
+</tr>
+<tr>
+<td>Create service yaml file</td>
+<td>kubectl create service service-type service_name --tcp=port:target_port --dry-run=client -o yaml &gt; file_name.yaml</td>
+</tr>
+<tr>
+<td>Expose service from pod/deployment</td>
+<td>kubectl expose deployment {pod/deployment_name} --type=service-type --port port --target-port target_port</td>
+</tr>
+<tr>
+<td>Create config map from key-value</td>
+<td>kubectl create configmap configmap_name --from-literal={key:value} --from-literal={key:value}</td>
+</tr>
+<tr>
+<td>Create config map from file</td>
+<td>kubectl create configmap configmap_name --from-file=file_name</td>
+</tr>
+<tr>
+<td>Create config map from env file</td>
+<td>kubectl create configmap configmap_name --from-env-file=file_name</td>
+</tr>
+<tr>
+<td>Create secret from key-value</td>
+<td>kubectl create secret generic secret_name --from-literal={key:value} --from-literal={key:value}</td>
+</tr>
+<tr>
+<td>Create secret from file</td>
+<td>kubectl create secret generic secret_name --from-file=file_name</td>
+</tr>
+<tr>
+<td>Create job</td>
+<td>kubectl create job job_name --image=image_name</td>
+</tr>
+<tr>
+<td>Create job from cronjob</td>
+<td>kubectl create job job_name --from=cronjob/cronjob-name</td>
+</tr>
+<tr>
+<td>Create cronjob</td>
+<td>kubectl create cronjob --image=image_name --schedule='cron-syntax' -- {command} {args}</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="monitoring-usage-commands">Monitoring Usage Commands<a class="headerlink" href="#monitoring-usage-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get node cpu and memory utilization</td>
+<td>kubectl top node node_name</td>
+</tr>
+<tr>
+<td>Get pod cpu and memory utilization</td>
+<td>kubectl top pods pod_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="node-commands">Node Commands<a class="headerlink" href="#node-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Describe node</td>
+<td>kubectl describe node node_name</td>
+</tr>
+<tr>
+<td>Get node in yaml</td>
+<td>kubectl get node node_name -o yaml</td>
+</tr>
+<tr>
+<td>Get node</td>
+<td>kubectl get node node_name</td>
+</tr>
+<tr>
+<td>Drain node</td>
+<td>kubectl drain node node_name</td>
+</tr>
+<tr>
+<td>Cordon node</td>
+<td>kubectl cordon node node_name</td>
+</tr>
+<tr>
+<td>Uncordon node</td>
+<td>kubectl uncordon node node_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pod-commands">Pod Commands<a class="headerlink" href="#pod-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get pod</td>
+<td>kubectl get pod pod_name</td>
+</tr>
+<tr>
+<td>Get pod in yaml</td>
+<td>kubectl get pod pod_name -o yaml</td>
+</tr>
+<tr>
+<td>Get pod wide information</td>
+<td>kubectl get pod pod_name -o wide</td>
+</tr>
+<tr>
+<td>Get pod with watch</td>
+<td>kubectl get pod pod_name -w</td>
+</tr>
+<tr>
+<td>Edit pod</td>
+<td>kubectl edit pod pod_name</td>
+</tr>
+<tr>
+<td>Describe pod</td>
+<td>kubectl describe pod pod_name</td>
+</tr>
+<tr>
+<td>Delete pod</td>
+<td>kubectl delete pod pod_name</td>
+</tr>
+<tr>
+<td>Log pod</td>
+<td>kubectl logs pod pod_name</td>
+</tr>
+<tr>
+<td>Tail -f pod</td>
+<td>kubectl logs pod -f pod_name</td>
+</tr>
+<tr>
+<td>Execute into pod</td>
+<td>kubectl exec -it pod pod_name /bin/bash</td>
+</tr>
+<tr>
+<td>Running Temporary Image</td>
+<td>kubectl run pod_name --image=curlimages/curl --rm -it --restart=Never -- curl {destination</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="deployment-commands">Deployment Commands<a class="headerlink" href="#deployment-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get deployment</td>
+<td>kubectl get deployment deployment_name</td>
+</tr>
+<tr>
+<td>Get deployment in yaml</td>
+<td>kubectl get deployment deployment_name -o yaml</td>
+</tr>
+<tr>
+<td>Get deployment wide information</td>
+<td>kubectl get deployment deployment_name -o wide</td>
+</tr>
+<tr>
+<td>Edit deployment</td>
+<td>kubectl edit deployment deployment_name</td>
+</tr>
+<tr>
+<td>Describe deployment</td>
+<td>kubectl describe deployment deployment_name</td>
+</tr>
+<tr>
+<td>Delete deployment</td>
+<td>kubectl delete deployment deployment_name</td>
+</tr>
+<tr>
+<td>Log deployment</td>
+<td>kubectl logs deployment/deployment_name -f</td>
+</tr>
+<tr>
+<td>Update image</td>
+<td>kubectl set image deployment deployment_name container_name=new_image_name</td>
+</tr>
+<tr>
+<td>Scale deployment with replicas</td>
+<td>kubectl scale deployment deployment_name --replicas replicas_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="service-commands">Service Commands<a class="headerlink" href="#service-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get service</td>
+<td>kubectl get service service_name</td>
+</tr>
+<tr>
+<td>Get service in yaml</td>
+<td></td>
+</tr>
+<tr>
+<td>Get service wide information</td>
+<td>kubectl get service service_name -o wide</td>
+</tr>
+<tr>
+<td>Edit service</td>
+<td>kubectl edit service service_name</td>
+</tr>
+<tr>
+<td>Describe service</td>
+<td>kubectl describe service service_name</td>
+</tr>
+<tr>
+<td>Delete service</td>
+<td>kubectl delete service service_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="endpoints-commands">Endpoints Commands<a class="headerlink" href="#endpoints-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get endpoints</td>
+<td>kubectl get endpoints endpoints_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ingress-commands">Ingress Commands<a class="headerlink" href="#ingress-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get ingress</td>
+<td>kubectl get ingress</td>
+</tr>
+<tr>
+<td>Get ingress in yaml</td>
+<td>kubectl get ingress -o yaml</td>
+</tr>
+<tr>
+<td>Get ingress wide information</td>
+<td>kubectl get ingress -o wide</td>
+</tr>
+<tr>
+<td>Edit ingress</td>
+<td>kubectl edit ingress ingress_name</td>
+</tr>
+<tr>
+<td>Describe ingress</td>
+<td>kubectl describe ingress ingress_name</td>
+</tr>
+<tr>
+<td>Delete ingress</td>
+<td>kubectl delete ingress ingress_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="daemonset-commands">DaemonSet Commands<a class="headerlink" href="#daemonset-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get daemonset</td>
+<td>kubectl get daemonset  daemonset_name</td>
+</tr>
+<tr>
+<td>Get daemonset in yaml</td>
+<td>kubectl get daemonset  daemonset_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit daemonset</td>
+<td>kubectl edit daemonset  daemonset_name</td>
+</tr>
+<tr>
+<td>Describe daemonset</td>
+<td>kubectl describe daemonset  daemonset_name</td>
+</tr>
+<tr>
+<td>Delete daemonset</td>
+<td>kubectl delete deployment  daemonset_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="statefulset-commands">StatefulSet Commands<a class="headerlink" href="#statefulset-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get statefulset</td>
+<td>kubectl get statefulset  statefulset_name</td>
+</tr>
+<tr>
+<td>Get statefulset in yaml</td>
+<td>kubectl get statefulset  statefulset_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit statefulset</td>
+<td>kubectl edit statefulset  statefulset_name</td>
+</tr>
+<tr>
+<td>Describe statefulset</td>
+<td>kubectl describe statefulset  statefulset_name</td>
+</tr>
+<tr>
+<td>Delete statefuleset</td>
+<td>kubectl delete statefulset  statefulset_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="configmaps-commands">ConfigMaps Commands<a class="headerlink" href="#configmaps-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get configmap</td>
+<td>kubectl get configmap  configmap_name</td>
+</tr>
+<tr>
+<td>Get configmap in yaml</td>
+<td>kubectl get configmap  configmap_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit configmap</td>
+<td>kubectl edit configmap  configmap_name</td>
+</tr>
+<tr>
+<td>Describe configmap</td>
+<td>kubectl describe configmap  configmap_name</td>
+</tr>
+<tr>
+<td>Delete configmap</td>
+<td>kubectl delete configmap  configmap_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="secret-commands">Secret Commands<a class="headerlink" href="#secret-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get secret</td>
+<td>kubectl get secret  secret_name</td>
+</tr>
+<tr>
+<td>Get secret in yaml</td>
+<td>kubectl get secret  secret_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit secret</td>
+<td>kubectl edit secret  secret_name</td>
+</tr>
+<tr>
+<td>Describe secret</td>
+<td>kubectl describe secret  secret_name</td>
+</tr>
+<tr>
+<td>Delete secret</td>
+<td>kubectl delete secret  secret_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="rollout-commands">Rollout Commands<a class="headerlink" href="#rollout-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Restart deployment</td>
+<td>kubectl rollout restart deployment  deployment_name</td>
+</tr>
+<tr>
+<td>Undo deployment with the latest revision</td>
+<td>kubectl rollout undo deployment  deployment_name</td>
+</tr>
+<tr>
+<td>Undo deployment with specified revision</td>
+<td>kubectl rollout undo deployment  deployment_name  --to-revision  revision_number</td>
+</tr>
+<tr>
+<td>Get all revisions of deployment</td>
+<td>kubectl rollout history deployment  deployment_name</td>
+</tr>
+<tr>
+<td>Get specified revision of deployment</td>
+<td>kubectl rollout history deployment  deployment_name  --revision= revision_number</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="job-commands">Job Commands<a class="headerlink" href="#job-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get job</td>
+<td>kubectl get job  job_name</td>
+</tr>
+<tr>
+<td>Get job in yaml</td>
+<td>kubectl get job  job_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit job in yaml</td>
+<td>kubectl edit job  job_name</td>
+</tr>
+<tr>
+<td>Describe job</td>
+<td>kubectl describe job  job_name</td>
+</tr>
+<tr>
+<td>Delete job</td>
+<td>kubectl delete job  job_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cronjob-commands">Cronjob Commands<a class="headerlink" href="#cronjob-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get cronjob</td>
+<td>kubectl get cronjob cronjob_name</td>
+</tr>
+<tr>
+<td>Get cronjob in yaml</td>
+<td>kubectl get cronjob  cronjob_name  -o yaml</td>
+</tr>
+<tr>
+<td>Edit cronjob</td>
+<td>kubectl edit cronjob  cronjob_name</td>
+</tr>
+<tr>
+<td>Describe cronjob</td>
+<td>kubectl describe cronjob  cronjob_name</td>
+</tr>
+<tr>
+<td>Delete cronjob</td>
+<td>kubectl delete cronjob  cronjob_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="network-policy-commands">Network Policy Commands<a class="headerlink" href="#network-policy-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Get networkpolicy</td>
+<td>kubectl get networkpolicy  networkpolicy_name</td>
+</tr>
+<tr>
+<td>Get networkpolicy in yaml</td>
+<td>kubectl get networkpolicy  networkpolicy_name  -o yaml</td>
+</tr>
+<tr>
+<td>Get networkpolicy wide information</td>
+<td>kubectl get networkpolicy  networkpolicy_name  -o wide</td>
+</tr>
+<tr>
+<td>Edit networkpolicy</td>
+<td>kubectl edit networkpolicy  networkpolicy_name</td>
+</tr>
+<tr>
+<td>Describe networkpolicy</td>
+<td>kubectl describe networkpolicy  networkpolicy_name</td>
+</tr>
+<tr>
+<td>Delete networkpolicy</td>
+<td>kubectl delete networkpolicy  networkpolicy_name</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="labels-and-selectors-commands">Labels and Selectors Commands<a class="headerlink" href="#labels-and-selectors-commands" title="Permanent link"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Show labels of node,pod and deployment</td>
+<td>kubectl get {node/pod/deployment} --show-labels</td>
+</tr>
+<tr>
+<td>Attach labels to {node/pod/deployment}</td>
+<td>kubectl label {node/pod/deployment} pod_name {key}={value}</td>
+</tr>
+<tr>
+<td>Remove labels from {node/pod/deployment}</td>
+<td>kubectl label {node/pod/deployment} {pod_name} {key}-</td>
+</tr>
+<tr>
+<td>Select node,pod and deployment by using labels</td>
+<td>kubectl get {node/pod/deployment} -l {key}={value}</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
