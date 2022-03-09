@@ -154,22 +154,22 @@
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#perfomance-isssues-due-to-high-cpu-usage" class="nav-link">Perfomance isssues due to high CPU Usage</a>
+            <li class="nav-item" data-level="2"><a href="#troubleshooting-linux-perfomance-isssue-happening-due-to-high-cpu-usage" class="nav-link">Troubleshooting Linux perfomance isssue happening due to high CPU Usage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#performance-issues-due-to-high-memory-usage" class="nav-link">Performance issues due to high Memory Usage</a>
+            <li class="nav-item" data-level="2"><a href="#troubleshooting-linux-performance-issue-happening-due-to-high-memory-usage" class="nav-link">Troubleshooting Linux performance issue happening due to high Memory Usage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#performance-issues-due-to-high-disk-io-usage" class="nav-link">Performance issues due to high Disk IO Usage</a>
+            <li class="nav-item" data-level="2"><a href="#troubleshooting-linux-performance-issue-happening-due-to-high-disk-io-usage" class="nav-link">Troubleshooting Linux performance issue happening due to high Disk IO Usage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#network-performance-issues" class="nav-link">Network Performance Issues</a>
+            <li class="nav-item" data-level="2"><a href="#troubleshooting-linux-os-network-performance-issues" class="nav-link">Troubleshooting Linux OS network performance Issues</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -197,6 +197,7 @@
 </code></pre>
 <p>We will try to break your investigation steps into major bullet points and helps you to find the root causes of the issue. </p>
 <h2 id="tools-helpful-in-your-investigation">Tools helpful in your investigation:<a class="headerlink" href="#tools-helpful-in-your-investigation" title="Permanent link"></a></h2>
+<p>Below listed tools are Linux performance monitoring tools, which will help you find out the root cause of the issue,</p>
 <p><img alt="!image" src="../../img/TroubleShooting.jpg" /></p>
 <ul>
 <li><a href="https://linux.die.net/man/1/top" target="_blank">top</a></li>
@@ -263,7 +264,7 @@ Total CPU % for /opt/mongodb/mms/jdk/bin/mms-app =  4.8
 
 ############################################
 </code></pre>
-<h2 id="perfomance-isssues-due-to-high-cpu-usage">Perfomance isssues due to high CPU Usage<a class="headerlink" href="#perfomance-isssues-due-to-high-cpu-usage" title="Permanent link"></a></h2>
+<h2 id="troubleshooting-linux-perfomance-isssue-happening-due-to-high-cpu-usage">Troubleshooting Linux perfomance isssue happening due to high CPU Usage<a class="headerlink" href="#troubleshooting-linux-perfomance-isssue-happening-due-to-high-cpu-usage" title="Permanent link"></a></h2>
 <p>Every performance issue troubleshooting should starts with <code>top</code> command:</p>
 <p>and the most useful output of <code>top</code> command is: </p>
 <pre><code>top - 16:18:32 up  2:52,  1 user,  load average: 0.09, 0.20, 0.22
@@ -342,7 +343,7 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
 6. Go to /proc/{$PID_OF_PROCESS}/
 </code></pre>
 <p><br></p>
-<h2 id="performance-issues-due-to-high-memory-usage">Performance issues due to high Memory Usage<a class="headerlink" href="#performance-issues-due-to-high-memory-usage" title="Permanent link"></a></h2>
+<h2 id="troubleshooting-linux-performance-issue-happening-due-to-high-memory-usage">Troubleshooting Linux performance issue happening due to high Memory Usage<a class="headerlink" href="#troubleshooting-linux-performance-issue-happening-due-to-high-memory-usage" title="Permanent link"></a></h2>
 <pre><code>d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
     There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
 
@@ -360,8 +361,8 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
 
     buff/cache: Size of memory utilized by system for kernel buffers(i.e. buff) and page cache and slabs(i.e. cache)
 </code></pre>
-<h2 id="performance-issues-due-to-high-disk-io-usage">Performance issues due to high Disk IO Usage<a class="headerlink" href="#performance-issues-due-to-high-disk-io-usage" title="Permanent link"></a></h2>
-<h2 id="network-performance-issues">Network Performance Issues<a class="headerlink" href="#network-performance-issues" title="Permanent link"></a></h2></div>
+<h2 id="troubleshooting-linux-performance-issue-happening-due-to-high-disk-io-usage">Troubleshooting Linux performance issue happening due to high Disk IO Usage<a class="headerlink" href="#troubleshooting-linux-performance-issue-happening-due-to-high-disk-io-usage" title="Permanent link"></a></h2>
+<h2 id="troubleshooting-linux-os-network-performance-issues">Troubleshooting Linux OS network performance Issues<a class="headerlink" href="#troubleshooting-linux-os-network-performance-issues" title="Permanent link"></a></h2></div>
             </div>
         </div>
 
