@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Linux Interview Questions for Freshers - 2 - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experianced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experianced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experianced Admins - L3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experianced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experianced - 2</a>
+</li>
+            
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux.md" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../network" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../linux_basic/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../linux_L1/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#linux-200-interview-questions-for-freshers-solved" class="nav-link">Linux 200+ Interview Questions for Freshers - Solved:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="linux-200-interview-questions-for-freshers-solved">Linux 200+ Interview Questions for Freshers - Solved:<a class="headerlink" href="#linux-200-interview-questions-for-freshers-solved" title="Permanent link"></a></h1>
+<hr />
+<p><br>
+  We have prepared a set of questions to help Freshers and Experianced Linux Admins in their preparations for Interview.
+  This list includes Google interview questions for Linux Admin, Amazon interview questions for Linux admin and other reputed firms as well. <br />
+  You will find these questions very helpful in your Linux Admins interviews. Prepare well and All the very best. 
+<br></p>
+<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome. </p>
+<hr />
+<ol>
+<li>When you login you get “$” prompt, what is the prompt for root?</li>
+</ol>
+<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link"></a></h1>
+<ol>
+<li>Explain the difference between grep and egrep?
+Search online</li>
+<li>What is the port # for DNS, NTP and NFS?
+53,123 and 111/2049</li>
+<li>What is the configuration file name of DNS and where is it located?
+/etc/named.conf</li>
+<li>How many new directories will be created after running the following command
+mkdir {a..c}{1..3}
+9</li>
+<li>Your PC is configured with a DNS server address but not the default gateway. Can the PC access internet?
+No</li>
+<li>What is the difference between IP and Gateway?
+Search online</li>
+<li>Can you assign one static IP to 2 computers, if not then why?
+No because it will create IP conflict</li>
+<li>How to change IPs address to static?
+ifconfig x.x.x.x</li>
+<li>You are trying to ping a server by hostname and you get an error message, “ping: unknown host …”. What could be the reason and how to solve the problem so you can ping it by hostname?
+Check for /etc/hosts or DNS to see if it has hostname to IP entry</li>
+<li>Explain the difference between relative and absolute path?
+Absolute path starts from / where relative path is your current directory</li>
+<li>List 3 different methods of adding user?
+Search online</li>
+<li>What is the command to change file/directory ownership and group?
+chown and chgrp</li>
+<li>List any 3 type of filesystem?
+ext4,NTFS and FAT</li>
+<li>When you login you get a message on the screen. What is the name of that file and where is it located?
+/etc/motd</li>
+<li>What is /bin directory used for?
+Search online</li>
+<li>What are the different types of DNS Server
+Master and secondary</li>
+<li>How to change a user password?
+passwd username</li>
+<li>What is the version of Redhat Linux you have experience with?
+7.4</li>
+<li>List any 4 linux distributions?
+Redhat, CentOS, Ubuntu and SUSE</li>
+<li>How to logoff from the system?
+exit</li>
+<li>Give any 3 examples of operating systems?
+Windows, Linux and MAC</li>
+<li>How to create a directory?
+mkdir</li>
+<li>Where are the zone files located for DNS service?
+/var/named/zonefiles</li>
+<li>How to check kernel version?
+uname –a</li>
+<li>Which directory has all the configuration files?
+/etc</li>
+<li>How to become root user from a regular user?
+su –</li>
+<li>How many mega bytes in 1 giga bytes?
+Search online</li>
+<li>What is the purpose of having different network ports?
+So the communication of each application goes through a dedicated port</li>
+<li>How to display first column of a file?
+cat filename | awk ‘{print $1}’</li>
+<li>What is the name of DNS rpm package?
+bind</li>
+<li>What is the difference between nslookup and dig commands?
+Search online</li>
+<li>How to check your user id and group id?
+id</li>
+<li>How to check a file’s permission?
+ls –l</li>
+<li>What is the difference between “kill” and “kill -9” command?
+Search online</li>
+<li>What is subnet?
+Search online</li>
+<li>You are troubleshooting an issue with Redhat support and they have asked you to send the contents of /etc directory. How and which method you will use to transfer the contents?
+tar (compress) the entire /etc directory and ftp</li>
+<li>What is root home directory?
+/root</li>
+<li>What is rsyslogd deamon and its purpose?
+Search online</li>
+<li>Your company has terminated a server administrator. What is first thing as an administrator you should do to enhance the security?
+Change root password</li>
+<li>How to check the computer name or host name in Linux?
+hostname</li>
+<li>Which permission allows a user to run an executable with the permissions of the owner of that file?
+First 3 bits should have x</li>
+<li>What is the command to untar a tarred file?
+untar</li>
+<li>What is /proc directory used for?
+Search online</li>
+<li>What is the purpose of nsswitch.conf file
+It tells the system where to go to resolve hostnames</li>
+<li>List 3 basic commands to navigate the filesystem?
+cd, pwd and ls</li>
+<li>Which service/daemon should be running on the server that allows you to connect remotely?
+sshd</li>
+<li>What is the purpose of firewall?
+Search online</li>
+<li>List any 3 IT components?
+Hardware, OS and Applications</li>
+<li>Which directory has all the commands we use, e.g. ls, cd etc.?
+/usr/bin or /bin</li>
+<li>What is the difference between memory, virtual memory and cache?
+Search online</li>
+<li>Which of the following is correct?
+a. Hardware   Operating System   Users
+b. Operating System   Users   Hardware
+c. Database   Hardware   Users</li>
+<li>Which of the following is a communication command?
+o grep
+o mail
+o touch
+o cd</li>
+<li>How to rename a file or directory?
+mv</li>
+<li>How to change a hostname in Linux?
+Search online</li>
+<li>How to check network interfaces in Linux?
+ifconfig</li>
+<li>Why is “tail –f logfilename” command used most often and what does it do?
+It will output all incoming logs in real time</li>
+<li>What type of hardware have you worked on?
+You should get yourself familiar with Dell, HP and UCS hardware by going online and check the vendor websites</li>
+<li>How to sort a file in reverse order?
+cat filename | sort –r</li>
+<li>What is the name of operating system that runs Unix?
+Solaris, HP-UX etc.</li>
+<li>List all byte sizes from smallest to largest?
+Search online</li>
+<li>How to check the total number of partition in Linux?
+fdisk -l</li>
+<li>How to access a linux system from a linux system?
+ssh</li>
+<li>Explain the procedure of bonding 2 NICs or interfaces together?
+Search online</li>
+<li>What is the exact command syntax to list the 5th column of a file and cut the first 3 letters?
+cat filename | awk ‘{print $5}’ | cut –c1-3</li>
+<li>What is /etc/hosts file used for?
+To resolve hostnames with IP address</li>
+<li>List any 3 options of ‘df’ command and what they are used for?
+Search online</li>
+<li>What is the command to change file/directory permissions?
+chmod</li>
+<li>What is the purpose of pipe (|)?
+To combine multiple commands</li>
+<li>What is /etc directory used for?
+For configuration files</li>
+<li>Which command is used to list files in a directory?
+ls –l</li>
+<li>There is a command which gives you information about other commands, please explain that command and what is it used for?
+man</li>
+<li>How to delete a file and a directory?
+rm filename and rmdir dirname</li>
+<li>What is the difference between “tail” and “tail -10”?
+None</li>
+<li>List 4 commands to display or read a file contents?
+cat, more, less, vi</li>
+<li>Which command is used to read the top 5 lines of a file?
+head -5 filename</li>
+<li>What are the different commands or methods to write to a file?
+echo &gt; filename and vi filename</li>
+<li>What is swap space and how to check swap space?
+Search online</li>
+<li>What is inode and how to find an inode of a file?
+Search online</li>
+<li>Which file to edit for kernel tuning?
+Search online</li>
+<li>What is the latest version of Redhat?
+Search online</li>
+<li>Name the command to find specific word from a file?
+grep word filename</li>
+<li>You have scheduled a job using crontab but it does not run at the time you specified, what could be the reason and how would you troubleshoot?
+Check your system time
+Check your crontab entry
+Check /var/log/messages</li>
+<li>How to check system hardware information?
+dmidecode</li>
+<li>How to check network interface MAC address?
+ifconfig</li>
+<li>If I don’t want others to read my file1, how to do that?
+Remove r from the last 3 bits of file permission</li>
+<li>What is the purpose of “uniq” and “sed” command?
+Search online</li>
+<li>Which command is used to list the contents of a directory in the most recent time and in reverse order, meaning the most updated file should be listed on the bottom?
+ls –ltr</li>
+<li>What is the difference between tar, gzip and gunzip?
+Search online</li>
+<li>What are the different ways to install and OS?
+DVD, DVD iso and network boot</li>
+<li>How to view difference between two files?
+diff file1 and file2</li>
+<li>You noticed that one of the Linux servers has no disk space left, how would you troubleshoot that issue?
+If running LVM then add more disk and extend LVM
+If not running LVM then add more disk, create a new partition and link the new partition to an existing filesystem</li>
+<li>How to check Redhat version release?
+uname –a or /etc/redhat-release</li>
+<li>What is the difference between TCP and UDP?
+Search online</li>
+<li>What is a zombie process?
+Search online</li>
+<li>How do you search for a pattern/word in a file and then replace it in an entire file?
+sed command</li>
+<li>Explain the purpose of “touch” command?
+To create an empty file</li>
+<li>If a command hangs, how to stop it and get the prompt back?
+Ctrl C</li>
+<li>Which command is used to count words or lines?
+wc</li>
+<li>How to check the number of users logged in?
+who</li>
+<li>What is the command to view the calendar of 2011?
+cal 2011</li>
+<li>Which command is used to view disk space?
+df –h</li>
+<li>How to create a new group in Linux?
+groupadd</li>
+<li>What is the command to send a message to everyone who is logged into the system?
+wall</li>
+<li>Which command is used to check total number of disks?
+fdisk –l</li>
+<li>What is an mail server record in DNS?
+MX</li>
+<li>What does the following command line do?
+ps -ef | awk '{print $1}' | sort | uniq
+List the first column of all running processes, sort them and remove duplicates</li>
+<li>You get a call that when a user goes to www.yourwebsite.com it fails and gets an error, how do you troubleshoot?
+Check for user internet
+Check to see if user computer has DNS for hostname lookup
+Check to see if the server is up that is running that website
+Check to see if the server’s web service is running
+Check for DNS availability which is resolving that website</li>
+<li>List 4 different directories in /?
+/etc, /bin, /tmp, /home</li>
+<li>What is the output of the following command: $tail -10 filename | head -1
+It will show the first line from the last 10 lines of a file</li>
+<li>What are the different fields in /etc/passwd file?
+Search online</li>
+<li>Which command is used to list the processes?
+ps –ef</li>
+<li>What is the difference between “hostname” and “uname” commands?
+Hostname will give you system name and uname will give you OS information</li>
+<li>How to check system load?
+top and uptime command</li>
+<li>How to schedule jobs?
+crontab and at</li>
+<li>What is the 3rd field when setting up crontab?
+Day of the month</li>
+<li>What is the command to create a new user?
+useradd</li>
+<li>What is the “init #” for system reboot?
+6</li>
+<li>How to restart a service?
+systemctl restart servicename</li>
+<li>How to shutdown a system?
+shutdown or init 0</li>
+<li>What is “ftp” command used for?
+To transfer files from one computer to another</li>
+<li>Explain cron job syntax? First is minute, second is..?
+Min, house, day of the month, month, day of the week and command</li>
+<li>How to delete a package in Linux?
+rpm –e packagename</li>
+<li>What is the file name where user password information is saved?
+/etc/shadow</li>
+<li>Which command you would use to find the location of chmod command?
+which chmod</li>
+<li>Which command is used to check if the other computer is online?
+ping othercomputer</li>
+<li>Please explain about LAN, MAN and WAN?
+Search online</li>
+<li>How to list hidden files in a directory?
+ls –la</li>
+<li>What is the difference between telnet and ssh?
+ssh is secure where telnet is not</li>
+<li>How to run a calculator on Linux and exit out of it?
+bc and quit</li>
+<li>List any 4 commands to monitor system?
+top, df –h, iostat, dmesg</li>
+<li>You are notified that your server is down, list the steps you will take to troubleshoot?
+Check the system physically
+Login through system console
+Ping the system
+Reboot or boot if possible</li>
+<li>What is difference between static and DHCP IP?
+Search online</li>
+<li>How to write in vi editor mode?
+i = insert, a = insert in next space, o = insert in new line</li>
+<li>What is the difference between “crontab” and “at” jobs?
+crontab is for repetitive jobs where at is for one time job</li>
+<li>What is vCenter server in VMWare?
+Search online</li>
+<li>What is “dmidecode” command used for?
+To get system information</li>
+<li>What is the difference between SAN and NAS?
+Search online</li>
+<li>What is the location of system logs? E.g. messages
+/var/log directory</li>
+<li>How to setup an alias and what is it used for?
+alias aliasname=”command”
+It is used to created short-cuts for long commands</li>
+<li>What is the purpose of “netstat” command?
+Search online</li>
+<li>What are terminal control keys, list any 3?
+Crtl C, D and Z</li>
+<li>Which command(s) you would run if you need to find out how many processes are running on your system?
+ps –ef | wc –l</li>
+<li>What are the different types of shells?
+sh, bash, ksh, csh etc.</li>
+<li>How to delete a line when in vi editor mode?
+dd</li>
+<li>Which is the core of the operating system?
+a) Shell
+b) Kernel
+c) Commands
+d) Script</li>
+<li>Which among the following interacts directly with system hardware?
+a) Shell
+b) Commands
+c) Kernel
+d) Applications</li>
+<li>How to save and quit from vi editor?
+Shift ZZ or :wq!</li>
+<li>What is the difference between a process and daemon?
+Search online</li>
+<li>What is the process or daemon name for NTP?
+ntpd</li>
+<li>What are a few commands you would run if your system is running slow?
+top, iostat, df –h, netstat etc.</li>
+<li>How to install a package in Redhat Linux?
+yum install packagename</li>
+<li>What is the difference between “ifconfig” and “ipconfig” commands?
+ifconfig for Linux and ipconfig for Windows</li>
+<li>What is the first line written in a shell script?
+Define shell
+e.g. #!/bin/bash</li>
+<li>Where is the network (Ethernet) file located, please provide exact directory location and file name?
+/etc/sysconfig/network-scripts/ifcfg-nic</li>
+<li>Why do we use “last” command?
+To see who has logged in the system whether active or logged off</li>
+<li>What is RHEL Linux stands for?
+Search online</li>
+<li>To view your command history, which command is used and how to run a specific command?
+history and history #</li>
+<li>What is NTP and briefly explain how does it work and where is the config files and related commands of NTP?
+Search online</li>
+<li>How to disable firewall in Linux?
+Search online</li>
+<li>How to configure mail server relay for sendmail service?
+Edit /etc/mail/sendmail.mc file and add SMART_HOST entry</li>
+<li>Where is samba log file located?
+/var/log/samba</li>
+<li>What is mkfs command used for?
+To create a new filesystem</li>
+<li>If you create a new group, which file does it get created in?
+/etc/group</li>
+<li>Which file has DNS server information (e.g. DNS resolution)?
+/etc/resolv.conf</li>
+<li>What are the commands you would run if you need to find out the version and build date of a package (e.g. http)?
+rpm –qi http</li>
+<li>On the file permissions? What are the first 3 bits for and who is it for?
+Read, write and execute. They are used for the owner of the file</li>
+<li>How to create a soft link?
+ln –s</li>
+<li>How to write a script to delete messages in a log file older than 30 days automatically?
+Search online</li>
+<li>How to quit out of “man” command?
+q</li>
+<li>Which command is used to partition disk in Linux?
+fdisk</li>
+<li>What is the difference between “shutdown” and “halt” command?
+Search online</li>
+<li>What is the exact syntax of mounting NFS share on a client and also how to un-mount?
+Search online</li>
+<li>What experience do you have with scripting, explain?
+if-the, do-while, case, for loop scripts</li>
+<li>How to get information on all the packages installed on the system?
+rpm –qa</li>
+<li>Explain VMWare?
+Search online</li>
+<li>You are tasked to examine a log file in order to find out why a particular application keep crashing. Log file is very lengthy, which command can you use to simplify the log search using a search string?
+grep for error, warning, failure etc. in /var/log/messages file</li>
+<li>What is /etc/fstab file and explain each column of this file?
+Search online</li>
+<li>What the latest version of Windows server?
+Search online</li>
+<li>What is the exact command to list only the first 2 lines of history output?
+history | head -2</li>
+<li>How to upgrade Linux from 7.3 to 7.4?
+yum install update</li>
+<li>How to tell which shell you are in or running?
+$0</li>
+<li>You have tried to “cd” into a directory but you have been denied. You are not the owner of that directory, what permissions do you need and where?</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>r – x</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>What is CNAME record in DNS?
+Entry for hostname to hostname</li>
+<li>What is the name of VMWare operating system?
+ESXi</li>
+<li>What is the client name used to connect to ESXi or vCenter server?
+vSphere client</li>
+<li>You get a call from a user saying that I cannot write to a file because it says, permission denied. The file is owned by that user, how do you troubleshoot?
+Give write permission on the first 3 bits</li>
+<li>What is the latest version of VMWare?
+Search online</li>
+<li>What is the name of firewall daemon in Linux?
+firewalld</li>
+<li>Which command syntax you can use to list only the 20th line of a file?
+Search online</li>
+<li>What is the difference between run level 3 and 5?
+3 = Boot system with networking, 5 = boot system with networking and GUI</li>
+<li>List a few commands that are used in troubleshooting network related issue?
+netstat, tcpdump etc.</li>
+<li>What is the difference between domain and nameserver?
+Search online</li>
+<li>You open up a file and it has 3000 lines and it scrolled up really fast, which command you will use to view it one page at a time?
+more or less</li>
+<li>How to start a new shell. E.g. start a new ksh shell?
+Simply type ksh, or bash</li>
+<li>How to kill a process?
+kill processID</li>
+<li>How to check scheduled jobs?
+crontab –l</li>
+<li>How to check system memory and CPU usage?
+free and top</li>
+<li>Which utility could you use to repair the corrupted file system?
+fsck</li>
+<li>What is the command to make a service start at boot?
+systemctl enable servicename</li>
+<li>How to combine 2 files into 1? E.g. you 3 lines in file “A” and 5 lines in file “B”, which command syntax to use that will combine into one file of 3+5 = 8 lines
+cat fileA &gt;&gt; fileB</li>
+<li>What is echo command used for?
+To output to a screen</li>
+<li>What does the following command do?
+echo This year the summer will be great &gt; file1
+It will create a new file “file1” with the content as “This year the summer will be great”</li>
+<li>Which file to modify to allow users to run root commands
+/etc/sudoers</li>
+<li>You need to modify httpd.conf file but you cannot find it, Which command line tool you can use to find file?
+find / -name “httpd.conf”</li>
+<li>Your system crashed and being restarted, but a message appears, indicating that the operating system cannot be found. What is the most likely cause of the problem?
+The /boot file is most likely corrupted</li>
+</ol>
+<p><a href="../linux_L1/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -47,7 +47,7 @@
                                 <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="../performance/" class="nav-link">Performance-Troubleshooting</a>
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
@@ -58,19 +58,45 @@
     <ul class="dropdown-menu">
             
 <li>
-    <a href="../linux_basic/" class="dropdown-item">Linux General Questions</a>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
 </li>
             
 <li>
-    <a href="../linux_L1/" class="dropdown-item">Linux L1 interview Questions</a>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
 </li>
             
 <li>
-    <a href="../linux_L2/" class="dropdown-item">Linux L2 interview Questions</a>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experianced - L1</a>
 </li>
             
 <li>
-    <a href="../linux_L3/" class="dropdown-item">Linux L3 interview Questions</a>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experianced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experianced Admins - L3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experianced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experianced - 2</a>
+</li>
+            
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
 </li>
     </ul>
   </li>
@@ -84,26 +110,43 @@
 </li>
                                     
 <li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
-</li>
-                                    
-<li>
     <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem">
-                                <a href="../../linux.md" class="nav-link">Linux</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
                             </li>
-                            <li class="navitem">
-                                <a href="../network" class="nav-link">Network</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../../db/" class="nav-link">Database</a>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux.md" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../network" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
                             </li>
                             <li class="navitem">
                                 <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
@@ -165,16 +208,20 @@
     You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource 
     group.
 
-    Solution: On Subscription1, you assign the Logic App Operator role to the Developers group. Does this meet the goal?
+    Solution: On Subscription1, you assign the Logic App Operator role to the Developers group. Does this meet
+              the goal?
+
     A. Yes
     B. No
 
     Correct Answer: B
 
     Explanation:
-    You would need the Logic App Contributor role. References:
-    https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app
+    You would need the Logic App Contributor role.
 </code></pre>
+<p>References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles" target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app" target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a></p>
 <p>QUESTION 3</p>
 <pre><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
     Subscription1. Adatum contains a group named Developers. Subscription1 contains a resource group named Dev.
@@ -188,10 +235,10 @@
     Explanation:
     The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view,
     edit, and update a logic app.
-
-    References:
-    https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app
 </code></pre>
+<p>References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles" target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app" target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a></p>
 <p>QUESTION 4</p>
 <pre><code>    You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named
     Workspace1.
@@ -208,35 +255,40 @@
 
     Explanation:
     To search a term in a specific table, add in (table-name) just after the search operator
-
-    References:
-    https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal
-
-    QUESTION 5
-
-    You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
+</code></pre>
+<p>References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries" target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries</a>
+    <br>- <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal" target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal</a></p>
+<p>QUESTION 5</p>
+<pre><code>    You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the following table.
     RG1 has a web app named WebApp1. WebApp1 is located in West Europe. You move WebApp1 to RG2.
     What is the effect of the move?
+
     A. The App Service plan for WebApp1 moves to North Europe. Policy2 applies to WebApp1.
     B. The App Service plan for WebApp1 remains in West Europe. Policy2 applies to WebApp1.
     C. The App Service plan for WebApp1 moves to North Europe. Policy1 applies to WebApp1.
     D. The App Service plan for WebApp1 remains in West Europe. Policy1 applies to WebApp1.
+
     Correct Answer: B Section: [none] Explanation
-    Explanation/Reference:
+
     Explanation:
     You can move an app to another App Service plan, as long as the source plan and the target plan are in the same resource group and geographical region.
     The region in which your app runs is the region of the App Service plan it's in. However, you cannot change an App Service plan's region.
-    References:
-    https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage
-    QUESTION 6
-    You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.
+</code></pre>
+<p>References:<br>
+    - <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage" target="_blank">https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage</a></p>
+<p>QUESTION 6</p>
+<pre><code>    You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.
     Your company has three cost centers named Manufacturing, Sales, and Finance. You need to associate each virtual machine to a specific cost center.
     What should you do?
+
     A. Configure locks for the virtual machine.
     B. Add an extension to the virtual machines.
     C. Assign tags to the virtual machines.
     D. Modify the inventory settings of the virtual machine.
+
     Correct Answer: C Section: [none] Explanation
+
     Explanation/Reference:
     References:
     https://docs.microsoft.com/en-us/azure/billing/billing-getting-started https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags

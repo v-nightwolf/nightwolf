@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>DevOps Interview Questions for Freshers and Experianced - 2 - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experianced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experianced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experianced Admins - L3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experianced</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">DevOps Interview Questions for Freshers and Experianced - 2</a>
+</li>
+            
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux.md" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../network" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../devops_interview_questions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../git/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#devops-interview-question-2" class="nav-link">DevOps Interview Question - 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="devops-interview-question-2">DevOps Interview Question - 2<a class="headerlink" href="#devops-interview-question-2" title="Permanent link"></a></h1>
+<hr />
+<p>We have consolidated a list of frequently asked DevOps intervoew questions.</p>
+<hr />
+<ol>
+<li>
+<p>List of Docker components?</p>
+<pre><code>1. Docker image: – Contains OS (very small) (almost negligible) + soft wares 
+2. Docker Container: – Container like a machine which is created from Docker image.
+3. Docker file: – Describes steps to create a docker image.
+4. Docker hub/registry: – Stores all docker images publicly.
+5. Docker daemon: – Docker service runs at back end Above five components we call as Docker components
+</code></pre>
+</li>
+<li>
+<p>What is Docker workflow?</p>
+<pre><code>First we create Docker file by mentioning instructions to build docker image. Form this Docker image, we
+are going to create Docker container. This Docker image we can push to docker hub as well. This image can
+be pulled by others to create docker containers. We can create docker images from docker containers.
+Like this we can create Docker images form either docker file or docker containers. We can create docker
+containers from docker images. This is the work flow of docker.
+</code></pre>
+</li>
+<li>
+<p>Sample Docker file instructions?</p>
+<pre><code> FROM ubuntu
+ WORKDIR /tmp
+ RUN echo “Hello” &gt; /tmp/testfile
+ ENV myname user1
+ COPY testfile1 /tmp
+ ADD test.tar.gz /tmp
+</code></pre>
+</li>
+<li>
+<p>What is the importance of volumes in Docker? </p>
+<pre><code>1. Volume is a directory inside your container   
+2. First declare directory as a volume and then share volume   
+3. Even if we stop container, still we can access volume  
+4. Volume will be created in one container  
+5. You can share one volume across any no of containers  
+6. Volume will not be included when you update an image  
+7. Map volumes in two ways   
+8. Share host – container   
+9. Share container – container
+</code></pre>
+</li>
+<li>
+<p>What do you mean by port mapping in Docker? </p>
+<pre><code>Suppose if you want to make any container as web server by installing web package in it, you need to
+provide containers IP address to public in order to access website which is running inside docker 
+container. But Docker containers don’t have an IP address. So, to address this issue, we have a concept
+called Docker port mapping. We map host port with container port and customers use public IP of host
+machine. Then their request will be routed from host port to container’s port and will be loaded webpage
+which is running inside docker container. This is how we can access website which is running inside
+container through port mapping.
+</code></pre>
+</li>
+<li>
+<p>What is Registry server in Docker? </p>
+<pre><code>Registry server is our own docker hub created to store private docker images instead of storing in public
+Docker hub. Registry server is one of the docker containers. We create this Registry server from “registry”
+image, especially provided by docker to create private docker hub. We can store any no of private docker
+images in this Registry server. We can give access to others, so that, they also can store their docker
+images whomever you provide access. Whenever we want, we can pull these images and can create containers
+out of these images.
+</code></pre>
+</li>
+<li>
+<p>Important docker commands? </p>
+<pre><code>1. Docker ps (to see list of running containers) 
+2. Docker ps -a (to see list of all containers) 
+3. Docker images (to see list of all images) 
+4. Docker run (to create docker container) 
+5. Docker attach (to go inside container) 
+6. Docker stop (to stop container) 
+7. Docker start (to start container) 
+8. Docker commit (to create image out of docker file) 
+9. Docker rm (to delete container) 
+10. Docker rmi (to delete image)
+</code></pre>
+</li>
+<li>
+<p>What is Ansible? </p>
+<pre><code>Ansible is one of the configuration Management Tools. It is a method through we automate system admin tasks.
+Configuration refers to each and every minute details of a system. If we do any changes in system means we 
+are changing the configuration of a machine. That means we are changing the configuration of the machine.
+All windows/Linux system administrators manage the configuration of a machine manually. All DevOps engineers
+are managing this configuration automatic way by using some tools which are available in the market. One such
+tool is Ansible. That’s why we call Ansible as configuration management tool.
+</code></pre>
+</li>
+<li>
+<p>Working process of Ansible?</p>
+<pre><code>Here we crate file called playbook and inside playbook we write script in YAML format to create infrastructure.
+Once we execute this playbook, automatically code will be converted into Infrastructure. We call this process
+as IAC (Infrastructure as Code). We have open source and enterprise editions of Ansible. Enterprise edition
+we call Ansible Tower.
+</code></pre>
+</li>
+<li>
+<p>The architecture of Ansible?</p>
+<pre><code>We create Ansible server by installing Ansible package in it. Python is pre-requisite to install ansible. 
+We need not to install ansible package in nodes. Because, communication establishes from server to node 
+through “ssh” client. By default all Linux machine will have “ssh” client. Server is going to push the code
+to nodes that we write in playbooks. So Ansible follows pushing mechanism.
+</code></pre>
+</li>
+<li>
+<p>Ansible components? </p>
+<pre><code>1. Server:– It is the place where we create playbooks and write code in YML format
+2. Node:– It is the place where we apply code to create infrastructure. Server pushes code to nodes.
+3. SSH:– It is an agent through ansible server pushes code to nodes.
+4. Setup:– It is a module in ansible which gathers nodes information. 
+5. Inventory file:- In this file we keep IP/DNS of nodes.
+</code></pre>
+</li>
+<li>
+<p>Disadvantages in other SCM (Source Code Management) tools?  </p>
+<pre><code>- Huge overhead of Infrastructure setup   
+- Complicated setup   
+- Pull mechanism   
+- Lot of learning required
+</code></pre>
+</li>
+<li>
+<p>Advantages of Ansible over other SCM (Source Code Management) tools?   </p>
+<pre><code>- Agentless  
+- Relies on “ssh”  
+- Uses python  
+- Push mechanism
+</code></pre>
+</li>
+<li>
+<p>How does Ansible work?</p>
+<pre><code>We give nodes IP addresses in hosts file by creating any group in ansible server why because, ansible 
+doesn’t recognize individual IP addresses of nodes. We create playbook and write code in YAML script.
+The group name we have to mention in a playbook and then we execute the playbook. By default, playbook 
+will be executed in all those nodes which are under this group. This is how ansible converts code into
+infrastructure.
+</code></pre>
+</li>
+<li>
+<p>What do you mean by Ad-Hoc commands in Ansible? </p>
+<pre><code>These are simple one liner Linux commands we use to meet temporary requirements without actually saving
+for later. Here we don’t use ansible modules. So there, Idempotency will not work with Ad-Hoc commands.
+If at all we don’t get required YAML module to write to create infrastructure, then we go for it. Without
+using playbooks we can use these Ad-Hoc commands for temporary purpose.
+</code></pre>
+</li>
+<li>
+<p>Differences between Chef and Ansible?</p>
+<table>
+<thead>
+<tr>
+<th>Ansible</th>
+<th>Chef</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Playbook</td>
+<td>Recipe</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>Resource</td>
+</tr>
+<tr>
+<td>Host</td>
+<td>Node</td>
+</tr>
+<tr>
+<td>Setup</td>
+<td>Ohai</td>
+</tr>
+<tr>
+<td>SSH</td>
+<td>Knife</td>
+</tr>
+<tr>
+<td>mechanism: Push</td>
+<td>mechanism: Pull</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>What is Playbook in Ansible?</p>
+<pre><code>Playbook is a file where we write YAML script to create infrastructure in nodes. Here, we use modules to 
+create infrastructure. We create so many sections in playbook. We mention all modules in task section. 
+You can create any no of playbooks. There is no limit. Each playbook defines one scenario. All sections
+begin with “-” &amp; its attributes &amp; parameters beneath it.
+</code></pre>
+</li>
+<li>
+<p>Mention some list of sections that we mention in Playbook?</p>
+<pre><code>1. Target section
+2. Task section
+3. Variable section
+4. Handler section
+</code></pre>
+</li>
+<li>
+<p>What is Target section in Ansible playbook?</p>
+<pre><code>This is one of the important sections in Playbook. In this section, we mention the group name which
+contains either IP addresses or Hostnames of nodes. When we execute playbook, then code will be pushed
+too all nodes which are there in the group that we mention in Target section. We use “all” key word to
+refer all groups.
+</code></pre>
+</li>
+<li>
+<p>What is Task section in Ansible playbook?</p>
+<pre><code>This is second most important section in playbook after target section. In this section, we are going
+to mention list of all modules. All tasks we mention in this task section. We can mention any no of 
+modules in one playbook. There is no limit. If there is only one task, then instead of going with big
+playbook, simply we can go with arbitrary command where we can use one module at a time. If more than
+one module, then there is no option except going with big playbook.
+</code></pre>
+</li>
+<li>
+<p>What is Variable section?</p>
+<pre><code>In this section we are going to mention variables. Instead of hard coding, we can mention as variables
+so that during runtime it pulls the actual value in place of key. We have this concept in each and every
+programming language and scripting language. We use “vars” key word to use variables.
+</code></pre>
+</li>
+<li>
+<p>What is Handler section?</p>
+<pre><code>All tasks we mention in tasks section. But some tasks where dependency is there, we should not mention
+in tasks section. That is not good practice. For example, installing package is one task and starting
+service is one more task. But there is dependency between them. I.e. after installing package only,
+we have to start service. Otherwise it throws error. These kind of tasks, we mention in handler section.
+In above example, package task we mention in task section and service task we mention in handler section 
+so that after installing task only service will be started.
+</code></pre>
+</li>
+<li>
+<p>What is Dry run in playbook? </p>
+<pre><code>Dry run is to test playbook. Before executing playbook in nodes, we can test whether the code in playbook
+is written properly or not. Dry run won’t actually executes playbook, but it shows output as` if it 
+executed playbook. Then by seeing the output, we can come to know whether the playbook is written properly
+or not. It checks whether the playbook is formatted correctly or not. It tests how the playbook is going
+to behave without running the tasks.
+</code></pre>
+</li>
+<li>
+<p>Why are we using loops concept in Ansible?</p>
+<pre><code>Sometimes we might need to deal with multiple tasks. For instance, Installing multiple packages, Creating
+many users, creation many groups..etc. In this case, mentioning module for every task is complex process.
+So, to address this issue, we have a concept of loops. We have to use variables in combination with loops.
+</code></pre>
+</li>
+<li>
+<p>Where do we use conditionals in Playbooks? </p>
+<pre><code>Sometimes, your nodes could be mixture of different flavors of Linux OS. Linux commands vary in different
+Linux operating systems. In this case, we can’t execute common set of commands in all machines, at the same
+time, we can’t execute different commands in each node separately. To address this issue, we have
+conditionals concept where commands will be executed based up on certain condition that we give.
+</code></pre>
+</li>
+<li>
+<p>What is Ansible vault? </p>
+<pre><code>Sometimes, we use sensitive information in playbooks like passwords, keys …etc. So any one can open these
+playbooks and get to know about this sensitive information. So we have to protect our playbooks from being
+read by others. So by using Ansible vault, we encrypt playbooks so that, those who ever is having password,
+only those can read this information. It is the way of protecting playbooks by encrypting them.
+</code></pre>
+</li>
+<li>
+<p>What do you mean by Roles in Ansible? </p>
+<pre><code>Adding more &amp; more functionality to the playbooks will make it difficult to maintain in a single file. 
+To address this issue, we organize playbooks into a directory structure called “roles”. We create separate
+file to each section and we just mention the names of those sections in playbook instead of mentioning all
+modules in main playbook. When you call main playbook, main playbook will call all sections files respectively
+in the order whatever order you mention in playbook. So, by using this Roles, we can maintain small playbook
+without any complexity.
+</code></pre>
+</li>
+<li>
+<p>Write a sample playbook to install any package? </p>
+<pre><code>— # My First YAML playbook 
+– hosts: demo 
+  user: ansible 
+  become: yes 
+  connection: ssh
+  tasks: 
+    – name: Install HTTPD on centos 7 
+        action: yum name=httpd state=installed
+</code></pre>
+</li>
+<li>
+<p>Write a sample playbook by mentioning variables instead of hard coding?</p>
+<pre><code>— # My First YAML playbook 
+– hosts: demo 
+  user: nightwolf
+  become: yes 
+  connection: ssh
+  vars: pkgname: httpd
+  tasks: 
+   – name: Install HTTPD server on centos 7 
+     action: yum name=‘{{pkgname}}’ state=installed
+</code></pre>
+</li>
+<li>
+<p>What is CI &amp; CD? </p>
+<pre><code>CI means Continues Integration and CD means Continues Delivery/Deploy. Whenever developers write code, we
+integrate all that code of all developers at that point of time and we build, test and deliver/deploy to 
+the client. This process we call CI &amp; CD. Jenkins helps in achieving this. So instead of doing night builds,
+build as and when commit occurs by integrating all code in SCM tool, build, test and checking the quality
+of that code is what we call Continues Integration.
+</code></pre>
+</li>
+<li>
+<p>Key terminology that we use in Jenkins?</p>
+<pre><code>- Integrate: Combine all code written by developers till some point of time.
+- Build: Compile the code and make a small executable package.
+- Test: Test in all environments whether application is working properly or not.
+- Archived: Stored in an artifactory so that in future we may use/deliver again.
+- Deliver: Handing the product to Client Deploy: Installing product in client’s machines.
+</code></pre>
+</li>
+<li>
+<p>What is Jenkins Workflow? </p>
+<pre><code>We attach Git, Maven, Selenium &amp; Artifactory plug-ins to Jenkins. Once Developers put the code in Git,
+Jenkins pulls that code and send to Maven for build. Once build is done, Jenkins pulls that built code
+and send to selenium for testing. Once testing is done, then Jenkins will pull that code and send to
+Artifactory as per requirement and finally we can deliver the end product to client we call Continues 
+delivery. We can also deploy with Jenkins into clients machine directly as per the requirement. This is
+what Jenkins work flow.
+</code></pre>
+</li>
+<li>
+<p>What are the ways through which we can do Continues Integration? </p>
+<pre><code>There are total three ways through which we can do Continues Integration:
+
+  1. Manually:– Manually write code, then do build manually and then test manually by writing test cases
+                and deploy manually into clients machine. 
+  2. Scripts:– Can do above process by writing scripts so that these scripts do CI&amp;CD automatically. 
+               here complexity is, writing script is not so easy. 
+  3. Tool:– Using tools like Jenkins is very handy. Everything is preconfigured in these type of tools.
+            So less manual intervention. This is the most preferred way.
+</code></pre>
+</li>
+<li>
+<p>Benefits of CI? </p>
+<pre><code>1. Detects bugs as soon as possible, so that bug will be rectified fast and development happens fast.
+2. Complete automation. No need manual intervention. 
+3. We can intervene manually whenever we want i.e. we can stop any stage at any point of time so have 
+   better control.
+4. Can establish complete and continues work flow.
+</code></pre>
+</li>
+<li>
+<p>Why only Jenkins?  </p>
+<pre><code>- It has so many plug-ins. 
+- You can write your own plug-in  
+- You can use community plug-ins  
+- Jenkins is not just a tool. It is a framework i.e. you can do what ever you want. All you need is plugins.
+- We can attach slaves to Jenkins master. It instructs others(slaves) to do Job.
+- If slaves are not available, Jenkins itself does the job.  
+- Jenkins also acts as cron server replacement i.e. can do repeated tasks automatically.  
+- Running some scripts regularly E.g.: Automatic daily alarm.  
+- Can create Labels (Group of slaves) (Can restrict where the project has to run).
+</code></pre>
+</li>
+<li>
+<p>What is Jenkins Architecture? </p>
+<pre><code>Jenkins architecture is Client-Server model. Where ever, we install Jenkins, we call that server is Jenkins
+master. We can also create slaves in Jenkins, so that server load will be distributed to slaves. Jenkins
+Master randomly assigns tasks to slaves. But if you want to restrict any job to run in particular slave, 
+then we can do it, so that particular job will be executed in that slave only. We can group some slaves
+by using “Label”.
+</code></pre>
+</li>
+<li>
+<p>How to install Jenkins? </p>
+<pre><code>- You can install Jenkins in any OS. All OSs supports Jenkins. We access Jenkins through web page only.
+   That’s why it doesn’t make any difference whether you install Jenkins in Windows or Linux.   
+- Choose Long Term Support release version, so that you will get support from Jenkins community. If you
+   are using Jenkins for testing purpose, you can choose weekly release. But for production environments,
+   we prefer Long Term Support release version.
+- Need to install JAVA. Java is pre-requisite to install Jenkins.  
+- Need to install web package. Because, we are going to access Jenkins through web page only.
+</code></pre>
+</li>
+<li>
+<p>Does Jenkins open source? </p>
+<pre><code>There are two editions in Jenkins 1. Open source 2. Enterprise edition Open source edition we call Jenkins.
+Here we get support from community if we need it. Enterprise edition we call Hudson. Here Jenkins company 
+will provide support.
+</code></pre>
+</li>
+<li>
+<p>How many types of configurations in Jenkins?</p>
+<pre><code>There are total 3 types of configurations in Jenkins:
+ 1. Global:– Here, whatever configuration changes we do, applicable to whole Jenkins including jobs as well
+             as nodes. This configuration has high priority. 
+ 2. Job:– These configurations applicable to only Jobs. Jobs also we call as projects or items in Jenkins. 
+ 3. Node:– These configurations applicable to only nodes. Also we call Slaves. These are kind of helpers to
+           Jenkins master to distribute the excessive load.
+</code></pre>
+</li>
+<li>
+<p>What do you mean by workspace in Jenkins? </p>
+<pre><code>The workspace is the location on your computer where Jenkins places all files related to the Jenkins
+project. By default each project or job is assigned a workspace location and it contains Jenkins-specific
+project metadata, temporary files like logs and any build artifacts, including transient build files.
+Jenkins web page acts like a window through which we are actually doing work in workspace.
+</code></pre>
+</li>
+<li>
+<p>List of Jenkins services?</p>
+<pre><code>   - localhost:8080/restart (to restart Jenkins). 
+   - localhost:8080/stop (to stop Jenkins).
+   - localhost:8080/start (to start Jenkins).
+</code></pre>
+</li>
+<li>
+<p>How to create a free style project in Jenkins?   </p>
+<pre><code>- Create project by giving any name  
+- Select Free style project  
+- Click on build  
+- Select execute windows batch command  
+- Give any command (echo “Hello Dear Students!!”)  
+- Select Save  
+- Click on Build now  
+- Finally can see Console output
+</code></pre>
+</li>
+<li>
+<p>What do you mean by Plugins in Jenkins?   </p>
+<pre><code>- With Jenkins, nearly everything is a plugin and that nearly all functionality is provided by plugins. 
+  You can think of Jenkins as little more than an executor of plugins.  
+- Plugins are small libraries that add new abilities to Jenkins and can provide integration points to other
+  tools.  
+- Since nearly everything Jenkins does is because of a plugin, Jenkins ships with a small set of default
+  plugins, some of which can be upgraded independently of Jenkins.
+</code></pre>
+</li>
+<li>
+<p>How to create Maven Project?   </p>
+<pre><code>- Select new item 
+- Copy the git hub maven project link and paste in git section in Jenkins  
+- Select build  
+- Click on clean package  
+- Select save  
+- Click on Build now  
+- Verify workspace contents with GitHub sideSee console output
+</code></pre>
+</li>
+<li>
+<p>How can we Schedule projects? </p>
+<pre><code>Sometimes, we might need some jobs to be executed after frequent intervals. To schedule a job:
+
+ - Click on any project 
+ - Click on Configure  
+ - Select on Build triggers  
+ - Click on Build periodically  
+ - Give timing (In format : * * * * * )  
+ - Select Save  
+ - Can see automatic builds every 1 min  
+ - You can manually trigger build as well if you want.
+</code></pre>
+</li>
+<li>
+<p>What do you mean by Upstream and Downstream projects? </p>
+<pre><code>We can also call them as linked projects. These are the ways through which, we connect jobs one with other. 
+In Upstream jobs, first job will trigger second job after build is over. In Downstream jobs, second job
+will wait till first job finishes its build. As and when first job finishes its work, then second job will
+be triggered automatically. In Upstream, first job will be active. In Downstream jobs, second job will be 
+active. We can use any one type to link multiple jobs.
+</code></pre>
+</li>
+<li>
+<p>What is view in Jenkins?</p>
+<pre><code>We can customize view as per our needs. We can modify Jenkins home page. We can segregate jobs as per the 
+type of jobs like free style jobs and maven jobs and so on. To create custom view:
+
+    - Select List of Related Projects  
+    - Select Default views  
+    - Click on All  
+    - Click on + and select Freestyle
+    - Select List Views  
+    - Select Job filter  
+    - Select required jobs to be segregated  
+    - Now, you can see different view
+</code></pre>
+</li>
+<li>
+<p>What is User Administration in Jenkins? </p>
+<pre><code>In Jenkins, we can create users, groups and can assign limited privileges to them so that, we can have
+better control on Jenkins. Users will not install Jenkins in their machines. They access Jenkins as a user.
+Here we can’t assign permissions directly to users. Instead we create “Roles” and assign permissions to 
+those roles. These roles we attach to users so that users get the permissions whatever we assign to those
+roles.
+</code></pre>
+</li>
+<li>
+<p>What is Global tool configuration in Jenkins?</p>
+<pre><code>We install Java, Maven, Git and many other tools in our server. Whenever Jenkins need those tools, by 
+default Jenkins will install them automatically every time. But it’s not a good practice. That’s why we 
+give installed path of all these tools in Jenkins so that whenever Jenkins need them, automatically Jenkins
+pull them form local machine instead of downloading every time. This way of giving path of these tools in
+Jenkins we call “Global tool configuration”
+</code></pre>
+</li>
+<li>
+<p>What is Build?</p>
+<pre><code>Build means, Compile the source code, assembling of all class files and finally creating deliverable
+
+Compile:– Convert Source code into machine-readable format 
+Assembly (Linking):– Grouping all class files 
+Deliverable:– .war, .jar
+
+The above process is same for any type of code. This process we call Build.
+</code></pre>
+</li>
+<li>
+<p>What is Maven?</p>
+<pre><code>Maven is one of the Build tools. It is the most advance build tool in the market. In this, everything is
+already pre-configured. Maven belongs to Apache Company. We use maven to build Java code only. We can’t
+build other codes by using Maven. By default, we get so many plugins with Maven. You can write your own
+plugins as well. Maven’s local repository is “.M2” where we can get required compilers and dependencies.
+Maven’s main configuration file is “pom.xml” where we keep all instructions to build.
+</code></pre>
+</li>
+<li>
+<p>Advantages of Maven?  </p>
+<pre><code>- Automated tasks (Mention all in pom.xml)   
+- Multiple Tasks at a time   
+- Quality product  
+- Minimize bad builds
+- Keep history
+- Save time – Save money   
+- Gives set of standards
+- Gives define project life cycle (Goals)   
+- Manage all dependencies   
+- Uniformity in all projects   
+- Re-usability
+</code></pre>
+</li>
+<li>
+<p>List of Build tools available in Market?   </p>
+<pre><code>- C and C++: Make file   
+- .Net: Visual studio   
+- Java: Ant, Maven
+</code></pre>
+</li>
+<li>
+<p>What is the architecture of Maven? </p>
+<pre><code>Maven main configuration file is pom.xml. For one project, there will be one workspace and one pom.xml.
+Requirements for build:–
+
+  - Source code (Will be pulled from Git hub)
+  - Compiler (Pulls from remote repo and then put them in local repo, from there, maven pulls into 
+    Workspace)
+  - Dependencies (Pulls from remote repo and then put them in local repo, from there, maven pulls into
+    Workspace)
+</code></pre>
+</li>
+<li>
+<p>What is Maven’s Build Life Cycle?</p>
+<pre><code>In maven, we have different goals. These are:
+
+   - Generate resources (Dependencies)
+   - Compile code
+   - Unit test
+   - Package (Build)
+   - Install (in to local repo &amp; artifactory)
+   - Deploy (to servers)
+   - Clean (delete all run time files)
+</code></pre>
+</li>
+<li>
+<p>What does POM.XML contains? </p>
+<pre><code>POM.XML is maven’s main configuration file where we keep all details related to project. It contains:
+
+  - Metadata about that project
+  - Dependencies required to build the project
+  - The kind of project
+  - Kind of output you want (.jar, .war)
+  - Description about that project
+</code></pre>
+</li>
+<li>
+<p>What is Multi-Module Project in Maven?</p>
+<pre><code>- Dividing big project into small modules, we call Multi Module Project. 
+- Each module must have its own SRC folder &amp; pom.xml so that build will happen separately.
+- To build all modules with one command, there should be a parent pom.xml file. This calls all child
+  pom.xml files automatically.
+- In parent pom.xml file, need to mention the child pom.xml files in an order.
+</code></pre>
+</li>
+<li>
+<p>What is Nagios? </p>
+<pre><code>Nagios is one of the monitoring tools. By using Nagios we can monitor and give alerts. Where ever you
+install Nagios that becomes Nagios server. Monitoring is important, because we need to make sure that
+our servers should never go down. If at all in some exceptional cases server goes down, immediately we
+need alert in the form of intimation so that we can take required action to bring the server up immediately.
+So for this purpose, we use Nagios.
+</code></pre>
+</li>
+<li>
+<p>Why do we have to use Nagios?</p>
+<pre><code>There are many advantages in using Nagios:
+
+  - It is oldest &amp; Latest (every now and then, it is getting upgraded as per current market requirements)
+  - Stable (we have been using this since so many years and it is performing well)
+  - By default, we get so many Plug-ins
+  - It is having its own Database.
+  - Nagios is both Monitoring &amp; Alerting tool.
+</code></pre>
+</li>
+<li>
+<p>How does Nagios works?</p>
+<pre><code>- We mention all details in configuration files what data to be collected from which machine.
+- Nagios daemon reads those details about what data to be collected.
+- Daemon use NRPE (Nagios Remote Plug-in Executer) plug-in to collect data form nodes and stores in its
+  own database.
+- Finally displays in Nagios dashboard.
+</code></pre>
+</li>
+<li>
+<p>What is the Directory structure of Nagios? </p>
+<pre><code> /usr/local/nagios/bin – binary files 
+ /usr/local/nagios/sbin – CGI files (to get web page)
+ /usr/local/nagios/libexec – plugins
+ /usr/local/nagios/share – PHP Files
+ /usr/local/nagios/etc – configuration files
+ /usr/local/nagios/var – logs
+ /usr/local/nagios/var/status.dat(file) – database
+</code></pre>
+</li>
+<li>
+<p>What are the Important Configuration files in Nagios?</p>
+<pre><code>Nagios main configuration file is /usr/local/nagios/etc/nagios.cfg
+
+/usr/local/nagios/etc/objects/localhost.cfg (where we keep hosts information)
+/usr/local/nagios/etc/objects/contacts.cfg (whom to be informed (emails))
+/usr/local/nagios/etc/objects/timeperiods.cfg (at what time to monitor)
+/usr/local/nagios/etc/objects/commands.cfg (plugins to use)
+/usr/local/nagios/etc/objects/templates.cfg (sample templates)
+</code></pre>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
