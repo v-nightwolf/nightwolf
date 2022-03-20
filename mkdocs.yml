@@ -30,6 +30,7 @@ nav:
             - DevOps Interview Questions for Freshers and Experianced - 2 : 'nightwolf-cotribution/devops_interview_questions-2.md'
             - GIT Interview Questions: 'nightwolf-cotribution/git.md'
             - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'
+            - Docker Interview Questions: 'nightwolf-cotribution/docker_interview_questions.md'
         - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - AWS Interview Questions: 'nightwolf-cotribution/aws.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
