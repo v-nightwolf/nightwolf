@@ -28,23 +28,23 @@
 
 * [Linux Interview Questions for Freshers-2](nightwolf-cotribution/linux_interview_questions_for_freshers.md)
 
-* [Linux Interview Questions for Freshers and Experianced - L1](nightwolf-cotribution/linux_L1.md)
+* [Linux Interview Questions for Freshers and Experienced - L1](nightwolf-cotribution/linux_L1.md)
 
-* [Linux Interview Questions for Experianced Linux Admins - L2](nightwolf-cotribution/linux_L2.md)
+* [Linux Interview Questions for Experienced Linux Admins - L2](nightwolf-cotribution/linux_L2.md)
 
-* [Advanced Linux Interview Questions for Experianced Admins - L3](nightwolf-cotribution/linux_L3.md)
+* [Advanced Linux Interview Questions for Experienced Admins - L3](nightwolf-cotribution/linux_L3.md)
 
 * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 
-* [AWS interview questions for experianced professionals](nightwolf-cotribution/aws.md)
+* [AWS interview questions for experienced professionals](nightwolf-cotribution/aws.md)
 
-* [DevOps Interview Questions for Freshers and Experianced](nightwolf-cotribution/devops_interview_questions.md)
+* [DevOps Interview Questions for Freshers and Experienced](nightwolf-cotribution/devops_interview_questions.md)
 
-* [DevOps Interview Questions for Freshers and Experianced-2](nightwolf-cotribution/devops_interview_questions-2.md)
+* [DevOps Interview Questions for Freshers and Experienced-2](nightwolf-cotribution/devops_interview_questions-2.md)
 
 * [GIT Interview Questions for DevOps Roles](nightwolf-cotribution/git.md)
 
-* [Jenkins Interview Questions for Experianced DevOps Engineer](nightwolf-cotribution/jenkins.md)
+* [Jenkins Interview Questions for Experienced DevOps Engineer](nightwolf-cotribution/jenkins.md)
 
 * [Docker Interview Questions for DevOps Roles](nightwolf-cotribution/docker_interview_questions.md)
 

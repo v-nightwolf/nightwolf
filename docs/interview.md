@@ -12,9 +12,9 @@
 <br>
 ### [AWS Interview Questions](nightwolf-cotribution/aws.md)
 <br>
-### [DevOps Interview Questions for Freshers and Experianced](nightwolf-cotribution/devops_interview_questions.md)
+### [DevOps Interview Questions for Freshers and Experienced](nightwolf-cotribution/devops_interview_questions.md)
 <br>
-### [DevOps Interview Questions for Freshers and Experianced-2](nightwolf-cotribution/devops_interview_questions-2.md)
+### [DevOps Interview Questions for Freshers and Experienced-2](nightwolf-cotribution/devops_interview_questions-2.md)
 <br>
 ### [GIT Interview Questions](nightwolf-cotribution/git.md)
 <br>

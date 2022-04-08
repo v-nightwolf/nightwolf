@@ -22,12 +22,12 @@ nav:
         - Linux Interview Questions:
            - 'Linux Interview Questions for Freshers': 'nightwolf-cotribution/linux_basic.md'
            - 'Linux Interview Questions for Freshers - 2': 'nightwolf-cotribution/linux_interview_questions_for_freshers.md'
-           - 'Linux Interview Questions for Freshers and Experianced - L1': 'nightwolf-cotribution/linux_L1.md'
-           - 'Linux Interview Questions for Experianced Linux Admins - L2': 'nightwolf-cotribution/linux_L2.md'
-           - 'Advanced Linux Interview Questions for Experianced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
+           - 'Linux Interview Questions for Freshers and Experienced - L1': 'nightwolf-cotribution/linux_L1.md'
+           - 'Linux Interview Questions for Experienced Linux Admins - L2': 'nightwolf-cotribution/linux_L2.md'
+           - 'Advanced Linux Interview Questions for Experienced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
         - DevOps Interview Questions:
-            - DevOps Interview Questions for Freshers and Experianced: 'nightwolf-cotribution/devops_interview_questions.md'
-            - DevOps Interview Questions for Freshers and Experianced - 2 : 'nightwolf-cotribution/devops_interview_questions-2.md'
+            - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
+            - DevOps Interview Questions for Freshers and Experienced - 2 : 'nightwolf-cotribution/devops_interview_questions-2.md'
             - GIT Interview Questions: 'nightwolf-cotribution/git.md'
             - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'
             - Docker Interview Questions: 'nightwolf-cotribution/docker_interview_questions.md'
