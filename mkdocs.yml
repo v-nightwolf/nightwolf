@@ -25,6 +25,7 @@ nav:
            - 'Linux Interview Questions for Freshers and Experienced - L1': 'nightwolf-cotribution/linux_L1.md'
            - 'Linux Interview Questions for Experienced Linux Admins - L2': 'nightwolf-cotribution/linux_L2.md'
            - 'Advanced Linux Interview Questions for Experienced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
+           - 'Solved list of Linux interview Questions': 'nightwolf-cotribution/linux_questionairs.md'
         - DevOps Interview Questions:
             - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
             - DevOps Interview Questions for Freshers and Experienced - 2 : 'nightwolf-cotribution/devops_interview_questions-2.md'
@@ -40,7 +41,7 @@ nav:
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
     - Technical:
          - Linux: linux.md
-         - Network: nightwolf-cotribution/network
+         - Network: network.md
          - Database: db/
     - Discussions: https://talks.nightwolf.in
 

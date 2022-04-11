@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://www.nightwolf.in/mysql/">
+        <link rel="canonical" href="https://www.nightwolf.in/network/">
         <link rel="shortcut icon" href="../img/favi.png">
         
-        <title>Mysql - nightWolf</title>
+        <title>Network - nightWolf</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -139,7 +139,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -148,7 +148,7 @@
 </li>
                                     
 <li>
-    <a href="../network/" class="dropdown-item">Network</a>
+    <a href="./" class="dropdown-item active">Network</a>
 </li>
                                     
 <li>
@@ -167,6 +167,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../linux/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -184,66 +194,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#mysql-tuner" class="nav-link">MySql Tuner</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="mysql-tuner">MySql Tuner<a class="headerlink" href="#mysql-tuner" title="Permanent link"></a></h2>
-<p>Below script can help you in tunning your MYSQL database for best performance. Please note that do not blindly trust what this script says. Always think before you impliment the recommendations.  </p>
-<pre><code>wget https://raw.github.com/major/MySQLTuner-perl/master/mysqltuner.pl; chmod +x mysqltuner.pl; ./mysqltuner.pl
-</code></pre>
-<p>The output of this script will look like:</p>
-<pre><code>[root@linux~]# ./mysqltuner.pl
-
- &gt;&gt;  MySQLTuner 1.4.0 - Major Hayden &lt;major@mhtx.net&gt;
- &gt;&gt;  Bug reports, feature requests, and downloads at http://mysqltuner.com/
- &gt;&gt;  Run with '--help' for additional options and output filtering
-[OK] Currently running supported MySQL version 5.1.73
-[OK] Operating on 64-bit architecture
-
--------- Storage Engine Statistics -------------------------------------------
-[--] Status: +CSV +InnoDB +MRG_MYISAM
-[!!] InnoDB is enabled but isn't being used
-[OK] Total fragmented tables: 0
-
--------- Security Recommendations  -------------------------------------------
-[!!] User '@bash-test' has no password set.
-[!!] User '@localhost' has no password set.
-
--------- Performance Metrics -------------------------------------------------
-[--] Up for: 44m 11s (13 q [0.005 qps], 7 conn, TX: 16K, RX: 662)
-[--] Reads / Writes: 100% / 0%
-[--] Total buffers: 34.0M global + 2.7M per thread (1000 max threads)
-[!!] Maximum possible memory usage: 2.7G (280% of installed RAM)
-[OK] Slow queries: 0% (0/13)
-[OK] Highest usage of available connections: 0% (1/1000)
-[OK] Key buffer size / total MyISAM indexes: 8.0M/90.0K
-[!!] Query cache is disabled
-[OK] Temporary tables created on disk: 0% (0 on disk / 3 total)
-[!!] Thread cache is disabled
-[OK] Table cache hit rate: 53% (8 open / 15 opened)
-[OK] Open file limit used: 0% (16/5K)
-[OK] Table locks acquired immediately: 100% (18 immediate / 18 locks)
-
--------- Recommendations -----------------------------------------------------
-General recommendations:
-    Add skip-innodb to MySQL configuration to disable InnoDB
-    MySQL started within last 24 hours - recommendations may be inaccurate
-    Reduce your overall MySQL memory footprint for system stability
-    Enable the slow query log to troubleshoot bad queries
-    Set thread_cache_size to 4 as a starting value
-Variables to adjust:
-  *** MySQL's maximum memory usage is dangerously high ***
-  *** Add RAM before increasing MySQL buffer variables ***
-    query_cache_size (&gt;= 8M)
-    thread_cache_size (start at 4)
-</code></pre></div>
+<p>This is a dummy file for now which will act as placeholder for later.</p></div>
             </div>
         </div>
 
