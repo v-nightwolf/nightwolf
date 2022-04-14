@@ -28,10 +28,11 @@ nav:
            - 'Solved list of Linux interview Questions': 'nightwolf-cotribution/linux_questionairs.md'
         - DevOps Interview Questions:
             - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
-            - DevOps Interview Questions for Freshers and Experienced - 2 : 'nightwolf-cotribution/devops_interview_questions-2.md'
+            - DevOps Interview Questions for Freshers and Experienced-2: 'nightwolf-cotribution/devops_interview_questions-2.md'
             - GIT Interview Questions: 'nightwolf-cotribution/git.md'
             - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'
             - Docker Interview Questions: 'nightwolf-cotribution/docker_interview_questions.md'
+            - Terraform Interview Questions and Answers: 'nightwolf-cotribution/terraform_interview_question.md'
         - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - AWS Interview Questions: 'nightwolf-cotribution/aws.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'

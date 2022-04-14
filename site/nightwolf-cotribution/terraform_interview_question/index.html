@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Terraform Interview Questions and Answers - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+            
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Terraform Interview Questions and Answers</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://talks.nightwolf.in" class="nav-link">Discussions</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../docker_interview_questions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../network/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#top-250-questions-and-answers-for-terraform-associate-certification" class="nav-link">Top 250 Questions and Answers For Terraform Associate Certification</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="top-250-questions-and-answers-for-terraform-associate-certification">Top 250 Questions and Answers For Terraform Associate Certification<a class="headerlink" href="#top-250-questions-and-answers-for-terraform-associate-certification" title="Permanent link"></a></h1>
+<hr />
+<p>We have consolidated a list of frequently asked questions in Terraform AssociateCertification. Same list consists of frequently asked Terraform interview questions. This will help DevOps Engineers in their preparations for Interview.
+  You will find these questions very helpful in your DevOps interviews. Prepare well and All the very best.
+<br></p>
+<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
+<hr />
+<ol>
+<li>
+<p>What is Infrastructure as Code?</p>
+<pre><code>You write and execute the code to define, deploy, update, and destroy your infrastructure
+</code></pre>
+</li>
+<li>
+<p>What are the benefits of IaC?</p>
+<pre><code>a. Automation =&gt; We can bring up the servers with one script and scale up and down based on our load with
+   the same script.
+b. Reusability of the code =&gt;  We can reuse the same code
+c. Versioning =&gt; We can check it into version control and we get versioning. Now we can see an incremental
+   history of who changed what, how is our infrastructure actually defined at any given point of time, and
+   wehave this transparency of documentation. 
+   IaC makes changes idempotent, consistent, repeatable, and predictable.
+</code></pre>
+</li>
+<li>
+<p>How using IaC make it easy to provision infrastructure?</p>
+<pre><code>IaC makes it easy to provision and apply infrastructure configurations, saving time. It standardizes 
+workflows across different infrastructure providers (e.g., VMware, AWS, Azure, GCP, etc.) by using a common
+syntax across all of them.
+</code></pre>
+</li>
+<li>
+<p>What is Ideompodent in terms of IaC?</p>
+<pre><code>The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple
+times, the result remains the same.
+</code></pre>
+</li>
+<li>
+<p>What are Day 0 and Day 1 activities?</p>
+<pre><code>IaC can be applied throughout the lifecycle, both on the initial build, as well as throughout the life of 
+the infrastructure. Commonly, these are referred to as Day 0 and Day 1 activities.
+
+"Day 0" code provisions and configures your initial infrastructure.
+"Day 1" refers to OS and application configurations you apply after you have initially built your 
+infrastructure.
+</code></pre>
+</li>
+<li>
+<p>What are the use cases of Terraform?</p>
+<pre><code>Heroku App Setup
+Multi-Tier Applications
+Self-Service Clusters
+Software Demos
+Disposable Environments
+Software Defined Networking
+Resource Schedulers
+Multi-Cloud Deployment
+</code></pre>
+<p>Reference: <a href=https://www.terraform.io/intro/use-cases.html >https://www.terraform.io/intro/use-cases.html</a></p>
+</li>
+<li>
+<p>What are the advantages of Terraform?</p>
+<pre><code>Platform Agnostic
+State Management
+Operator Confidence
+</code></pre>
+<p>Reference: <a href=https://learn.hashicorp.com/terraform/getting-started/intro > https://learn.hashicorp.com/terraform/getting-started/intro </a></p>
+</li>
+<li>
+<p>Where do you describe all the components or your entire datacenter so thatTerraform provision those?</p>
+<pre><code>Configuration files ends with *.tf
+</code></pre>
+</li>
+<li>
+<p>How can Terraform build infrastructure so efficiently?</p>
+<pre><code>Terraform builds a graph of all your resources, and parallelizes the creation and modification of any
+non-dependent resources. Because of this, Terraform builds infrastructure as efficiently as possible, and
+operators get insight into dependencies in their infrastructure.
+</code></pre>
+</li>
+<li>
+<p>What is multi-cloud deployment?</p>
+<pre><code>Provisoning your infrastrcutire into multiple cloud providers to increase fault-tolerance of your 
+applications.
+</code></pre>
+</li>
+<li>
+<p>How multi-cloud deployment is useful?</p>
+<pre><code>By using only a single region or cloud provider, fault tolerance is limited by the availability of that 
+provider.
+Having a multi-cloud deployment allows for more graceful recovery of the loss of a region or entire provider.
+</code></pre>
+</li>
+<li>
+<p>What is cloud-agnostic in terms of provisioning tools?</p>
+<pre><code>cloud-agnostic and allows a single configuration to be used to manage multiple providers, and to even handle 
+cross-cloud dependencies.
+</code></pre>
+</li>
+<li>
+<p>Is Terraform cloud-agostic?</p>
+<pre><code>Yes
+</code></pre>
+</li>
+<li>
+<p>What is the use of terraform being cloud-agnostic?</p>
+<pre><code>It simplifies management and orchestration, helping operators build large-scale multi-cloud infrastructures.
+</code></pre>
+</li>
+<li>
+<p>What is the Terraform State?</p>
+<pre><code>Every time you run Terraform, it records information about what infrastructure it created in a Terraform
+state file
+By default, when you run Terraform in the folder /some/folder, Terraform creates the file 
+/some/folder/terraform.tfstate
+This file contains a custom JSON format that records a mapping from the Terraform resources in your 
+configuration files to the representation of those resources in the real world.
+</code></pre>
+</li>
+<li>
+<p>What is the purpose of the Terraform State?</p>
+<pre><code>Mapping to the Real World =&gt; Terraform requires some sort of database to map Terraform config to the real
+ world because you can not find the same functionality in every cloud provider. You need to have some kind 
+ of mechanism to be cloud-agnostic
+
+Metadata =&gt; Terraform must also track metadata such as resource dependencies, pointer to the provider 
+ configuration that was most recently used with the resource in situations where multiple aliased providers 
+ are present.
+
+Performance =&gt; When running a terraform plan, Terraform must know the current state of resources in order 
+ to effectively determine the changes that it needs to make to reach your desired configuration.
+ For larger infrastructures, querying every resource is too slow. Many cloud providers do not provide APIs
+ to query multiple resources at once, and the round trip time for each resource is hundreds of milliseconds.
+ So, Terraform stores a cache of the attribute values for all resources in the state. This is the most 
+ optional feature of Terraform state and is done only as a performance improvement.
+
+Syncing =&gt; When two people works on the same file and doing some changes to the infrastructure. Its very 
+  important for everyone to be working with the same state so that operations will be applied to the same
+  remote objects.
+</code></pre>
+<p>Reference: <a href=https://www.terraform.io/docs/state/purpose.html>https://www.terraform.io/docs/state/purpose.html</a></p>
+</li>
+<li>
+<p>What is the name of the terraform state file?</p>
+<pre><code>terraform.tfstate
+</code></pre>
+</li>
+<li>
+<p>How do you install terraform on different OS?</p>
+<pre><code>// Mac OS
+brew install terraform
+// Windows
+choco install terraform
+</code></pre>
+</li>
+<li>
+<p>How do you manually install terraform?</p>
+<pre><code>step 1: Download the zip fille
+step 2: mv ~/Downloads/terraform /usr/local/bin/terraform
+</code></pre>
+</li>
+<li>
+<p>Where do you put terraform configurations so that you can configure somebehaviors of Terraform itself?</p>
+<pre><code>The special terraform configuration block type is used to configure some behaviors of Terraform itself, 
+such as requiring a minimum Terraform version to apply your configuration.
+
+terraform
+ {
+   # ...
+ }
+</code></pre>
+</li>
+<li>
+<p>Only constants are allowed inside the terraform block. Is this correct?</p>
+<pre><code>Yes
+
+Within a terraform block, only constant values can be used; arguments may not refer to named objects such
+as resources, input variables, etc, and may not use any of the Terraform language built-in functions.
+</code></pre>
+</li>
+<li>
+<p>What are the Providers?</p>
+<pre><code>A provider is a plugin that Terraform uses to translate the API interactions with the service. A provider
+is responsible for understanding API interactions and exposing resources. Because Terraform can interact
+with any API, you can represent almost any infrastructure type as a resource in Terraform.
+</code></pre>
+<p>Reference: <a href=https://www.terraform.io/docs/configuration/providers.html> https://www.terraform.io/docs/configuration/providers.html</a></p>
+</li>
+<li>
+<p>How do you configure a Provider?</p>
+<pre><code>provider "google" {
+  project = "acme-app"
+  region = "us-central1"
+}
+
+The name given in the block header ("google" in this example) is the name of the provider to configure. 
+Terraform associates each resource type with a provider by taking the first word of the resource type name
+(separated by underscores), and so the "google" provider is assumed to be the provider for the resource 
+type name google_compute_instance.
+
+The body of the block (between { and } ) contains configuration arguments for the provider itself. Most 
+arguments in this section are specified by the provider itself; in this example both project and region
+are specific to the google provider.
+</code></pre>
+</li>
+<li>
+<p>What are the meta-arguments that are defined by Terraform itself and availablefor all provider blocks?</p>
+<pre><code>version: Constraining the allowed provider versions 
+alias: using the same provider with different configurations for different resources
+</code></pre>
+</li>
+<li>
+<p>What is Provider initialization and why do we need?</p>
+<pre><code>Each time a new provider is added to configuration -- either explicitly via a provider block or by adding
+a resource from that provider -- Terraform must initialize the provider before it can be used.
+
+Initialization downloads and installs the provider's plugin so that it can later be executed.
+</code></pre>
+</li>
+<li>
+<p>How do you initialize any Provider?</p>
+<pre><code>Provider initialization is one of the actions of terraform init. 
+Running this command will download and initialize any providers that are not already initialized.
+</code></pre>
+</li>
+<li>
+<p>When you run terraform init command, all the providers are installed in thecurrent working directory. Is this true?</p>
+<pre><code>Providers downloaded by terraform init are only installed for the current working directory; other working
+directories can have their own installed provider versions.
+
+Note that terraform init cannot automatically download providers that are not distributed by HashiCorp.
+</code></pre>
+</li>
+<li>
+<p>How do you constrain the provider version?</p>
+<pre><code>To constrain the provider version as suggested, add a required_providers block inside a terraform block:
+
+terraform {
+  required_providers {
+  aws = "~&gt; 1.0"
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>How do you upgrade to the latest acceptable version of the provider?</p>
+<pre><code>terraform init --upgrade
+It upgrade to the latest acceptable version of each provider. This command also upgrades to the latest
+versions of all Terraform modules.
+</code></pre>
+</li>
+<li>
+<p>How many ways you can configure provider versions?</p>
+<pre><code>1. With required_providers blocks under terraform block:
+
+  terraform {
+    required_providers {
+    aws = "~&gt; 1.0"
+    }
+  }
+
+2. Provider version constraints can also be specified using a version argument within a provider block:
+
+  provider {
+      version= "1.0"
+  }
+</code></pre>
+</li>
+<li>
+<p>How do you configure Multiple Provider Instances?</p>
+<pre><code>  alias
+
+  You can optionally define multiple configurations for the same provider, and select which one to use on
+  a per-resource or per-module basis.
+</code></pre>
+</li>
+<li>
+<p>Why do we need Multiple Provider instances?</p>
+<pre><code>Some of the example scenarios:
+
+  a. multiple regions for a cloud platform
+  b. targeting multiple Docker hosts
+  c. multiple Consul hosts, etc.
+</code></pre>
+</li>
+<li>
+<p>How do we define multiple Provider configurations?</p>
+<pre><code>To include multiple configurations for a given provider, include multiple provider blocks with the same 
+provider name, but set the alias meta-argument to an alias name to use for each additional configuration.
+
+# The default provider configuration
+  provider "aws" {
+    region = "us-east-1"
+  }
+
+# Additional provider configuration for west coast region
+  provider "aws" {
+    alias = "west"
+    region = "us-west-2"
+  }
+</code></pre>
+</li>
+<li>
+<p>How do you select alternate providers?</p>
+<pre><code>By default, resources use a default provider configuration inferred from the first word of the resource 
+type name. For example, a resource of type aws_instance uses the default (un-aliased) aws provider 
+configuration unless otherwise stated.
+
+resource "aws_instance" "foo" {
+  provider = aws.west
+
+  # ...
+}
+</code></pre>
+</li>
+<li>
+<p>What is the location of the user plugins directory?</p>
+<pre><code>Windows =&gt; %APPDATA%\terraform.d\plugins
+Unix based systems =&gt; ~/.terraform.d/plugins
+</code></pre>
+</li>
+<li>
+<p>Third-party plugins should be manually installed. Is that true?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>The command terraform init cannot install third-party plugins? True or false?</p>
+<pre><code>True
+
+Install third-party providers by placing their plugin executables in the user plugins directory. The user 
+plugins directory is in one of the following locations, depending on the host operating system.
+
+Once a plugin is installed, terraform init can initialize it normally. You must run this command from the
+directory where the configuration files are located.
+</code></pre>
+</li>
+<li>
+<p>What is the naming scheme for provider plugins?</p>
+<pre><code>"terraform-provider-&lt;NAME&gt;_vX.Y.Z"
+</code></pre>
+</li>
+<li>
+<p>What is the CLI configuration File?</p>
+<pre><code>The CLI configuration file configures per-user settings for CLI behaviors, which apply across all Terraform
+working directories.
+
+It is named either ".terraformrc" or "terraform.rc" .
+</code></pre>
+</li>
+<li>
+<p>Where is the location of the CLI configuration File?</p>
+<pre><code>On Windows, the file must be named named "terraform.rc" and placed in the relevant user's
+%APPDATA% directory.
+
+On all other systems, the file must be named ".terraformrc" (note the leading period) and placed directly
+in the home directory of the relevant user.
+
+The location of the Terraform CLI configuration file can also be specified using the TF_CLI_CONFIG_FILE
+environment variable.
+</code></pre>
+</li>
+<li>
+<p>What is Provider Plugin Cache?</p>
+<pre><code>By default, terraform init downloads plugins into a subdirectory of the working directory so that each 
+working directory is self-contained. As a consequence, if you have multiple configurations that use the 
+same provider then a separate copy of its plugin will be downloaded for each configuration.
+
+Given that provider plugins can be quite large (on the order of hundreds of megabytes), this default 
+behavior can be inconvenient for those with slow or metered Internet connections.
+
+Therefore Terraform optionally allows the use of a local directory as a shared plugin cache, which then
+allows each distinct plugin binary to be downloaded only once.
+</code></pre>
+</li>
+<li>
+<p>How do you enable Provider Plugin Cache?</p>
+<pre><code>To enable the plugin cache, use the plugin_cache_dir setting in the CLI configuration file.
+
+plugin_cache_dir = "$HOME/.terraform.d/plugin-cache"
+
+Alternatively, the TF_PLUGIN_CACHE_DIR environment variable can be used to enable caching or to override
+an existing cache directory within a particular shell session.
+</code></pre>
+</li>
+<li>
+<p>When you are using plugin cache you end up growing cache directory withdifferent versions. Whose responsibility
+    to clean it?</p>
+<pre><code>User
+
+Terraform will never itself delete a plugin from the plugin cache once it has been placed there. Over time, 
+as plugins are upgraded, the cache directory may grow to contain several unused versions which must be 
+manually deleted.
+</code></pre>
+</li>
+<li>
+<p>Why do we need to initialize the directory?</p>
+<pre><code>When you create a new configuration - or check out an existing configuration from version control - you
+need to initialize the directory.
+
+// Example
+  provider "aws" {
+    profile = "default"
+    region = "us-east-1"
+  }
+
+  resource "aws_instance" "example" {
+    ami = "ami-2757f631"
+    instance_type = "t2.micro"
+  }
+
+Initializing a configuration directory downloads and installs providers used in the configuration, which in
+this case is the aws provider. Subsequent commands will use local settings and data during initialization.
+</code></pre>
+</li>
+<li>
+<p>What is the command to initialize the directory?</p>
+<pre><code>terraform init
+</code></pre>
+</li>
+<li>
+<p>If different teams are working on the same configuration. How do you make filesto have consistent formatting?</p>
+<pre><code>terraform fmt
+
+This command automatically updates configurations in the current directory for easy readability and 
+consistency.
+</code></pre>
+</li>
+<li>
+<p>If different teams are working on the same configuration. How do you make filesto have syntactically valid and 
+    internally consistent?</p>
+<pre><code>terraform validate
+
+This command will check and report errors within modules, attribute names, and value types.
+
+Validate your configuration. If your configuration is valid, Terraform will return a success message.
+</code></pre>
+</li>
+<li>
+<p>What is the command to create infrastructure?</p>
+<pre><code>terraform apply
+</code></pre>
+</li>
+<li>
+<p>What is the command to show the execution plan and not apply?</p>
+<pre><code>terraform plan
+</code></pre>
+</li>
+<li>
+<p>How do you inspect the current state of the infrastructure applied?</p>
+<pre><code>terraform show
+
+When you applied your configuration, Terraform wrote data into a file called terraform.tfstate. This file
+now contains the IDs and properties of the resources Terraform created so that it can manage or destroy 
+those resources going forward.
+</code></pre>
+</li>
+<li>
+<p>If your state file is too big and you want to list the resources from your state.What is the command?</p>
+<pre><code>terraform state list
+</code></pre>
+</li>
+<li>
+<p>What is plug-in based architecture?</p>
+<pre><code>Defining additional features as plugins to your core platform or core application. 
+This provides extensibility, flexibility and isolation
+</code></pre>
+</li>
+<li>
+<p>What are Provisioners?</p>
+<pre><code>If you need to do some initial setup on your instances, then provisioners let you upload files, run shell 
+scripts, or install and trigger other software like configuration management tools, etc.
+</code></pre>
+</li>
+<li>
+<p>How do you define provisioners?</p>
+<pre><code>resource "aws_instance" "example" {
+  ami = "ami-b374d5a5"
+  instance_type = "t2.micro"
+
+  provisioner "local-exec" {
+    command = "echo hello &gt; hello.txt"
+  }
+}
+
+Provisioner block within the resource block. Multiple provisioner blocks can be added to define multiple 
+provisioning steps. Terraform supports multiple provisioners
+</code></pre>
+</li>
+<li>
+<p>What are the types of provisioners?</p>
+<pre><code>local-exec
+remote-exec
+</code></pre>
+</li>
+<li>
+<p>What is a local-exec provisioner and when do we use it?</p>
+<pre><code>The local-exec provisioner executing a command locally on your machine running Terraform.
+We use this when we need to do something on our local machine without needing any external URL.
+</code></pre>
+</li>
+<li>
+<p>What is a remote-exec provisioner and when do we use it?</p>
+<pre><code>Another useful provisioner is remote-exec which invokes a script on a remote resource after it is created.
+This can be used to run a configuration management tool, bootstrap into a cluster, etc.
+</code></pre>
+</li>
+<li>
+<p>Are provisioners runs only when the resource is created or destroyed?</p>
+<pre><code>Provisioners are only run when a resource is created or destroyed. Provisioners that are run while 
+destroying are Destroy provisioners.
+They are not a replacement for configuration management and changing the software of an already-running
+server, and are instead just meant as a way to bootstrap a server.
+</code></pre>
+</li>
+<li>
+<p>What do we need to use a remote-exec?</p>
+<pre><code>In order to use a remote-exec provisioner, you must choose an ssh or winrm connection in the form of a
+connection block within the provisioner.
+
+Here is an example
+
+  provider "aws" {
+    profile = "default"
+    region = "us-west-2"
+  }
+
+  resource "aws_key_pair" "example" {
+    key_name = "examplekey"
+    public_key = file("~/.ssh/terraform.pub")
+  }
+
+  resource "aws_instance" "example" {
+    key_name = aws_key_pair.example.key_name
+    ami = "ami-04590e7389a6e577c"
+    instance_type = "t2.micro"
+
+    connection {
+      type = "ssh"
+      user = "ec2-user"
+      private_key = file("~/.ssh/terraform")
+      host = self.public_ip
+      }
+
+    provisioner "remote-exec" {
+      inline = [
+        "sudo amazon-linux-extras enable nginx1.12",
+        "sudo yum -y install nginx",
+        "sudo systemctl start nginx"
+      ]
+    }
+  }
+</code></pre>
+</li>
+<li>
+<p>When terraform mark the resources are tainted?</p>
+<pre><code>If a resource successfully creates but fails during provisioning, Terraform will error and mark the 
+resource as "tainted".
+
+A resource that is tainted has been physically created, but can not be considered safe to use since 
+provisioning failed.
+</code></pre>
+</li>
+<li>
+<p>You applied the infrastructure with terraform apply and you have some taintedresources. You run an execution plan now what happens to those tainted resources?</p>
+<pre><code>When you generate your next execution plan, Terraform will not attempt to restart provisioning on the
+same resource because it is not guaranteed to be safe.
+
+Instead, Terraform will remove any tainted resources and create new resources, attempting to provision
+them again after creation.
+</code></pre>
+</li>
+<li>
+<p>Terraform also does not automatically roll back and destroy the resource duringthe apply when the failure happens. Why?</p>
+<pre><code>Terraform also does not automatically roll back and destroy the resource during the apply when the failure
+happens, because that would go against the execution plan: the execution plan would have said a resource
+will be created, but does not say it will ever be deleted. If you create an execution plan with a tainted
+resource, however, the plan will clearly state that the resource will be destroyed because it is tainted.
+</code></pre>
+</li>
+<li>
+<p>How do you manually taint a resource?</p>
+<pre><code>terraform taint resource.id
+</code></pre>
+</li>
+<li>
+<p>Does the taint command modify the infrastructure?</p>
+<pre><code>terraform taint resource.id
+
+This command will not modify infrastructure, but does modify the state file in order to mark a resource as
+tainted. Once a resource is marked as tainted, the next plan will show that the resource will be destroyed
+and recreated and the next apply will implement this change.
+</code></pre>
+</li>
+<li>
+<p>By default, provisioners that fail will also cause the Terraform apply itself to fail.Is this true?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>By default, provisioners that fail will also cause the Terraform apply itself to fail.How do you change this?</p>
+<pre><code>The 'on_failure' setting can be used to change this. The allowed values are:
+
+continue: Ignore the error and continue with creation or destruction.
+
+fial: Raise an error and stop applying (the default behavior). If this is a creation provisioner, taint 
+the resource.
+
+// Example
+  resource "aws_instance" "web" {
+    # ...
+
+    provisioner "local-exec" {
+      command = "echo The server's IP address is ${self.private_ip}"
+      on_failure = "continue"
+    }
+  }
+</code></pre>
+</li>
+<li>
+<p>How do you define destroy provisioner and give an example?</p>
+<pre><code>You can define destroy provisioner with the parameter when:
+
+provisioner "remote-exec" {
+  when = "destroy"
+  # &lt;...snip...&gt;
+}
+</code></pre>
+</li>
+<li>
+<p>How do you apply constraints for the provider versions?</p>
+<pre><code>The "required_providers" setting is a map specifying a version constraint for each provider required by
+your configuration.
+
+terraform {
+  required_providers {
+  aws = "&gt;= 2.7.0"
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>What should you use to set both a lower and upper bound on versions for eachprovider?</p>
+<pre><code>terraform {
+  required_providers {
+  aws = "~&gt; 2.7.0"
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>How do you try experimental features?</p>
+<pre><code>In releases where experimental features are available, you can enable them on a per-module basis by setting
+the experiments argument inside a terraform block:
+
+terraform {
+  experiments = [example]
+}
+</code></pre>
+</li>
+<li>
+<p>When does the terraform does not recommend using provisions?</p>
+<pre><code>Passing data into virtual machines and other compute resources
+Running configuration management software
+</code></pre>
+<p>References: </p>
+<p><a href=https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources>https://www.terraform.io/docs/provisioners/#passing-data-into-virtual-machines-and-other-compute-resources</a></p>
+<p><a href=https://www.terraform.io/docs/provisioners/#running-configuration-management-software>https://www.terraform.io/docs/provisioners/#running-configuration-management-software</a></p>
+</li>
+<li>
+<p>Expressions in provisioner blocks cannot refer to their parent resource by name.Is this true?</p>
+<pre><code>True
+
+The "self" object represents the provisioner's parent resource, and has all of that resource's attributes.
+
+For example, use "self.public_ip" to reference an aws_instance 'public_ip' attribute.
+</code></pre>
+</li>
+<li>
+<p>What does this symbol version = "~&gt; 1.0" mean when defining versions?</p>
+<pre><code>Any version more than 1.0 and less than 2.0.
+</code></pre>
+</li>
+<li>
+<p>Terraform supports both cloud and on-premises infrastructure platforms. Is this true?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>Terraform assumes an empty default configuration for any provider that is notexplicitly configured. A provider block can be empty. Is this true?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>How do you configure the required version of Terraform CLI can be used withyour configuration?</p>
+<pre><code>The required_version setting can be used to constrain which versions of the Terraform CLI can be used with
+your configuration. If the running version of Terraform does not match the constraints specified, Terraform
+will produce an error and exit without taking any further actions.
+</code></pre>
+</li>
+<li>
+<p>Terraform CLI versions and provider versions are independent of each other. Isthis true?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>You are configuring aws provider and it is always recommended to hard codeaws credentials in *.tf files. Is this true?</p>
+<pre><code>False
+
+nightwolf recommends that you never hard-code credentials into "*.tf" configuration files. We are explicitly
+defining the default AWS config profile here to illustrate how Terraform should access sensitive credentials.
+
+If you leave out your AWS credentials, Terraform will automatically search for saved API credentials 
+(for example, in ~/.aws/credentials ) or IAM instance profile credentials. This is cleaner when ".tf" files 
+are checked into source control or if there is more than one admin user
+</code></pre>
+</li>
+<li>
+<p>You are provisioning the infrastructure with the command terraform apply andyou noticed one of the resources failed. How do you remove that resource withoutaffecting the whole infrastructure?</p>
+<pre><code>You can taint the resource ans the next apply will destroy the resource
+
+terraform taint &lt;resource.id&gt;
+</code></pre>
+</li>
+</ol>
+<p><a href="../terraform_interview_question-2/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p>
+<p>You may also refer to:</p>
+<ul>
+<li><a href="../linux_basic/">Linux Interview Questions for Freshers</a></li>
+<li><a href="../linux_interview_questions_for_freshers/">Linux Interview Questions for Freshers-2</a></li>
+<li><a href="../linux_L1/">Linux Interview Questions for Freshers and Experienced - L1</a></li>
+<li><a href="../linux_L2/">Linux Interview Questions for Experienced Linux Admins - L2</a></li>
+<li><a href="../linux_L3/">Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
+<li><a href="../network/">OS Network Interview Questions</a></li>
+<li><a href="../aws/">AWS interview questions for experienced professionals</a></li>
+<li><a href="../devops_interview_questions/">DevOps Interview Questions for Freshers and Experienced</a></li>
+<li><a href="../devops_interview_questions-2/">DevOps Interview Questions for Freshers and Experienced-2</a></li>
+<li><a href="../git/">GIT Interview Questions for DevOps Roles</a></li>
+<li><a href="../jenkins/">Jenkins Interview Questions for Experienced DevOps Engineer</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
