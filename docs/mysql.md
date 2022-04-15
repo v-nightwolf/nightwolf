@@ -51,3 +51,15 @@ The output of this script will look like:
 	  *** Add RAM before increasing MySQL buffer variables ***
 	    query_cache_size (>= 8M)
 	    thread_cache_size (start at 4)
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{!footer.md!}
