@@ -27,6 +27,7 @@ nav:
            - 'Linux Interview Questions for Experienced Linux Admins - L2': 'nightwolf-cotribution/linux_L2.md'
            - 'Advanced Linux Interview Questions for Experienced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
            - 'Solved list of Linux interview Questions': 'nightwolf-cotribution/linux_questionairs.md'
+        - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - DevOps Interview Questions:
             - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
             - DevOps Interview Questions for Freshers and Experienced-2: 'nightwolf-cotribution/devops_interview_questions-2.md'
@@ -37,8 +38,11 @@ nav:
             - Terraform Interview Questions and Answers- 1st: 'nightwolf-cotribution/terraform_interview_question.md'
             - Terraform Interview Questions and Answers- 2nd: 'nightwolf-cotribution/terraform_interview_question-2.md'
             - Terraform Interview Questions and Answers- 3rd: 'nightwolf-cotribution/terraform_interview_question-3.md'
-        - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
-        - AWS Interview Questions: 'nightwolf-cotribution/aws.md'
+        - AWS Interview Questions: 
+            - AWS Certified SysOps Administrator Questions- 1st: 'nightwolf-cotribution/aws.md'
+            - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
+            - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
+            - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
     - Cheatsheets:
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
@@ -48,8 +52,8 @@ nav:
          - Linux: linux.md
          - Network: network.md
          - Database: db/
-    - Discussions: https://talks.nightwolf.in
-
+           #    - Discussions: https://talks.nightwolf.in
+    - Services: service.md
 
 extra:
   analytics:

@@ -39,7 +39,13 @@
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 
 * <h5> AWS </h5>
-      * [AWS interview questions for experienced professionals](nightwolf-cotribution/aws.md)
+      * [AWS Certified SysOps Administrator Questions - 1st](nightwolf-cotribution/aws.md)
+
+      * [AWS Certified SysOps Administrator Questions - 2nd](nightwolf-cotribution/aws-2.md)
+
+      * [AWS interview questions for experienced professionals - 1st](nightwolf-cotribution/aws-3.md)
+
+      * [AWS interview questions for experienced professionals - 2nd](nightwolf-cotribution/aws-4.md)
 
 * <h5> DevOps - [GIT, Terraform, Jenkins & Docker] </h5>
       * [DevOps Interview Questions for Freshers and Experienced](nightwolf-cotribution/devops_interview_questions.md)

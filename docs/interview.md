@@ -10,10 +10,13 @@
 ###[OS Network interview Questions and Answers](nightwolf-cotribution/network.md)
 <br>
 # AWS
-### [AWS Interview Questions and Answers](nightwolf-cotribution/aws.md)
+### [AWS Certified SysOps Administrator Questions and Answers - 1](nightwolf-cotribution/aws.md)
+### [AWS Certified SysOps Administrator Questions and Answers - 2](nightwolf-cotribution/aws-2.md)
+### [AWS Interview Questions and Answers - 1](nightwolf-cotribution/aws-3.md)
+### [AWS Interview Questions and Answers - 2](nightwolf-cotribution/aws-4.md)
 <br>
 # DevOps
-### [DevOps Interview Questions and Answers for Freshers and Experienced](nightwolf-cotribution/devops_interview_questions.md)
+### [DevOps Interview Questions and Answers for Freshers and Experienced-1](nightwolf-cotribution/devops_interview_questions.md)
 ### [DevOps Interview Questions and Answers for Freshers and Experienced-2](nightwolf-cotribution/devops_interview_questions-2.md)
 <br>
 # Terraform

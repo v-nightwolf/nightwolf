@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/aws-3/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>AWS Interview Questions- 1st - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../service.md" class="nav-link">Services</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../aws-2/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../aws-4/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#aws-interview-questions-answers" class="nav-link">AWS Interview Questions &amp; Answers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="aws-interview-questions-answers">AWS Interview Questions &amp; Answers<a class="headerlink" href="#aws-interview-questions-answers" title="Permanent link"></a></h1>
+<hr />
+<p>These are AWS interview questions for experienced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
+<br></p>
+<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
+<hr />
+<ol>
+<li>
+<p>List the components required to build Amazon VPC?</p>
+<pre><code>Subnet, Internet Gateway, NAT Gateway, HW VPN Connection, Virtual Private Gateway, Customer Gateway, Router,
+Peering Connection, VPC Endpoint for S3, Egressonly Internet Gateway.
+</code></pre>
+</li>
+<li>
+<p>How do you safeguard your EC2 instances running in a VPC?</p>
+<pre><code>Security Groups can be used to protect your EC2 instances in a VPC. We can configure both INBOUND and
+OUTBOUND traffic in a Security Group which enables secured access to your EC2 instances. Security Group
+automatically denies any unauthorized access to your EC2 instances.
+</code></pre>
+</li>
+<li>
+<p>In a VPC how many EC2 instances can you use?</p>
+<pre><code>Initially you are limited to launch 20 EC2 Instances at one time. Maximum VPC size is 65,536 instances.
+</code></pre>
+</li>
+<li>
+<p>Can you establish a peering connection to a VPC in a different REGION?</p>
+<pre><code>Not possible. Peering Connection are available only between VPC in the same region.
+</code></pre>
+</li>
+<li>
+<p>Can you connect your VPC with a VPC owned by another AWS account?</p>
+<pre><code>Yes, Possible. Provided the owner of other VPCs accepts your connection.
+</code></pre>
+</li>
+<li>
+<p>What are all the different connectivity options available for your VPC?</p>
+<pre><code>Internet Gateway, Virtual Private Gateway, NAT, EndPoints, Peering Connections.
+</code></pre>
+</li>
+<li>
+<p>Can a EC2 instance inside your VPC connect with the EC2 instance belonging to other VPCs?</p>
+<pre><code>Yes, Possible. Provided an Internet Gateway is configured in such a way that traffic bounded for EC2
+instances running in other VPCs.
+</code></pre>
+</li>
+<li>
+<p>How can you monitor network traffic in your VPC?</p>
+<pre><code>It is possible using Amazon VPC Flow-Logs feature.
+</code></pre>
+</li>
+<li>
+<p>Difference between Security Groups and ACLs in a VPC?</p>
+<pre><code>A Security Group defines which traffic is allowed TO or FROM EC2 instance. Whereas ACL, controls at the
+SUBNET level, scrutinize the traffic TO or FROM a Subnet.
+</code></pre>
+</li>
+<li>
+<p>Hon an EC2 instance in a VPC establish the connection with the internet?</p>
+<pre><code>Using either a Public IP or an Elastic IP.
+</code></pre>
+</li>
+<li>
+<p>Different types of Cloud Computing as per services?</p>
+<pre><code>PAAS (Platform As A Service), IAAS (Infrastructure As A Service), SAAS (Software As A Service)
+</code></pre>
+</li>
+<li>
+<p>What is Auto Scaling?</p>
+<pre><code>Automatically adding duplicate instances to application farm during heavy business hours. Scale-IN and
+Scale-OUT are two different types of Scaling.
+
+Scale-IN: Reducing the instances.
+Scale-OUT: Increasing the instances by duplicating.
+</code></pre>
+</li>
+<li>
+<p>What is AMI?</p>
+<pre><code>AMI is defined as Amazon Machine Image. Basically it’s a template comprising software configuration part.
+For example, Operating System, DB Server, Application Server, etc.
+</code></pre>
+</li>
+<li>
+<p>Difference between Stopping and Terminating the Instances?</p>
+<pre><code>When you STOP an instance it is a normal shutdown. The corresponding EBS volume attached to that instance
+remains attached and you can restart the instance later. When you TERMINATE an instance it gets deleted and
+you cannot restart that instance again later. And any EBS volume attached with that instance also deleted.
+</code></pre>
+</li>
+<li>
+<p>When you launch a standby Relational Database Service instance will it be available in the same Available Zone?</p>
+<pre><code>Not advisable. Because the purpose of having standby RDS instance is to avoid an infrastructure failure.
+So you have to keep your standby RDS service in a different Availability Zone, which may have different
+infrastructure.
+</code></pre>
+</li>
+<li>
+<p>Difference between Amazon RDS, DynamoDB and Redshift?</p>
+<pre><code>RDS is meant for structured data only. DynamoDB is meant for unstructured data which is a NoSQL service.
+Redshift is a data warehouse product used for data analysis.
+</code></pre>
+</li>
+<li>
+<p>What are Lifecycle Hooks?</p>
+<pre><code>Lifecycle Hooks are used in Auto Scaling. Lifecycle hooks enable you to perform custom actions by pausing
+instances as an Auto Scaling group launches or terminates them. Each Auto Scaling group can have multiple
+lifecycle hooks.
+</code></pre>
+</li>
+<li>
+<p>What is S3?</p>
+<pre><code>S3 stands for Simple Storage Service, with a simple web service interface to store and retrieve any amount
+of data from anywhere on the web.
+</code></pre>
+</li>
+<li>
+<p>What is AWS Lambada?</p>
+<pre><code>Lambda is an event-driven platform. It is a compute service that runs code in response to events and
+automatically manages the compute resources required by that code.
+</code></pre>
+</li>
+<li>
+<p>In S3 how many buckets can be created?</p>
+<pre><code>By default 100 buckets can be created in a region.
+</code></pre>
+</li>
+<li>
+<p>What is CloudFront?</p>
+<pre><code>Amazon CloudFront is a content delivery network operated by Amazon Web Services. It is a service that speeds
+up transfer of your static and dynamic web content such as HTML files, IMAGE files., etc., CloudFront
+delivers your particulars thru worldwide data centers named Edge Locations.
+</code></pre>
+</li>
+<li>
+<p>Brief about S3 service in AWS?</p>
+<pre><code>S3, a Simple Storage Service from Amazon. You can move your files TO and FROM S3. Its like a FTP storage.
+You can keep your SNAPSHOTS in S3. You can also ENCRYPT your sensitive data in S3.
+</code></pre>
+</li>
+<li>
+<p>Explain Regions and Available Zones in EC2?</p>
+<pre><code>Amazon has hosted EC2 in various locations around the world. These locations are called REGIONS. For example
+in Asia, Mumbai is one region and Singapore is another region. Each region is composed of isolated locations
+which are known as AVAILABLE ZONES. Region is independent. But the Available Zones are linked thru low-latency
+links.
+</code></pre>
+</li>
+<li>
+<p>What are the two types of Load Balancer?</p>
+<pre><code>Classic LB and Application LB. ALB is the Content Based Routing.
+</code></pre>
+</li>
+<li>
+<p>Can a AMI be shared?</p>
+<pre><code>Yes. A developer can create an AMI and share it with other developers for their use. A shared AMI is packed
+with the components you need and you can customize the same as per your needs. As you are not an owner of a
+shared AMI there is a risk always involved.
+</code></pre>
+</li>
+<li>
+<p>What is a Hypervisor?</p>
+<pre><code>A Hypervisor is a kind of software that enables Virtualization. It combines physical hardware resources into
+a platform which is delivered virtually to one or more users. XEN is the Hypervisor for EC2.
+</code></pre>
+</li>
+<li>
+<p>Key Pair and its uses?</p>
+<pre><code>You use Key Pair to login to your Instance in a secured way. You can create a key pair using EC2 console. When
+your instances are spread across regions you need to create key pair in each region.
+</code></pre>
+</li>
+<li>
+<p>What is the feature of ClassicLink?</p>
+<pre><code>ClassicLink allows instances in EC2 classic platform to communicate with instances in VPC using Private IP
+address. EC2 classic platform instances cannot not be linked to more than one VPC at a time.
+</code></pre>
+</li>
+<li>
+<p>Can you edit a Route Table in VPC?</p>
+<pre><code>Yes. You can always modify route rules to specify which subnets are routed to the Internet gateway, the virtual
+private gateway, or other instances.
+</code></pre>
+</li>
+<li>
+<p>How many Elastic IPs can you create?</p>
+<pre><code>5 VPC Elastic IP addresses per AWS account per region.
+</code></pre>
+</li>
+<li>
+<p>Can you ping the router or default gateway that connects your subnets?</p>
+<pre><code>NO, you cannot. It is not supported. However you can ping EC2 instances within a VPC, provided your
+firewall, Security Groups and network ACLs allows such traffic.
+</code></pre>
+</li>
+<li>
+<p>How will you monitor the network traffic in a VPC?</p>
+<pre><code>Using Amazon VPC Flow Logs feature.
+</code></pre>
+</li>
+<li>
+<p>Can you make a VPC available in multiple Available Zones?</p>
+<pre><code>Yes.
+</code></pre>
+</li>
+<li>
+<p>How do you ensure an EC2 instance is launched in a particular Available Zone?</p>
+<pre><code>After selecting your AMI Template and Instance Type, in the third step while configuring the instance
+you must select the SUBNET in which you wish to launch your instance. It will be launched in the AZ
+associated with that SUBNET.
+</code></pre>
+</li>
+<li>
+<p>For Internet Gateways do you find any Bandwidth constraints?</p>
+<pre><code>NO. Normally an IG is HORIZONTALLY SCALLED, Redundant and Highly Available. It is not having nay Bandwidth
+constraints usually.
+</code></pre>
+</li>
+<li>
+<p>What is the significance of a Default VPC?</p>
+<pre><code>When you launch your instances in a Default VPC in a Region, you would be getting the benefit of advanced
+Network Functionalities. You can also make use of Security Groups, multiple IP addresses, and multiple
+Network interfaces.
+</code></pre>
+</li>
+<li>
+<p>Can you make use of default EBS Snapshots?</p>
+<pre><code>You can use, provided if it is located in the same region where your VPC is presented.
+</code></pre>
+</li>
+<li>
+<p>What will happen when you delete a PEERING CONNECTION in your side?</p>
+<pre><code>The PEERING CONNECTION available in the other side would also get terminated. There will no more traffic
+flow.
+</code></pre>
+</li>
+<li>
+<p>Can you establish a Peering connection to a VPC in a different region?</p>
+<pre><code>NO. Its possible between VPCs in the same region.
+</code></pre>
+</li>
+<li>
+<p>Can you connect your VPC with a VPC created by another AWS account?</p>
+<pre><code>Yes. Only when that owner accepts your peering connection request.
+</code></pre>
+</li>
+<li>
+<p>When you delete your DB instance what will happen to your backups and DB snapshots?</p>
+<pre><code>When a DB instance is deleted, RDS retains the user-created DB snapshot along with all other manually
+created DB snapshots. Also automated backups are deleted and only manually created DB Snapshots are
+retained.
+</code></pre>
+</li>
+<li>
+<p>What is the significance of an Elastic IP?</p>
+<pre><code>The Public IP is associated with the instance until it is stopped or terminated Only. A Public IP is not
+static. Every time your instance is stopped or terminated the associated Public IP gets vanished and a
+new Public IP gets assigned with that instance. To over come this issue a public IP can be replaced by an
+Elastic IP address, which stays with the instance as long as the user doesn’t manually detach it.
+Similarly when if you are hosting multiple websites on your EC2 server, in that case you may require more
+than one Elastic IP address.
+</code></pre>
+</li>
+<li>
+<p>How will you use S3 with your EC2 instances?</p>
+<pre><code>Websites hosted on your EC2 instances can load their static contents directly from S3. It provides highly
+scalable, reliable, fast, inexpensive data storage infrastructure.
+</code></pre>
+</li>
+<li>
+<p>Is this possible to connect your company datacenter to Amazon Cloud?</p>
+<pre><code>Yes, you can very well do this by establishing a VPN connection between your company’s network and Amazon
+VPC.
+</code></pre>
+</li>
+<li>
+<p>Can you change the Private IP of an EC2 instance while it is running or stopped?</p>
+<pre><code>A Private IP is STATIC. And it is attached with an instance throughout is lifetime and cannot be changed.
+</code></pre>
+</li>
+<li>
+<p>What is the use of Subnets?</p>
+<pre><code>When a network has more number of HOSTS, managing these hosts can be tedious under a single large network.
+Therefore we divide this large network into easily manageable sub-networks (subnets) so that managing hosts
+under each subnet becomes easier.
+</code></pre>
+</li>
+<li>
+<p>What is the use of Route Table?</p>
+<pre><code>Route Table is used to route the network pockets. Generally one route table would be available in each
+subnet. Route table can have any no. of records or information, hence attaching multiple subnets to a
+route table is also possible.
+</code></pre>
+</li>
+<li>
+<p>Can you use the Standby DB instance for read and write along with your Primary DB instance?</p>
+<pre><code>Standby server cannot be used in parallel with primary server unless your Primary instance goes down.
+</code></pre>
+</li>
+<li>
+<p>What is the use of Connection Draining?</p>
+<pre><code>Connection Draining is a service under Elastic Load Balancing. It keeps monitoring the healthiness of the
+instances. If any instance fails Connection Draining pulls all the traffic from that particular failed
+instance and re-route the traffic to other healthy instances.
+</code></pre>
+</li>
+<li>
+<p>What is the role of AWS CloudTrail?</p>
+<pre><code>CloudTrail is designed for logging and tracking API calls. Also used to audit all S3 bucket accesses.
+</code></pre>
+</li>
+<li>
+<p>What is the use of Amazon Transfer Acceleration Service?</p>
+<pre><code>ATA service speeds up your data transfer with the use of optimized network paths. Also, speed up your
+CDN up to 300% compared to normal data transfer speed.
+</code></pre>
+</li>
+<li>
+<p>What is the name of AWS CEO or Chief ? Jeff Bezos or Lisa Su or Denise Morrison ?</p>
+<pre><code>Jeff Bezos
+</code></pre>
+</li>
+<li>
+<p>EC2 officially launch in …..   2002 or 2006 or  2008 ?</p>
+<pre><code>2006
+</code></pre>
+</li>
+<li>
+<p>S3 Launched officially lunched in …..
+2002 or 2006 or 2008 ?</p>
+<pre><code>2006
+</code></pre>
+</li>
+<li>
+<p>You cannot store unlimited data in Amazon Web Services. True or False ?</p>
+<pre><code>False
+</code></pre>
+</li>
+<li>
+<p>Rapid provisioning allows you to very quickly spin up a new virtual machine with minimal effort. True or false ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>A hybrid setup is one in which part of your resources are AWS and the rest are with another cloud provider. True or False ?</p>
+<pre><code>False
+</code></pre>
+</li>
+<li>
+<p>As an added layer of security for AWS management, which of the following should be you do ?</p>
+<ul>
+<li>Create multiple Admin accounts</li>
+<li>Generate a new security key each time you log in</li>
+<li>Create IAM users<pre><code>Ans:  Create IAM users
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Is AMI template ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>EC2 Instances are Virtual Server in AWS. True or False ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>What does “elastic” refer to in Elastic Compute Cloud(EC2)? Select all that apply.</p>
+<ol>
+<li>Increasing and decreasing capacity as needed</li>
+<li>Monitoring services on multiple devices</li>
+<li>Operating on Mac, Windows and Linux</li>
+<li>Paying only for running virtual machines</li>
+<li>Stretching applications across virtual machines<pre><code>Ans:
+    1. Increasing and decreasing capacity as needed  
+    AND
+    4. Paying only for running virtual machines
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>You can upload a custom configuration virtual image and sell it on the AWS Marketplace. True or false ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>EC2 Machine types define which of the following ?</p>
+<ol>
+<li>AWS Region</li>
+<li>Core Count</li>
+<li>User Location<pre><code>Ans: Core Count
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Which is default instance type ?</p>
+<ol>
+<li>On-demand</li>
+<li>RI</li>
+<li>Spot instance<pre><code>Ans: On-demand
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>What is Elastic Computing ?</p>
+<ol>
+<li>Data will be replicate to different AZs</li>
+<li>You can spin up and spin down VMs</li>
+<li>Automatically VMs will be add and remove<pre><code>Ans: You can spin up and spin down VMs
+
+In cloud computing, elasticity is defined as "the degree to which a system is able to adapt to workload
+changes by provisioning and de-provisioning resources in an autonomic manner, such that at each pointi
+in time the available resources match the current demand as closely as possible"
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Can We launch multiple instances with same AMI ? </p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>PEM file is one time physical password ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>Windows user required PPK file to connect Linux instance hosted on AWS. True or False ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>You can purchase time on EC2 directly from other users and specify the price you want to pay. True or false ?</p>
+<pre><code>True
+</code></pre>
+</li>
+<li>
+<p>Which of the following might prevent your EC2 instance from appearing in the list of instances?</p>
+<ol>
+<li>EC2 is not selected</li>
+<li>Correct region is not selected</li>
+<li>AWS marketplace is not selected<pre><code>Ans: Correct region is not selected
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Which of the following main reason to terminate an unused EC2 instance ?</p>
+<ol>
+<li>Security Concerns</li>
+<li>Additional fees</li>
+<li>Data Loss<pre><code>Ans: Additional fees
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Which AWS service exists only to redundantly cache data and images ?</p>
+<ol>
+<li>AWS Availability Zones</li>
+<li>AWS Edge Locations</li>
+<li>AWS Regions<pre><code>Ans: AWS Edge Locations
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>Regions, AZs and Edge Locations all terms are same… True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>AWS every service is available at every regions…. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>Premium support is Available in AWS for Developer, Business &amp; Enterprise level ? </p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Can you add new Debit/Credit card in your AWS Account ? </p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Can you increase micro to large of instance ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>On-demand instances is based on a bid mechanism. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>RI can be sold on the AWS marketplace?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>What are different options in instances ? Which instance is best on Production?</p>
+<pre><code>- On-demand
+- RI
+- Depends on Application or Website
+
+Ans: Depends on Application or Website
+</code></pre>
+</li>
+<li>
+<p>Which is most expensive options in instance ?</p>
+<pre><code>Ans: On-demand
+</code></pre>
+</li>
+<li>
+<p>Amazon S3 is internet accessible storage via HTTP /HTTPS. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Amazon S3 is not a object level of storage. True or False?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>Amazon S3 is storage for the Internet. True or False?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Temporary storage access speed is not guaranteed. True or False?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>There is 99.99% SLA(Service Level Agreement) for temporary storage. True or False?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>Ephemeral storage is block-level storage ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Single object size is up to 5 TB in Amazon S3. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>You can create unlimited bucket size in Amazon S3. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>By default, Instance-Backed and EBS-Backed root volumes delete all data. However, when using EBS-Backed storage, you can configure it to
+save the data on the root volume. True or false ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>You can switch from an Instance-Backed to an EBS-Backed root volume at any time. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>When using an EBS-Backed machine, you can override the terminate option and save the root volume. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Which of the following is a service of AWS Simple Storage Service(S3)? Select all that apply.</p>
+<ol>
+<li>Database Indexing</li>
+<li>File searching</li>
+<li>Secure Hosting</li>
+<li>Storage Scaling<pre><code>  Ans: 3. Secure Hosting &amp; 4. Storage Scaling
+</code></pre>
+</li>
+</ol>
+</li>
+<li>
+<p>What’s the difference between instance store and EBS?</p>
+<pre><code>Issue: 
+  I’m not sure whether to store the data associated with my Amazon EC2 instance in instance store or in an
+  attached Amazon Elastic Block Store (Amazon EBS) volume. Which option is best for me?
+
+Resolution: 
+  Some Amazon EC2 instance types come with a form of directly attached, block-device storage known as the
+  instance store. The instance store is ideal for temporary storage, because the data stored in instance
+  store volumes is not persistent through instance stops, terminations, or hardware failures. You can find
+  more detailed information about the instance store at Amazon EC2 Instance Store.
+  For data you want to retain longer-term, or if you need to encrypt the data, we recommend using EBS
+  volumes instead. EBS volumes preserve their data through instance stops and terminations, can be easily
+  backed up with EBS snapshots, can be removed from instances and reattached to another, and support
+  full-volume encryption. For more detailed information about EBS volumes, see Features of Amazon EBS.
+</code></pre>
+</li>
+<li>
+<p>BS can be attached to any running instance that is in the same Availability Zone ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>EBS is internet accessible. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>EBS has persistent file system for EC2. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>EBS supports incremental snapshots. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Amazon Glacier enables customers to offload the administrative burdens of operating and scaling storage to AWS. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Amazon Glacier is a great storage choice when low storage cost is paramount. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Data is rarely retrieved, and retrieval latency of several hours is acceptable in Glacier. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Glacier is basically for data archival. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>It is very cheap storage. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Glacier has very, very slow retrieval times. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>By Default, Instance-Backed and EBS-Backed root volumes delete all data. However, when using EBS-Backed storage, you can configure it
+to save the data on the root volume. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>You can switch from an Instance-Backed to an EBS-Backed root volume at any time. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>When using an EBS-Backed machine, you can override the terminate option and save the root volume. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC is Private, Isolated, Virtual Network. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC would be logically isolated network in AWS cloud. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC is also give control of network architecture. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC is also going to enhanced security. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC has ability to interwork with other organizations. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>VPC does not enable hybrid cloud(site-to-site VPN). True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>Route Table is a set of Rules tells the direction of network. True or False ?</p>
+<pre><code>Ans: True
+</code></pre>
+</li>
+<li>
+<p>Security Group is a subnet level of security. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>NACLs(Network Access Lists) is a resource level of security. True or False ?</p>
+<pre><code>Ans: False
+</code></pre>
+</li>
+<li>
+<p>Any default stack is available in Cloud Formation ?</p>
+<pre><code>Ans: You can not create default stack but you can choose the type of stack to create e.g : A sample stack
+
+A Linux-based chef 12 stack
+A Windows-based Chef 12.2 stack
+A Linux-based Chef 11.10 stack
+</code></pre>
+</li>
+<li>
+<p>What is the difference between Stack and Template in Cloud Formation ?</p>
+<pre><code>Ans: Stack : Cloud-based applications usually require a group of related resources— application servers,
+     database servers, and so on—that must be created and managed collectively. This collection of
+     instances is called a stack.
+</code></pre>
+</li>
+<li>
+<p>We can create multiple server for same stack ?</p>
+<pre><code>Ans: you can select one “instance type” e.g: t2.micro at a time but you can set more then one
+     “Webserver Capacity” which is “The initial number of Webserver instances“ means
+     automatically same kind of instances will launch.
+</code></pre>
+</li>
+<li>
+<p>Can you explain the term SQS is pull based, not pushed base.</p>
+<pre><code>Ans: It means that you have to actively poll the queue in order to receive a messages. The messages are
+     pushed into the queue by the producers but pulled out of the queue by the consumers.You have to call
+     the Receive Message action from the consumer in order to get the messages, they are not pushed to you
+     automatically when they arrive.
+</code></pre>
+</li>
+</ol>
+<hr />
+<p><a href="../aws-4/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p>
+<hr />
+<p><br></p>
+<p>You may also refer to below articles:</p>
+<ul>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/>Linux Interview Questions for Freshers - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L1/>Linux Interview Questions for Freshers and Experienced - L1</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L2/>Linux Interview Questions for Experienced Linux Admins - L2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-4/ >AWS interview questions for experienced professionals - 2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions/>DevOps Interview Questions for Freshers and Experienced</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/ >DevOps Interview Questions for Freshers and Experienced - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/git/>GIT Interview Questions for DevOps Roles</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/jenkins/>Jenkins Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/>Terraform Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-2/>Terraform Interview Questions for Experienced DevOps Engineer - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/>Terraform Interview Questions for Experienced DevOps Engineer - 3</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
