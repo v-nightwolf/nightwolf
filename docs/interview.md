@@ -36,6 +36,19 @@
 # Azure
 ### [Azure Interview Questions and Answers](nightwolf-cotribution/azure.pdf)
 <br>
+# Ansible 
+### [Ansible Interview Questions and Answers](nightwolf-cotribution/ansible_interview_questions.md)
+<br>
+# Kubernetes
+### [Kubernetes Interview Questions and Answers](nightwolf-cotribution/kubernetes_interview_questions.md)
+<br>
+# Shell-Scripting
+### [Shell-Scripting Interview Questions and Answers](nightwolf-cotribution/shell_scripting_interview_questions.md)
+
+<br>
+# Managerial
+### [Managerial Interview Questions and Answers](nightwolf-cotribution/managerial_interview_questions.md)
+
 <br>
 <br>
 

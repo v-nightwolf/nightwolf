@@ -27,6 +27,7 @@ nav:
            - 'Linux Interview Questions for Experienced Linux Admins - L2': 'nightwolf-cotribution/linux_L2.md'
            - 'Advanced Linux Interview Questions for Experienced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
            - 'Solved list of Linux interview Questions': 'nightwolf-cotribution/linux_questionairs.md'
+        - Shell-Scripting Interview Questions: 'nightwolf-cotribution/shell_scripting_interview_questions.md'
         - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - DevOps Interview Questions:
             - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
@@ -34,6 +35,8 @@ nav:
         - GIT Interview Questions: 'nightwolf-cotribution/git.md'
         - Jenkins Interview Questions: 'nightwolf-cotribution/jenkins.md'
         - Docker Interview Questions: 'nightwolf-cotribution/docker_interview_questions.md'
+        - Kubernetes Interview Questions: 'nightwolf-cotribution/kubernetes_interview_questions.md'
+        - Ansible Interview Questions: 'nightwolf-cotribution/ansible_interview_questions.md'
         - Terraform Interview Questions:  
             - Terraform Interview Questions and Answers- 1st: 'nightwolf-cotribution/terraform_interview_question.md'
             - Terraform Interview Questions and Answers- 2nd: 'nightwolf-cotribution/terraform_interview_question-2.md'
@@ -44,6 +47,7 @@ nav:
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
             - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
+        - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
     - Cheatsheets:
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md

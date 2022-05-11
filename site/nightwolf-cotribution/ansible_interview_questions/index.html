@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/linux_L2/">
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/ansible_interview_questions/">
         <link rel="shortcut icon" href="../../img/favi.png">
         
-        <title>Linux Interview Questions for Experienced Linux Admins - L2 - nightWolf</title>
+        <title>Ansible Interview Questions - nightWolf</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active">Linux Interview Questions for Experienced Linux Admins - L2</a>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
 </li>
             
 <li>
@@ -122,7 +122,7 @@
 </li>
                                     
 <li>
-    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+    <a href="./" class="dropdown-item active">Ansible Interview Questions</a>
 </li>
                                     
   <li class="dropdown-submenu">
@@ -220,12 +220,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../linux_L1/" class="nav-link">
+                                <a rel="prev" href="../kubernetes_interview_questions/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../linux_L3/" class="nav-link">
+                                <a rel="next" href="../terraform_interview_question/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -247,7 +247,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#linux-interview-questions-and-answers-for-experienced-linux-admins-solved" class="nav-link">Linux Interview Questions and Answers for Experienced Linux Admins - Solved</a>
+            <li class="nav-item" data-level="1"><a href="#ansible-interview-questions" class="nav-link">Ansible Interview Questions</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -256,206 +256,181 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="linux-interview-questions-and-answers-for-experienced-linux-admins-solved">Linux Interview Questions and Answers for Experienced Linux Admins - Solved<a class="headerlink" href="#linux-interview-questions-and-answers-for-experienced-linux-admins-solved" title="Permanent link"></a></h1>
+<h1 id="ansible-interview-questions">Ansible Interview Questions<a class="headerlink" href="#ansible-interview-questions" title="Permanent link"></a></h1>
 <p><br>
-  We have prepared a set of questions to help Freshers and Experienced Linux Admins in their preparations for Interview.
-  This list includes Google interview questions for Linux (Infrastructure specialist), Amazon interview questions for Linux (Cloud Support Engineer - II) and other reputed firms as well. <br />
-  Most of these are scenario based Linux interview questions for Experienced Linux Admins.
-  You will find these questions very helpful in your Linux Admins interviews. Prepare well and All the very best.
+  We have prepared a set of frequently asked  Ansible questions to help Freshers and Experienced Admins in their preparations for Interview.</p>
+<p>You will find these questions very helpful in your Linux/Ansible/DevOps Admins interviews. Prepare well and All the very best.
 <br></p>
 <p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
 <hr />
-<pre><code>    1. Please explain Linux booting processing?
-
-    2. Difference between RHEL6 and RHEL7 booting process.
-
-    3. Difference between systemd and initd.
-       Hint =&gt;
-            "Systemd" is an enhanced version of "init". "sysytemd" was launched with RHEL 7.x has capability
-            to start the services in parallel. Please refer to below table for more information.
+<ol>
+<li>
+<p>What is Ansible architecture ?</p>
+</li>
+<li>
+<p>How a normal yaml file is different from Ansible playbook ?</p>
+</li>
+<li>
+<p>What is Ansible playbook, define all terms in playbook ?</p>
+</li>
+<li>
+<p>What is handlers and notifiers ?</p>
+</li>
+<li>
+<p>What are resgisters ?</p>
+</li>
+<li>
+<p>What are various modules you have used in Ansible ?</p>
+</li>
+<li>
+<p>How to used when condition and loops in Ansible ?</p>
+</li>
+<li>
+<p>Write a playbook to start a service, stop a service and check the health check of service.</p>
+</li>
+<li>
+<p>What are Ansible adhoc commands ?</p>
+</li>
+<li>
+<p>What are roles and tell where you will keep the diffrenet files in diffrenet folders ?</p>
+</li>
+<li>
+<p>What is Ansible vault and how you store the secret files ?</p>
+</li>
+<li>
+<p>How the SSH connectivity takes place between two server in Ansible ?</p>
+</li>
+<li>
+<p>What is different between Puppet and Ansible ?</p>
+</li>
+<li>
+<p>How can I set the PATH or any other environment variable for a task or entire play ?</p>
+<pre><code>Setting environment variables can be done with the environment keyword. It can be used at the task or other
+levels in the play.
 </code></pre>
-<p><img alt="" src="../../img/systemdvsinit.jpeg" /> <img alt="" src="../../img/systemdvsinit-2.jpeg" /></p>
-<pre><code>    4. What are the inodes and how will you free up them?
-
-    5. How to check the loaded kernel modules.
-       Hint =&gt;
-           using "lsmod" command
-
-    6. How to load kernel module. any commands ?
-        Hint =&gt;
-                    We can use "modprobe" or "insmod" commands to load kernel module.
-
-    7. How to blacklist a module.
-
-
-    8. Explain the below error:
-
-            -------------------------------------------------------------------------------------------
-             No filesystem could mount root, tried:
-            [    4.471120] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)
-            -------------------------------------------------------------------------------------------
-
-    9. Explain few examples of kernel panic.
-        Hint =&gt;
-           A kernel panic is one of several Linux boot issues. In basic terms, it is a situation when the kernel
-           can't load properly and therefore the system fails to boot. During the boot process, the kernel does
-           not load directly. Instead, initramfs loads in RAM, then it points to the kernel (vmlinuz), and then
-           the operating system boots. If initramfs gets corrupted or deleted at this stage because of recent 
-           OS patching, updates, or other causes, then we face a kernel panic.
-
-           Causes of Kernel panics:
-             a). If the initramfs file gets corrupted.
-             b). If initramfs is not created properly for the specified kernel. Every kernel version has its own
-                 corresponding initramfs.
-             c). If the installed kernel is not supported or not installed correctly.
-             d). If recent patches have some flaws.
-             e). If a module has been installed from online or another source, but the initrd image is not 
-                 created with the latest installed module.
-
-    10. What is an oops in terms of Kernel?
-       Hint =&gt;
-           An oops indicates a kernel bug and should always be reported and fixed.
-           When an oops occurs, the system will print out information that is relevent to debugging the problem,
-           like the contents of all the CPU registers, and the location of page descriptor tables.
-           In particular, the contents of the EIP (instruction pointer) is printed. Like this:
-
-               EIP: 0010:[&lt;00000000&gt;]
-               Call Trace: [&lt;c010b860&gt;]
-
-           An oops is not a kernel panic. In a panic, the kernel cannot continue; the system grinds to a halt and
-           must be restarted. An oops may cause a panic if a vital part of the system is destroyed. An oops in a 
-           device driver, for example, will almost never cause a panic.
-
-     11. What is "nohup" used for?
-         Hint =&gt;
-             nohup is a POSIX command which means "no hang up". Its purpose is to execute a command such that it
-             ignores the HUP (hangup) signal and therefore does not stop when the user logs out. Output that 
-             would normally go to the terminal goes to a file called nohup.
-
-             ## nuhup Syntax:
-                    nohup command [command-argument ...]
-
-     12. How to troubleshoot a issue where a client not able to access a server?
-
-     13. What are outputs when you execute the NATCAT (nc) command  and explain each ?
-         Hint =&gt;
-            - Connected
-            - Connection timeout
-            - Connection refused(if port / server is blocking by the firewall)
-
-     14. How can we check the packet flow in our system?
-         Hint =&gt; 
-             We can use "tcpdump" command to check the incoming and outgoing packets.
-
-     15. what is the steal value in top command?
-
-     16. What is tcpwrappers?
-         Hint =&gt;
-            tcpwrappers is a host based Network Access Control List, by which we can allow or deny a host or
-            subnetwork IP addresses. Files used by tcpwrappr for access control are /etc/hosts.allow and 
-            /etc/hosts.deny.
-
-     17. Describe how 'ps' works.
-        Hint =&gt;
-           On Linux, the ps command works by reading files in the proc filesystem. The directory '/proc/PID'
-           contains various files that provide information about process PID. The content of these files is
-           generated on the fly by the kernel when a process reads them.
-           You can use 'strace' command to actually see how ps works.
-
-     18. Which Linux file types do you know?
-
-     19. What is "nohup" used for?
-
-     20. What is the difference between these two commands?  myvar=hello &amp; export myvar=hello
-
-
-     21. What happens to a child process that dies and has no parent process to wait for it and what’s bad
-         about this?
-
-     22. Explain briefly each one of the process states.
-
-     23. How to know which process listens on a specific port?
-
-     24. What is a zombie process and what could be the cause of it?
-
-     25. You run a bash script and you want to see its output on your terminal and save it to a file at the 
-         same time. How can you achieve it?
-         Hint =&gt; 
-            We can use "tee" command to do this. Below is the command expamle:
-
-            /sbin/ifconfig | tee FILE_NAME
-
-     26. Explain what echo "1" &gt; /proc/sys/net/ipv4/ip_forward does.
-
-     27. What is CPU load ? How to calculate the load average on the system?
-
-     28. What the Zombie and Orphan process? How to kill zombie process?
-
-     29. What could be the impacts on the system if there are many zombie process are available?
-
-     30. Explain the TOP, IOSTAT,VMSTAT,IOTOP commands.
-
-     31. You need to upgrade kernel at 100-1000 servers, how you would do this?
-
-     32. How can you tell if the httpd package was already installed?
-
-     33. How can you list the contents of a package?
-
-     34. How can you determine which package is better: openssh-server-5.3p1-118.1.el6_8.x86_64 or
-         openssh-server-6.6p1-1.el6.x86_64 ?
-
-
-
-     35. Describe briefly the steps you need to take in order to create and install a valid certificate for the
-         site https://www.nightwolf.in.
-
-     36. Can you have several HTTPS virtual hosts sharing the same IP?
-
-     37. What is a wildcard certificate?
-
-
-
-     38. Which Linux file types do you know?
-
-     39. How can you get Host, Channel, ID, LUN of SCSI disk?
-
-     40. Can you explain to me the difference between block based, and object based storage?
-
-     41. What is a tarpipe (or, how would you go about copying everything, including hardlinks and special files,
-         from one server to another)?
-
-
-
-     42. How many NTP servers would you configure in your local ntp.conf?
-
-     43. What does the column 'reach' mean in ntpq -p output?
-
-
-
-     44. What is bash quick substitution/caret replace(^x^y)?
-
-     45. Do you know of any alternative shells? If so, have you used any?
-
-
-     46. How can you limit process memory usage?
-
-
-     47. How do you troubleshoot memory performance issue. Please explain the details.
-
-     48. Which tools do you use to troubleshoot high Memory troubleshooting.
-
-     49. What are zombie process and how to kill/reclaim them.
-
-     50. What are D-State processes and what causes these.
-
-     51. If Disk is causing D-state processes, what you can check and can do to fix the issue.
-
-     52. How to troubleshoot the system performance if any Linux system is facing slowness?
-
-     53. How to troubleshoot high memory usageissue on Linux system.
+</li>
+<li>
+<p>How do I handle different machines needing different user accounts or ports to log in with ?</p>
+<pre><code>Setting inventory variables in the inventory file is the easiest way.
+
+For instance, suppose these hosts have different usernames and ports:
+
+[webservers]
+test.nightwolf.in  ansible_port=5000   ansible_user=nightwolf
+foo.nightwolf.in   ansible_port=5001   ansible_user=bar
 </code></pre>
-<hr />
-<p><a href="../linux_L3/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p>
+</li>
+<li>
+<p>How do I get ansible to reuse connections, enable Kerberized SSH, or have Ansible pay attention to my local SSH config file ?</p>
+<pre><code>Switch your default connection type in the configuration file to ssh, or use -c ssh to use Native OpenSSH
+for connections instead of the python paramiko library. In Ansible 1.2.1 and later, ssh will be used by
+default if OpenSSH is new enough to support ControlPersist as an option.
+
+Paramiko is great for starting out, but the OpenSSH type offers many advanced options. You will want to run
+Ansible from a machine new enough to support ControlPersist, if you are using this connection type. You can
+still manage older clients. If you are using RHEL 6, CentOS 6, SLES 10 or SLES 11 the version of OpenSSH is
+still a bit old, so consider managing from a Fedora or openSUSE client even though you are managing older
+nodes, or just use paramiko.
+</code></pre>
+</li>
+<li>
+<p>How do I get Ansible to notice a dead target in a timely manner ?</p>
+<pre><code>You can add -o ServerAliveInterval=NumberOfSeconds in ssh_args from ansible.cfg. Without this option, SSH
+and therefore Ansible will wait until the TCP connection times out. Another solution is to add
+ServerAliveInterval into your global SSH configuration. A good value for ServerAliveInterval is up to you
+to decide; keep in mind that ServerAliveCountMax=3 is the SSH default so any value you set will be tripled
+before terminating the SSH session.
+</code></pre>
+</li>
+<li>
+<p>How do I see a list of all of the ansible_ variables ?</p>
+<pre><code>Ansible by default gathers “facts” about the machines under management, and these facts can be accessed in
+playbooks and in templates. To see a list of all of the facts that are available about a machine, you can
+run the setup module as an ad hoc action:
+
+ansible -m setup hostname
+
+This will print out a dictionary of all of the facts that are available for that particular host. You might
+want to pipe the output to a pager.This does NOT include inventory variables or internal ‘magic’ variables.
+</code></pre>
+</li>
+<li>
+<p>How do I see all the inventory variables defined for my host? </p>
+<pre><code>By running the following command, you can see inventory variables for a host:
+
+ansible-inventory --list --yaml
+</code></pre>
+</li>
+<li>
+<p>How do I see all the variables specific to my host ?</p>
+<pre><code>To see all host specific variables, which might include facts and other sources:
+
+ansible -m debug -a "var=hostvars['hostname']" localhost
+
+Unless you are using a fact cache, you normally need to use a play that gathers facts first, for facts
+included in the task above.
+</code></pre>
+</li>
+<li>
+<p>How do I loop over a list of hosts in a group, inside of a template ?</p>
+</li>
+<li>
+<p>How do I access a variable name programmatically ?</p>
+<pre><code>An example may come up where we need to get the ipv4 address of an arbitrary interface, where the interface
+to be used may be supplied via a role parameter or other input. Variable names can be built by adding
+strings together using “~”, like so:
+
+  {{ hostvars[inventory_hostname]['ansible_' ~ which_interface]['ipv4']['address'] }}
+
+The trick about going through hostvars is necessary because it’s a dictionary of the entire namespace of
+variables. inventory_hostname is a magic variable that indicates the current host you are looping over in
+the host loop.
+
+In the example above, if your interface names have dashes, you must replace them with underscores:
+
+  {{ hostvars[inventory_hostname]['ansible_' ~ which_interface | replace('_', '-') ]['ipv4']['address'] }}
+</code></pre>
+</li>
+<li>
+<p>How do I access shell environment variables ? </p>
+<pre><code>On controller machine : Access existing variables from controller use the env lookup plugin. For example,
+to access the value of the HOME environment variable on the management machine:
+
+  ---
+  # ...
+    vars:
+       local_home: "{{ lookup('env','HOME') }}"
+
+On target machines : Environment variables are available via facts in the ansible_env variable:
+
+    {{ ansible_env.HOME }}
+</code></pre>
+</li>
+<li>
+<p>How do I generate encrypted passwords for the user module ?</p>
+<pre><code>Ansible ad hoc command is the easiest option:
+
+  ansible all -i localhost, -m debug -a "msg={{ 'mypassword' | password_hash('sha512', 'mysecretsalt') }}"
+
+The mkpasswd utility that is available on most Linux systems is also a great option:
+
+  mkpasswd --method=sha-512
+</code></pre>
+</li>
+<li>
+<p>How do I get the original ansible_host when I delegate a task ?</p>
+<pre><code>As the documentation states, connection variables are taken from the delegate_to host so ansible_host is
+overwritten, but you can still access the original via hostvars:
+
+  original_host: "{{ hostvars[inventory_hostname]['ansible_host'] }}"
+
+This works for all overridden connection variables, like ansible_user, ansible_port, and so on.
+</code></pre>
+</li>
+</ol>
+<p><br>
+<br>
+<br></p>
 <hr />
 <p><br>
 You may also refer to below articles:</p>

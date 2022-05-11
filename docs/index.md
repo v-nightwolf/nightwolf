@@ -35,6 +35,8 @@
 
       * [Advanced Linux Interview Questions for Experienced Admins - L3](nightwolf-cotribution/linux_L3.md)
 
+      * [Shell-Scripting Interview Questions and Answers](nightwolf-cotribution/shell_scripting_interview_questions.md)
+
 * <h5> OS Networking </h5>
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 
@@ -63,6 +65,15 @@
       * [Terraform Interview Questions for DevOps Roles - 2nd](nightwolf-cotribution/terraform_interview_question-2.md)
 
       * [Terraform Interview Questions for DevOps Roles - 3rd](nightwolf-cotribution/terraform_interview_question-3.md)
+
+      * [Ansible Interview Questions and Answers](nightwolf-cotribution/ansible_interview_questions.md)
+
+      * [Kubernetes Interview Questions and Answers](nightwolf-cotribution/kubernetes_interview_questions.md)
+
+* <h5> Managerial Interview </h5>
+
+      * [Managerial Interview Questions and Answers](nightwolf-cotribution/managerial_interview_questions.md)
+
 
 * [Interview materials](reference.md) 
 
