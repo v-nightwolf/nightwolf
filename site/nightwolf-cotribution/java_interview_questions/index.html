@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Java/OOPs Interview Questions - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../service.md" class="nav-link">Services</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ansible_interview_questions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../java_interview_questions-2/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#top-100-java-interview-questions-answers" class="nav-link">Top 100 Java Interview Questions &amp; Answers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="top-100-java-interview-questions-answers">Top 100 Java Interview Questions &amp; Answers<a class="headerlink" href="#top-100-java-interview-questions-answers" title="Permanent link"></a></h1>
+<hr />
+<p>We have prepared a set of frequently asked Core Java interview questions to help Freshers and Experienced Java developers in their preparations for Interview.</p>
+<p>You will find these questions very helpful in your Java/OOPs interviews. Prepare well and All the very best.
+<br></p>
+<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
+<hr />
+<ol>
+<li>
+<p>What is the difference between an Inner Class and a Sub-Class?</p>
+<pre><code>Ans: An Inner class isa class which is nested within another class. An Inner class has access rights for
+the class which is nesting it and it can access all variables and methods defined in the outer class.
+A sub-class is a class which inherits from another class called super class. Sub-class can access all
+public and protected methods and fields of its super class.
+</code></pre>
+</li>
+<li>
+<p>What are the various access specifiers for Java classes?</p>
+<pre><code>Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope.
+The types of access specifiers for classes are:
+  1. Public: Class, Method, Field is accessible from anywhere.
+  2. Protected:Method, Field can be accessed from the same class to which they belong or from the
+     sub-classes,and from the class of same package, but not from outside
+  3. Default: Method, Field,class can be accessed only from the same package and not from outside
+     of it's native package.
+  4. Private: Method, Field can be accessed from the same class to which they belong8.
+</code></pre>
+</li>
+<li>
+<p>What's the purpose of Static methods and static variables?</p>
+<pre><code>Ans: When there is a requirement to share a method or a variable between multiple objects of a class
+instead of creating separate copies for each object, we use static keyword to make a method or variable
+shared for all objects.
+</code></pre>
+</li>
+<li>
+<p>What is data encapsulation and what's its significance?</p>
+<pre><code>Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a
+single unit. Encapsulation helps programmers to follow a modular approach for software development as
+each object has its own set of methods and variables and serves its functions independent of other objects.
+Encapsulation also serves data hiding purpose.
+</code></pre>
+</li>
+<li>
+<p>What is a singleton class? Give a practical example of its usage.</p>
+<pre><code>A singleton class in java can have only one instance and hence all its methods and variables belong to just
+one instance. Singleton class concept is useful for the situations when there is a need to limit the number
+of objects for a class. 
+The best example of singleton usage scenario is when there is a limit of having only one connection to a
+database due to some driver limitations or because of any licensing issues.
+</code></pre>
+</li>
+<li>
+<p>What are Loops in Java? What are three types of loops?</p>
+<pre><code>Ans: Looping is used in programming to execute a statement or a block of statement repeatedly.
+
+There are three types of loops in Java:
+  1) For Loops : For loops are used in java to execute statements repeatedly for a given number of times.
+                 For loops are used when number of times to execute the statements is known to programmer.
+
+  2) While Loops: While loop is used when certain statements need to be executed repeatedly until a condition
+                  is fulfilled. In while loops, condition is checked first before execution of statements.
+
+  3) Do While Loops: Do While Loop is same as While loop with only difference that condition is checked
+                     after execution of block of statements. Hence in case of do while loop, statements are
+                     executed at least once.
+</code></pre>
+</li>
+<li>
+<p>What is an infinite Loop? How infinite loop is declared?</p>
+<pre><code>Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by
+definingg any breaking logic in the body of the statement blocks.
+
+Infinite loop is declared as follows:
+
+  for (;;) {
+
+  //Statements to execute
+
+  // Add any loop breaking logic
+
+  }
+</code></pre>
+</li>
+<li>
+<p>What is the difference between continue and break statement?</p>
+<pre><code>Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop,
+loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues
+with next iteration.
+
+In below example, Loop is broken when counter reaches 4.
+
+for (counter-0;counter&lt;10;counter+){
+  system.out.println(counter);
+  if (counter == 4){
+    break;}
+}
+
+In the below example when counter reaches 4, loop jumps to next iteration and any statements after the 
+continue keyword are skipped for current iteration.
+
+for (counter=0;counter&lt;10;counter++) {
+  system.out.printin(counter);
+  if (counter==4){
+    continue;
+    }
+  system.out.println("This will not get printed when counter is 4");
+}
+</code></pre>
+</li>
+<li>
+<p>What is the difference between double and float variables in Java?</p>
+<pre><code>Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision
+floating point decimal number while Double is double precision decimal number.
+</code></pre>
+</li>
+<li>
+<p>What is Final Keyword in Java? Give an example.</p>
+<pre><code>Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after
+assignment, value of a constant can't be changed.
+
+In below example, a constant with the name const_val is declared and assigned avalue:
+  private final int const_val=100
+
+When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than
+any other method,because they are resolved at complied time.
+When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.
+</code></pre>
+</li>
+<li>
+<p>What is ternary operator? Give an example.</p>
+<pre><code>Ans: Ternary operator, also called conditional operator is used to decide which value to assign to a variable
+based on a Boolean value evaluation. It's denoted as?
+
+In the below example, if rank is 1, status is assigned a value of "Done" else "Pending".
+
+public class conditionTest {
+  public static void main(String args[]) {
+    string status;
+    int rank 3;
+    status = (rank == 1)? "Done": "Pending":
+    System.out.println(status);
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>How can you generate random numbers in Java?</p>
+<pre><code>Ans:
+
+- Using Math.random() you can generate random numbers in the range greater than or equal to 0.1 and less
+  than 1.0
+- Using Random class in package java.util
+</code></pre>
+</li>
+<li>
+<p>What is default switch case? Give example.</p>
+<pre><code>Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is
+an optional case. It can be declared only once all other switch cases have been coded.
+
+In the below example, when score is not 1 or 2, default case is used.
+
+  public class switchExample {
+    int score=4;
+    public static void main(String args[]) {
+      switch (score) {
+          case 1:
+            system.out.println("Score is 1");
+            break;
+          case 2:
+            system.out.println("Score is 2");
+            break;
+          default:
+            system.out.println("Default Case") 
+        }
+    }
+  }
+</code></pre>
+</li>
+<li>
+<p>What is the base class in Java from which all classes are derived?</p>
+<pre><code>Ans: java.lang.object
+</code></pre>
+</li>
+<li>
+<p>Can main() method in Java can return any data?</p>
+<pre><code>Ans: In java, main() method can't return any data and hence, ite's always declared with a void return type.
+</code></pre>
+</li>
+<li>
+<p>What are Java Packages? What's the significance of packages?</p>
+<pre><code>Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are
+related to each other. Use of packages helps developers to modularize the code and group the code for
+proper re-use. Once code has been packaged in Packages, it can be imported in other classes and used.
+</code></pre>
+</li>
+<li>
+<p>Can we declare a class as Abstract without having any abstract method?</p>
+<pre><code>Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn't
+have any abstract method. However, if a class has even one abstract method, it must be declared as abstract
+otherwise it will give an error.
+</code></pre>
+</li>
+<li>
+<p>What's the difference between an Abstract Class and Interface in Java?</p>
+<pre><code>Ans: The primary difference between an abstract class and interface is that an interface can only possess
+declaration of public static methods with no concrete implementation while an abstract class can have
+members with any access specifiers (public, private etc) with or without concrete implementation.
+
+Another key difference in the use of abstract classes and interfaces is that a class which implements an
+interface must implement all the methods of the interface while a class which inherits from an abstract
+class doesn't require implementation of all the methods of its super class.
+
+A class can implement multiple interfaces but it can extend only one abstract class.
+</code></pre>
+</li>
+<li>
+<p>What are the performance implications of Interfaces over abstract classes?</p>
+<pre><code>Ans: Interfaces are slower in performance as compared to abstract classes as extra indirections are required
+for interfaces. Another key factor for developers to take into consideration is that any class can extend
+only one abstract class while a class can implement many interfaces.
+
+Use of interfaces also puts an extra burden on the developers as any time an interface is implemented in a
+class; developer is forced to implement each and every method of interface.
+</code></pre>
+</li>
+<li>
+<p>Does Importing a package imports its sub-packages as well in Java?</p>
+<pre><code>Ans: In java, when a package is imported, its sub-packages are not imported and developer needs to import
+therm separately if required.
+
+For example, if a developer imports a package university.*, all classes in the package named university are
+loaded but no classes from the sub-package are loaded. To load the classes from its sub-package
+( say department), developer has to import it explicitly as follows:
+
+Import university.department.*
+</code></pre>
+</li>
+<li>
+<p>Can we declare the main method of our class as private?</p>
+<pre><code>Ans: In java, main method must be public static in order to run any application correctly. If main method
+is declared as private, developer will not get any compilation error however, it will not get executed and
+will give a runtime error.
+</code></pre>
+</li>
+<li>
+<p>How can we pass argument to a function by reference instead of pass by value?</p>
+<pre><code>Ans: In java, we can pass argument to a function only by value and not by reference.
+</code></pre>
+</li>
+<li>
+<p>How an object is serialized in java?</p>
+<pre><code>Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable
+is implemented by the class. All objects of a class implementing serializable interface get serialized and
+their state is saved in byte stream.
+</code></pre>
+</li>
+<li>
+<p>When we should use serialization?</p>
+<pre><code>Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object's
+state is saved and converted into byte stream. The byte stream is transferred over the network and the
+object is re-created at destination.
+</code></pre>
+</li>
+<li>
+<p>Is it compulsory for a Try Block to be followed by a Catch Block in Java for Exception handling?</p>
+<pre><code>Ans: Try block needs to be followed by either Catch block or Finally block or both. Any exception thrown
+from try block needs to be either caught in the catch block or else any specific tasks to be performed
+before code abortion are put in the Finally block.
+</code></pre>
+</li>
+<li>
+<p>Is there any way to skip Finally block of exception even if some exception occurs in the exception block?</p>
+<pre><code>Ans: If an exception is raised in Try block, control passes to catch block if it exists otherwise to
+finally block. Finally block is always executed when an exception occurs and the only way to avoid execution
+of any statements in Finally block is by aborting the code forcibly by writing following line of code at
+the end of try block:
+
+  System.exit(0);
+</code></pre>
+</li>
+<li>
+<p>When the constructor of a class is invoked?</p>
+<pre><code>Ans: The constructor of a class is invoked every time an object is created with new keyword. For example,
+in the following class two objects are created using new keyword and hence, constructor is invoked two times.
+
+public class const_example {
+  const_example() {
+  system.out.println("Inside constructor");
+  }
+
+  public static void main(String args[]){
+    const_example cl=new const_example();
+    const example c2=new const_example();
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>Can a class have multiple constructors?</p>
+<pre><code>Ans: Yes, a class can have multiple constructors with different parameters. Which constructor gets used for
+object creation depends on the arguments passed while creating the objects.
+</code></pre>
+</li>
+<li>
+<p>Can we override static methods of a class?</p>
+<pre><code>Ans: We cannot override static methods. Static methods belong to a class and not to individual objects and
+are resolved at the time of compilation (not at runtime). Even if we try to override static method, we will
+not get an complitaion error,nor the impact of overriding when running the code.
+</code></pre>
+</li>
+<li>
+<p>In the below example, what will be the output?</p>
+<pre><code>public class superclass { 
+  public void displayResult(){
+    system.out.printin("Printing from superclass");
+  }
+}
+
+public class subclass extends superclass{
+  public void displayResult() {
+    system.out.println("Displaying from subClass");
+    super.displayResult();
+  }
+
+  public static void main(String args[]){
+    subclass obj=new subclass);
+    obj.displayResuit();
+  }
+}
+</code></pre>
+<hr />
+<pre><code>  Ans: Output will be:
+
+      Displaying from subclass
+      Displaying from superclass
+</code></pre>
+</li>
+<li>
+<p>Is String a data type in java?</p>
+<pre><code>Ans: String is not a primitive data type in java. When a string is created in java, it is actually an
+object of Java. lang.String class that gets created. After creation of this string object, all built-in
+methods of String class can be used on the string object.
+</code></pre>
+</li>
+<li>
+<p>In the below example, how many String Objects are created?</p>
+<pre><code>String s1="l am Java Expert";
+String s2-"l am C Expert"; 
+String s3-"l am Java Expert"
+</code></pre>
+<hr />
+<pre><code>Ans: In the above example, two objects of Java.Lang.String class are created. s1 and s3 are references to
+same object.
+</code></pre>
+</li>
+<li>
+<p>Why Strings in Java are called as Immutable?</p>
+<pre><code>Ans: In java, string objects are called immutable as once value has been assigned to a string, it can not 
+be changed and if changed, a new object is created.
+
+In below example, reference str refers to a string object having value "Value one".
+
+  String str="Value One"
+
+When a new value is assigned to it, a new String object gets created and the reference is moved to the new
+object.
+
+  str="New Value";
+</code></pre>
+</li>
+<li>
+<p>What's the difference between an array and Vector?</p>
+<pre><code>Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature
+and can hold data of different data types.
+</code></pre>
+</li>
+<li>
+<p>What is multi-threading?</p>
+<pre><code>Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single
+program. Threads share same process stack and running in parallel. It helps in performance improvement of
+any program.
+</code></pre>
+</li>
+<li>
+<p>Why Runnable Interface is used in Java?</p>
+<pre><code>Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable
+interface is implemented by a class to support multi threading.
+</code></pre>
+</li>
+<li>
+<p>What are the two ways of implementing multi-threading in Java?</p>
+<pre><code>Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:
+
+  1. By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. 
+     There is a Run() method in this interface which is implemented.
+
+  2. By writing a class that extend Java.Lang.Thread class.
+</code></pre>
+</li>
+<li>
+<p>When a lot of changes are required in data, which one should be a preference to be used? String or StringBuffer?</p>
+<pre><code>Ans: Since StringBuffers are dynamic in nature and we can change the values of StringBuffer objects unlike
+String which is immutable, it is always a good choice to use StringBuffer when data is being changed too
+much. If we use String in such a case, for every data change a new String object will be created which
+will be an extra overhead.
+</code></pre>
+</li>
+<li>
+<p>What's the purpose of using Break in each case of Switch Statement?</p>
+<pre><code>Ans: Break is used after each case (except the last one) in a switch so that code breaks after the valid
+case and does not flow in the proceeding cases too.
+If break is not used after each case, all cases after the valid case also get executed resulting in wrong
+results.
+</code></pre>
+</li>
+<li>
+<p>How garbage collection is done in Java?</p>
+<pre><code>Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is
+destroyed automatically. For automatic garbage collection java calls either System.gc) method or
+Runtime.gc() method.
+</code></pre>
+</li>
+<li>
+<p>How we can execute any code even before main method?</p>
+<pre><code>Ans: If we want to execute any statements before even creation of objects at load time of class, we can
+use a static block of code in the class. Any statements inside this static block of code will get
+executed once at the time of loading the class even before creation of objects in the main method.
+</code></pre>
+</li>
+<li>
+<p>Can a class be a super class and a sub-class at the same time? Give example.</p>
+<pre><code>Ans: If there is a hierarchy of inheritance used, a class can be a super class for another class and a
+sub-class for another one at the same time.
+In the example below, continent class is sub-class of world class and it's super class of country class.
+
+public class world {
+  ------------
+}
+
+public class continenet extends world {
+  ------------
+}
+
+public class country extends continent{
+  ------------
+}
+</code></pre>
+</li>
+<li>
+<p>How objects of a class are created if no constructor is defined in the class?</p>
+<pre><code>Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a
+default constructor is implicitly used for object creation. This constructor has no parameters.
+</code></pre>
+</li>
+<li>
+<p>In multi-threading how can we ensure that a resource isn't used by multiple threads simultaneously?</p>
+<pre><code>Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled
+by using the concept of synchronization. Using synchronized keyword, we can ensure that only one thread
+can use shared resource at a time and others can get control of the resource only once it has become free
+from the other one using it.
+</code></pre>
+</li>
+<li>
+<p>Can we call the constructor of a class more than once for an object?</p>
+<pre><code>Ans: Constructor is called automatically when we create an object using new keyword. It is called only once
+for an object at the time of object creation and hence, we can not invoke the constructor again for an
+object after its creation.
+</code></pre>
+</li>
+<li>
+<p>There are two classes named classA and classB. Both classes are in the same package. Can a private member of classA can be accessed by an object of classB?</p>
+<pre><code>Ans: Private members of a class are not accessible outside the scope of that class and any other class even
+in the same package can not access them.
+</code></pre>
+</li>
+<li>
+<p>Can we have two methods in a class with the same name?</p>
+<pre><code>Ans: We can define two methods in a class with the same name but with different number/type of parameters.
+Which method is to get invoked will depend upon the parameters passed.
+
+For example in the class below we have two print methods with same name but different parameters. Depending
+upon the parameters, appropriate one will be called:
+
+  public class methodExample {
+
+    public void print() {
+      system.out.println("Print method without parameters.");
+    }
+
+    public void print(String name){
+      system.out.printin("Print method with parameter");
+    }
+
+    public static void main(String args[]){
+      methodExample objl= new method Example();
+      obj1.print();
+      objl.print("xx");
+    }
+}
+</code></pre>
+</li>
+<li>
+<p>How can we make copy of a java object?</p>
+<pre><code>Ans: We can use the concept of cloning to create copy of an object. Using clone, we create copies with the
+actual state of an object.
+
+Clone() is a method of Cloneable interface and hence, Cloneable interface needs to be implemented for making
+object copies.
+</code></pre>
+</li>
+<li>
+<p>What's the benefit of using inheritance?</p>
+<pre><code>Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the
+code of its super class. Polymorphism (Extensibility ) is another great benefit which allow new functionality
+to be introduced without effecting existing derived classes.
+</code></pre>
+</li>
+<li>
+<p>What's the default access specifier for variables and methods of a class?</p>
+<pre><code>Ans: Default access specifier for variables and method is package protected i.e variables and class is
+available to any other class but in the same package,not outside the package.
+</code></pre>
+</li>
+</ol>
+<hr />
+<p><a href="../java_interview_questions-2/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p>
+<hr />
+<p><br></p>
+<p>You may also refer to below articles:</p>
+<ul>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/>Linux Interview Questions for Freshers - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L1/>Linux Interview Questions for Freshers and Experienced - L1</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L2/>Linux Interview Questions for Experienced Linux Admins - L2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/ >Shell-Scripting interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-4/ >AWS interview questions for experienced professionals - 2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/ansible_interview_questions/ >Ansible interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/kubernetes_interview_questions/ >Kubernetes interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions/>DevOps Interview Questions for Freshers and Experienced</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/ >DevOps Interview Questions for Freshers and Experienced - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/git/>GIT Interview Questions for DevOps Roles</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/jenkins/>Jenkins Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/>Terraform Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-2/>Terraform Interview Questions for Experienced DevOps Engineer - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/>Terraform Interview Questions for Experienced DevOps Engineer - 3</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/>JAVA Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/>JAVA Interview Questions - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

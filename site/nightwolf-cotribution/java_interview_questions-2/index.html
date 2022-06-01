@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Java/OOPs Interview Questions-2 - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-220186946-1', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../service.md" class="nav-link">Services</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../java_interview_questions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../terraform_interview_question/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#top-100-java-interview-questions-2" class="nav-link">Top 100 Java Interview Questions - 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="top-100-java-interview-questions-2">Top 100 Java Interview Questions - 2<a class="headerlink" href="#top-100-java-interview-questions-2" title="Permanent link"></a></h1>
+<hr />
+<p>We have prepared a set of frequently asked Core Java interview questions to help Freshers and Experienced Java developers in their preparations for Interview.</p>
+<p>You will find these questions very helpful in your Java/OOPs interviews. Prepare well and All the very best.
+<br></p>
+<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
+<hr />
+<ol>
+<li>
+<p>Give an example of use of Pointers in Java class.</p>
+<pre><code>Ans: There are no pointers in Java. So we can't use concept of pointers in Java.
+</code></pre>
+</li>
+<li>
+<p>How can we restrict inheritance for a class so that no class can be inherited from it?</p>
+<pre><code>Ans: If we want a class not to be extended further by any class, we can use the keyword Final with the
+class name.
+
+In the following example, Stone class is Final and can not be extended:
+
+  public Final Class Stone {
+    // Class methods and Variables
+  }
+</code></pre>
+</li>
+<li>
+<p>What's the access scope of Protected Access specifier?</p>
+<pre><code>Ans: When a method or a variable is declared with Protected access specifier, it becomes accessible in the
+same class,any other class of the same package as well as a sub-class.
+</code></pre>
+<p><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em> Access Levels </em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>**</p>
+<table>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Class</th>
+<th>Package</th>
+<th>SubClass</th>
+<th>World</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>no modifier</td>
+<td>Y</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>private</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>What's difference between Stack and Queue?</p>
+<pre><code>Ans: Stack and Queue both are used as placeholder for a collection of data. The primary difference between
+ a stack and a queue is that stack is based on Last in First out (LIFO) principle while a queue is based on
+ FIFO (First In First Out) principle.
+</code></pre>
+</li>
+<li>
+<p>In java, how we can disallow serialization of variables?</p>
+<pre><code>Ans: If we want certain variables of a class not to be serialized, we can use the keyword transient while
+declaring them. For example, the variable trans_var below is a transient variable and can not be serialized:
+
+public class transientExample {
+  private transient trans_var;
+  // rest of the code 
+}
+</code></pre>
+</li>
+<li>
+<p>How can we use primitive data types as objects?</p>
+<pre><code>Ans: Primitive data types like int can be handled as objects by the use of their respective wrapper classes.
+For example, Integer is a wrapper class for primitive data type int. We can apply different methods to a
+wrapper class, just like any other object.
+</code></pre>
+</li>
+<li>
+<p>Which types of exceptions are caught at compile time?</p>
+<pre><code>Ans: Checked exceptions can be caught at the time of program compilation. Checked exceptions must be
+handled by using try catch block in the code in order to successfully compile the code.
+</code></pre>
+</li>
+<li>
+<p>Describe different states of a thread.</p>
+<pre><code>Ans: A thread in Java can be in either of the following states:
+
+    Ready: When a thread is created, it is in Ready state.
+    Running: A thread currently being executed is in running state.
+    Waiting: A thread waiting for another thread to free certain resources is in waiting state.
+    Dead: A thread which has gone dead after execution is in dead state.
+</code></pre>
+</li>
+<li>
+<p>Can we use a default constructor of a class even if an explicit constructor is defined?</p>
+<pre><code>Ans: Java provides a default no argument constructor if no explicit constructor is defined in a Java class.
+But if an explicit constructor has been defined, default constructor can not be invoked and developer can
+use only those constructors which are defined in the class.
+</code></pre>
+</li>
+<li>
+<p>Can we override a method by using same method name and arguments but different return types?</p>
+<pre><code>Ans: The basic condition of method overriding is that method name, arguments as well as return type must be
+exactly same as is that of the method being overridden. Hence usinga different return type does not
+override a method.
+</code></pre>
+</li>
+<li>
+<p>What will be the output of following piece of code?</p>
+<pre><code>public class operatorExample {
+  public static void main(String args[]) {
+      int x=4;
+      system.out.println(x++); 
+  }
+}
+</code></pre>
+<hr />
+<pre><code>Ans: In this case postfix ++ operator is used which first returns the value and then increments. Hence
+the output will be 4.
+</code></pre>
+</li>
+<li>
+<p>A person says that he compiled a java class successfully without even having a main method in it? Is it possible?</p>
+<pre><code>Ans: main method is an entry point of Java class and is required for execution of the program.
+However a class gets compiled successfully even if it does not have a main method. It can not be run though.
+</code></pre>
+</li>
+<li>
+<p>Can we call a non-static method from inside a static method?</p>
+<pre><code>Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call
+the non-Static methods from a static block (like froma static main method), an object of the class needs
+to be created first. Then using object reference, these methods can be invoked.
+</code></pre>
+</li>
+<li>
+<p>What are the two environment variables that must be set in order to run any Java programs?</p>
+<pre><code>Ans: Java programs can be executed in a machine only once following two environment variables have been
+properly set:
+
+    1. PATH variable
+    2. CLASSPATH variable
+</code></pre>
+</li>
+<li>
+<p>Can variables be used in Java without initialization?</p>
+<pre><code>Ans: In Java, if a variable is used ina code without prior initialization by a valid value, program does
+ not compile and gives an error as no default value is assigned to variables in Java.
+</code></pre>
+</li>
+<li>
+<p>Can a class in Java be inherited from more than one class?</p>
+<pre><code>Ans: In Java, a class can be derived from only one class and not from multiple classes. Multiple
+inheritances is not supported by Java.
+</code></pre>
+</li>
+<li>
+<p>Can a constructor have different name than a Class name in Java?</p>
+<pre><code>Ans: Constructor in Java must have same name as the class name and if the name is different, it does not
+act as a constructor and compiler thinks of it as a normal method.
+</code></pre>
+</li>
+<li>
+<p>What will be the output of Round(3.7) and Ceill3.7)?</p>
+<pre><code>Ans: Round(3.7) returns 4 and Ceil(3.7) returns 4.
+</code></pre>
+</li>
+<li>
+<p>Can we use goto in Java to go to a particular line?</p>
+<pre><code>Ans: In Java, there is not goto keyword and java doesn't support this feature of going to a particular
+labeled line.
+</code></pre>
+</li>
+<li>
+<p>Can a dead thread be started again?</p>
+<pre><code>Ans: In java, a thread which is in dead state can't be started again. There is no way to restart a dead
+thread.
+</code></pre>
+</li>
+<li>
+<p>Is the following class declaration correct?</p>
+<pre><code>    public abstract final class testClass{
+        // Class methods and variables
+    }
+</code></pre>
+<hr />
+<pre><code>Ans: The above class declaration is incorrect as an abstract class can not be declared as Final.
+</code></pre>
+</li>
+<li>
+<p>Is JDK required on each machine to run a Java program?</p>
+<pre><code>Ans: JDK is development Kit of Java and is required for development only and to run a Java program on a
+machine, JDK isn't required. Only JRE is required.
+</code></pre>
+</li>
+<li>
+<p>What's the difference between comparison done by equals method and == operator?</p>
+<pre><code>Ans: In Java, equals() method is used to compare the contents of two string objects and returns true if
+the two have same value while == operator compares the references of two string objects.
+
+In the following example, equals() returns true as the two string objects have same values.
+However "==" operator returns false as both string objects are referencing to different objects:
+
+    public class equalsTest {
+      public static void main(String args[]) {
+        String str1 = new String("Hello World");
+        String str2 new String("Hello World");
+
+        if (str1.equals(str2))
+        {
+          // this condition is true 
+          System.out.printin("str1 and str2 are equal in terms of values");
+        }
+
+        if (str1== str2)
+        {
+          //This condition is true
+          System.out.println("Both strings are referencing same object");
+        } else
+          {
+            //This condition is NOT true
+            System.out.println("Both strings are referencing different objects");
+          }
+      }
+    }
+</code></pre>
+</li>
+<li>
+<p>Is it possible to define a method in Java class but provide it's implementation in the code of another language like C?</p>
+<pre><code>Ans: Yes, we can do this by use of native methods. In case of native method based development, we define
+public static methods in our Java class without its implementation and then implementation is done in
+another language like C separately.
+</code></pre>
+</li>
+<li>
+<p>How are destructors defined in Java?</p>
+<pre><code>Ans: In Java, there are no destructors defined in the class as there is no need to do so. Java has its own
+garbage collection mechanism which does the job automatically by destroying the objects when no longer
+referenced.
+</code></pre>
+</li>
+<li>
+<p>Can a variable be local and static at the same time?</p>
+<pre><code>Ans: No a variable can't be static as well as local at the same time. Defining a local variable as static
+gives compilation error.
+</code></pre>
+</li>
+<li>
+<p>Can we have static methods in an Interface? </p>
+<pre><code>Ans: Static methods can not be overridden in any class while any methods in an interface are by default
+abstract and are supposed to be implemented in the classes being implementing the interface. So it makes
+no sense to have static methods in an interface in Java.
+</code></pre>
+</li>
+<li>
+<p>In a class implementing an interface, can we change the value of any variable defined in the interface?</p>
+<pre><code>Ans: No, we can not change the value of any variable of an interface in the implementing class as all
+variables defined in the interface are by default public, static and Final and final variables are like
+constants which can not be changed later.
+</code></pre>
+</li>
+<li>
+<p>Is it correct to say that due to garbage collection feature in Java, a java program never goes out of memory?</p>
+<pre><code>Ans: Even though automatic garbage collection is provided by Java, it does not ensure that a Java program
+will not go out of memory as there is a possibility that creation of Java objects is being done at a faster
+pace compared to garbage collection resulting in filling of all the available memory resources.
+
+So, garbage collection helps in reducing the chances of a program going out of memory but it does not
+ensure that.
+</code></pre>
+</li>
+<li>
+<p>Can we have any other return type than void for main method?</p>
+<pre><code>Ans: No, Java class main method can have only void return type for the program to get successfully
+executed. Nonetheless, if you absolutely must return a value to at the completion of main method, you can
+use System.exit(int status).
+</code></pre>
+</li>
+<li>
+<p>I want to re-reach and use an object once it has been garbage collected. How it's possible?</p>
+<pre><code>Ans: Once an object has been destroyed by garbage collector, it no longer exists on the heap and it can not
+be accessed again. There is no way to reference it again.
+</code></pre>
+</li>
+<li>
+<p>In Java thread programming, which method is a must implemetation for all threads?</p>
+<pre><code>Ans: Run() is a method of Runnable interface that must be implemented by all threads.
+</code></pre>
+</li>
+<li>
+<p>I want to control database connections in my program and want that only one thread should be able to make database connection at a time. How can I implement this logic?</p>
+<pre><code>Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed
+in a method which hs synchronized keyword so that only one thread can access it at a time.
+</code></pre>
+</li>
+<li>
+<p>How can an exception be thrown manually by a programmer? </p>
+<pre><code>Ans: In order to throw an exception in a block of code manually, throw keyword is used. Then this exception
+is caught and handled in the catch block.
+
+  public void topMethod() {
+    try {
+      excMethod();
+    }catch(ManualException e){}
+  }
+
+  public void excMethod{
+    String name=null;
+    if(name == null}{
+        throw (new ManualException("Exception thrown manually ");
+    }
+  }
+</code></pre>
+</li>
+<li>
+<p>I want my class to be developed in sucha way that no other class (even derived class) can create its objects. How can I do so?</p>
+<pre><code>Ans: If we declare the constructor of a class as private, it will not be accessible by any other class and
+hence, no other class will be able to instantiate it and formation of its object will be limited to itself
+only.
+</code></pre>
+</li>
+<li>
+<p>How objects are stored in Java?</p>
+<pre><code>Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a
+garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes
+available for any new objects.
+</code></pre>
+</li>
+<li>
+<p>How can we find the actual size of an object on the heap?</p>
+<pre><code>Ans: In java, there is no way to find out the exact size of an object on the heap.
+</code></pre>
+</li>
+<li>
+<p>Which of the following classes will have more memory allocated?</p>
+<pre><code>Class A: Three methods, four variables, no object
+Class B: Five methods, three variables, no object
+</code></pre>
+<hr />
+<pre><code>Ans: Memory is not allocated before creation of objects. Since for both classes, there are no objects
+created so no memory is allocated on heap for any class.
+</code></pre>
+</li>
+<li>
+<p>What happens if an exception is not handled in a program?</p>
+<pre><code>Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no
+statement executes after the statement which caused exception throwing.
+</code></pre>
+</li>
+<li>
+<p>I have multiple constructors defined in a class. Is it possible to call a constructor from another constructor's body?</p>
+<pre><code>Ans: If a class has multiple constructors, it's possible to call one constructor from the body of
+another one using this().
+</code></pre>
+</li>
+<li>
+<p>What's meant by anonymous class?</p>
+<pre><code>Ans: An anonymous class is a class defined without any name in a single line of code using new keyword.
+For example, in below code we have defined an anonymous class in one line of code:
+
+  public java.util.Enumeration testMethod()
+  {
+    return new java.util.Enumeration()
+    @Override
+      public boolean hasMoreElements()
+      {
+        // TODO Auto-generated method stub
+        return false;
+      }
+      @Override
+
+      public Object nextElement()
+      {
+        // TODO Auto-generated method stub
+        return null; 
+      }
+  }
+</code></pre>
+</li>
+<li>
+<p>Is there a way to increase the size of an array after its declaration?</p>
+<pre><code>Ans: Arrays are static and once we have specified its size, we can not change it. If we want to use such
+collections where we may require a change of size ( no of items), we should prefer vector Over array.
+</code></pre>
+</li>
+<li>
+<p>If an application has multiple classes in it, is it okay to have a main method in more than one class?</p>
+<pre><code>Ans: If there is main method in more than one classes in a java application, it will not cause any issue
+as entry point for any application will be a specific class and code will start from the main method of
+that particular class only.
+</code></pre>
+</li>
+<li>
+<p>I want to persist data of objects for later use. What's the best approach to do so?</p>
+<pre><code>Ans: The best way to persist data for future use is to use the concept of serialization.
+</code></pre>
+</li>
+<li>
+<p>What is a Local class in Java?</p>
+<pre><code>Ans: In Java, if we define a new class inside a particular block, it is called a local class. Such a class
+has local scope and is not usable outside the block where its defined.
+</code></pre>
+</li>
+<li>
+<p>String and StringBuffer both represent String objects. Can we compare String and StringBuffer in Java?</p>
+<pre><code>Ans: Although String and StringBuffer both represent String objects, we can not compare them with each other
+and if we try to compare them, we get an error.
+</code></pre>
+</li>
+<li>
+<p>Which APl is provided by Java for operations on set of objects?</p>
+<pre><code>Ans: Java provides a Collection APl which provides many useful methods which can be applied on a set of
+objects. Some of the important classes provided by Collection API include ArrayList, Hash Map, TreeSet
+and TreeMap.
+</code></pre>
+</li>
+<li>
+<p>Can we cast any other type to Boolean Type with type casting?</p>
+<pre><code>Ans: No, we can neither cast any other primitive type to Boolean data type nor can cast Boolean data type
+to any other primitive data type.
+</code></pre>
+</li>
+<li>
+<p>Can we use different return types for methods when overridden?</p>
+<pre><code>Ans: The basic requirement of method overriding in Java is that the overridden method should have same
+name, and parameters.But a method can be overridden with a different return type as long as the new return
+type extends the original.
+
+For example, method is returning a reference type.
+
+  Class B extends A {
+    A method(int x){
+      // original method
+    }
+    B method(int x){
+      //overridden method
+    }
+  }
+</code></pre>
+</li>
+<li>
+<p>What's the base class of all exception classes?</p>
+<pre><code>Ans: In Java, Java.lang.Throwable is the super class of all exception classes and all exception classes are
+derived from this base class.
+</code></pre>
+</li>
+<li>
+<p>What's the order of call of constructors in inheritiance?</p>
+<pre><code>Ans: In case of inheritance, whena new object of a derived class is created, first the constructor of the
+super class is invoked and then the constructor of the derived class is invoked.
+</code></pre>
+</li>
+</ol>
+<hr />
+<p><br></p>
+<p>You may also refer to below articles:</p>
+<ul>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/>Linux Interview Questions for Freshers - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L1/>Linux Interview Questions for Freshers and Experienced - L1</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L2/>Linux Interview Questions for Experienced Linux Admins - L2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/ >Shell-Scripting interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-4/ >AWS interview questions for experienced professionals - 2nd</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/ansible_interview_questions/ >Ansible interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/kubernetes_interview_questions/ >Kubernetes interview questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions/>DevOps Interview Questions for Freshers and Experienced</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/ >DevOps Interview Questions for Freshers and Experienced - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/git/>GIT Interview Questions for DevOps Roles</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/jenkins/>Jenkins Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/>Terraform Interview Questions for Experienced DevOps Engineer</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-2/>Terraform Interview Questions for Experienced DevOps Engineer - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/>Terraform Interview Questions for Experienced DevOps Engineer - 3</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/>JAVA Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/>JAVA Interview Questions - 2</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

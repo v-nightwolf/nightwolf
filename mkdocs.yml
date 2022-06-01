@@ -37,6 +37,9 @@ nav:
         - Docker Interview Questions: 'nightwolf-cotribution/docker_interview_questions.md'
         - Kubernetes Interview Questions: 'nightwolf-cotribution/kubernetes_interview_questions.md'
         - Ansible Interview Questions: 'nightwolf-cotribution/ansible_interview_questions.md'
+        - Java/OOPs Interview Questions:
+            - Java/OOPs Interview Questions: 'nightwolf-cotribution/java_interview_questions.md'
+            - Java/OOPs Interview Questions-2: 'nightwolf-cotribution/java_interview_questions-2.md'
         - Terraform Interview Questions:  
             - Terraform Interview Questions and Answers- 1st: 'nightwolf-cotribution/terraform_interview_question.md'
             - Terraform Interview Questions and Answers- 2nd: 'nightwolf-cotribution/terraform_interview_question-2.md'

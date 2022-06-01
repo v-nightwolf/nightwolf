@@ -44,6 +44,10 @@
 <br>
 # Shell-Scripting
 ### [Shell-Scripting Interview Questions and Answers](nightwolf-cotribution/shell_scripting_interview_questions.md)
+<br>
+# JAVA
+### [Java/OOPs Interview Questions and Answers](nightwolf-cotribution/java_interview_questions.md)
+### [Java/OOPs Interview Questions and Answers - part 2](nightwolf-cotribution/java_interview_questions-2.md)
 
 <br>
 # Managerial
