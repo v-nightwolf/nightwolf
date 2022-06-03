@@ -6,6 +6,8 @@
 ###[Advanced Linux L3 interview Questions and Answers](nightwolf-cotribution/linux_L3.md)
 ###[Solved list of Linux interview Questions](nightwolf-cotribution/linux_questionairs.md)
 </br>
+ {!inpage-ads.md!}
+
 # OS Networking
 ###[OS Network interview Questions and Answers](nightwolf-cotribution/network.md)
 <br>
@@ -15,6 +17,7 @@
 ### [AWS Interview Questions and Answers - 1](nightwolf-cotribution/aws-3.md)
 ### [AWS Interview Questions and Answers - 2](nightwolf-cotribution/aws-4.md)
 <br>
+
 # DevOps
 ### [DevOps Interview Questions and Answers for Freshers and Experienced-1](nightwolf-cotribution/devops_interview_questions.md)
 ### [DevOps Interview Questions and Answers for Freshers and Experienced-2](nightwolf-cotribution/devops_interview_questions-2.md)
@@ -36,6 +39,7 @@
 # Azure
 ### [Azure Interview Questions and Answers](nightwolf-cotribution/azure.pdf)
 <br>
+ {!inpage-ads.md!}
 # Ansible 
 ### [Ansible Interview Questions and Answers](nightwolf-cotribution/ansible_interview_questions.md)
 <br>
@@ -55,4 +59,4 @@
 
 <br>
 <br>
-
+{!horizontal-ads.md!}

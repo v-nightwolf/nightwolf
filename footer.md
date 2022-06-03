@@ -1,3 +1,6 @@
+{!horizontal-ads.md!}
+---
+
 You may also refer to below articles:
 
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a>
