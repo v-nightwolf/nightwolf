@@ -76,6 +76,14 @@
 
       * [Java/OOPs Interview Questions and Answers - part 2](nightwolf-cotribution/java_interview_questions-2.md)
 
+* <h5> Manual Testing / Quality Assurance </h5>
+
+      * [Manual Testing/QA Interview Questions and Answers](nightwolf-cotribution/manual_testing_interview_questions.md)
+
+
+* <h5> Database Management System [DBMS] </h5>
+
+      * [DBMS Interview Questions and Answers](nightwolf-cotribution/dbms_interview_questions.md)
 
 * <h5> Managerial Interview </h5>
 
@@ -121,3 +129,5 @@
 ## [Network]()
 
 ## [Contribute to nightWolf](contribute.md)
+
+{!multiplex-ads.md!}

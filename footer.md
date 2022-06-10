@@ -25,5 +25,7 @@ You may also refer to below articles:
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/>Terraform Interview Questions for Experienced DevOps Engineer - 3</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/>JAVA Interview Questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/>JAVA Interview Questions - 2</a>
+* <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/manual_testing_interview_questions/>Manual Testing Interview Questions for QA Engineers/Testers</a>
+* <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/>DBMS Interview Questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a>
 

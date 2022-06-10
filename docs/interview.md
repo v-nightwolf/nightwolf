@@ -52,7 +52,12 @@
 # JAVA
 ### [Java/OOPs Interview Questions and Answers](nightwolf-cotribution/java_interview_questions.md)
 ### [Java/OOPs Interview Questions and Answers - part 2](nightwolf-cotribution/java_interview_questions-2.md)
-
+<br>
+# Manual Testing / Quality Assurance
+### [Manual Testing/QA Interview Questions and Answers](nightwolf-cotribution/manual_testing_interview_questions.md)
+<br>
+# Database Management System [DBMS] 
+### [DBMS Interview Questions and Answers](nightwolf-cotribution/dbms_interview_questions.md)
 <br>
 # Managerial
 ### [Managerial Interview Questions and Answers](nightwolf-cotribution/managerial_interview_questions.md)

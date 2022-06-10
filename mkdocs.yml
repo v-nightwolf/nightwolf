@@ -49,6 +49,8 @@ nav:
             - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
             - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
+        - Manual Testing/QA Interview Questions: 'nightwolf-cotribution/manual_testing_interview_questions.md'
+        - DBMS Interview Questions and Answers: 'nightwolf-cotribution/dbms_interview_questions.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
         - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
     - Cheatsheets:
@@ -60,7 +62,8 @@ nav:
          - Network: network.md
          - Database: db/
            #    - Discussions: https://talks.nightwolf.in
-    - Services: service.md
+    - Services:
+        - Jobs for you: https://www.linkedin.com/groups/8982092/
 
 extra:
   analytics:
