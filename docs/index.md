@@ -1,7 +1,15 @@
-[<h1 style="text-align: center;font-family: cursive;"><img src="img/favi.png" height="70" /> nightWolf </h1>](index.md)
+<table>
+  <tr>
+   <td><h1 style="text-align: right;font-family: cursive;"><a href="https://nightwolf.in/"><img src="img/favi.png" height="70" /> nightWolf </a></h1></td>
+   <td><h1 style="text-align: right;"> {!visits.md!} </h1></td>
+</tr>
+
+</table>
+
 <br/>
 
 ## [Linux System Performance](nightwolf-cotribution/performance.md)
+
 
   System performance is one of the major and reoccurring issue in IT infrastructure and Linux performance troubleshooting is one of the most tedious task in system administration. 
   We have consolidated few major issues and bottlenecks for you to understand the root cause of the performance issues.

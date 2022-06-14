@@ -511,7 +511,7 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
 
 <p><br></p>
 <h2 id="troubleshooting-linux-performance-issue-happening-due-to-high-memory-usage">Troubleshooting Linux performance issue happening due to high Memory Usage<a class="headerlink" href="#troubleshooting-linux-performance-issue-happening-due-to-high-memory-usage" title="Permanent link"></a></h2>
-<pre><code>d). 4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
+<pre><code>4th and 5th line in 'top' output contains Memory stats in Kibibytes(kib).
     There is slight difference between kilibyte and kibibyte i.e 1 kB = 1000 bytes. 1 KiB = 1024 bytes.
 
     As a default, line 4 reflects physical memory, classified as:
@@ -622,11 +622,15 @@ KiB Swap:  2097148 total,  1206268 free,   890880 used.    48052 avail Mem
       the page is present on that address or not.
 </code></pre>
 <h3 id="linux-memory-management">Linux memory management:<a class="headerlink" href="#linux-memory-management" title="Permanent link"></a></h3>
-<pre><code> - When a process in Memory tries to access a file, the Memory Management program check if that File already
-   exists in Memory and what memory pages are mapped to the requested file. For Page faults are raised.
+<pre><code> - When a process in Memory tries to access a file, the Memory Management program checks if that File already
+   exists in Memory and what memory pages are mapped to the requested file. For this, Memory Page faults are
+   raised.
 </code></pre>
-<h5 id="what-are-page-faults">What are Page Faults:<a class="headerlink" href="#what-are-page-faults" title="Permanent link"></a></h5>
-<pre><code>    It is a condition when a process in execution can not find memory pages for a file in Virtual memory space.
+<h5 id="what-are-memory-page-faults">What are Memory Page Faults:<a class="headerlink" href="#what-are-memory-page-faults" title="Permanent link"></a></h5>
+<pre><code>  - It is a condition when a process in execution can not find memory pages for a file in Virtual memory space. 
+  - Memory Page Faults are of 2 types:
+     * Major Page Faults
+     * Minor Page Faults
 </code></pre>
 <h5 id="what-are-major-page-faults">What are Major page faults ?<a class="headerlink" href="#what-are-major-page-faults" title="Permanent link"></a></h5>
 <pre><code>   * If page mapping for requested file is not found in Virtual Memory space, a "Major page Fault" is raised.
