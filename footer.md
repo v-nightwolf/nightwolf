@@ -1,4 +1,5 @@
 {!horizontal-ads.md!}
+
 ---
 
 You may also refer to below articles:
@@ -29,3 +30,6 @@ You may also refer to below articles:
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/>DBMS Interview Questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a>
 
+---
+
+{!multiplex-ads.md!}
