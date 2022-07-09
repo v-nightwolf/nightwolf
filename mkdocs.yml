@@ -57,11 +57,13 @@ nav:
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
+         - gcloud commands Cheatsheet: gcloud_cheatsheet.md
     - Technical:
          - Linux: linux.md
          - Network: network.md
          - Database: db/
-           #    - Discussions: https://talks.nightwolf.in
+         - Cloud: 
+           - Service Comparison between GCP, AWS, Azure: cloud-comp.md
     - Services:
         - Jobs for you: https://www.linkedin.com/groups/8982092/
 

@@ -2,7 +2,7 @@
 ---
 Below table consists of names of service offered by 3 major public clouds for different requirements. This table will be very useful when you are comparing services offered by GCP, Azure and AWS.
 
-A detailed comparision is discussed in <a target="_blank" href=https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison >Article</a>. Please checkout if you need more details.
+A detailed comparison is discussed in <a target="_blank" href=https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison >Article</a>. Please checkout if you need more details.
 
   All the [feedbacks and suggestions](https://nightwolf.in/contribute/) are most welocome.
 

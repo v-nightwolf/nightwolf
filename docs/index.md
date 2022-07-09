@@ -113,6 +113,7 @@
 
 * [Linux YUM cheatsheet](nightwolf-cotribution/yum_cheatsheet.pdf)
 
+* [gcloud Commands Cheatsheet](gcloud_cheatsheet.md)
 
 ## [Linux]()
 
@@ -135,6 +136,9 @@
 * [mongoDB](mongo.md)
 
 ## [Network]()
+
+## [Cloud]()
+* [Service Comparison between GCP, AWS, Azure](cloud-comp.md)
 
 ## [Contribute to nightWolf](contribute.md)
 
