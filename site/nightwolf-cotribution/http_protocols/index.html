@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/kubernetes_interview_questions/">
+        <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/http_protocols/">
         <link rel="shortcut icon" href="../../img/favi.png">
         
-        <title>Kubernetes Interview Questions - nightWolf</title>
+        <title>HTTP Protocols and major version differences - nightWolf</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                             <li class="navitem">
                                 <a href="../performance/" class="nav-link">Linux-Performance</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -118,7 +118,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">Kubernetes Interview Questions</a>
+    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
 </li>
                                     
 <li>
@@ -271,16 +271,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../docker_interview_questions/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../ansible_interview_questions/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -299,7 +289,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#kubernetes-interview-questions" class="nav-link">Kubernetes Interview Questions</a>
+            <li class="nav-item" data-level="1"><a href="#http-protocols-and-major-version-differences" class="nav-link">HTTP Protocols and major version differences</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -308,136 +298,36 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="kubernetes-interview-questions">Kubernetes Interview Questions<a class="headerlink" href="#kubernetes-interview-questions" title="Permanent link"></a></h1>
-<p><br>
-  We have prepared a set of frequently asked Kubernetes questions to help Freshers and Experienced Admins in their preparations for Interview.</p>
-<p>You will find these questions very helpful in your Linux/Ansible/DevOps/Kubernetes Admins interviews. Prepare well and All the very best.
-<br></p>
-<p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
-     crossorigin="anonymous"></script>
-<p><ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5000366982270064"
-     data-ad-slot="4236115489"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<hr />
-<ol>
-<li>
-<p>What is the architecture of kubernetes ?</p>
-</li>
-<li>
-<p>What does control manager, etcd, scheduler, API server do ?</p>
-</li>
-<li>
-<p>What is a manifest file and what are the components of it ?</p>
-</li>
-<li>
-<p>What is node affinity, pod afiinity , taint toleration ?</p>
-</li>
-<li>
-<p>What is node port, cluster ip ?</p>
-</li>
-<li>
-<p>What is persitant volumes and why we use it ?</p>
-</li>
-<li>
-<p>Describe what is pod and what is pod lifecycle.</p>
-</li>
-<li>
-<p>What are the components on master and worked node ?</p>
-</li>
-<li>
-<p>What is ingress controller ? </p>
-</li>
-<li>
-<p>What are types of services in kuberntes ?</p>
-</li>
-<li>
-<p>How one pod talks with other pod ?</p>
-</li>
-<li>
-<p>How the pod healcheck is done(describe rediness, livesness) ?</p>
-</li>
-<li>
-<p>How the monitoring is done(integration on Prometheus and grafana) ?</p>
-</li>
-<li>
-<p>What is deamonset, replicaset, horizontal pod autoscaler ?</p>
-</li>
-<li>
-<p>Write a manifest file of your own choice.</p>
-</li>
-<li>
-<p>What is namespace and why we use it ?</p>
-</li>
-<li>
-<p>What are helm charts and uses ?</p>
-</li>
-</ol>
-<p><br>
-<br>
-<br></p>
-<hr />
-<p><br></p>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
-     crossorigin="anonymous"></script>
-<!-- horizontal -->
-<p><ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5000366982270064"
-     data-ad-slot="5166053770"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<hr />
-<p>You may also refer to below articles:</p>
-<ul>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/>Linux Interview Questions for Freshers - 2</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L1/>Linux Interview Questions for Freshers and Experienced - L1</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L2/>Linux Interview Questions for Experienced Linux Admins - L2</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/ >Shell-Scripting interview questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-4/ >AWS interview questions for experienced professionals - 2nd</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/ansible_interview_questions/ >Ansible interview questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/kubernetes_interview_questions/ >Kubernetes interview questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions/>DevOps Interview Questions for Freshers and Experienced</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/ >DevOps Interview Questions for Freshers and Experienced - 2</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/git/>GIT Interview Questions for DevOps Roles</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/jenkins/>Jenkins Interview Questions for Experienced DevOps Engineer</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/>Terraform Interview Questions for Experienced DevOps Engineer</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-2/>Terraform Interview Questions for Experienced DevOps Engineer - 2</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/>Terraform Interview Questions for Experienced DevOps Engineer - 3</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/>JAVA Interview Questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/>JAVA Interview Questions - 2</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/manual_testing_interview_questions/>Manual Testing Interview Questions for QA Engineers/Testers</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/>DBMS Interview Questions</a></li>
-<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a></li>
-</ul>
-<hr />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
-     crossorigin="anonymous"></script>
-<p><ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-5000366982270064"
-     data-ad-slot="3808191339"></ins></p>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
+<h1 id="http-protocols-and-major-version-differences">HTTP Protocols and major version differences<a class="headerlink" href="#http-protocols-and-major-version-differences" title="Permanent link"></a></h1>
+<p>In the earliest phase (HTTP/0.9), the HTTP protocol did not use headers and only transmitted plain HTML files. It was a one-line protocol only supporting the GET method.</p>
+<p>Key Features of HTTP/1.0:</p>
+<p>• The concept of headers both for requests (from the client machine) as well as responses (from servers) was introduced. The use of headers such as GET, POST, HEAD added extended flexibility, none of which was possible with the earlier version.
+• Version information was now included.
+• It allowed a single request/response for every TCP connection.
+• Status codes were used to indicate successful requests and to indicate transmission errors.
+• The content-type header made it possible to send files other than plain HTML, including scripts and media.</p>
+<p>/// Key Features of HTTP/1.1:</p>
+<p>• It was no longer required for each connection to be terminated immediately after every request was served with a response; instead, with the keep-alive header, it was possible to have persistent connections. It allowed multiple requests/responses per TCP connection.
+• The Upgrade header was used to indicate a preference from the client that made it possible to switch to a more preferred protocol if found appropriate by the server.
+• HTTP/1.1 provided support for chunk transfers that allowed streaming of content dynamically as chunks and for additional headers to be sent after the message body. This enhancement was particularly useful in cases where values of a field remained unknown until the content had been produced. For example, when the content had to be digitally signed, it was not possible to do so before the entire content gets generated.
+• Other features that reinforced its stability were introduced such as:
+• pipelining (the second request is sent before the response to the first is adequately served)
+• content negotiation (an exchange between client and server to determine the media type, it also provides the provision to serve different versions of a resource at the same URI)
+• cache control (used to specify caching policies in both requests and responses)</p>
+<p>/// Key Features of HTTP/2:
+- It introduces the concept of a server push where the server anticipates the resources that will be required by the client and pushes them prior to the client making requests. The client retains the authority to deny the server push; however, in most cases, this feature adds a lot of efficiency to the process.
+- Introduces the concept of multiplexing that interleaves the requests and responses without head-of-line blocking and does so over a single TCP connection.
+- It is a binary protocol i.e. only binary commands in the form of 0s and 1s are transmitted over the wire. The binary framing layer divides the message into frames that are segregated based on their type – Data or Header. This feature greatly increases efficiency in terms of security, compression and multiplexing.
+- HTTP/2 uses HPACK header compression algorithm that is resilient to attacks like CRIME and utilizes static Huffman encoding.</p>
+<p>/// What are the other differences between HTTP/2 and HTTP/1.1 that impact performance?</p>
+<p>Multiplexing: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.</p>
+<p>Server push: Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. The server also sends a message letting the client know what pushed content to expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole thing.</p>
+<p>Header compression: Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.</p>
+<p>/// How does prioritization in HTTP/2 affect performance?</p>
+<p>In HTTP/2, developers have hands-on, detailed control over prioritization. This allows them to maximize perceived and actual page load speed to a degree that was not possible in HTTP/1.1.
+HTTP/2 offers a feature called weighted prioritization. This allows developers to decide which page resources will load first, every time. In HTTP/2, when a client makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as multiplexing. Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.</p>
+<p>Imagine that Alice wants to read a novel that her friend Bob wrote, but both Alice and Bob only communicate through the regular mail. Alice sends a letter to Bob and asks Bob to send her his novel. Bob decides to send the novel HTTP/1.1-style: He mails one chapter at a time, and he only mails the next chapter after receiving a reply letter from Alice confirming that she received the previous chapter. Using this method of content delivery, it takes Alice many weeks to read Bob's novel.</p>
+<p>Now imagine that Bob decides to send Alice his novel HTTP/2-style: In this case, he sends each chapter of the novel separately (to stay within the postal service's size limits) but all at the same time. He also numbers each chapter: Chapter 1, Chapter 2, etc. Now, Alice receives the novel all at once and can assemble it in the correct order on her own time. If a chapter is missing, she may send a quick reply asking for that specific chapter, but otherwise the process is complete, and Alice can read the novel in just a few days.</p></div>
             </div>
         </div>
 

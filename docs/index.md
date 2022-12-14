@@ -48,6 +48,9 @@
 * <h5> OS Networking </h5>
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 
+* <h5> Google Cloud Certification Practice Questions </h5>
+      * [GCP ACE Practice Questions - 1st](nightwolf-cotribution/gcp-ace-1.md
+      )
 * <h5> AWS </h5>
       * [AWS Certified SysOps Administrator Questions - 1st](nightwolf-cotribution/aws.md)
 

@@ -49,6 +49,8 @@ nav:
             - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
             - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
+        - Google Cloud Certification Practice Questions:
+            - GCP ACE Practice Questions-1: 'nightwolf-cotribution/gcp-ace-1.md'
         - Manual Testing/QA Interview Questions: 'nightwolf-cotribution/manual_testing_interview_questions.md'
         - DBMS Interview Questions and Answers: 'nightwolf-cotribution/dbms_interview_questions.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
