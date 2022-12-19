@@ -59,6 +59,7 @@ nav:
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
+         - Yum vs APT cheatsheet: nightwolf-cotribution/yum_vs_apt.md
          - gcloud commands Cheatsheet: gcloud_cheatsheet.md
     - Technical:
          - Linux: linux.md

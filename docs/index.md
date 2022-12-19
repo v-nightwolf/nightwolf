@@ -116,6 +116,8 @@
 
 * [Linux YUM cheatsheet](nightwolf-cotribution/yum_cheatsheet.pdf)
 
+* [Yum vs APT cheatsheet](nightwolf-cotribution/yum_vs_apt.md)
+
 * [gcloud Commands Cheatsheet](gcloud_cheatsheet.md)
 
 ## [Linux]()
