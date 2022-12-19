@@ -11,6 +11,8 @@ You may also refer to below articles:
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/ >Shell-Scripting interview questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a>
+* <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-1/>GCP ACE Practice Questions - 1st</a>
+* <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-2/>GCP ACE Practice Questions - 2nd</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a>

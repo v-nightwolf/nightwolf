@@ -158,6 +158,20 @@
   </li>
                                     
   <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">GCP ACE Practice Questions-1</a>
+</li>
+            
+<li>
+    <a href="../gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">AWS Interview Questions</a>
     <ul class="dropdown-menu">
             
@@ -175,16 +189,6 @@
             
 <li>
     <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active">GCP ACE Practice Questions-1</a>
 </li>
     </ul>
   </li>
@@ -228,6 +232,10 @@
                                     
 <li>
     <a href="../../gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../TLS-Difference/" class="dropdown-item">TLS Version key differences</a>
 </li>
                                 </ul>
                             </li>
@@ -276,12 +284,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../aws-4/" class="nav-link">
+                                <a rel="prev" href="../terraform_interview_question-3/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../manual_testing_interview_questions/" class="nav-link">
+                                <a rel="next" href="../gcp-ace-2/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -314,9 +322,21 @@
 
 <h1 id="google-cloud-associate-cloud-engineer-practice-exam-1">Google Cloud Associate Cloud Engineer Practice Exam - 1:<a class="headerlink" href="#google-cloud-associate-cloud-engineer-practice-exam-1" title="Permanent link"></a></h1>
 <hr />
-<p>These are top 40 GCP ACE(Google Cloud Platform Associate Cloud Engineer) certification practice questions/cheatsheet (GCP ACE exam dumps) for professionals who are aspired to be GCP ACE certified. You will find these GCP ACE questions and answers very helpful in your GCP-ACE certification and interviews. Prepare well and All the very best.
+<p>These are top 50 GCP ACE(Google Cloud Platform Associate Cloud Engineer) certification practice questions/cheatsheet (GCP ACE exam dumps) for professionals who are aspired to be GCP ACE certified. You will find these GCP ACE questions and answers very helpful in your GCP-ACE certification and interviews. Prepare well and All the very best.
 <br></p>
 <p>All the <a href="https://nightwolf.in/contribute/">feedbacks and suggestions</a> are most welocome.</p>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="4236115489"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <hr />
 <ol>
 <li>
@@ -1088,6 +1108,192 @@ Explanation:
     the same organization but different projects will not run on the same sole tenant instance.
 </code></pre>
 <p>Reference: <a target="_blank" href=https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes>https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes</a></p>
+<hr />
+</li>
+<li>
+<p>You want to run a Kubernetes cluster for a high availability set of applications. What type of cluster would you use? </p>
+<pre><code>a). Multi-regional
+b). Single zone
+c). Regional
+d). Multi-zonal
+
+Correct: c
+
+Explanation:
+    Regional clusters have replicas of the control plane while single zone and multi-zonal clusters
+    have only one control plane. There is no such thing as multi-regional cluster.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-creating-a-highly-available-gke-cluster>https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-creating-a-highly-available-gke-cluster</a></p>
+<hr />
+</li>
+<li>
+<p>A large enterprise has created multiple organizations in GCP. They would like to connect
+the VPC networks across organizations. What should they do?</p>
+<pre><code>a). Implement a Shared VPC
+b). Implement VPC Network Peering between VPCs
+c). Implement a VPN between VPCs
+d). Define firewall rules to allow egress traffic to other VPC networks
+
+Correct: b
+
+Explanation:
+    Since the connected networks are in different organizations, they must use VPC Network
+    Peering. VPC sharing is only available within a single organization. Firewall rule changes may
+    be needed, but that is not sufficient. VPNs are used to connect GCP networks with on premises
+    networks.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/vpc/docs/vpc-peering>https://cloud.google.com/vpc/docs/vpc-peering</a></p>
+<hr />
+</li>
+<li>
+<p>You are creating a set of virtual machines in Compute Engine. GCP will automatically
+assign an IP address to each. What type of IP address will be assigned?</p>
+<pre><code>a). Regional external address
+b). Global internal address
+c). Regional internal address
+d). Global external address
+
+Correct: c
+
+Explanation:
+    GCP assigns regional internal IP addresses for VM instances, including GKE pods, nodes, and
+    services. They are also used for Internal TCP/UDP Load Balancing and Internal HTTP(S) Load
+    Balancing.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/compute/docs/ip-addresses>https://cloud.google.com/compute/docs/ip-addresses</a></p>
+<hr />
+</li>
+<li>
+<p>You have created a target pool with instances in two zones which are in the same region.
+The target pool is not functioning correctly. What could be the cause of the problem?</p>
+<pre><code>a). The target pool is not sending logs to Cloud Logging.
+b). The target pool is missing a health check.
+c). The target pool nodes are configured with different memory specifications
+d). The target pool is not sending metrics to Cloud Monitoring.
+
+Correct: b
+
+Explanation:
+    Target pools must have a health check to function properly. Nodes can be in different zones but
+    must be in the same region. Cloud Monitoring and Cloud Logging are useful but they are not
+    required for the target pool to function properly. Nodes in a pool have the same configuration.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/load-balancing/docs/target-pools>https://cloud.google.com/load-balancing/docs/target-pools</a></p>
+<hr />
+</li>
+<li>
+<p>A manager in your company is having trouble tracking the use and cost of resources across
+several projects. In particular, they do not know which resources are created by different
+teams they manage. What would you suggest the manager use to help better understand which resources are used by which team?</p>
+<pre><code>a). IAM policies
+b). Trace logs
+c). Audit logs
+d). Labels
+
+Correct: d
+
+Explanation:
+    Labels are key-value pairs attached to resources and used to manage them. The manager could
+    use a key-value pair with the key 'team-name' and the value the name of the team that created the
+    resource. Audit logs do not necessarily have the names of teams that own a resource. Traces are
+    used for performance monitoring and analysis. IAM policies are used to control access to
+    resources, not to track which team created them.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/resource-manager/docs/creating-managing-labels>https://cloud.google.com/resource-manager/docs/creating-managing-labels</a></p>
+<hr />
+</li>
+<li>
+<p>The CFO of your company wants to improve an existing data warehouse by migrating it to
+Google Cloud. They want to minimize operational overhead while ensuring existing SQL
+tools can be used with the migrated data warehouse. What GCP service would you recommend?</p>
+<pre><code>a). Cloud SQL
+b). Cloud Spanner
+c). Bigtable
+d). BigQuery
+
+Correct: d
+
+Explanation:
+    BigQuery is a managed, petabyte scale data warehouse, which uses SQL. Bigtable does not
+    support SQL. Cloud SQL and Cloud Spanner support SQL but are designed for transaction
+    processing, not analytical applications like data warehouses.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/bigquery/docs/how-to>https://cloud.google.com/bigquery/docs/how-to</a></p>
+<hr />
+</li>
+<li>
+<p>A software development team is using Google Container Registry to manage container
+images. You have recently joined the team and want to view metadata about existing
+container images. What command would you use?</p>
+<pre><code>a). gcloud container images list
+b). gcloud container metadata list
+c). gcloud images container list
+d). gcloud container list metadata
+
+Correct: a
+
+Explanation:
+    The correct command is gcloud container images list. The other options are not valid gcloud
+    commands. For more information, see
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/sdk/gcloud/reference/container/images/list>https://cloud.google.com/sdk/gcloud/reference/container/images/list</a></p>
+<hr />
+</li>
+<li>
+<p>Kubernetes Engine collects application logs by default when the log data is written where?</p>
+<pre><code>a). SYSLOG
+b). SYSERR
+c). STDERR
+d). STDOUT
+
+Correct: c, d
+
+Explanation:
+    Kubernetes Engine collects log data written to standard output (STDOUT) and standard error
+    (STDERR).
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/blog/products/management-tools/using-logging-your-apps-running-kubernetes-engine>https://cloud.google.com/blog/products/management-tools/using-logging-your-apps-running-kubernetes-engine</a></p>
+<hr />
+</li>
+<li>
+<p>A startup is implementing an IoT application that will ingest data at high speeds. The
+architect for the startup has decided that data should be ingested in a queue that can store
+the data until the processing application is able to process it. The architect also wants to use
+a managed service in Google Cloud. What service would you recommend?</p>
+<pre><code>a). Bigtable
+b). Cloud Dataflow
+c). Cloud Pub/Sub
+d). Cloud Dataproc
+
+Correct: c
+
+Explanation:
+    Cloud Pub/Sub is a queuing service that is used to ingest data and store it until it can be
+    processed. Bigtable is a NoSQL database, not a queueing service. Cloud Dataflow is a stream
+    and batch processing service, not a queueing service. Cloud Dataproc is a managed Spark/Hadoop service.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/pubsub/docs/overview>https://cloud.google.com/pubsub/docs/overview</a></p>
+<hr />
+</li>
+<li>
+<p>To avoid potentially violating a regulation, your company has determined that it will only
+use GCP resources in North America. How would you ensure no resources are created outside of North America?</p>
+<pre><code>a). Create a data lifecycle management policy that prevents data from being saved outside of North America.
+b). Create an Cloud Audit policy that prevents users from creating resources outside of North America.
+c). Create a policy at the folder level of the resource hierarchy that includes a constraint using a
+    Resource Location Restriction.
+d). Create a policy at the organization level of the resource hierarchy that includes a constraint
+    using a Resource Location Restriction.
+
+Correct: d
+
+Explanation:
+    Constraints are the standard way to restrict where resources can be created and applying policies
+    with constraints will enforce those constraints for all resources in the organization. If the policy
+    were applied at the folder level, it would have to be applied for all folders and that is not as
+    efficient as applying at the organization level. There is no such thing as a Cloud Audit policy.
+</code></pre>
+<p>Reference: <a target="_blank" href=https://cloud.google.com/resource-manager/docs/organizationpolicy/defining-locations>https://cloud.google.com/resource-manager/docs/organizationpolicy/defining-locations</a></p>
 </li>
 </ol>
 <hr />
@@ -1117,6 +1323,8 @@ Explanation:
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_L3/ >Advanced Linux Interview Questions for Experienced Admins - L3</a></li>
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/ >Shell-Scripting interview questions</a></li>
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/network/ >OS Network Interview Questions</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-1/>GCP ACE Practice Questions - 1st</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-2/>GCP ACE Practice Questions - 2nd</a></li>
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws/ >AWS Certified SysOps Administrator - Questions and Answers-1st</a></li>
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-2/ >AWS Certified SysOps Administrator - Questions and Answers-2nd</a></li>
 <li><a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/aws-3/ >AWS interview questions for experienced professionals - 1st</a></li>

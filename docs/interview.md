@@ -1,4 +1,3 @@
-<h4 style="text-align: right;"> {!visits.md!} </h4>
 # Linux
 ###[Linux Interview Questions and Answers for Freshers](nightwolf-cotribution/linux_basic.md)
 ### [Linux Interview Questions and Answers for Freshers-2](nightwolf-cotribution/linux_interview_questions_for_freshers.md)
@@ -11,6 +10,12 @@
 
 # OS Networking
 ###[OS Network interview Questions and Answers](nightwolf-cotribution/network.md)
+<br>
+
+# Google Cloud Platform(GCP)
+### [GCP ACE Practice Questions - 1st](nightwolf-cotribution/gcp-ace-1.md)
+### [GCP ACE Practice Questions - 2nd](nightwolf-cotribution/gcp-ace-2.md)
+
 <br>
 # AWS
 ### [AWS Certified SysOps Administrator Questions and Answers - 1](nightwolf-cotribution/aws.md)

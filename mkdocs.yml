@@ -12,6 +12,7 @@ markdown_extensions:
     - toc:
         permalink: ""
     - markdown_include.include:
+    - attr_list:
 
 # Copyright
 copyright: 'Copyright &copy; 2022 nightWolf'
@@ -44,13 +45,14 @@ nav:
             - Terraform Interview Questions and Answers- 1st: 'nightwolf-cotribution/terraform_interview_question.md'
             - Terraform Interview Questions and Answers- 2nd: 'nightwolf-cotribution/terraform_interview_question-2.md'
             - Terraform Interview Questions and Answers- 3rd: 'nightwolf-cotribution/terraform_interview_question-3.md'
+        - Google Cloud Certification Practice Questions:
+            - GCP ACE Practice Questions-1: 'nightwolf-cotribution/gcp-ace-1.md'
+            - GCP ACE Practice Questions-2: 'nightwolf-cotribution/gcp-ace-2.md'
         - AWS Interview Questions: 
             - AWS Certified SysOps Administrator Questions- 1st: 'nightwolf-cotribution/aws.md'
             - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
             - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
-        - Google Cloud Certification Practice Questions:
-            - GCP ACE Practice Questions-1: 'nightwolf-cotribution/gcp-ace-1.md'
         - Manual Testing/QA Interview Questions: 'nightwolf-cotribution/manual_testing_interview_questions.md'
         - DBMS Interview Questions and Answers: 'nightwolf-cotribution/dbms_interview_questions.md'
         - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
@@ -61,6 +63,7 @@ nav:
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
          - Yum vs APT cheatsheet: nightwolf-cotribution/yum_vs_apt.md
          - gcloud commands Cheatsheet: gcloud_cheatsheet.md
+         - TLS Version key differences: nightwolf-cotribution/TLS-Difference.md
     - Technical:
          - Linux: linux.md
          - Network: network.md

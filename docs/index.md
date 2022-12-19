@@ -1,10 +1,4 @@
-<table>
-  <tr>
-   <td><h1 style="text-align: right;font-family: cursive;"><a href="https://nightwolf.in/"><img src="img/favi.png" height="70" /> nightWolf </a></h1></td>
-   <td><h1 style="text-align: right;"> {!visits.md!} </h1></td>
-</tr>
-
-</table>
+<h1 style="text-align: center;font-family: cursive;"><a href="https://nightwolf.in/"><img src="img/favi.png" height="70" /> nightWolf </a></h1>
 
 <br/>
 
@@ -49,8 +43,10 @@
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 
 * <h5> Google Cloud Certification Practice Questions </h5>
-      * [GCP ACE Practice Questions - 1st](nightwolf-cotribution/gcp-ace-1.md
-      )
+      * [GCP ACE Practice Questions - 1st](nightwolf-cotribution/gcp-ace-1.md)
+
+      * [GCP ACE Practice Questions - 2nd](nightwolf-cotribution/gcp-ace-2.md)
+
 * <h5> AWS </h5>
       * [AWS Certified SysOps Administrator Questions - 1st](nightwolf-cotribution/aws.md)
 
@@ -119,6 +115,8 @@
 * [Yum vs APT cheatsheet](nightwolf-cotribution/yum_vs_apt.md)
 
 * [gcloud Commands Cheatsheet](gcloud_cheatsheet.md)
+
+* [TLS Version difference](nightwolf-cotribution/TLS-Difference.md)
 
 ## [Linux]()
 
