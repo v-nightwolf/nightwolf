@@ -13,8 +13,9 @@
 <br>
 
 # Google Cloud Platform(GCP)
-### [GCP ACE Practice Questions - 1st](nightwolf-cotribution/gcp-ace-1.md)
-### [GCP ACE Practice Questions - 2nd](nightwolf-cotribution/gcp-ace-2.md)
+### [GCP ACE Practice Questions - set 1](nightwolf-cotribution/gcp-ace-1.md)
+### [GCP ACE Practice Questions - set 2](nightwolf-cotribution/gcp-ace-2.md)
+### [GCP ACE Practice Questions - set 3](nightwolf-cotribution/gcp-ace-3.md)
 
 <br>
 # AWS
