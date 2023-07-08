@@ -63,45 +63,127 @@ Official documentation can be found at <a target="_blank" href=https://cloud.goo
 
           gsutil mb -l US gs://$PROJECT_ID
 
-* To List the items in Cloud Storage Bucket:  
+* To list the items in Cloud Storage Bucket:  
 
           gsutil ls gs://$PROJECT_ID
 
-* gcloud config list project
-* gcloud config configurations list
-* gcloud config configurations create my-second-config
-* gcloud config configurations activate my-default-configuration
-* gcloud config list
-* gcloud config list account
-* gcloud config configurations describe my-second-configuration
-* gcloud compute instances list
-* gcloud compute instances create
-* gcloud compute instances create my-first-instance-from-gcloud
-* gcloud compute instances describe my-first-instance-from-gcloud
-* gcloud compute instances delete my-first-instance-from-gcloud
-* gcloud compute zones list
-* gcloud compute regions list
-* gcloud compute machine-types list
-* gcloud compute machine-types list --filter zone:asia-southeast2-b
-* gcloud compute machine-types list --filter "zone:(asia-southeast2-b asia-southeast2-c)"
-* gcloud compute zones list --filter=region:us-west2
-* gcloud compute zones list --sort-by=region
-* gcloud compute zones list --sort-by=~region
-* gcloud compute zones list --uri
-* gcloud compute regions describe us-west4
-* gcloud compute instance-templates list
-* gcloud compute instance-templates create instance-template-from-command-line
-* gcloud compute instance-templates delete instance-template-from-command-line
-* gcloud compute instance-templates describe my-instance-template-with-custom-image
-* gcloud compute instances create my-test-vm --source-instance-template=my-instance-template-with-custom-image
-* gcloud compute instance-groups managed list
-* gcloud compute instance-groups managed delete my-managed-instance-group
-* gcloud compute instance-groups managed create my-mig --zone us-central1-a --template my-instance-template-with-custom-image --size 1
-* gcloud compute instance-groups managed set-autoscaling my-mig --max-num-replicas=2 --zone us-central1-a
-* gcloud compute instance-groups managed stop-autoscaling my-mig --zone us-central1-a
-* gcloud compute instance-groups managed resize my-mig --size=1 --zone=us-central1-a
-* gcloud compute instance-groups managed recreate-instances my-mig --instances=my-mig-85fb --zone us-central1-a
-* gcloud compute instance-groups managed delete my-managed-instance-group --region=us-central1
+* To list the set project property in the core section:
+
+		gcloud config list $PROJECT_ID
+
+* To list gcloud named configurations: 
+
+		gcloud config configurations list
+
+* To create a new named configuration:
+
+		gcloud config configurations create my-second-config
+
+* To activate sepcific named configuration: 
+
+		gcloud config configurations activate my-default-configuration
+
+* To list the properties of the specified section using the active configuration:
+
+		gcloud config list
+
+* To see your currently available accounts used for `gcloud` authentication: 
+
+		gcloud config list account
+
+* To describe a named configuration by listing its properties: 
+
+		gcloud config configurations describe my-second-configuration
+
+* To display all Compute Engine instances in a project: 
+
+		gcloud compute instances list
+
+* To create Compute Engine virtual machine instances:
+
+		gcloud compute instances create
+
+* To display all data associated with a Compute Engine virtual machine instance: 
+
+		gcloud compute instances describe my-first-instance-from-gcloud
+
+* To delete Compute Engine virtual machine instances: 
+
+		gcloud compute instances delete my-first-instance-from-gcloud
+
+* To display all Google Compute Engine zones in a project: 
+
+		gcloud compute zones list
+
+* To display all Google Compute Engine regions in a project:
+
+		gcloud compute regions list
+
+* To display all Google Compute Engine machine types in a project: 
+
+		gcloud compute machine-types list
+
+* To display all Google Compute Engine machine types in Zone `asia-southeast2-b`:
+
+		gcloud compute machine-types list --filter zone:asia-southeast2-b
+
+* To filter the Google Compute Engine machine types in multiple zones: 
+
+		gcloud compute machine-types list --filter "zone:(asia-southeast2-b asia-southeast2-c)"
+
+* To display all data associated with a Compute Engine region: 
+
+		gcloud compute regions describe $REGION
+
+* To list Google Compute Engine instance templates: 
+
+		gcloud compute instance-templates list
+
+* To create a Compute Engine virtual machine instance template: 
+
+		gcloud compute instance-templates create instance-template-from-command-line
+
+* To delete one or more Compute Engine virtual machine instance templates: 
+
+		gcloud compute instance-templates delete instance-template-from-command-line
+
+* To  display all data associated with a Google Compute Engine virtual machine instance template:
+
+		gcloud compute instance-templates describe my-instance-template-with-custom-image
+
+* To list Google Compute Engine managed instance groups: 
+
+		gcloud compute instance-groups managed list
+
+* To delete Compute Engine managed instance groups:  
+
+		gcloud compute instance-groups managed delete my-managed-instance-group
+
+* To create a Compute Engine managed instance group:
+
+		gcloud compute instance-groups managed create my-mig --zone us-central1-a --template my-instance-template \ 
+		--size 1
+
+* To set autoscaling parameters of a managed instance group:
+
+		gcloud compute instance-groups managed set-autoscaling my-mig --max-num-replicas=2 --zone us-central1-a
+
+* To stop autoscaling a managed instance group: 
+
+		gcloud compute instance-groups managed stop-autoscaling my-mig --zone us-central1-a
+
+* To set managed instance group size:
+
+		gcloud compute instance-groups managed resize my-mig --size=1 --zone=us-central1-a
+
+* To recreate instances managed by a managed instance group:
+
+		gcloud compute instance-groups managed recreate-instances my-mig --instances=my-mig-85fb --zone us-central1-a
+
+* To delete Compute Engine managed instance groups: 
+
+		gcloud compute instance-groups managed delete my-managed-instance-group --region=us-central1
+
 
 ## Troubleshooting instance ssh issue
 

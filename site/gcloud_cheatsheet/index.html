@@ -440,47 +440,156 @@ Official documentation can be found at <a target="_blank" href=https://cloud.goo
 </code></pre>
 </li>
 <li>
-<p>To List the items in Cloud Storage Bucket:  </p>
+<p>To list the items in Cloud Storage Bucket:  </p>
 <pre><code>  gsutil ls gs://$PROJECT_ID
 </code></pre>
 </li>
 <li>
-<p>gcloud config list project</p>
+<p>To list the set project property in the core section:</p>
+<pre><code>gcloud config list $PROJECT_ID
+</code></pre>
 </li>
-<li>gcloud config configurations list</li>
-<li>gcloud config configurations create my-second-config</li>
-<li>gcloud config configurations activate my-default-configuration</li>
-<li>gcloud config list</li>
-<li>gcloud config list account</li>
-<li>gcloud config configurations describe my-second-configuration</li>
-<li>gcloud compute instances list</li>
-<li>gcloud compute instances create</li>
-<li>gcloud compute instances create my-first-instance-from-gcloud</li>
-<li>gcloud compute instances describe my-first-instance-from-gcloud</li>
-<li>gcloud compute instances delete my-first-instance-from-gcloud</li>
-<li>gcloud compute zones list</li>
-<li>gcloud compute regions list</li>
-<li>gcloud compute machine-types list</li>
-<li>gcloud compute machine-types list --filter zone:asia-southeast2-b</li>
-<li>gcloud compute machine-types list --filter "zone:(asia-southeast2-b asia-southeast2-c)"</li>
-<li>gcloud compute zones list --filter=region:us-west2</li>
-<li>gcloud compute zones list --sort-by=region</li>
-<li>gcloud compute zones list --sort-by=~region</li>
-<li>gcloud compute zones list --uri</li>
-<li>gcloud compute regions describe us-west4</li>
-<li>gcloud compute instance-templates list</li>
-<li>gcloud compute instance-templates create instance-template-from-command-line</li>
-<li>gcloud compute instance-templates delete instance-template-from-command-line</li>
-<li>gcloud compute instance-templates describe my-instance-template-with-custom-image</li>
-<li>gcloud compute instances create my-test-vm --source-instance-template=my-instance-template-with-custom-image</li>
-<li>gcloud compute instance-groups managed list</li>
-<li>gcloud compute instance-groups managed delete my-managed-instance-group</li>
-<li>gcloud compute instance-groups managed create my-mig --zone us-central1-a --template my-instance-template-with-custom-image --size 1</li>
-<li>gcloud compute instance-groups managed set-autoscaling my-mig --max-num-replicas=2 --zone us-central1-a</li>
-<li>gcloud compute instance-groups managed stop-autoscaling my-mig --zone us-central1-a</li>
-<li>gcloud compute instance-groups managed resize my-mig --size=1 --zone=us-central1-a</li>
-<li>gcloud compute instance-groups managed recreate-instances my-mig --instances=my-mig-85fb --zone us-central1-a</li>
-<li>gcloud compute instance-groups managed delete my-managed-instance-group --region=us-central1</li>
+<li>
+<p>To list gcloud named configurations: </p>
+<pre><code>gcloud config configurations list
+</code></pre>
+</li>
+<li>
+<p>To create a new named configuration:</p>
+<pre><code>gcloud config configurations create my-second-config
+</code></pre>
+</li>
+<li>
+<p>To activate sepcific named configuration: </p>
+<pre><code>gcloud config configurations activate my-default-configuration
+</code></pre>
+</li>
+<li>
+<p>To list the properties of the specified section using the active configuration:</p>
+<pre><code>gcloud config list
+</code></pre>
+</li>
+<li>
+<p>To see your currently available accounts used for <code>gcloud</code> authentication: </p>
+<pre><code>gcloud config list account
+</code></pre>
+</li>
+<li>
+<p>To describe a named configuration by listing its properties: </p>
+<pre><code>gcloud config configurations describe my-second-configuration
+</code></pre>
+</li>
+<li>
+<p>To display all Compute Engine instances in a project: </p>
+<pre><code>gcloud compute instances list
+</code></pre>
+</li>
+<li>
+<p>To create Compute Engine virtual machine instances:</p>
+<pre><code>gcloud compute instances create
+</code></pre>
+</li>
+<li>
+<p>To display all data associated with a Compute Engine virtual machine instance: </p>
+<pre><code>gcloud compute instances describe my-first-instance-from-gcloud
+</code></pre>
+</li>
+<li>
+<p>To delete Compute Engine virtual machine instances: </p>
+<pre><code>gcloud compute instances delete my-first-instance-from-gcloud
+</code></pre>
+</li>
+<li>
+<p>To display all Google Compute Engine zones in a project: </p>
+<pre><code>gcloud compute zones list
+</code></pre>
+</li>
+<li>
+<p>To display all Google Compute Engine regions in a project:</p>
+<pre><code>gcloud compute regions list
+</code></pre>
+</li>
+<li>
+<p>To display all Google Compute Engine machine types in a project: </p>
+<pre><code>gcloud compute machine-types list
+</code></pre>
+</li>
+<li>
+<p>To display all Google Compute Engine machine types in Zone <code>asia-southeast2-b</code>:</p>
+<pre><code>gcloud compute machine-types list --filter zone:asia-southeast2-b
+</code></pre>
+</li>
+<li>
+<p>To filter the Google Compute Engine machine types in multiple zones: </p>
+<pre><code>gcloud compute machine-types list --filter "zone:(asia-southeast2-b asia-southeast2-c)"
+</code></pre>
+</li>
+<li>
+<p>To display all data associated with a Compute Engine region: </p>
+<pre><code>gcloud compute regions describe $REGION
+</code></pre>
+</li>
+<li>
+<p>To list Google Compute Engine instance templates: </p>
+<pre><code>gcloud compute instance-templates list
+</code></pre>
+</li>
+<li>
+<p>To create a Compute Engine virtual machine instance template: </p>
+<pre><code>gcloud compute instance-templates create instance-template-from-command-line
+</code></pre>
+</li>
+<li>
+<p>To delete one or more Compute Engine virtual machine instance templates: </p>
+<pre><code>gcloud compute instance-templates delete instance-template-from-command-line
+</code></pre>
+</li>
+<li>
+<p>To  display all data associated with a Google Compute Engine virtual machine instance template:</p>
+<pre><code>gcloud compute instance-templates describe my-instance-template-with-custom-image
+</code></pre>
+</li>
+<li>
+<p>To list Google Compute Engine managed instance groups: </p>
+<pre><code>gcloud compute instance-groups managed list
+</code></pre>
+</li>
+<li>
+<p>To delete Compute Engine managed instance groups:  </p>
+<pre><code>gcloud compute instance-groups managed delete my-managed-instance-group
+</code></pre>
+</li>
+<li>
+<p>To create a Compute Engine managed instance group:</p>
+<pre><code>gcloud compute instance-groups managed create my-mig --zone us-central1-a --template my-instance-template \ 
+--size 1
+</code></pre>
+</li>
+<li>
+<p>To set autoscaling parameters of a managed instance group:</p>
+<pre><code>gcloud compute instance-groups managed set-autoscaling my-mig --max-num-replicas=2 --zone us-central1-a
+</code></pre>
+</li>
+<li>
+<p>To stop autoscaling a managed instance group: </p>
+<pre><code>gcloud compute instance-groups managed stop-autoscaling my-mig --zone us-central1-a
+</code></pre>
+</li>
+<li>
+<p>To set managed instance group size:</p>
+<pre><code>gcloud compute instance-groups managed resize my-mig --size=1 --zone=us-central1-a
+</code></pre>
+</li>
+<li>
+<p>To recreate instances managed by a managed instance group:</p>
+<pre><code>gcloud compute instance-groups managed recreate-instances my-mig --instances=my-mig-85fb --zone us-central1-a
+</code></pre>
+</li>
+<li>
+<p>To delete Compute Engine managed instance groups: </p>
+<pre><code>gcloud compute instance-groups managed delete my-managed-instance-group --region=us-central1
+</code></pre>
+</li>
 </ul>
 <h2 id="troubleshooting-instance-ssh-issue">Troubleshooting instance ssh issue<a class="headerlink" href="#troubleshooting-instance-ssh-issue" title="Permanent link"></a></h2>
 <pre><code>    recommendations, rerun the ssh command with the --troubleshoot option.
