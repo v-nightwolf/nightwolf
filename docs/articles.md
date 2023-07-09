@@ -10,6 +10,9 @@ We are working on wide variety of articles for the readers. Here is a list of ar
 * ##### [What is Internet of Things (IoT) ?](articles/iot.md)
 * ##### [What is Natural Language Processing (NLP) ?](articles/natural_language_processing.md)
 * ##### [What is Robotics and Automation ?](articles/robotics_automation.md)
+* ##### [Quantum Computing: The Next Frontier](articles/quantum_computing.md)
+* ##### [Blockchain: A Primer for Beginners](articles/blockchain.md)
+* ##### [What is Virtual Reality (VR) ?](articles/virtual_reality.md)
 
 ---
 

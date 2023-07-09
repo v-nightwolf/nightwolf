@@ -76,6 +76,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.nightwolf.in/articles/blockchain/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.nightwolf.in/articles/iot/</loc>
          <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
@@ -96,7 +101,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://www.nightwolf.in/articles/quantum_computing/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://www.nightwolf.in/articles/robotics_automation/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/virtual_reality/</loc>
          <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
