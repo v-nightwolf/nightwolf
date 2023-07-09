@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/articles/ai_intro/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>What is Artificial Intelligence(AI) ? - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'G-6S38F29HSQ', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../nightwolf-cotribution/performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/TLS-Difference/" class="dropdown-item">TLS Version key differences</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">What is Artificial Intelligence(AI) ?</a>
+</li>
+                                    
+<li>
+    <a href="../ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
+</li>
+                                    
+<li>
+    <a href="../machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
+</li>
+                                    
+<li>
+    <a href="../neural_networks/" class="dropdown-item">What is Neural Network ?</a>
+</li>
+                                    
+<li>
+    <a href="../iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
+</li>
+                                    
+<li>
+    <a href="../natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
+</li>
+                                    
+<li>
+    <a href="../robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../cloud-comp/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../ai_trends/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#what-is-artificial-intelligenceai" class="nav-link">What is Artificial Intelligence(AI) ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="what-is-artificial-intelligenceai">What is Artificial Intelligence(AI) ?<a class="headerlink" href="#what-is-artificial-intelligenceai" title="Permanent link"></a></h1>
+<hr />
+<p>I am sure, the question "What is Artificial Intelligence (AI)?" has come up in front of us many times and we must be wondering to find more about this AI thing. Let me help your query with below short introduction to AI. </p>
+<p><strong>Artificial Intelligence (AI) is a term that has gained significant attention and popularity in recent years. It refers to the development and implementation of intelligent systems that can perform tasks requiring human-like intelligence. AI aims to simulate human cognition, reasoning, problem-solving, and decision-making processes, using algorithms and data analysis to achieve these objectives.</strong></p>
+<ul>
+<li>
+<p>AI systems are designed to think and learn like humans, enabling them to process vast amounts of information, analyze patterns, and make predictions or decisions based on the available data. By leveraging advanced algorithms, AI systems can identify hidden insights and correlations that might not be apparent to human observers.</p>
+</li>
+<li>
+<p>Within the field of AI, there are several subfields that focus on specific aspects of intelligent systems. Machine learning, for example, is a critical component of AI, enabling systems to learn from data and improve their performance over time without explicit programming. Machine learning algorithms can recognize patterns in data and use them to make accurate predictions or classifications.</p>
+</li>
+<li>
+<p>Another subfield of AI is natural language processing (NLP), which focuses on enabling machines to understand and interact with human language. NLP algorithms enable chatbots, virtual assistants, and other AI systems to comprehend human commands, respond to inquiries, and generate human-like text. This has opened up new avenues for human-machine communication and interaction.</p>
+</li>
+<li>
+<p>Computer vision is yet another subfield of AI that involves teaching machines to interpret and understand visual information. With computer vision, AI systems can analyze images and videos, enabling applications such as facial recognition, object detection, and autonomous vehicles. This capability has transformed industries such as security, healthcare, and transportation.</p>
+</li>
+</ul>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="4236115489"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr />
+<ul>
+<li>
+<p>Robotics is a branch of AI that combines intelligence with physical systems. AI-powered robots are capable of performing tasks autonomously or in collaboration with humans. They can handle repetitive or dangerous tasks in industries like manufacturing and logistics, freeing up human workers for more complex and creative endeavors.</p>
+</li>
+<li>
+<p>The applications of AI are vast and span across various industries. In healthcare, AI is being used for diagnosis assistance, drug discovery, and personalized medicine. In finance, AI algorithms aid in fraud detection, algorithmic trading, and risk assessment. AI is revolutionizing transportation with self-driving cars and optimizing supply chain management in manufacturing. Furthermore, AI is enhancing entertainment experiences through recommendation systems and immersive technologies.</p>
+</li>
+<li>
+<p>While the potential of AI is immense, it is essential to consider the ethical implications of its development and deployment. Privacy concerns, bias in algorithms, and the impact on employment are among the challenges that need to be addressed to ensure responsible and beneficial use of AI.</p>
+</li>
+<li>
+<p>In conclusion, Artificial Intelligence represents the development and application of intelligent systems that mimic human-like intelligence. Through machine learning, natural language processing, computer vision, and robotics, AI systems are revolutionizing various industries and reshaping the way we live and work. As AI continues to advance, it is crucial to balance its potential with ethical considerations to create a future where human intelligence and artificial intelligence can coexist and thrive.</p>
+</li>
+</ul>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="4236115489"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr />
+<p><strong>If I have to write above in crisp bullet points, this is how I would write:</strong></p>
+<ul>
+<li>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans.</li>
+<li>AI involves the development of intelligent systems capable of performing tasks that typically require human intelligence, such as perception, reasoning, problem-solving, and decision-making.</li>
+<li>AI systems use algorithms and data to analyze, interpret, and extract meaningful insights from vast amounts of information.</li>
+<li>AI encompasses various subfields, including machine learning, natural language processing, computer vision, robotics, and expert systems.</li>
+<li>Machine learning is a key component of AI, allowing systems to learn from data and improve their performance over time without explicit programming.</li>
+<li>AI systems can process and understand human language, enabling communication with humans through chatbots and virtual assistants.</li>
+<li>Computer vision enables AI systems to analyze and interpret visual information, leading to applications such as facial recognition and object detection.</li>
+<li>Robotics combines AI and automation to create intelligent machines that can perform physical tasks and interact with the environment.</li>
+<li>AI has widespread applications across industries, including healthcare, finance, manufacturing, transportation, and entertainment.</li>
+<li>Ethical considerations surrounding AI, such as privacy, bias, and job displacement, require careful attention to ensure responsible development and deployment.</li>
+</ul>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<!-- horizontal -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="5166053770"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<hr />
+<p>You may also explore other articles in our bucket, Happy reading !!:</p>
+<ul>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/ai_intro>What is Artificial Intelligence ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/machine_learning_intro/>What is Machine Learning ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/ai_trends>Unleashing the Power of Artificial Intelligence</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/neural_networks>What is Neural Networks ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/iot>What is Internet of Things (IoT) ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/natural_language_processing>What is Natural Language Processing (NLP) ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/robotics_automation>What is Robotics and Automation ?</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

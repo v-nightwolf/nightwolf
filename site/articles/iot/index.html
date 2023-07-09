@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/articles/iot/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>What is Internet of Things (IoT) ? - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'G-6S38F29HSQ', 'nightwolf.in');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../nightwolf-cotribution/performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/azure.pdf" class="dropdown-item">Azure Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/TLS-Difference/" class="dropdown-item">TLS Version key differences</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
+</li>
+                                    
+<li>
+    <a href="../ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
+</li>
+                                    
+<li>
+    <a href="../machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
+</li>
+                                    
+<li>
+    <a href="../neural_networks/" class="dropdown-item">What is Neural Network ?</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">What is Internet of Things (IoT) ?</a>
+</li>
+                                    
+<li>
+    <a href="../natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
+</li>
+                                    
+<li>
+    <a href="../robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../neural_networks/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../natural_language_processing/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#unveiling-the-wonders-of-the-internet-of-things-iot" class="nav-link">Unveiling the Wonders of the Internet of Things (IoT)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="unveiling-the-wonders-of-the-internet-of-things-iot">Unveiling the Wonders of the Internet of Things (IoT)<a class="headerlink" href="#unveiling-the-wonders-of-the-internet-of-things-iot" title="Permanent link"></a></h1>
+<h3 id="a-guide-to-a-connected-world">A Guide to a Connected World<a class="headerlink" href="#a-guide-to-a-connected-world" title="Permanent link"></a></h3>
+<hr />
+<h4 id="what-is-internet-of-things-iot"><strong>What is Internet of Things (IoT) ?</strong><a class="headerlink" href="#what-is-internet-of-things-iot" title="Permanent link"></a></h4>
+<p>The Internet of Things (IoT) is a technological marvel that has revolutionized the way we live, work, and interact with our surroundings. In this article, we will explore the concept of IoT in simple terms, shedding light on its impact and providing learning materials to delve deeper into this exciting field. Let's embark on a journey to understand how IoT is transforming our world into a connected ecosystem.</p>
+<h4 id="understanding-the-internet-of-things-iot"><strong>Understanding the Internet of Things (IoT)</strong><a class="headerlink" href="#understanding-the-internet-of-things-iot" title="Permanent link"></a></h4>
+<p>Imagine a world where everyday objects are interconnected and can communicate with each other over the internet. That's the essence of the Internet of Things. IoT refers to the network of physical devices, vehicles, appliances, and other objects embedded with sensors, software, and connectivity, enabling them to collect and exchange data.</p>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="4236115489"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr />
+<h5 id="the-key-elements-of-iot-are-as-follows"><strong>The key elements of IoT are as follows:</strong><a class="headerlink" href="#the-key-elements-of-iot-are-as-follows" title="Permanent link"></a></h5>
+<ol>
+<li>
+<p><strong>Devices:</strong> IoT is built upon a vast array of devices that are equipped with sensors and connected to the internet. These devices can be anything from smart home appliances like thermostats and refrigerators to wearables like fitness trackers and smartwatches.</p>
+</li>
+<li>
+<p><strong>Sensors:</strong> Sensors play a crucial role in IoT devices as they capture and monitor various types of data from the surrounding environment. They can detect temperature, humidity, motion, light, and much more. Sensors act as the eyes and ears of IoT devices, collecting valuable information.</p>
+</li>
+<li>
+<p><strong>Connectivity:</strong> The devices in an IoT network communicate with each other and with the cloud through various connectivity options such as Wi-Fi, Bluetooth, cellular networks, or even satellite connections. This enables seamless data exchange and remote control of IoT devices.</p>
+</li>
+<li>
+<p><strong>Data and Analytics:</strong> IoT generates massive amounts of data through the sensors embedded in devices. This data is collected, stored, and analyzed to extract valuable insights. Advanced analytics techniques, such as machine learning, are applied to make sense of the data and drive intelligent decision-making.</p>
+</li>
+</ol>
+<h4 id="impact-and-applications-of-iot"><strong>Impact and Applications of IoT</strong><a class="headerlink" href="#impact-and-applications-of-iot" title="Permanent link"></a></h4>
+<p>The impact of IoT is far-reaching and encompasses various aspects of our lives:</p>
+<ol>
+<li>
+<p><strong>Smart Homes:</strong> IoT enables homeowners to control and automate their home appliances, lighting, security systems, and more through smart devices and voice assistants. This enhances convenience, energy efficiency, and security.</p>
+</li>
+<li>
+<p><strong>Healthcare:</strong> IoT devices can monitor patients' vital signs, track medication adherence, and enable remote patient monitoring. This enables personalized healthcare, early detection of health issues, and improved patient outcomes.</p>
+</li>
+<li>
+<p><strong>Industrial IoT (IIoT):</strong> In industries, IoT is transforming manufacturing, logistics, and supply chain management. IIoT enables real-time monitoring of machinery, predictive maintenance, and optimization of operations for improved efficiency and productivity.</p>
+</li>
+<li>
+<p><strong>Smart Cities:</strong> IoT technologies are being employed to create smarter and more sustainable cities. Smart parking systems, intelligent traffic management, and energy-efficient infrastructure are just a few examples of how IoT is revolutionizing urban living.</p>
+</li>
+</ol>
+<h4 id="learning-materials-to-explore"><strong>Learning Materials to Explore</strong><a class="headerlink" href="#learning-materials-to-explore" title="Permanent link"></a></h4>
+<p>To delve deeper into the realm of IoT, here are some learning materials that can help you understand the subject better:</p>
+<ol>
+<li>
+<p>"A Gentle Introduction to IoT" by The IoT Learning Initiative: This online guide provides a beginner-friendly introduction to IoT, covering its core concepts, applications, and challenges.</p>
+</li>
+<li>
+<p>IoT Courses on Coursera: Platforms like Coursera offer a variety of IoT courses from top universities and institutions. These courses cover topics such as IoT architecture, security, and data analytics, providing a comprehensive understanding of IoT.</p>
+</li>
+<li>
+<p>IoT Developer Platforms: Platforms like Arduino, Raspberry Pi, and Microsoft Azure IoT offer resources, tutorials, and projects to help you get hands-on experience with building IoT solutions.</p>
+</li>
+</ol>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="4236115489"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr />
+<h4 id="conclusion"><strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Permanent link"></a></h4>
+<p>The Internet of Things (IoT) has ushered in a new era of connectivity and transformed the way we interact with the world around us. By interconnecting devices, sensors, and data analytics, IoT has brought immense convenience, efficiency, and innovation to our lives. Exploring learning materials like the recommended guide, online courses, and developer platforms will enable you to further comprehend the intricacies of IoT and its applications. So, embrace the connected world of IoT and witness firsthand how it is shaping the future of technology and society.</p>
+<hr />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
+     crossorigin="anonymous"></script>
+<!-- horizontal -->
+<p><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5000366982270064"
+     data-ad-slot="5166053770"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<hr />
+<p>You may also explore other articles in our bucket, Happy reading !!:</p>
+<ul>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/ai_intro>What is Artificial Intelligence ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/machine_learning_intro/>What is Machine Learning ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/ai_trends>Unleashing the Power of Artificial Intelligence</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/neural_networks>What is Neural Networks ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/iot>What is Internet of Things (IoT) ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/natural_language_processing>What is Natural Language Processing (NLP) ?</a></li>
+<li><a target="_blank" href=https://www.nightwolf.in/articles/robotics_automation>What is Robotics and Automation ?</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -71,8 +71,16 @@ nav:
          - Database: db/
          - Cloud: 
            - Service Comparison between GCP, AWS, Azure: cloud-comp.md
-    - Services:
-        - Jobs for you: https://www.linkedin.com/groups/8982092/
+         - Group for Jobs postings: https://www.linkedin.com/groups/8982092/
+
+    - Articles:
+        - What is Artificial Intelligence(AI) ?: articles/ai_intro.md
+        - Unleashing the Power of Artificial Intelligence: articles/ai_trends.md
+        - What is Machine Learning ?: articles/machine_learning_intro.md
+        - What is Neural Network ?: articles/neural_networks.md
+        - What is Internet of Things (IoT) ?: articles/iot.md
+        - What is Natural Language Processing (NLP) ?: articles/natural_language_processing.md
+        - What is Robotics and Automation ?: articles/robotics_automation.md
 
 extra:
   analytics:

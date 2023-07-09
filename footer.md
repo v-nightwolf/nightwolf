@@ -2,7 +2,7 @@
 
 ---
 
-You may also refer to below articles:
+You may also refer to other interview preparation articles:
 
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_basic/>Linux Interview Questions for Freshers</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/>Linux Interview Questions for Freshers - 2</a>
@@ -32,6 +32,7 @@ You may also refer to below articles:
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/>DBMS Interview Questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a>
 
+* {!articles_foot.md!}
 ---
 
 {!multiplex-ads.md!}

@@ -2,252 +2,292 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.nightwolf.in/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/</loc>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/cheatsheet/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/cloud-comp/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/contribute/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/db/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/gcloud_cheatsheet/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/interview/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/linux/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/mongo/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/mysql/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/network/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/reference/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/ai_intro/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/ai_trends/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/iot/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/machine_learning_intro/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/natural_language_processing/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/neural_networks/</loc>
+         <lastmod>2023-07-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/articles/robotics_automation/</loc>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/TLS-Difference/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/ansible_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/aws-2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/aws-3/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/aws-4/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/aws/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/azure_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions-2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/devops_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/docker_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-1/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/gcp-ace-3/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/git/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/git_cheatsheet/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/http_protocols/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions-2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/jenkins/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/kubernetes_cheatsheet/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/kubernetes_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_L1/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_L2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_L3/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_basic/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_interview_questions_for_freshers/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/linux_questionairs/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/manual_testing_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/network/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/performance/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/shell_scripting_interview_questions/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-2/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question-3/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/terraform_interview_question/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://www.nightwolf.in/nightwolf-cotribution/yum_vs_apt/</loc>
-         <lastmod>2023-07-08</lastmod>
+         <lastmod>2023-07-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
