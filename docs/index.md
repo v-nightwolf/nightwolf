@@ -128,8 +128,6 @@
 * [What is Robotics and Automation ?](articles/robotics_automation.md)
 * [Quantum Computing: The Next Frontier](articles/quantum_computing.md)
 * [Blockchain: A Primer for Beginners](articles/blockchain.md)
-* [Quantum Computing: The Next Frontier](articles/quantum_computing.md)
-* [Blockchain: A Primer for Beginners](articles/blockchain.md)
 * [What is Virtual Reality (VR) ?](articles/virtual_reality.md)
 
 

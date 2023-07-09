@@ -11,3 +11,7 @@ You may also explore other articles in our bucket, Happy reading !!:
 * <a target="_blank" href=https://www.nightwolf.in/articles/iot>What is Internet of Things (IoT) ?</a>
 * <a target="_blank" href=https://www.nightwolf.in/articles/natural_language_processing>What is Natural Language Processing (NLP) ?</a>
 * <a target="_blank" href=https://www.nightwolf.in/articles/robotics_automation>What is Robotics and Automation ?</a>
+* <a target="_blank" href=https://www.nightwolf.in/articles/quantum_computing>Quantum Computing: The Next Frontier</a>
+* <a target="_blank" href=https://www.nightwolf.in/articles/blockchain>Blockchain: A Primer for Beginners</a>
+* <a target="_blank" href=https://www.nightwolf.in/articles/virtual_reality>What is Virtual Reality (VR) ?</a>
+
