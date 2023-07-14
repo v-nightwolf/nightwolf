@@ -1,6 +1,6 @@
 site_name: nightWolf
 site_favicon: 'img/favi.png'
-google_analytics: ['G-6S38F29HSQ', 'nightwolf.in']
+google_analytics: ['G-8QN4YRWY1N', 'nightwolf.in']
 site_url: https://www.nightwolf.in
 
 theme:
@@ -85,4 +85,4 @@ nav:
 extra:
   analytics:
     provider: google
-    property: G-6S38F29HSQ 
+    property: G-8QN4YRWY1N 
