@@ -1,12 +1,13 @@
 site_name: nightWolf
 site_favicon: 'img/favi.png'
-google_analytics: ['G-8QN4YRWY1N', 'nightwolf.in']
 site_url: https://www.nightwolf.in
 
 theme:
     name: mkdocs 
     nav_style: dark
     logo: wolf.png
+    analytics:
+      gtag: G-8QN4YRWY1N
 
 markdown_extensions:
     - toc:
@@ -82,7 +83,3 @@ nav:
         - What is Natural Language Processing (NLP) ?: articles/natural_language_processing.md
         - What is Robotics and Automation ?: articles/robotics_automation.md
 
-extra:
-  analytics:
-    provider: google
-    property: G-8QN4YRWY1N 
