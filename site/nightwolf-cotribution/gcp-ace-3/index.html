@@ -996,15 +996,16 @@ Explanation:
 <p>You are developing a simple application in App Engine Standard service. Unit testing and
 user acceptance testing has succeeded, and you want to build a new App Engine application
 to serve as your performance testing environment. What should you do?</p>
-<p>a). Configure a Deployment Manager YAML template to copy the application from the development GCP
+<pre><code>a). Configure a Deployment Manager YAML template to copy the application from the development GCP
     project into the performance testing GCP project.
 b). Create a new GCP project for the performance testing environment using gcloud and copy the application
     from the development GCP project into the performance testing GCP project.
 c). Create a new GCP project for the performance testing environment using gcloud and deploy your App
     Engine application to the new GCP project.
 d). Use gcloud to deploy the application to a new performance testing GCP project by specifying the 
-    --project parameter. Select Yes when prompted for confirmation on creating a new project.</p>
-<pre><code>Correct: c
+    --project parameter. Select Yes when prompted for confirmation on creating a new project.
+
+Correct: c
 
 Explanation:
 You can deploy to a different project by using --project flag. By default, the service is deployed
