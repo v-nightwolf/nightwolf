@@ -31,6 +31,8 @@ You may also refer to other interview preparation articles:
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/manual_testing_interview_questions/>Manual Testing Interview Questions for QA Engineers/Testers</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/dbms_interview_questions/>DBMS Interview Questions</a>
 * <a target="_blank" href=https://www.nightwolf.in/nightwolf-cotribution/managerial_interview_questions/ >Managerial interview questions</a>
+* [Microsoft Azure Administrator AZ-103](/nightwolf-cotribution/azure_questions)
+* [Microsoft Azure Administrator AZ-103 - set 2](/nightwolf-cotribution/azure_questions_2)
 
 * {!articles_foot.md!}
 ---

@@ -50,15 +50,18 @@ nav:
             - GCP ACE Practice Questions-1: 'nightwolf-cotribution/gcp-ace-1.md'
             - GCP ACE Practice Questions-2: 'nightwolf-cotribution/gcp-ace-2.md'
             - GCP ACE Practice Questions-3: 'nightwolf-cotribution/gcp-ace-3.md'
-        - AWS Interview Questions: 
+        - AWS Certification Practice Questions: 
             - AWS Certified SysOps Administrator Questions- 1st: 'nightwolf-cotribution/aws.md'
             - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
             - AWS Interview Questions- 2nd: 'nightwolf-cotribution/aws-4.md'
+        - Azure AZ-103 Practice Questions:
+            - Microsoft Azure Administrator AZ-103: 'nightwolf-cotribution/azure_questions.md'
+            - Microsoft Azure Administrator AZ-103- set 2: 'nightwolf-cotribution/azure_questions_2.md'
         - Manual Testing/QA Interview Questions: 'nightwolf-cotribution/manual_testing_interview_questions.md'
         - DBMS Interview Questions and Answers: 'nightwolf-cotribution/dbms_interview_questions.md'
-        - Azure Interview Questions: 'nightwolf-cotribution/azure.pdf'
         - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
+
     - Cheatsheets:
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md

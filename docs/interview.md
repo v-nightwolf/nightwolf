@@ -17,6 +17,10 @@
 ### [GCP ACE Practice Questions - set 2](nightwolf-cotribution/gcp-ace-2.md)
 ### [GCP ACE Practice Questions - set 3](nightwolf-cotribution/gcp-ace-3.md)
 
+# Azure
+### [Microsoft Azure Administrator AZ-103](nightwolf-cotribution/azure_questions.md)
+### [Microsoft Azure Administrator AZ-103 - set 2](nightwolf-cotribution/azure_questions_2.md)
+
 <br>
 # AWS
 ### [AWS Certified SysOps Administrator Questions and Answers - 1](nightwolf-cotribution/aws.md)

@@ -166,7 +166,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.nightwolf.in/nightwolf-cotribution/azure_interview_questions/</loc>
+         <loc>https://www.nightwolf.in/nightwolf-cotribution/azure_questions/</loc>
+         <lastmod>2023-08-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.nightwolf.in/nightwolf-cotribution/azure_questions_2/</loc>
          <lastmod>2023-08-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
