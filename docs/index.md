@@ -130,6 +130,8 @@
 * [Blockchain: A Primer for Beginners](articles/blockchain.md)
 * [What is Virtual Reality (VR) ?](articles/virtual_reality.md)
 * [Cybersecurity: Protecting our digital world](articles/cyber_security.md)
+* [What is AI Chat Open Assistant Chatbot ?](articles/ai_chatbot.md)
+* [What is Bard chatbot ?](articles/bard.md)
 
 ## [Linux]()
 
