@@ -12,10 +12,16 @@
 ###[OS Network interview Questions and Answers](nightwolf-cotribution/network.md)
 <br>
 
+# Python
+### [Python Programs for practice](nightwolf-cotribution/python_programs.md)
+<br>
+
 # Google Cloud Platform(GCP)
 ### [GCP ACE Practice Questions - set 1](nightwolf-cotribution/gcp-ace-1.md)
 ### [GCP ACE Practice Questions - set 2](nightwolf-cotribution/gcp-ace-2.md)
 ### [GCP ACE Practice Questions - set 3](nightwolf-cotribution/gcp-ace-3.md)
+
+<br>
 
 # Azure
 ### [Microsoft Azure Administrator AZ-103](nightwolf-cotribution/azure_questions.md)

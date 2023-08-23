@@ -39,6 +39,9 @@
 
       * [Shell-Scripting Interview Questions and Answers](nightwolf-cotribution/shell_scripting_interview_questions.md)
 
+* <h5> Python </h5>
+      * [Python Programs for practice](nightwolf-cotribution/python_programs.md)
+
 * <h5> OS Networking </h5>
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
 

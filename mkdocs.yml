@@ -30,6 +30,7 @@ nav:
            - 'Advanced Linux Interview Questions for Experienced Admins - L3': 'nightwolf-cotribution/linux_L3.md'
            - 'Solved list of Linux interview Questions': 'nightwolf-cotribution/linux_questionairs.md'
         - Shell-Scripting Interview Questions: 'nightwolf-cotribution/shell_scripting_interview_questions.md'
+        - Python Programs for practice: 'nightwolf-cotribution/python_programs.md'
         - OS Networking Interview Questions: 'nightwolf-cotribution/network.md'
         - DevOps Interview Questions:
             - DevOps Interview Questions for Freshers and Experienced: 'nightwolf-cotribution/devops_interview_questions.md'
@@ -63,11 +64,12 @@ nav:
         - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
 
     - Cheatsheets:
+         - Leetcode Solutions CheatSheet: cheatsheets/leetcode_solutions.md
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
          - Yum vs APT cheatsheet: nightwolf-cotribution/yum_vs_apt.md
-         - gcloud commands Cheatsheet: gcloud_cheatsheet.md
+         - gcloud commands Cheatsheet: cheatsheets/gcloud_cheatsheet.md
          - TLS Version key differences: nightwolf-cotribution/TLS-Difference.md
     - Technical:
          - Linux: linux.md
@@ -91,3 +93,4 @@ nav:
         - Cybersecurity: articles/cyber_security.md
         - What is AI Chat Open Assistant Chatbot ?: articles/ai_chatbot.md
         - What is Bard chatbot ?: articles/bard.md
+

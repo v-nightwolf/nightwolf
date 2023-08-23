@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/cheatsheets/leetcode_solutions/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Leetcode Solutions CheatSheet - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-8QN4YRWY1N');
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../nightwolf-cotribution/performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interview-Prep <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/python_programs/" class="dropdown-item">Python Programs for practice</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/azure_questions/" class="dropdown-item">Microsoft Azure Administrator AZ-103</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cheatsheets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Leetcode Solutions CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/TLS-Difference/" class="dropdown-item">TLS Version key differences</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Technical <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Articles <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../articles/ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/neural_networks/" class="dropdown-item">What is Neural Network ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/quantum_computing/" class="dropdown-item">Quantum Computing</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/blockchain/" class="dropdown-item">Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/cyber_security/" class="dropdown-item">Cybersecurity</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
+</li>
+                                    
+<li>
+    <a href="../../articles/bard/" class="dropdown-item">What is Bard chatbot ?</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../nightwolf-cotribution/managerial_interview_questions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../nightwolf-cotribution/kubernetes_cheatsheet/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#leetcode-solutions" class="nav-link">LeetCode Solutions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-rotate-array-in-java" class="nav-link">1. Rotate Array in Java</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-evaluate-reverse-polish-notation" class="nav-link">2. Evaluate Reverse Polish Notation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-solution-of-longest-palindromic-substring-in-java" class="nav-link">3. Solution of Longest Palindromic Substring in Java</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-solution-word-break" class="nav-link">4. Solution Word Break</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#5-word-break-ii" class="nav-link">5. Word Break II</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="leetcode-solutions">LeetCode Solutions<a class="headerlink" href="#leetcode-solutions" title="Permanent link"></a></h1>
+<hr />
+<p>LeetCode is a popular online platform that provides a collection of coding challenges and problems primarily focused on computer science and programming. It is widely used by individuals, especially those preparing for technical interviews at technology companies, as well as by students and professionals looking to improve their coding and problem-solving skills.</p>
+<ul>
+<li>
+<p>LeetCode offers a vast array of problems that cover various topics such as data structures (arrays, linked lists, trees, graphs, etc.) and algorithms (sorting, searching, dynamic programming, etc.). These problems are designed to challenge users' ability to write efficient and correct code to solve specific tasks or puzzles.</p>
+</li>
+<li>
+<p>Users can submit their solutions to the problems using various programming languages like Python, Java, C++, and more. LeetCode then evaluates the submissions for correctness, efficiency, and runtime performance. This allows users to practice coding, learn new techniques, and improve their skills by tackling a diverse set of problems.</p>
+</li>
+<li>
+<p>The platform also includes features such as a discussion forum for problem-solving discussions, articles and solutions contributed by the community, and premium features for more personalized practice and learning experiences.</p>
+</li>
+</ul>
+<hr />
+<h2 id="1-rotate-array-in-java"><strong>1. Rotate Array in Java</strong><a class="headerlink" href="#1-rotate-array-in-java" title="Permanent link"></a></h2>
+<p>You may have been using Java for a while. Do you think a simple Java array question
+can be a challenge? Let’s use the following problem to test.</p>
+<p>Problem: Rotate an array of n elements to the right by k steps. For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+How many different ways do you know to solve this problem?</p>
+<h5 id="solution-1-intermediate-array"><strong>Solution 1 - Intermediate Array</strong><a class="headerlink" href="#solution-1-intermediate-array" title="Permanent link"></a></h5>
+<pre><code>In a straightforward way, we can create a new array and then copy elements to the
+new array. Then change the original array by using System.arraycopy().
+
+
+public void rotate(int[] nums, int k) {
+ if(k &gt; nums.length)
+ k=k%nums.length;
+ int[] result = new int[nums.length];
+ for(int i=0; i &lt; k; i++){
+   result[i] = nums[nums.length-k+i];
+ }
+ int j=0;
+ for(int i=k; i&lt;nums.length; i++){
+   result[i] = nums[j];
+   j++;
+ }
+ System.arraycopy( result, 0, nums, 0, nums.length );
+}
+
+Space is O(n) and time is O(n).
+
+</code></pre>
+<h5 id="solution-2-bubble-rotate"><strong>Solution 2 - Bubble Rotate</strong><a class="headerlink" href="#solution-2-bubble-rotate" title="Permanent link"></a></h5>
+<pre><code>Can we do this in O(1) space?
+  This solution is like a bubble sort
+
+public static void rotate(int[] arr, int order) {
+    if (arr == null || order &lt; 0) {
+        throw new IllegalArgumentException(&quot;Illegal argument!&quot;);
+    }
+
+    for (int i = 0; i &lt; order; i++) {
+        for (int j = arr.length - 1; j &gt; 0; j--) {
+            int temp = arr[j];
+            arr[j] = arr[j - 1];
+            arr[j - 1] = temp;
+        }
+    }
+}
+
+However, the time is O(n*k).
+
+</code></pre>
+<h5 id="solution-3-reversal"><strong>Solution 3 - Reversal</strong><a class="headerlink" href="#solution-3-reversal" title="Permanent link"></a></h5>
+<pre><code>Can we do this in O(1) space and in O(n) time? The following solution does.
+Assuming we are given 1,2,3,4,5,6 and order 2. The basic idea is:
+
+  1. Divide the array two parts: 1,2,3,4 and 5, 6
+  2. Rotate first part: 4,3,2,1,5,6
+  3. Rotate second part: 4,3,2,1,6,5
+  4. Rotate the whole array: 5,6,1,2,3,4
+
+--------------------
+
+public static void rotate(int[] arr, int order) {
+    order = order % arr.length;
+
+    if (arr == null || order &lt; 0) {
+        throw new IllegalArgumentException(&quot;Illegal argument!&quot;);
+    }
+
+    //length of first part
+    int a = arr.length - order;
+
+    reverse(arr, 0, a-1);
+    reverse(arr, a, arr.length-1);
+    reverse(arr, 0, arr.length-1);
+}
+
+public static void reverse(int[] arr, int left, int right) 
+{
+    if(arr == null || arr.length == 1)
+        return;
+
+    while(left &lt; right){
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left++;
+        right--;
+    }
+}
+
+</code></pre>
+<h2 id="2-evaluate-reverse-polish-notation"><strong>2. Evaluate Reverse Polish Notation</strong><a class="headerlink" href="#2-evaluate-reverse-polish-notation" title="Permanent link"></a></h2>
+<p>The problem:</p>
+<p>Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+Valid operators are +, -, *, /. Each operand may be an integer or another
+expression.</p>
+<p>Some examples:</p>
+<p>["2", "1", "+", "3", "*"] -&gt; ((2 + 1) * 3) -&gt; 9</p>
+<p>["4", "13", "5", "/", "+"] -&gt; (4 + (13 / 5)) -&gt; 6</p>
+<h5 id="solution-1-naive-approach"><strong>Solution 1 - Naive Approach</strong><a class="headerlink" href="#solution-1-naive-approach" title="Permanent link"></a></h5>
+<pre><code>This problem is simple. After understanding the problem, we should quickly realize
+that this problem can be solved by using a stack. We can loop through each element
+in the given array. When it is a number, push it to the stack. When it is an operator,
+pop two numbers from the stack, do the calculation, and push back the result.
+
+The following is the code. It runs great by feeding a small test. However, this code contains
+compilation errors in leetcode. Why?
+
+public class Test {
+    public static void main(String[] args) throws IOException {
+        String[] tokens = new String[] { &quot;2&quot;, &quot;1&quot;, &quot;+&quot;, &quot;3&quot;, &quot;*&quot; };
+        System.out.println(evalRPN(tokens));
+    }
+
+public static int evalRPN(String[] tokens) {
+    int returnValue = 0;
+    String operators = &quot;+-*/&quot;;
+
+    Stack&lt;String&gt; stack = new Stack&lt;String&gt;();
+
+    for (String t : tokens) {
+        if (!operators.contains(t)) {
+            stack.push(t);
+        } else {
+            int a = Integer.valueOf(stack.pop());
+            int b = Integer.valueOf(stack.pop());
+            switch (t) {
+              case &quot;+&quot;:
+                stack.push(String.valueOf(a + b));
+                break;
+              case &quot;-&quot;:
+                stack.push(String.valueOf(b - a));
+                break;
+              case &quot;*&quot;:
+                stack.push(String.valueOf(a * b));
+                break;
+              case &quot;/&quot;:
+                stack.push(String.valueOf(b / a));
+                break;
+            }
+        }
+    }
+    returnValue = Integer.valueOf(stack.pop());
+    return returnValue;
+    }
+}
+
+The problem is that switch string statement is only available from JDK 1.7. Leetcode
+apparently use versions below that.
+
+</code></pre>
+<h5 id="solution-2-accepted-solution"><strong>Solution 2 - Accepted Solution</strong><a class="headerlink" href="#solution-2-accepted-solution" title="Permanent link"></a></h5>
+<pre><code>If you want to use switch statement, you can convert the above by using the following
+code which use the index of a string &quot;+-*/&quot;.
+
+public class Solution {
+    public int evalRPN(String[] tokens) {
+        int returnValue = 0;
+        String operators = &quot;+-*/&quot;;
+
+        Stack&lt;String&gt; stack = new Stack&lt;String&gt;();
+
+        for(String t : tokens){
+            if(!operators.contains(t)){
+                stack.push(t);
+            }else{
+                int a = Integer.valueOf(stack.pop());
+                int b = Integer.valueOf(stack.pop());
+                int index = operators.indexOf(t);
+                switch(index){
+                    case 0:
+                        stack.push(String.valueOf(a+b));
+                        break;
+                    case 1:
+                        stack.push(String.valueOf(b-a));
+                        break;
+                    case 2:
+                        stack.push(String.valueOf(a*b));
+                        break;
+                    case 3:
+                        stack.push(String.valueOf(b/a));
+                        break;
+                }
+            }
+        }
+    returnValue = Integer.valueOf(stack.pop());
+    return returnValue;
+    }
+}
+
+
+</code></pre>
+<h2 id="3-solution-of-longest-palindromic-substring-in-java"><strong>3. Solution of Longest Palindromic Substring in Java</strong><a class="headerlink" href="#3-solution-of-longest-palindromic-substring-in-java" title="Permanent link"></a></h2>
+<p>Finding the longest palindromic substring is a classic problem of coding interview. In
+this post, I will summarize 3 different solutions for this problem</p>
+<h5 id="solution-1-naive-approach_1"><strong>Solution 1 - Naive Approach</strong><a class="headerlink" href="#solution-1-naive-approach_1" title="Permanent link"></a></h5>
+<pre><code>Naively, we can simply examine every substring and check if it is palindromic. The
+time complexity is O(n3ˆ). If this is submitted to LeetCode onlinejudge, an error message will be returned - &quot;Time Limit Exceeded&quot;. Therefore, this approach is just a start,
+we need a better algorithm.
+
+public static String longestPalindrome1(String s) {
+    int maxPalinLength = 0;
+    String longestPalindrome = null;
+    int length = s.length();
+
+    // check all possible sub strings
+    for (int i = 0; i &lt; length; i++) {
+        for (int j = i + 1; j &lt; length; j++) {
+            int len = j - i;
+            String curr = s.substring(i, j + 1);
+            if (isPalindrome(curr)) {
+                if (len &gt; maxPalinLength) {
+                    longestPalindrome = curr;
+                    maxPalinLength = len;
+                }
+            }
+        }
+    }
+    return longestPalindrome;
+}
+
+public static boolean isPalindrome(String s) {
+    for (int i = 0; i &lt; s.length() - 1; i++) {
+        if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+</code></pre>
+<h5 id="solution-2-dynamic-programming"><strong>Solution 2 - Dynamic Programming</strong><a class="headerlink" href="#solution-2-dynamic-programming" title="Permanent link"></a></h5>
+<pre><code>Let s be the input string, i and j are two indices of the string.
+Define a 2-dimension array &quot;table&quot; and let table[i][j] denote whether substring from
+i to j is palindrome.
+
+Start condition:
+
+    table[i][i] == 1;
+    table[i][i+1] == 1 =&gt; s.charAt(i) == s.charAt(i+1)
+
+Changing condition:
+
+    table[i+1][j-1] == 1 &amp;&amp; s.charAt(i) == s.charAt(j) =&gt; table[i][j] == 1
+
+Time O(n2ˆ) Space O(n2ˆ)
+
+--------------------------------------------------------------------
+
+public static String longestPalindrome2(String s) {
+    if (s == null)
+        return null;
+
+    if(s.length() &lt;=1)
+            return s;
+
+    int maxLen = 0;
+    String longestStr = null;
+
+    int length = s.length();
+
+    int[][] table = new int[length][length];
+
+    //every single letter is palindrome
+    for (int i = 0; i &lt; length; i++) {
+        table[i][i] = 1;
+    }
+
+    printTable(table);
+
+    //e.g. bcba
+    //two consecutive same letters are palindrome
+    for (int i = 0; i &lt;= length - 2; i++) {
+        if (s.charAt(i) == s.charAt(i + 1)){
+            table[i][i + 1] = 1;
+            longestStr = s.substring(i, i + 2);
+        }
+    }
+
+    printTable(table);
+
+    //condition for calculate whole table
+    for (int l = 3; l &lt;= length; l++) {
+        for (int i = 0; i &lt;= length-l; i++) {
+            int j = i + l - 1;
+            if (s.charAt(i) == s.charAt(j)) {
+                table[i][j] = table[i + 1][j - 1];
+                if (table[i][j] == 1 &amp;&amp; l &gt; maxLen)
+                    longestStr = s.substring(i, j + 1);
+                } else {
+                    table[i][j] = 0;
+                }
+                printTable(table);
+        }
+    }
+    return longestStr;
+}
+
+public static void printTable(int[][] x){
+    for(int [] y : x){
+        for(int z: y){
+            System.out.print(z + &quot; &quot;);
+        }
+        System.out.println();
+    }
+    System.out.println(&quot;------&quot;);
+}
+
+Given an input, we can use printTable method to examine the table after each iteration. For example,
+ if input string is &quot;dabcba&quot;, the final matrix would be the following:
+
+1 0 0 0 0 0
+0 1 0 0 0 1
+0 0 1 0 1 0
+0 0 0 1 0 0
+0 0 0 0 1 0
+0 0 0 0 0 1
+
+
+From the table, we can clear see that the longest string is in cell table[1][5].
+
+</code></pre>
+<h5 id="solution-3-simple-algorithm"><strong>Solution 3 - Simple Algorithm</strong><a class="headerlink" href="#solution-3-simple-algorithm" title="Permanent link"></a></h5>
+<pre><code>Time O(n2ˆ), Space O(1)
+
+---------------------------------------------------------
+
+public String longestPalindrome(String s) {
+    if (s.isEmpty()) {
+        return null;
+    }
+
+    if (s.length() == 1) {
+    return s;
+    }
+
+    String longest = s.substring(0, 1);
+
+    for (int i = 0; i &lt; s.length(); i++) {
+        // get longest palindrome with center of i
+        String tmp = helper(s, i, i);
+
+        if (tmp.length() &gt; longest.length()) {
+            longest = tmp;
+        }
+
+        // get longest palindrome with center of i, i+1
+        tmp = helper(s, i, i + 1);
+        if (tmp.length() &gt; longest.length()) {
+            longest = tmp;
+        }
+    }
+    return longest;
+}
+
+// Given a center, either one letter or two letter,
+// Find longest palindrome
+public String helper(String s, int begin, int end) {
+    while (begin &gt;= 0 &amp;&amp; end &lt;= s.length() - 1 &amp;&amp; s.charAt(begin) == s.charAt(end)) {
+        begin--;
+        end++;
+    }
+    return s.substring(begin + 1, end);
+}
+
+</code></pre>
+<h2 id="4-solution-word-break"><strong>4. Solution Word Break</strong><a class="headerlink" href="#4-solution-word-break" title="Permanent link"></a></h2>
+<p>Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence of one or more dictionary words. For example, given s = "leetcode", dict = ["leet", "code"]. Return true because "leetcode" can be segmented as "leet code".</p>
+<h5 id="solution-1-naive-approach_2"><strong>Solution 1 - Naive Approach</strong><a class="headerlink" href="#solution-1-naive-approach_2" title="Permanent link"></a></h5>
+<pre><code>This problem can be solve by using a naive approach, which is trivial. A discussion
+can always start from that though.
+
+------------------------------------------------------------
+
+public class Solution {
+
+    public boolean wordBreak(String s, Set&lt;String&gt; dict) {
+        return wordBreakHelper(s, dict, 0);
+    }
+
+    private boolean wordBreakHelper(String s, Set&lt;String&gt; dict, int start) {
+        if (start == s.length()) {
+            return true;
+        }
+
+        for (String word : dict) {
+            int len = word.length();
+            int end = start + len;
+
+            if (end &gt; s.length()) {
+                continue;
+            }
+
+            if (s.substring(start, end).equals(word)) {
+                if (wordBreakHelper(s, dict, end)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+}
+
+
+Time: O(n2ˆ)
+This solution exceeds the time limit.
+
+
+</code></pre>
+<h5 id="solution-2-dynamic-programming_1"><strong>Solution 2 - Dynamic Programming</strong><a class="headerlink" href="#solution-2-dynamic-programming_1" title="Permanent link"></a></h5>
+<pre><code>The key to solve this problem by using dynamic programming approach:
+
+    • Define an array t[] such that t[i]==true =&gt;0-(i-1) can be segmented using dictionary
+    • Initial state t[0] == true
+
+--------------------------------------------------------------
+public class Solution {
+
+    public boolean wordBreak(String s, Set&lt;String&gt; dict) {
+        boolean[] t = new boolean[s.length() + 1];
+
+        // set first to be true, why?
+        // Because we need initial state
+        t[0] = true;
+
+        for (int i = 0; i &lt; s.length(); i++) {
+            // should continue from match position
+            if (!t[i]) {
+                continue;
+            }
+
+            for (String a : dict) {
+                int len = a.length();
+                int end = i + len;
+
+                if (end &gt; s.length()) {
+                    continue;
+                }
+
+                if (t[end]) {
+                    continue;
+                }
+
+                if (s.substring(i, end).equals(a)) {
+                    t[end] = true;
+                }
+            }
+        }
+
+        return t[s.length()];
+    }
+}
+
+--------------------------------------------------------------
+
+Time: O(string length * dict size)
+One tricky part of this solution is the case:
+
+    INPUT: &quot;programcreek&quot;, [&quot;programcree&quot;,&quot;program&quot;,&quot;creek&quot;].
+
+We should get all possible matches, not stop at &quot;programcree&quot;.
+</code></pre>
+<h5 id="solution-3-regular-expression"><strong>Solution 3 -  Regular Expression</strong><a class="headerlink" href="#solution-3-regular-expression" title="Permanent link"></a></h5>
+<pre><code>The problem is supposed to be equivalent to matching the regexp (leet|code)*, which
+means that it can be solved by building a DFA in O(2m) and executing it in O(n). ˆ
+Leetcode online judge does not allow using Pattern class though.
+
+--------------------------------------------------------------
+public class Main {
+
+    public static void main(String[] args) {
+        HashSet&lt;String&gt; dict = new HashSet&lt;&gt;();
+        dict.add(&quot;go&quot;);
+        dict.add(&quot;goal&quot;);
+        dict.add(&quot;goals&quot;);
+        dict.add(&quot;special&quot;);
+
+        StringBuilder sb = new StringBuilder();
+        for (String s : dict) {
+            sb.append(s).append(&quot;|&quot;);
+        }
+
+        String pattern = sb.toString().substring(0, sb.length() - 1);
+        pattern = &quot;(&quot; + pattern + &quot;)*&quot;;
+        Pattern p = Pattern.compile(pattern);
+        Matcher m = p.matcher(&quot;goalspecial&quot;);
+
+        if (m.matches()) {
+            System.out.println(&quot;match&quot;);
+        }
+    }
+}
+
+--------------------------------------------------------------
+
+</code></pre>
+<h2 id="5-word-break-ii"><strong>5. Word Break II</strong><a class="headerlink" href="#5-word-break-ii" title="Permanent link"></a></h2>
+<p>Given a string s and a dictionary of words dict, add spaces in s to construct a sentence
+where each word is a valid dictionary word. Return all such possible sentences.
+For example, given s = "catsanddog", dict = ["cat", "cats", "and", "sand", "dog"], the
+solution is ["cats and dog", "cat sand dog"].</p>
+<h5 id="solution-1-dynamic-programming"><strong>Solution 1 - Dynamic Programming</strong><a class="headerlink" href="#solution-1-dynamic-programming" title="Permanent link"></a></h5>
+<pre><code>This problem is very similar to Word Break. Instead of using a boolean array to track
+the match positions, we need to track the actual words. Then we can use depth first
+search to get all the possible paths, i.e., the list of strings.
+
+--------------------------------------------------------------
+
+public static List&lt;String&gt; wordBreak(String s, Set&lt;String&gt; dict) {
+
+    // create an array of ArrayList&lt;String&gt;
+    List&lt;String&gt;[] dp = new ArrayList[s.length() + 1];
+    dp[0] = new ArrayList&lt;String&gt;();
+
+    for (int i = 0; i &lt; s.length(); i++) {
+        if (dp[i] == null) {
+            continue;
+        }
+
+        for (String word : dict) {
+            int len = word.length();
+            int end = i + len;
+
+            if (end &gt; s.length()) {
+                continue;
+            }
+
+            if (s.substring(i, end).equals(word)) {
+                if (dp[end] == null) {
+                    dp[end] = new ArrayList&lt;String&gt;();
+                }
+                dp[end].add(word);
+            }
+        }
+    }
+
+    List&lt;String&gt; result = new LinkedList&lt;String&gt;();
+    if (dp[s.length()] == null) {
+        return result;
+    }
+
+    ArrayList&lt;String&gt; tmp = new ArrayList&lt;&gt;();
+    dfs(dp, s.length(), result, tmp);
+    return result;
+}
+
+public static void dfs(List&lt;String&gt;[] dp, int end, List&lt;String&gt; result, ArrayList&lt;String&gt; tmp) {
+
+    if (end &lt;= 0) {
+        String path = tmp.get(tmp.size() - 1);
+        for (int i = tmp.size() - 2; i &gt;= 0; i--) {
+            path += &quot; &quot; + tmp.get(i);
+        }
+        result.add(path);
+        return;
+    }
+
+    for (String str : dp[end]) {
+        tmp.add(str);
+        dfs(dp, end - str.length(), result, tmp);
+        tmp.remove(tmp.size() - 1);
+    }
+}
+
+
+--------------------------------------------------------------
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
