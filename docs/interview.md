@@ -14,6 +14,7 @@
 
 # Python
 ### [Python Programs for practice](nightwolf-cotribution/python_programs.md)
+### [Python Programs for practice - set 2](nightwolf-cotribution/python_programs_2.md)
 <br>
 
 # Google Cloud Platform(GCP)

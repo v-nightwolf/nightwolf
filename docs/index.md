@@ -41,6 +41,7 @@
 
 * <h5> Python </h5>
       * [Python Programs for practice](nightwolf-cotribution/python_programs.md)
+      * [Python Programs for practice - set 2](nightwolf-cotribution/python_programs_2.md)
 
 * <h5> OS Networking </h5>
       * [OS Network Interview Questions](nightwolf-cotribution/network.md)
