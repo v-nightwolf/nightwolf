@@ -67,6 +67,7 @@ nav:
 
     - Cheatsheets:
          - Leetcode Solutions CheatSheet: cheatsheets/leetcode_solutions.md
+         - HTTP Protocols: cheatsheets/http_protocols.md
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md
          - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
