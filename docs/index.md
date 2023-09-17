@@ -108,7 +108,7 @@
 * [Interview materials](reference.md) 
 
 
-## [Cheatsheets](cheatsheet.md)
+## [Cheatsheets](cheatsheets.md)
  
  Cheatsheets for different techs for your references: 
 
