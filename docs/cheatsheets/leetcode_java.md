@@ -1,4 +1,4 @@
-# LeetCode Solutions
+# LeetCode Solutions - JAVA
 
 ---
 
@@ -12,6 +12,9 @@ LeetCode is a popular online platform that provides a collection of coding chall
 
 ---
 
+{!inpage-ads.md!}
+
+---
 
 ## **1. Rotate Array in Java**
 
@@ -633,3 +636,11 @@ public static void dfs(List<String>[] dp, int end, List<String> result, ArrayLis
 --------------------------------------------------------------
 
 ```
+
+<br>
+
+ {!inpage-ads.md!}
+
+---
+<br>
+{!footer.md!}

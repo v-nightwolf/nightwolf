@@ -114,14 +114,14 @@
 
 `This include:`
 
-* [LeetCode Solutions Cheatsheet](cheatsheets/leetcode_solutions.md)
+* [LeetCode Solutions Cheatsheet](cheatsheets/leetcode_java.md)
 * [HTTP Protocols & versions](cheatsheets/http_protocols.md)
 * [Kubernetes cheatsheet](nightwolf-cotribution/kubernetes_cheatsheet.md)
 * [GIT cheatsheet](nightwolf-cotribution/git_cheatsheet.md)
-* [Linux YUM cheatsheet](nightwolf-cotribution/yum_cheatsheet.pdf)
+* [Linux YUM cheatsheet](cheatsheets/yum_cheatsheet.pdf)
 * [Yum vs APT cheatsheet](nightwolf-cotribution/yum_vs_apt.md)
-* [gcloud Commands Cheatsheet](gcloud_cheatsheet.md)
-* [TLS Version difference](nightwolf-cotribution/TLS-Difference.md)
+* [gcloud Commands Cheatsheet](cheatsheets/gcloud_cheatsheet.md)
+* [TLS Version difference](cheatsheets/tls-difference.md)
 
 ## [Articles](articles.md)
 

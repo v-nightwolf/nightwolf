@@ -66,14 +66,14 @@ nav:
         - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
 
     - Cheatsheets:
-         - Leetcode Solutions CheatSheet: cheatsheets/leetcode_solutions.md
+         - Leetcode Solutions CheatSheet: cheatsheets/leetcode_java.md
          - HTTP Protocols: cheatsheets/http_protocols.md
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md
-         - Linux YUM CheatSheet: nightwolf-cotribution/yum_cheatsheet.pdf
+         - Linux YUM CheatSheet: cheatsheets/yum_cheatsheet.pdf
          - Yum vs APT cheatsheet: nightwolf-cotribution/yum_vs_apt.md
          - gcloud commands Cheatsheet: cheatsheets/gcloud_cheatsheet.md
-         - TLS Version key differences: nightwolf-cotribution/TLS-Difference.md
+         - TLS Version key differences: cheatsheets/tls-difference.md
     - Technical:
          - Linux: linux.md
          - Network: network.md
