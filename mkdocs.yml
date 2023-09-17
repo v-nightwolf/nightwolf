@@ -66,7 +66,7 @@ nav:
         - Managerial Interview Questions: 'nightwolf-cotribution/managerial_interview_questions.md'
 
     - Cheatsheets:
-         - Leetcode Solutions CheatSheet: cheatsheets/leetcode_java.md
+         - Leetcode Solutions JAVA: cheatsheets/leetcode_java.md
          - HTTP Protocols: cheatsheets/http_protocols.md
          - Kubernetes CheatSheet: nightwolf-cotribution/kubernetes_cheatsheet.md
          - GIT CheatSheet: nightwolf-cotribution/git_cheatsheet.md

@@ -1,5 +1,5 @@
 <br>
-## [LeetCode Solutions Cheatsheet](cheatsheets/leetcode_java.md)
+## [LeetCode Solutions JAVA](cheatsheets/leetcode_java.md)
 <br>
 ## [HTTP Protocols & versions](cheatsheets/http_protocols.md)
 <br>
