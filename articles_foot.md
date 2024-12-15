@@ -4,6 +4,8 @@
 
 You may also explore other articles in our bucket, Happy reading !!:
 
+
+* <a target="_blank" href=https://www.nightwolf.in/articles/gcpdiag_intro>What is gcpdiag ?</a>
 * <a target="_blank" href=https://www.nightwolf.in/articles/ai_intro>What is Artificial Intelligence ?</a>
 * <a target="_blank" href=https://www.nightwolf.in/articles/machine_learning_intro/>What is Machine Learning ?</a>
 * <a target="_blank" href=https://www.nightwolf.in/articles/ai_trends>Unleashing the Power of Artificial Intelligence</a>
