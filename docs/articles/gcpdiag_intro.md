@@ -55,14 +55,17 @@ You can install and run gcpdiag using a shell wrapper that starts gcpdiag in a D
 
 - **Cloud Shell:**
    * gcpdiag is integrated into Google Cloud Shell. You can run it directly using:
-        - **Lints**:  
-            ```bash
-            gcpdiag lint --project=YOUR_PROJECT_ID
-            ```
-        - **Runbooks**:
-            ```bash
-            gcpdiag runbook gce/ssh -p project_id=YOUR_PROJECT_ID -p name=VM_NAME -p zone=VM_ZONE 
-            ```
+
+    - **Lints**:  
+    
+        ```
+        gcpdiag lint --project=YOUR_PROJECT_ID
+        ```
+    - **Runbooks**:
+
+        ```
+        gcpdiag runbook gce/ssh -p project_id=YOUR_PROJECT_ID -p name=VM_NAME -p zone=VM_ZONE 
+        ```
 
     Note: For further help on command syntax, please see [gcpdiag official website](https://gcpdiag.dev). 
 
