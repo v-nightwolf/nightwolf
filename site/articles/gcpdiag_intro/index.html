@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://www.nightwolf.in/articles/gcpdiag_intro/">
+        <link rel="shortcut icon" href="../../img/favi.png">
+        
+        <title>Diagnose GCP issues with gcpdiag - nightWolf</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', "G-8QN4YRWY1N");
+        </script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../..">nightWolf</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../nightwolf-cotribution/performance/" class="nav-link">Linux-Performance</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interview-Prep</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Linux Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Python Programs</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/python_programs/" class="dropdown-item">Python Programs for practice</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/python_programs_2/" class="dropdown-item">Python Programs for practice-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/network/" class="dropdown-item">OS Networking Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git/" class="dropdown-item">GIT Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../nightwolf-cotribution/azure_questions/" class="dropdown-item">Microsoft Azure Administrator AZ-103</a>
+</li>
+            
+<li>
+    <a href="../../nightwolf-cotribution/azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cheatsheets</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cheatsheets/leetcode_java/" class="dropdown-item">Leetcode Solutions JAVA</a>
+</li>
+                                    
+<li>
+    <a href="../../cheatsheets/http_protocols/" class="dropdown-item">HTTP Protocols</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../cheatsheets/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
+</li>
+                                    
+<li>
+    <a href="../../nightwolf-cotribution/yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../cheatsheets/gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
+</li>
+                                    
+<li>
+    <a href="../../cheatsheets/tls-difference/" class="dropdown-item">TLS Version key differences</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Technical</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/" class="dropdown-item">Linux</a>
+</li>
+                                    
+<li>
+    <a href="../../network/" class="dropdown-item">Network</a>
+</li>
+                                    
+<li>
+    <a href="../../db/" class="dropdown-item">Database</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Cloud</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Diagnose GCP issues with gcpdiag</a>
+</li>
+                                    
+<li>
+    <a href="../ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
+</li>
+                                    
+<li>
+    <a href="../ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
+</li>
+                                    
+<li>
+    <a href="../machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
+</li>
+                                    
+<li>
+    <a href="../neural_networks/" class="dropdown-item">What is Neural Network ?</a>
+</li>
+                                    
+<li>
+    <a href="../iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
+</li>
+                                    
+<li>
+    <a href="../natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
+</li>
+                                    
+<li>
+    <a href="../robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
+</li>
+                                    
+<li>
+    <a href="../quantum_computing/" class="dropdown-item">Quantum Computing</a>
+</li>
+                                    
+<li>
+    <a href="../blockchain/" class="dropdown-item">Blockchain</a>
+</li>
+                                    
+<li>
+    <a href="../virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
+</li>
+                                    
+<li>
+    <a href="../cyber_security/" class="dropdown-item">Cybersecurity</a>
+</li>
+                                    
+<li>
+    <a href="../ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
+</li>
+                                    
+<li>
+    <a href="../bard/" class="dropdown-item">What is Bard chatbot ?</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../cloud-comp/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../ai_intro/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><strong>Diagnose Google Cloud Platform(GCP) issues with gcpdiag</strong></p>
+<p><strong>What is gcpdiag?</strong></p>
+<p><a href="https://gcpdiag.dev/">gcpdiag</a> is an open-source tool developed by Google Cloud Platform (GCP) teams to automate the detection and diagnosis of common misconfigurations and problems within your GCP projects. It leverages Google Cloud APIs to run a series of automated checks against your project and generates detailed reports highlighting any deviations from expected conditions.</p>
+<p>It consists of two primary components:</p>
+<ol>
+<li>
+<p><a href="https://gcpdiag.dev/rules/">Lints</a>: </p>
+<ul>
+<li>Quick and concise checks to assess the overall health of your GCP project.</li>
+<li>Identify potential issues and best practice violations.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://gcpdiag.dev/runbook/diagnostic-trees/">Runbooks</a>:</p>
+<ul>
+<li>In-depth diagnostic guides for specific problems.</li>
+<li>Provide step-by-step instructions to resolve issues.</li>
+<li>Offer tailored solutions based on your GCP environment.</li>
+<li>By utilizing both lints and runbooks, you can effectively diagnose and resolve GCP issues, ensuring optimal performance and security.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Why Use gcpdiag?</strong></p>
+<ul>
+<li><strong>Proactive Issue Detection:</strong> Identifies potential issues before they escalate into major problems.</li>
+<li><strong>Improved Performance:</strong> Pinpoints performance bottlenecks and optimization opportunities.</li>
+<li><strong>Reduced Downtime:</strong> Prevents outages by proactively addressing configuration errors.</li>
+<li><strong>Simplified Troubleshooting:</strong> Provides clear and actionable recommendations to fix identified issues.</li>
+<li><strong>Best Practice Adherence:</strong> Encourages adherence to GCP best practices and standards.</li>
+</ul>
+<p><strong>How to Use gcpdiag</strong></p>
+<p><strong>Installation</strong>
+You can install and run gcpdiag using a shell wrapper that starts gcpdiag in a Docker container. This should work on any machine with Docker or Podman installed, including Cloud Shell.</p>
+<pre><code>curl https://gcpdiag.dev/gcpdiag.sh &gt;gcpdiag
+chmod +x gcpdiag
+./gcpdiag lint --project=YOUR_PROJECT_ID
+</code></pre>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li><strong>Google Cloud SDK:</strong> Ensure you have the Google Cloud SDK installed and configured with the necessary permissions.</li>
+<li><strong>Project ID:</strong> You'll need the ID of the GCP project you want to analyze.</li>
+<li><a href="https://gcpdiag.dev/docs/running/#1-permissions"><strong>Permissions:</strong></a> The credentials that you use with gcpdiag needs to have at minimum the following roles granted (both of them):<ul>
+<li><code>Viewer</code> on the inspected project</li>
+<li><code>Service Usage Consumer</code> on the project used for billing/quota enforcement, which is per default the project being inspected, but can be explicitly set using the <code>--billing-project</code> option</li>
+</ul>
+</li>
+<li>
+<p><a href="https://gcpdiag.dev/docs/running/#2-required-apis"><strong>Required APIs:</strong></a> gcpdiag requires some APIs to be enabled in order for the inspection of resources to work correctly:</p>
+<ul>
+<li><code>cloudresourcemanager.googleapis.com</code> (Cloud Resource Manager API)</li>
+<li><code>iam.googleapis.com</code> (Identity and Access Management API)</li>
+<li><code>logging.googleapis.com</code> (Cloud Logging API)</li>
+<li><code>serviceusage.googleapis.com</code> (Service Usage API)</li>
+<li><code>monitoring.googleapis.com</code> (Cloud Monitoring API)</li>
+<li>Product API for which you are running gcpdiag diagnosis. </li>
+</ul>
+</li>
+</ul>
+<p><strong>Running gcpdiag:</strong></p>
+<ul>
+<li><strong>Cloud Shell:</strong></li>
+<li>
+<p>gcpdiag is integrated into Google Cloud Shell. You can run it directly using:</p>
+<ul>
+<li>
+<p><strong>Lints</strong>:  </p>
+<p><code>gcpdiag lint --project=YOUR_PROJECT_ID</code>
+    - <strong>Runbooks</strong>:</p>
+<p><code>gcpdiag runbook gce/ssh -p project_id=YOUR_PROJECT_ID -p name=VM_NAME -p zone=VM_ZONE</code></p>
+</li>
+</ul>
+<p>Note: For further help on command syntax, please see <a href="https://gcpdiag.dev">gcpdiag official website</a>. </p>
+</li>
+</ul>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li><strong>Rule-Based Checks:</strong> <code>gcpdiag</code> comes with a comprehensive set of rules to check for various issues, including:<ul>
+<li><strong>Errors (ERR):</strong> Critical misconfigurations.</li>
+<li><strong>Warnings (WAR):</strong> Potential issues.</li>
+<li><strong>Best Practices (BP):</strong> Recommendations for improvement.</li>
+<li><strong>Security Issues (SEC):</strong> Potential security risks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Detailed diagnosis via Runbooks:</strong> <code>gcpdiag</code> offers a powerful tool called "runbooks," which are automated diagnostic trees crafted by experienced GCP engineers. These runbooks can help you:</p>
+<ul>
+<li><strong>Pinpoint specific issues</strong>: Identify the root cause of problems within your GCP environment.</li>
+<li><strong>Guide troubleshooting</strong>: Provide step-by-step instructions to resolve the issue.</li>
+<li><strong>Offer tailored solutions</strong>: Suggest appropriate remedies based on your unique GCP setup.</li>
+</ul>
+</li>
+<li>
+<p><strong>Customizable Rules:</strong> You can create and add your own custom rules to tailor gcpdiag to your specific needs.</p>
+</li>
+<li><strong>Detailed Reports:</strong> Generates detailed reports in JSON format, providing clear insights into the identified issues.</li>
+<li><strong>Actionable Recommendations:</strong> Offers specific guidance on how to address each issue.</li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>By incorporating gcpdiag into your GCP workflow, you can significantly enhance the reliability, security, and performance of your infrastructure. It empowers you to proactively identify and resolve potential issues, ensuring a robust and efficient GCP environment.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 nightWolf</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
