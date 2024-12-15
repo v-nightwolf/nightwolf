@@ -83,6 +83,7 @@ nav:
          - Group for Jobs postings: https://www.linkedin.com/groups/8982092/
 
     - Articles:
+        - Diagnose GCP issues with gcpdiag: articles/gcpdiag_intro.md
         - What is Artificial Intelligence(AI) ?: articles/ai_intro.md
         - Unleashing the Power of Artificial Intelligence: articles/ai_trends.md
         - What is Machine Learning ?: articles/machine_learning_intro.md
