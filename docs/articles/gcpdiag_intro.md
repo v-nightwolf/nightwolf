@@ -1,4 +1,6 @@
-**Diagnose Google Cloud Platform(GCP) issues with gcpdiag**
+# Diagnose Google Cloud Platform(GCP) issues with gcpdiag
+
+---
 
 **What is gcpdiag?**
 
@@ -61,6 +63,7 @@ You can install and run gcpdiag using a shell wrapper that starts gcpdiag in a D
         ```
         gcpdiag lint --project=YOUR_PROJECT_ID
         ```
+
     - **Runbooks**:
 
         ```
