@@ -402,12 +402,18 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#diagnose-google-cloud-platformgcp-issues-with-gcpdiag" class="nav-link">Diagnose Google Cloud Platform(GCP) issues with gcpdiag</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><strong>Diagnose Google Cloud Platform(GCP) issues with gcpdiag</strong></p>
+<h1 id="diagnose-google-cloud-platformgcp-issues-with-gcpdiag">Diagnose Google Cloud Platform(GCP) issues with gcpdiag<a class="headerlink" href="#diagnose-google-cloud-platformgcp-issues-with-gcpdiag" title="Permanent link"></a></h1>
+<hr />
 <p><strong>What is gcpdiag?</strong></p>
 <p><a href="https://gcpdiag.dev/">gcpdiag</a> is an open-source tool developed by Google Cloud Platform (GCP) teams to automate the detection and diagnosis of common misconfigurations and problems within your GCP projects. It leverages Google Cloud APIs to run a series of automated checks against your project and generates detailed reports highlighting any deviations from expected conditions.</p>
 <p>It consists of two primary components:</p>
@@ -473,8 +479,10 @@ chmod +x gcpdiag
 <ul>
 <li>
 <p><strong>Lints</strong>:  </p>
-<p><code>gcpdiag lint --project=YOUR_PROJECT_ID</code>
-    - <strong>Runbooks</strong>:</p>
+<p><code>gcpdiag lint --project=YOUR_PROJECT_ID</code></p>
+</li>
+<li>
+<p><strong>Runbooks</strong>:</p>
 <p><code>gcpdiag runbook gce/ssh -p project_id=YOUR_PROJECT_ID -p name=VM_NAME -p zone=VM_ZONE</code></p>
 </li>
 </ul>
