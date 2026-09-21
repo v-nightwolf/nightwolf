@@ -8,6 +8,7 @@ theme:
     logo: wolf.png
     analytics:
       gtag: G-8QN4YRWY1N
+    custom_dir: overrides
 
 markdown_extensions:
     - toc:
@@ -17,6 +18,9 @@ markdown_extensions:
 
 # Copyright
 copyright: 'Copyright &copy; 2022 nightWolf'
+
+plugins:
+  - search
 
 nav:
     - Home: index.md

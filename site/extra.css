@@ -1,0 +1,56 @@
+/* .consulting-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none !important;
+    transition: transform 0.3s ease;
+}
+
+.consulting-float:hover {
+    transform: scale(1.1);
+    background-color: #e68a00;
+} */
+/* Floating Consulting Button */
+
+.consulting-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #ff9800 0%, #e68a00 100%);
+    color: white !important;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999; /* Ensures it stays on top of everything */
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+/* Hover Animation */
+.consulting-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #e68a00 0%, #ff9800 100%);
+}
+
+/* Mobile Responsiveness: Make it smaller on phones */
+@media screen and (max-width: 600px) {
+    .consulting-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

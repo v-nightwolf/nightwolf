@@ -162,4 +162,8 @@
 
 ## [Contribute to nightWolf](contribute.md)
 
+<a href="/consulting" class="consulting-float">
+    🚀 Get Expert Consulting
+</a>
+
 {!multiplex-ads.md!}

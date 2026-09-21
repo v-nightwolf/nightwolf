@@ -1,0 +1,19 @@
+# Block bandwidth-heavy / low-value crawlers
+User-agent: PetalBot
+Disallow: /
+ 
+User-agent: Sogou web spider
+Disallow: /
+ 
+User-agent: SERankingBacklinksBot
+Disallow: /
+ 
+User-agent: DomainStatsBot
+Disallow: /
+ 
+# Everyone else (including Googlebot, Bingbot, Google AdSense) is welcome
+User-agent: *
+Allow: /
+ 
+Sitemap: https://www.nightwolf.in/sitemap.xml
+ 
