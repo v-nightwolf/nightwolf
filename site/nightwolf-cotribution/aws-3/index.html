@@ -1,419 +1,2767 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
         <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/aws-3/">
-        <link rel="shortcut icon" href="../../img/favi.png">
+      
+      
+        <link rel="prev" href="../aws-2/">
+      
+      
+        <link rel="next" href="../aws-4/">
+      
+      
         
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
         <title>AWS Interview Questions- 1st - nightWolf</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../../css/brands.min.css" rel="stylesheet">
-        <link href="../../css/solid.min.css" rel="stylesheet">
-        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-          gtag('config', "G-8QN4YRWY1N");
-        </script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="../..">nightWolf</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../performance/" class="nav-link">Linux-Performance</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interview-Prep</a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Linux Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
-</li>
-            
-<li>
-    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
-</li>
-            
-<li>
-    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
-</li>
-            
-<li>
-    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
-</li>
-            
-<li>
-    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
-</li>
-            
-<li>
-    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Python Programs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../python_programs/" class="dropdown-item">Python Programs for practice</a>
-</li>
-            
-<li>
-    <a href="../python_programs_2/" class="dropdown-item">Python Programs for practice-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
-</li>
-            
-<li>
-    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
-</li>
-            
-<li>
-    <a href="../java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
-</li>
-            
-<li>
-    <a href="./" class="dropdown-item active" aria-current="page">AWS Interview Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../azure_questions/" class="dropdown-item">Microsoft Azure Administrator AZ-103</a>
-</li>
-            
-<li>
-    <a href="../azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
-</li>
-                                    
-<li>
-    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cheatsheets</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../cheatsheets/leetcode_java/" class="dropdown-item">Leetcode Solutions JAVA</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/http_protocols/" class="dropdown-item">HTTP Protocols</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/tls-difference/" class="dropdown-item">TLS Version key differences</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Technical</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../linux/" class="dropdown-item">Linux</a>
-</li>
-                                    
-<li>
-    <a href="../../network/" class="dropdown-item">Network</a>
-</li>
-                                    
-<li>
-    <a href="../../db/" class="dropdown-item">Database</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Cloud</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../articles/gcpdiag_intro/" class="dropdown-item">Diagnose GCP issues with gcpdiag</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/neural_networks/" class="dropdown-item">What is Neural Network ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/quantum_computing/" class="dropdown-item">Quantum Computing</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/blockchain/" class="dropdown-item">Blockchain</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/cyber_security/" class="dropdown-item">Cybersecurity</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/bard/" class="dropdown-item">What is Bard chatbot ?</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../aws-2/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../aws-4/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-  
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#aws-interview-questions-answers" class="nav-link">AWS Interview Questions &amp; Answers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<h1 id="aws-interview-questions-answers">AWS Interview Questions &amp; Answers<a class="headerlink" href="#aws-interview-questions-answers" title="Permanent link"></a></h1>
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8QN4YRWY1N"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8QN4YRWY1N",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aws-interview-questions-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="nightWolf" class="md-header__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nightWolf
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AWS Interview Questions- 1st
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="nightWolf" class="md-nav__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    nightWolf
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux-Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview-Prep
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview-Prep
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_interview_questions_for_freshers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers and Experienced - L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Experienced Linux Admins - L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Linux Interview Questions for Experienced Admins - L3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_questionairs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solved list of Linux interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell_scripting_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell-Scripting Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Programs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Networking Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DevOps Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jenkins Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ansible_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansible Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java/OOPs Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terraform Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 3rd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Cloud Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Google Cloud Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWS Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Azure AZ-103 Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Azure AZ-103 Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103- set 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_testing_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Testing/QA Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbms_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DBMS Interview Questions and Answers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managerial_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managerial Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/leetcode_java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leetcode Solutions JAVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/http_protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/yum_cheatsheet.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux YUM CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yum_vs_apt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yum vs APT cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/gcloud_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gcloud commands Cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/tls-difference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TLS Version key differences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud-comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Comparison between GCP, AWS, Azure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/groups/8982092/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group for Jobs postings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/gcpdiag_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnose GCP issues with gcpdiag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Artificial Intelligence(AI) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_trends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unleashing the Power of Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/machine_learning_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Machine Learning ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/neural_networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Neural Network ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/iot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Internet of Things (IoT) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/natural_language_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Natural Language Processing (NLP) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/robotics_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Robotics and Automation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/quantum_computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/blockchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blockchain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/virtual_reality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Virtual Reality (VR) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/cyber_security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cybersecurity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_chatbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is AI Chat Open Assistant Chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/bard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Bard chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="aws-interview-questions-answers">AWS Interview Questions &amp; Answers<a class="headerlink" href="#aws-interview-questions-answers" title="Permanent link">&para;</a></h1>
 <hr />
 <p>These are AWS interview questions for experienced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
 <br></p>
@@ -434,363 +2782,363 @@
 <ol>
 <li>
 <p>List the components required to build Amazon VPC?</p>
-<pre><code>Subnet, Internet Gateway, NAT Gateway, HW VPN Connection, Virtual Private Gateway, Customer Gateway, Router,
+<div class="highlight"><pre><span></span><code>Subnet, Internet Gateway, NAT Gateway, HW VPN Connection, Virtual Private Gateway, Customer Gateway, Router,
 Peering Connection, VPC Endpoint for S3, Egressonly Internet Gateway.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How do you safeguard your EC2 instances running in a VPC?</p>
-<pre><code>Security Groups can be used to protect your EC2 instances in a VPC. We can configure both INBOUND and
+<div class="highlight"><pre><span></span><code>Security Groups can be used to protect your EC2 instances in a VPC. We can configure both INBOUND and
 OUTBOUND traffic in a Security Group which enables secured access to your EC2 instances. Security Group
 automatically denies any unauthorized access to your EC2 instances.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>In a VPC how many EC2 instances can you use?</p>
-<pre><code>Initially you are limited to launch 20 EC2 Instances at one time. Maximum VPC size is 65,536 instances.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Initially you are limited to launch 20 EC2 Instances at one time. Maximum VPC size is 65,536 instances.
+</code></pre></div>
 </li>
 <li>
 <p>Can you establish a peering connection to a VPC in a different REGION?</p>
-<pre><code>Not possible. Peering Connection are available only between VPC in the same region.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Not possible. Peering Connection are available only between VPC in the same region.
+</code></pre></div>
 </li>
 <li>
 <p>Can you connect your VPC with a VPC owned by another AWS account?</p>
-<pre><code>Yes, Possible. Provided the owner of other VPCs accepts your connection.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Yes, Possible. Provided the owner of other VPCs accepts your connection.
+</code></pre></div>
 </li>
 <li>
 <p>What are all the different connectivity options available for your VPC?</p>
-<pre><code>Internet Gateway, Virtual Private Gateway, NAT, EndPoints, Peering Connections.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Internet Gateway, Virtual Private Gateway, NAT, EndPoints, Peering Connections.
+</code></pre></div>
 </li>
 <li>
 <p>Can a EC2 instance inside your VPC connect with the EC2 instance belonging to other VPCs?</p>
-<pre><code>Yes, Possible. Provided an Internet Gateway is configured in such a way that traffic bounded for EC2
+<div class="highlight"><pre><span></span><code>Yes, Possible. Provided an Internet Gateway is configured in such a way that traffic bounded for EC2
 instances running in other VPCs.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How can you monitor network traffic in your VPC?</p>
-<pre><code>It is possible using Amazon VPC Flow-Logs feature.
-</code></pre>
+<div class="highlight"><pre><span></span><code>It is possible using Amazon VPC Flow-Logs feature.
+</code></pre></div>
 </li>
 <li>
 <p>Difference between Security Groups and ACLs in a VPC?</p>
-<pre><code>A Security Group defines which traffic is allowed TO or FROM EC2 instance. Whereas ACL, controls at the
+<div class="highlight"><pre><span></span><code>A Security Group defines which traffic is allowed TO or FROM EC2 instance. Whereas ACL, controls at the
 SUBNET level, scrutinize the traffic TO or FROM a Subnet.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Hon an EC2 instance in a VPC establish the connection with the internet?</p>
-<pre><code>Using either a Public IP or an Elastic IP.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Using either a Public IP or an Elastic IP.
+</code></pre></div>
 </li>
 <li>
 <p>Different types of Cloud Computing as per services?</p>
-<pre><code>PAAS (Platform As A Service), IAAS (Infrastructure As A Service), SAAS (Software As A Service)
-</code></pre>
+<div class="highlight"><pre><span></span><code>PAAS (Platform As A Service), IAAS (Infrastructure As A Service), SAAS (Software As A Service)
+</code></pre></div>
 </li>
 <li>
 <p>What is Auto Scaling?</p>
-<pre><code>Automatically adding duplicate instances to application farm during heavy business hours. Scale-IN and
+<div class="highlight"><pre><span></span><code>Automatically adding duplicate instances to application farm during heavy business hours. Scale-IN and
 Scale-OUT are two different types of Scaling.
 
 Scale-IN: Reducing the instances.
 Scale-OUT: Increasing the instances by duplicating.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is AMI?</p>
-<pre><code>AMI is defined as Amazon Machine Image. Basically it’s a template comprising software configuration part.
+<div class="highlight"><pre><span></span><code>AMI is defined as Amazon Machine Image. Basically it’s a template comprising software configuration part.
 For example, Operating System, DB Server, Application Server, etc.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Difference between Stopping and Terminating the Instances?</p>
-<pre><code>When you STOP an instance it is a normal shutdown. The corresponding EBS volume attached to that instance
+<div class="highlight"><pre><span></span><code>When you STOP an instance it is a normal shutdown. The corresponding EBS volume attached to that instance
 remains attached and you can restart the instance later. When you TERMINATE an instance it gets deleted and
 you cannot restart that instance again later. And any EBS volume attached with that instance also deleted.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>When you launch a standby Relational Database Service instance will it be available in the same Available Zone?</p>
-<pre><code>Not advisable. Because the purpose of having standby RDS instance is to avoid an infrastructure failure.
+<div class="highlight"><pre><span></span><code>Not advisable. Because the purpose of having standby RDS instance is to avoid an infrastructure failure.
 So you have to keep your standby RDS service in a different Availability Zone, which may have different
 infrastructure.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Difference between Amazon RDS, DynamoDB and Redshift?</p>
-<pre><code>RDS is meant for structured data only. DynamoDB is meant for unstructured data which is a NoSQL service.
+<div class="highlight"><pre><span></span><code>RDS is meant for structured data only. DynamoDB is meant for unstructured data which is a NoSQL service.
 Redshift is a data warehouse product used for data analysis.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are Lifecycle Hooks?</p>
-<pre><code>Lifecycle Hooks are used in Auto Scaling. Lifecycle hooks enable you to perform custom actions by pausing
+<div class="highlight"><pre><span></span><code>Lifecycle Hooks are used in Auto Scaling. Lifecycle hooks enable you to perform custom actions by pausing
 instances as an Auto Scaling group launches or terminates them. Each Auto Scaling group can have multiple
 lifecycle hooks.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is S3?</p>
-<pre><code>S3 stands for Simple Storage Service, with a simple web service interface to store and retrieve any amount
+<div class="highlight"><pre><span></span><code>S3 stands for Simple Storage Service, with a simple web service interface to store and retrieve any amount
 of data from anywhere on the web.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is AWS Lambada?</p>
-<pre><code>Lambda is an event-driven platform. It is a compute service that runs code in response to events and
+<div class="highlight"><pre><span></span><code>Lambda is an event-driven platform. It is a compute service that runs code in response to events and
 automatically manages the compute resources required by that code.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>In S3 how many buckets can be created?</p>
-<pre><code>By default 100 buckets can be created in a region.
-</code></pre>
+<div class="highlight"><pre><span></span><code>By default 100 buckets can be created in a region.
+</code></pre></div>
 </li>
 <li>
 <p>What is CloudFront?</p>
-<pre><code>Amazon CloudFront is a content delivery network operated by Amazon Web Services. It is a service that speeds
+<div class="highlight"><pre><span></span><code>Amazon CloudFront is a content delivery network operated by Amazon Web Services. It is a service that speeds
 up transfer of your static and dynamic web content such as HTML files, IMAGE files., etc., CloudFront
 delivers your particulars thru worldwide data centers named Edge Locations.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Brief about S3 service in AWS?</p>
-<pre><code>S3, a Simple Storage Service from Amazon. You can move your files TO and FROM S3. Its like a FTP storage.
+<div class="highlight"><pre><span></span><code>S3, a Simple Storage Service from Amazon. You can move your files TO and FROM S3. Its like a FTP storage.
 You can keep your SNAPSHOTS in S3. You can also ENCRYPT your sensitive data in S3.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Explain Regions and Available Zones in EC2?</p>
-<pre><code>Amazon has hosted EC2 in various locations around the world. These locations are called REGIONS. For example
+<div class="highlight"><pre><span></span><code>Amazon has hosted EC2 in various locations around the world. These locations are called REGIONS. For example
 in Asia, Mumbai is one region and Singapore is another region. Each region is composed of isolated locations
 which are known as AVAILABLE ZONES. Region is independent. But the Available Zones are linked thru low-latency
 links.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are the two types of Load Balancer?</p>
-<pre><code>Classic LB and Application LB. ALB is the Content Based Routing.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Classic LB and Application LB. ALB is the Content Based Routing.
+</code></pre></div>
 </li>
 <li>
 <p>Can a AMI be shared?</p>
-<pre><code>Yes. A developer can create an AMI and share it with other developers for their use. A shared AMI is packed
+<div class="highlight"><pre><span></span><code>Yes. A developer can create an AMI and share it with other developers for their use. A shared AMI is packed
 with the components you need and you can customize the same as per your needs. As you are not an owner of a
 shared AMI there is a risk always involved.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is a Hypervisor?</p>
-<pre><code>A Hypervisor is a kind of software that enables Virtualization. It combines physical hardware resources into
+<div class="highlight"><pre><span></span><code>A Hypervisor is a kind of software that enables Virtualization. It combines physical hardware resources into
 a platform which is delivered virtually to one or more users. XEN is the Hypervisor for EC2.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Key Pair and its uses?</p>
-<pre><code>You use Key Pair to login to your Instance in a secured way. You can create a key pair using EC2 console. When
+<div class="highlight"><pre><span></span><code>You use Key Pair to login to your Instance in a secured way. You can create a key pair using EC2 console. When
 your instances are spread across regions you need to create key pair in each region.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the feature of ClassicLink?</p>
-<pre><code>ClassicLink allows instances in EC2 classic platform to communicate with instances in VPC using Private IP
+<div class="highlight"><pre><span></span><code>ClassicLink allows instances in EC2 classic platform to communicate with instances in VPC using Private IP
 address. EC2 classic platform instances cannot not be linked to more than one VPC at a time.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you edit a Route Table in VPC?</p>
-<pre><code>Yes. You can always modify route rules to specify which subnets are routed to the Internet gateway, the virtual
+<div class="highlight"><pre><span></span><code>Yes. You can always modify route rules to specify which subnets are routed to the Internet gateway, the virtual
 private gateway, or other instances.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How many Elastic IPs can you create?</p>
-<pre><code>5 VPC Elastic IP addresses per AWS account per region.
-</code></pre>
+<div class="highlight"><pre><span></span><code>5 VPC Elastic IP addresses per AWS account per region.
+</code></pre></div>
 </li>
 <li>
 <p>Can you ping the router or default gateway that connects your subnets?</p>
-<pre><code>NO, you cannot. It is not supported. However you can ping EC2 instances within a VPC, provided your
+<div class="highlight"><pre><span></span><code>NO, you cannot. It is not supported. However you can ping EC2 instances within a VPC, provided your
 firewall, Security Groups and network ACLs allows such traffic.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How will you monitor the network traffic in a VPC?</p>
-<pre><code>Using Amazon VPC Flow Logs feature.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Using Amazon VPC Flow Logs feature.
+</code></pre></div>
 </li>
 <li>
 <p>Can you make a VPC available in multiple Available Zones?</p>
-<pre><code>Yes.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Yes.
+</code></pre></div>
 </li>
 <li>
 <p>How do you ensure an EC2 instance is launched in a particular Available Zone?</p>
-<pre><code>After selecting your AMI Template and Instance Type, in the third step while configuring the instance
+<div class="highlight"><pre><span></span><code>After selecting your AMI Template and Instance Type, in the third step while configuring the instance
 you must select the SUBNET in which you wish to launch your instance. It will be launched in the AZ
 associated with that SUBNET.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>For Internet Gateways do you find any Bandwidth constraints?</p>
-<pre><code>NO. Normally an IG is HORIZONTALLY SCALLED, Redundant and Highly Available. It is not having nay Bandwidth
+<div class="highlight"><pre><span></span><code>NO. Normally an IG is HORIZONTALLY SCALLED, Redundant and Highly Available. It is not having nay Bandwidth
 constraints usually.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the significance of a Default VPC?</p>
-<pre><code>When you launch your instances in a Default VPC in a Region, you would be getting the benefit of advanced
+<div class="highlight"><pre><span></span><code>When you launch your instances in a Default VPC in a Region, you would be getting the benefit of advanced
 Network Functionalities. You can also make use of Security Groups, multiple IP addresses, and multiple
 Network interfaces.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you make use of default EBS Snapshots?</p>
-<pre><code>You can use, provided if it is located in the same region where your VPC is presented.
-</code></pre>
+<div class="highlight"><pre><span></span><code>You can use, provided if it is located in the same region where your VPC is presented.
+</code></pre></div>
 </li>
 <li>
 <p>What will happen when you delete a PEERING CONNECTION in your side?</p>
-<pre><code>The PEERING CONNECTION available in the other side would also get terminated. There will no more traffic
+<div class="highlight"><pre><span></span><code>The PEERING CONNECTION available in the other side would also get terminated. There will no more traffic
 flow.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you establish a Peering connection to a VPC in a different region?</p>
-<pre><code>NO. Its possible between VPCs in the same region.
-</code></pre>
+<div class="highlight"><pre><span></span><code>NO. Its possible between VPCs in the same region.
+</code></pre></div>
 </li>
 <li>
 <p>Can you connect your VPC with a VPC created by another AWS account?</p>
-<pre><code>Yes. Only when that owner accepts your peering connection request.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Yes. Only when that owner accepts your peering connection request.
+</code></pre></div>
 </li>
 <li>
 <p>When you delete your DB instance what will happen to your backups and DB snapshots?</p>
-<pre><code>When a DB instance is deleted, RDS retains the user-created DB snapshot along with all other manually
+<div class="highlight"><pre><span></span><code>When a DB instance is deleted, RDS retains the user-created DB snapshot along with all other manually
 created DB snapshots. Also automated backups are deleted and only manually created DB Snapshots are
 retained.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the significance of an Elastic IP?</p>
-<pre><code>The Public IP is associated with the instance until it is stopped or terminated Only. A Public IP is not
+<div class="highlight"><pre><span></span><code>The Public IP is associated with the instance until it is stopped or terminated Only. A Public IP is not
 static. Every time your instance is stopped or terminated the associated Public IP gets vanished and a
 new Public IP gets assigned with that instance. To over come this issue a public IP can be replaced by an
 Elastic IP address, which stays with the instance as long as the user doesn’t manually detach it.
 Similarly when if you are hosting multiple websites on your EC2 server, in that case you may require more
 than one Elastic IP address.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How will you use S3 with your EC2 instances?</p>
-<pre><code>Websites hosted on your EC2 instances can load their static contents directly from S3. It provides highly
+<div class="highlight"><pre><span></span><code>Websites hosted on your EC2 instances can load their static contents directly from S3. It provides highly
 scalable, reliable, fast, inexpensive data storage infrastructure.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Is this possible to connect your company datacenter to Amazon Cloud?</p>
-<pre><code>Yes, you can very well do this by establishing a VPN connection between your company’s network and Amazon
+<div class="highlight"><pre><span></span><code>Yes, you can very well do this by establishing a VPN connection between your company’s network and Amazon
 VPC.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you change the Private IP of an EC2 instance while it is running or stopped?</p>
-<pre><code>A Private IP is STATIC. And it is attached with an instance throughout is lifetime and cannot be changed.
-</code></pre>
+<div class="highlight"><pre><span></span><code>A Private IP is STATIC. And it is attached with an instance throughout is lifetime and cannot be changed.
+</code></pre></div>
 </li>
 <li>
 <p>What is the use of Subnets?</p>
-<pre><code>When a network has more number of HOSTS, managing these hosts can be tedious under a single large network.
+<div class="highlight"><pre><span></span><code>When a network has more number of HOSTS, managing these hosts can be tedious under a single large network.
 Therefore we divide this large network into easily manageable sub-networks (subnets) so that managing hosts
 under each subnet becomes easier.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the use of Route Table?</p>
-<pre><code>Route Table is used to route the network pockets. Generally one route table would be available in each
+<div class="highlight"><pre><span></span><code>Route Table is used to route the network pockets. Generally one route table would be available in each
 subnet. Route table can have any no. of records or information, hence attaching multiple subnets to a
 route table is also possible.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you use the Standby DB instance for read and write along with your Primary DB instance?</p>
-<pre><code>Standby server cannot be used in parallel with primary server unless your Primary instance goes down.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Standby server cannot be used in parallel with primary server unless your Primary instance goes down.
+</code></pre></div>
 </li>
 <li>
 <p>What is the use of Connection Draining?</p>
-<pre><code>Connection Draining is a service under Elastic Load Balancing. It keeps monitoring the healthiness of the
+<div class="highlight"><pre><span></span><code>Connection Draining is a service under Elastic Load Balancing. It keeps monitoring the healthiness of the
 instances. If any instance fails Connection Draining pulls all the traffic from that particular failed
 instance and re-route the traffic to other healthy instances.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the role of AWS CloudTrail?</p>
-<pre><code>CloudTrail is designed for logging and tracking API calls. Also used to audit all S3 bucket accesses.
-</code></pre>
+<div class="highlight"><pre><span></span><code>CloudTrail is designed for logging and tracking API calls. Also used to audit all S3 bucket accesses.
+</code></pre></div>
 </li>
 <li>
 <p>What is the use of Amazon Transfer Acceleration Service?</p>
-<pre><code>ATA service speeds up your data transfer with the use of optimized network paths. Also, speed up your
+<div class="highlight"><pre><span></span><code>ATA service speeds up your data transfer with the use of optimized network paths. Also, speed up your
 CDN up to 300% compared to normal data transfer speed.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the name of AWS CEO or Chief ? Jeff Bezos or Lisa Su or Denise Morrison ?</p>
-<pre><code>Jeff Bezos
-</code></pre>
+<div class="highlight"><pre><span></span><code>Jeff Bezos
+</code></pre></div>
 </li>
 <li>
 <p>EC2 officially launch in …..   2002 or 2006 or  2008 ?</p>
-<pre><code>2006
-</code></pre>
+<div class="highlight"><pre><span></span><code>2006
+</code></pre></div>
 </li>
 <li>
 <p>S3 Launched officially lunched in …..
 2002 or 2006 or 2008 ?</p>
-<pre><code>2006
-</code></pre>
+<div class="highlight"><pre><span></span><code>2006
+</code></pre></div>
 </li>
 <li>
 <p>You cannot store unlimited data in Amazon Web Services. True or False ?</p>
-<pre><code>False
-</code></pre>
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
 </li>
 <li>
 <p>Rapid provisioning allows you to very quickly spin up a new virtual machine with minimal effort. True or false ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>A hybrid setup is one in which part of your resources are AWS and the rest are with another cloud provider. True or False ?</p>
-<pre><code>False
-</code></pre>
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
 </li>
 <li>
 <p>As an added layer of security for AWS management, which of the following should be you do ?</p>
 <ul>
 <li>Create multiple Admin accounts</li>
 <li>Generate a new security key each time you log in</li>
-<li>Create IAM users<pre><code>Ans:  Create IAM users
-</code></pre>
+<li>Create IAM users<div class="highlight"><pre><span></span><code>Ans:  Create IAM users
+</code></pre></div>
 </li>
 </ul>
 </li>
 <li>
 <p>Is AMI template ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>EC2 Instances are Virtual Server in AWS. True or False ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>What does “elastic” refer to in Elastic Compute Cloud(EC2)? Select all that apply.</p>
@@ -799,26 +3147,26 @@ CDN up to 300% compared to normal data transfer speed.
 <li>Monitoring services on multiple devices</li>
 <li>Operating on Mac, Windows and Linux</li>
 <li>Paying only for running virtual machines</li>
-<li>Stretching applications across virtual machines<pre><code>Ans:
+<li>Stretching applications across virtual machines<div class="highlight"><pre><span></span><code>Ans:
     1. Increasing and decreasing capacity as needed  
     AND
     4. Paying only for running virtual machines
-</code></pre>
+</code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>You can upload a custom configuration virtual image and sell it on the AWS Marketplace. True or false ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>EC2 Machine types define which of the following ?</p>
 <ol>
 <li>AWS Region</li>
 <li>Core Count</li>
-<li>User Location<pre><code>Ans: Core Count
-</code></pre>
+<li>User Location<div class="highlight"><pre><span></span><code>Ans: Core Count
+</code></pre></div>
 </li>
 </ol>
 </li>
@@ -827,8 +3175,8 @@ CDN up to 300% compared to normal data transfer speed.
 <ol>
 <li>On-demand</li>
 <li>RI</li>
-<li>Spot instance<pre><code>Ans: On-demand
-</code></pre>
+<li>Spot instance<div class="highlight"><pre><span></span><code>Ans: On-demand
+</code></pre></div>
 </li>
 </ol>
 </li>
@@ -837,42 +3185,42 @@ CDN up to 300% compared to normal data transfer speed.
 <ol>
 <li>Data will be replicate to different AZs</li>
 <li>You can spin up and spin down VMs</li>
-<li>Automatically VMs will be add and remove<pre><code>Ans: You can spin up and spin down VMs
+<li>Automatically VMs will be add and remove<div class="highlight"><pre><span></span><code>Ans: You can spin up and spin down VMs
 
 In cloud computing, elasticity is defined as "the degree to which a system is able to adapt to workload
 changes by provisioning and de-provisioning resources in an autonomic manner, such that at each pointi
 in time the available resources match the current demand as closely as possible"
-</code></pre>
+</code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Can We launch multiple instances with same AMI ? </p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>PEM file is one time physical password ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>Windows user required PPK file to connect Linux instance hosted on AWS. True or False ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>You can purchase time on EC2 directly from other users and specify the price you want to pay. True or false ?</p>
-<pre><code>True
-</code></pre>
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
 </li>
 <li>
 <p>Which of the following might prevent your EC2 instance from appearing in the list of instances?</p>
 <ol>
 <li>EC2 is not selected</li>
 <li>Correct region is not selected</li>
-<li>AWS marketplace is not selected<pre><code>Ans: Correct region is not selected
-</code></pre>
+<li>AWS marketplace is not selected<div class="highlight"><pre><span></span><code>Ans: Correct region is not selected
+</code></pre></div>
 </li>
 </ol>
 </li>
@@ -881,8 +3229,8 @@ in time the available resources match the current demand as closely as possible"
 <ol>
 <li>Security Concerns</li>
 <li>Additional fees</li>
-<li>Data Loss<pre><code>Ans: Additional fees
-</code></pre>
+<li>Data Loss<div class="highlight"><pre><span></span><code>Ans: Additional fees
+</code></pre></div>
 </li>
 </ol>
 </li>
@@ -891,115 +3239,115 @@ in time the available resources match the current demand as closely as possible"
 <ol>
 <li>AWS Availability Zones</li>
 <li>AWS Edge Locations</li>
-<li>AWS Regions<pre><code>Ans: AWS Edge Locations
-</code></pre>
+<li>AWS Regions<div class="highlight"><pre><span></span><code>Ans: AWS Edge Locations
+</code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Regions, AZs and Edge Locations all terms are same… True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>AWS every service is available at every regions…. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>Premium support is Available in AWS for Developer, Business &amp; Enterprise level ? </p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Can you add new Debit/Credit card in your AWS Account ? </p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Can you increase micro to large of instance ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>On-demand instances is based on a bid mechanism. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>RI can be sold on the AWS marketplace?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>What are different options in instances ? Which instance is best on Production?</p>
-<pre><code>- On-demand
+<div class="highlight"><pre><span></span><code>- On-demand
 - RI
 - Depends on Application or Website
 
 Ans: Depends on Application or Website
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Which is most expensive options in instance ?</p>
-<pre><code>Ans: On-demand
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: On-demand
+</code></pre></div>
 </li>
 <li>
 <p>Amazon S3 is internet accessible storage via HTTP /HTTPS. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Amazon S3 is not a object level of storage. True or False?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>Amazon S3 is storage for the Internet. True or False?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Temporary storage access speed is not guaranteed. True or False?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>There is 99.99% SLA(Service Level Agreement) for temporary storage. True or False?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>Ephemeral storage is block-level storage ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Single object size is up to 5 TB in Amazon S3. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>You can create unlimited bucket size in Amazon S3. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>By default, Instance-Backed and EBS-Backed root volumes delete all data. However, when using EBS-Backed storage, you can configure it to
 save the data on the root volume. True or false ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>You can switch from an Instance-Backed to an EBS-Backed root volume at any time. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>When using an EBS-Backed machine, you can override the terminate option and save the root volume. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Which of the following is a service of AWS Simple Storage Service(S3)? Select all that apply.</p>
@@ -1007,14 +3355,14 @@ save the data on the root volume. True or false ?</p>
 <li>Database Indexing</li>
 <li>File searching</li>
 <li>Secure Hosting</li>
-<li>Storage Scaling<pre><code>  Ans: 3. Secure Hosting &amp; 4. Storage Scaling
-</code></pre>
+<li>Storage Scaling<div class="highlight"><pre><span></span><code>  Ans: 3. Secure Hosting &amp; 4. Storage Scaling
+</code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>What’s the difference between instance store and EBS?</p>
-<pre><code>Issue: 
+<div class="highlight"><pre><span></span><code>Issue: 
   I’m not sure whether to store the data associated with my Amazon EC2 instance in instance store or in an
   attached Amazon Elastic Block Store (Amazon EBS) volume. Which option is best for me?
 
@@ -1027,149 +3375,149 @@ Resolution:
   volumes instead. EBS volumes preserve their data through instance stops and terminations, can be easily
   backed up with EBS snapshots, can be removed from instances and reattached to another, and support
   full-volume encryption. For more detailed information about EBS volumes, see Features of Amazon EBS.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>BS can be attached to any running instance that is in the same Availability Zone ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>EBS is internet accessible. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>EBS has persistent file system for EC2. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>EBS supports incremental snapshots. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Amazon Glacier enables customers to offload the administrative burdens of operating and scaling storage to AWS. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Amazon Glacier is a great storage choice when low storage cost is paramount. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Data is rarely retrieved, and retrieval latency of several hours is acceptable in Glacier. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Glacier is basically for data archival. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>It is very cheap storage. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Glacier has very, very slow retrieval times. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>By Default, Instance-Backed and EBS-Backed root volumes delete all data. However, when using EBS-Backed storage, you can configure it
 to save the data on the root volume. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>You can switch from an Instance-Backed to an EBS-Backed root volume at any time. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>When using an EBS-Backed machine, you can override the terminate option and save the root volume. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC is Private, Isolated, Virtual Network. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC would be logically isolated network in AWS cloud. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC is also give control of network architecture. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC is also going to enhanced security. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC has ability to interwork with other organizations. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>VPC does not enable hybrid cloud(site-to-site VPN). True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>Route Table is a set of Rules tells the direction of network. True or False ?</p>
-<pre><code>Ans: True
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: True
+</code></pre></div>
 </li>
 <li>
 <p>Security Group is a subnet level of security. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>NACLs(Network Access Lists) is a resource level of security. True or False ?</p>
-<pre><code>Ans: False
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: False
+</code></pre></div>
 </li>
 <li>
 <p>Any default stack is available in Cloud Formation ?</p>
-<pre><code>Ans: You can not create default stack but you can choose the type of stack to create e.g : A sample stack
+<div class="highlight"><pre><span></span><code>Ans: You can not create default stack but you can choose the type of stack to create e.g : A sample stack
 
 A Linux-based chef 12 stack
 A Windows-based Chef 12.2 stack
 A Linux-based Chef 11.10 stack
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the difference between Stack and Template in Cloud Formation ?</p>
-<pre><code>Ans: Stack : Cloud-based applications usually require a group of related resources— application servers,
+<div class="highlight"><pre><span></span><code>Ans: Stack : Cloud-based applications usually require a group of related resources— application servers,
      database servers, and so on—that must be created and managed collectively. This collection of
      instances is called a stack.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>We can create multiple server for same stack ?</p>
-<pre><code>Ans: you can select one “instance type” e.g: t2.micro at a time but you can set more then one
+<div class="highlight"><pre><span></span><code>Ans: you can select one “instance type” e.g: t2.micro at a time but you can set more then one
      “Webserver Capacity” which is “The initial number of Webserver instances“ means
      automatically same kind of instances will launch.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can you explain the term SQS is pull based, not pushed base.</p>
-<pre><code>Ans: It means that you have to actively poll the queue in order to receive a messages. The messages are
+<div class="highlight"><pre><span></span><code>Ans: It means that you have to actively poll the queue in order to receive a messages. The messages are
      pushed into the queue by the producers but pulled out of the queue by the consumers.You have to call
      the Receive Message action from the consumer in order to get the messages, they are not pushed to you
      automatically when they arrive.
-</code></pre>
+</code></pre></div>
 </li>
 </ol>
 <hr />
@@ -1267,87 +3615,73 @@ A Linux-based Chef 11.10 stack
      data-ad-slot="3808191339"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-  <a href="/consulting" class="consulting-float">
-    <span>🚀 Get Expert Consulting</span>
-  </a>
+</script>
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Copyright &copy; 2022 nightWolf</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../../js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 nightWolf
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
 </html>

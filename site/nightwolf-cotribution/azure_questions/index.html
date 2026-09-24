@@ -1,419 +1,2830 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
         <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/azure_questions/">
-        <link rel="shortcut icon" href="../../img/favi.png">
+      
+      
+        <link rel="prev" href="../aws-4/">
+      
+      
+        <link rel="next" href="../azure_questions_2/">
+      
+      
         
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
         <title>Microsoft Azure Administrator AZ-103 - nightWolf</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../../css/brands.min.css" rel="stylesheet">
-        <link href="../../css/solid.min.css" rel="stylesheet">
-        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-          gtag('config', "G-8QN4YRWY1N");
-        </script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="../..">nightWolf</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../performance/" class="nav-link">Linux-Performance</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interview-Prep</a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Linux Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
-</li>
-            
-<li>
-    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
-</li>
-            
-<li>
-    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
-</li>
-            
-<li>
-    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
-</li>
-            
-<li>
-    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
-</li>
-            
-<li>
-    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Python Programs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../python_programs/" class="dropdown-item">Python Programs for practice</a>
-</li>
-            
-<li>
-    <a href="../python_programs_2/" class="dropdown-item">Python Programs for practice-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
-</li>
-            
-<li>
-    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
-</li>
-            
-<li>
-    <a href="../java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
-</li>
-            
-<li>
-    <a href="../aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active" aria-current="page">Microsoft Azure Administrator AZ-103</a>
-</li>
-            
-<li>
-    <a href="../azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
-</li>
-                                    
-<li>
-    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cheatsheets</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../cheatsheets/leetcode_java/" class="dropdown-item">Leetcode Solutions JAVA</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/http_protocols/" class="dropdown-item">HTTP Protocols</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/tls-difference/" class="dropdown-item">TLS Version key differences</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Technical</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../linux/" class="dropdown-item">Linux</a>
-</li>
-                                    
-<li>
-    <a href="../../network/" class="dropdown-item">Network</a>
-</li>
-                                    
-<li>
-    <a href="../../db/" class="dropdown-item">Database</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Cloud</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../articles/gcpdiag_intro/" class="dropdown-item">Diagnose GCP issues with gcpdiag</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/neural_networks/" class="dropdown-item">What is Neural Network ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/quantum_computing/" class="dropdown-item">Quantum Computing</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/blockchain/" class="dropdown-item">Blockchain</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/cyber_security/" class="dropdown-item">Cybersecurity</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/bard/" class="dropdown-item">What is Bard chatbot ?</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../aws-4/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../azure_questions_2/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-  
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="2"><a href="#microsoft-azure-administrator-az-103" class="nav-link">Microsoft Azure Administrator AZ-103</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<h2 id="microsoft-azure-administrator-az-103">Microsoft Azure Administrator AZ-103<a class="headerlink" href="#microsoft-azure-administrator-az-103" title="Permanent link"></a></h2>
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8QN4YRWY1N"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8QN4YRWY1N",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#microsoft-azure-administrator-az-103" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="nightWolf" class="md-header__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nightWolf
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Microsoft Azure Administrator AZ-103
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="nightWolf" class="md-nav__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    nightWolf
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux-Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview-Prep
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview-Prep
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_interview_questions_for_freshers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers and Experienced - L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Experienced Linux Admins - L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Linux Interview Questions for Experienced Admins - L3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_questionairs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solved list of Linux interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell_scripting_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell-Scripting Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Programs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Networking Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DevOps Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jenkins Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ansible_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansible Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java/OOPs Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terraform Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 3rd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Cloud Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Google Cloud Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWS Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Azure AZ-103 Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Azure AZ-103 Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-azure-administrator-az-103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microsoft Azure Administrator AZ-103
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103- set 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_testing_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Testing/QA Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbms_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DBMS Interview Questions and Answers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managerial_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managerial Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/leetcode_java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leetcode Solutions JAVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/http_protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/yum_cheatsheet.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux YUM CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yum_vs_apt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yum vs APT cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/gcloud_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gcloud commands Cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/tls-difference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TLS Version key differences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud-comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Comparison between GCP, AWS, Azure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/groups/8982092/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group for Jobs postings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/gcpdiag_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnose GCP issues with gcpdiag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Artificial Intelligence(AI) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_trends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unleashing the Power of Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/machine_learning_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Machine Learning ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/neural_networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Neural Network ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/iot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Internet of Things (IoT) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/natural_language_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Natural Language Processing (NLP) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/robotics_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Robotics and Automation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/quantum_computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/blockchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blockchain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/virtual_reality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Virtual Reality (VR) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/cyber_security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cybersecurity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_chatbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is AI Chat Open Assistant Chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/bard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Bard chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-azure-administrator-az-103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microsoft Azure Administrator AZ-103
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Microsoft Azure Administrator AZ-103</h1>
+
+<h2 id="microsoft-azure-administrator-az-103">Microsoft Azure Administrator AZ-103<a class="headerlink" href="#microsoft-azure-administrator-az-103" title="Permanent link">&para;</a></h2>
 <hr />
 <p>These are Microsoft Azure Administrator AZ-103 certification questions for experienced professionals.  You will find these questions very helpful in your Microsoft Azure Administrator AZ-103 certification exam. Prepare well and All the very best.
 <br></p>
@@ -433,7 +2844,7 @@
 
 <hr />
 <p>QUESTION 1</p>
-<pre><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
+<div class="highlight"><pre><span></span><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
     Subscription1. Adatum contains a group named Developers. Subscription1 contains a resource group named Dev.
     You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource
     group.
@@ -446,9 +2857,9 @@
 
     Explanation:
     The Contributor role can manage all resources (and add resources) in a Resource Group.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 2</p>
-<pre><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
+<div class="highlight"><pre><span></span><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
     Subscription1. Adatum contains a group named Developers. Subscription1 contains a resource group named Dev.
     You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource
     group.
@@ -463,14 +2874,14 @@
 
     Explanation:
     You would need the Logic App Contributor role.
-</code></pre>
+</code></pre></div>
 <p>References:<br>
     - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles"
     target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
     <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app"
     target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a></p>
 <p>QUESTION 3</p>
-<pre><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
+<div class="highlight"><pre><span></span><code>    You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named
     Subscription1. Adatum contains a group named Developers. Subscription1 contains a resource group named Dev.
     You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.
 
@@ -482,14 +2893,14 @@
     Explanation:
     The Logic App Contributor role lets you manage logic app, but not access to them. It provides access to view,
     edit, and update a logic app.
-</code></pre>
+</code></pre></div>
 <p>References:<br>
     - <a href="https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles"
     target="_blank">https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles</a>
     <br>- <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app"
     target="_blank">https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app</a></p>
 <p>QUESTION 4</p>
-<pre><code>    You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named
+<div class="highlight"><pre><span></span><code>    You have an Azure subscription named Subscription1 that contains an Azure Log Analytics workspace named
     Workspace1.
     You need to view the error events from a table named Event. Which query should you run in Workspace1?
 
@@ -504,14 +2915,14 @@
 
     Explanation:
     To search a term in a specific table, add in (table-name) just after the search operator
-</code></pre>
+</code></pre></div>
 <p>References:<br>
     - <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries"
     target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/search-queries</a>
     <br>- <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal"
     target="_blank">https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal</a></p>
 <p>QUESTION 5</p>
-<pre><code>    You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the
+<div class="highlight"><pre><span></span><code>    You have an Azure subscription named Subscription1. Subscription1 contains the resource groups in the
     following table.
     RG1 has a web app named WebApp1. WebApp1 is located in West Europe. You move WebApp1 to RG2.
     What is the effect of the move?
@@ -528,12 +2939,12 @@
     the same resource group and geographical region.
     The region in which your app runs is the region of the App Service plan it's in. However, you cannot change
     an App Service plan's region.
-</code></pre>
+</code></pre></div>
 <p>References:<br>
     - <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage"
     target="_blank">https://docs.microsoft.com/en-us/azure/app-service/app-service-plan-manage</a></p>
 <p>QUESTION 6</p>
-<pre><code>    You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.
+<div class="highlight"><pre><span></span><code>    You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.
     Your company has three cost centers named Manufacturing, Sales, and Finance. You need to associate each
     virtual machine to a specific cost center.
     What should you do?
@@ -549,9 +2960,9 @@
     References:
     https://docs.microsoft.com/en-us/azure/billing/billing-getting-started
     https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags
-</code></pre>
+</code></pre></div>
 <p>QUESTION 7</p>
-<pre><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
+<div class="highlight"><pre><span></span><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
     series contains a unique solution that might meet the stated goals. Some question sets might have more
     than one correct solution, while others might not have a correct solution.
     After you answer a question in this section, you will NOT be able to return to it. As a result, these
@@ -565,9 +2976,9 @@
     B. No
     Correct Answer: B Section: [none] Explanation
     Explanation/Reference:
-</code></pre>
+</code></pre></div>
 <p>QUESTION 8</p>
-<pre><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
+<div class="highlight"><pre><span></span><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
     series contains a unique solution that might meet the stated goals. Some question sets might have more
     than one correct solution, while others might not have a correct solution.
     After you answer a question in this section, you will NOT be able to return to it. As a result, these
@@ -581,9 +2992,9 @@
     B. No
     Correct Answer: B Section: [none] Explanation
     Explanation/Reference:
-</code></pre>
+</code></pre></div>
 <p>QUESTION 9</p>
-<pre><code>    Note: This question is part of a series of questions that present the same scenario. Each question
+<div class="highlight"><pre><span></span><code>    Note: This question is part of a series of questions that present the same scenario. Each question
     in the series contains a unique solution that might meet the stated goals. Some question sets might have
     more than one correct solution, while others might not have a correct solution.
     After you answer a question in this section, you will NOT be able to return to it. As a result, these
@@ -597,9 +3008,9 @@
     B. No
     Correct Answer: B Section: [none] Explanation
     Explanation/Reference:
-</code></pre>
+</code></pre></div>
 <p>QUESTION 10</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription.
     You plan to use Azure Resource Manager templates to deploy 50 Azure virtual machines that will be part of
     the same availability set.
@@ -621,9 +3032,9 @@
     References:
     https://www.itprotoday.com/microsoft-azure/check-if-azure-region-supports-2-or-3-fault-domains-managed- disks
     https://github.com/Azure/acs-engine/issues/1030
-</code></pre>
+</code></pre></div>
 <p>QUESTION 11</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1 that has a subscription ID of c276fc76-9cd4-44c9-
     99a7-4fd71546436e.
     You need to create a custom RBAC role named CR1 that meets the following requirements: Can be assigned
@@ -641,9 +3052,9 @@
     https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles
     https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-
     operations#microsoftresources
-</code></pre>
+</code></pre></div>
 <p>QUESTION 12</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure Active Directory (Azure AD) tenant that contains three global administrators named Admin1,
     Admin2, and Admin3.
     The tenant is associated to an Azure subscription. Access control for the subscription is configured as
@@ -656,9 +3067,9 @@
     Correct Answer:
     Section: [none] Explanation
     Explanation/Reference:
-</code></pre>
+</code></pre></div>
 <p>QUESTION 13</p>
-<pre><code>    You have an Azure policy as shown in the following exhibit.
+<div class="highlight"><pre><span></span><code>    You have an Azure policy as shown in the following exhibit.
     What is the effect of the policy?
     A. You are prevented from creating Azure SQL Servers in ContosoRG1 only.
     B. You can create Azure SQL servers in ContosoRG1 only.
@@ -669,9 +3080,9 @@
     Explanation:
     You are prevented from creating Azure SQL servers anywhere in Subscription 1 with the exception of
     ContosoRG1
-</code></pre>
+</code></pre></div>
 <p>QUESTION 14</p>
-<pre><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
+<div class="highlight"><pre><span></span><code>    Note: This question is part of a series of questions that present the same scenario. Each question in the
     series contains a unique solution that might meet the stated goals. Some question sets might have more
     than one correct solution, while others might not have a correct solution.
     After you answer a question in this section, you will NOT be able to return to it. As a result, these
@@ -692,9 +3103,9 @@
     view, edit, and update a logic app.
     References: https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles
     https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-securing-a-logic-app
-</code></pre>
+</code></pre></div>
 <p>QUESTION 15</p>
-<pre><code>    You have an Azure Active Directory (Azure AD) tenant that contains 5,000 user accounts. You create a new
+<div class="highlight"><pre><span></span><code>    You have an Azure Active Directory (Azure AD) tenant that contains 5,000 user accounts. You create a new
     user account named AdminUser1.
     You need to assign the User administrator administrative role to AdminUser1. What should you do from the
     user account properties?
@@ -714,9 +3125,9 @@
     References:
     https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-assign-role-
     azure-portal
-</code></pre>
+</code></pre></div>
 <p>QUESTION 16</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1.
     You plan to deploy an Ubuntu Server virtual machine named VM1 to Subscription1.
     You need to perform a custom deployment of the virtual machine. A specific trusted root certification
@@ -733,9 +3144,9 @@
     Once Cloud-init.txt has been created, you can deploy the VM with az vm create cmdlet, sing the --custom-
     data parameter to provide the full path to the cloud-init.txt file.
     References: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-automate-vm-deployment
-</code></pre>
+</code></pre></div>
 <p>QUESTION 17</p>
-<pre><code>    You have an Azure subscription named Subscription1. In Subscription1, you create an alert rule named Alert1.
+<div class="highlight"><pre><span></span><code>    You have an Azure subscription named Subscription1. In Subscription1, you create an alert rule named Alert1.
     The Alert1 action group is configured as shown in the following exhibit.
     Alert1 alert criteria is triggered every minute.
     Use the drop-down menus to select the answer choice that completes each statement based on the information
@@ -828,9 +3239,9 @@
     Authentication Requirements
     Users in the Miami office must use Azure Active Directory Seamless Single Sign-on (Azure AD Seamless SSO)
     when accessing resources in Azure.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 18</p>
-<pre><code>    You need to resolve the licensing issue before you attempt to assign the license again. What should you do?
+<div class="highlight"><pre><span></span><code>    You need to resolve the licensing issue before you attempt to assign the license again. What should you do?
     A. From the Groups blade, invite the user accounts to a new group.
     B. From the Profile blade, modify the usage location.
     C. From the Directory role blade, modify the directory role.
@@ -842,9 +3253,9 @@
     You attempt to assign a license in Azure to several users and receive the following error message:
     "Licenses not assigned. License agreement failed for one user."
     You verify that the Azure subscription has the available licenses.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 19</p>
-<pre><code>    You need to resolve the Active Directory issue. What should you do?
+<div class="highlight"><pre><span></span><code>    You need to resolve the Active Directory issue. What should you do?
     A. Run the IdFix tool then use the Update actions.
     B. From Active Directory Domains and Trusts, modify the list of UPN suffixes.
     C. From Azure AD Connect, modify the outbound synchronization rule.
@@ -859,9 +3270,9 @@
     Several users in humongousinsurance.com have UPNs that contain special characters. You suspect that some
     of the characters are unsupported in Azure AD.
     References: https://www.microsoft.com/en-us/download/details.aspx?id=36832
-</code></pre>
+</code></pre></div>
 <p>QUESTION 20</p>
-<pre><code>    You need to define a custom domain name for Azure AD to support the planned infrastructure. Which domain
+<div class="highlight"><pre><span></span><code>    You need to define a custom domain name for Azure AD to support the planned infrastructure. Which domain
     name should you use?
     A. ad.humongousinsurance.com
     B. humingousinsurance.onmicrosoft.com
@@ -883,9 +3294,9 @@
     Planned Azure AD Infrastructure: The on-premises Active Directory domain will be synchronized to Azure AD.
     References: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-custom-domain
     Question Set 1
-</code></pre>
+</code></pre></div>
 <p>QUESTION 21</p>
-<pre><code>    You plan to use the Azure Import/Export service to copy files to a storage account.
+<div class="highlight"><pre><span></span><code>    You plan to use the Azure Import/Export service to copy files to a storage account.
     Which two files should you create before you prepare the drives for the import job? Each correct answer
     presents part of the solution.
     NOTE: Each correct selection is worth one point.
@@ -901,9 +3312,9 @@
     E: Modify the dataset.csv file in the root folder where the tool resides. Depending on whether you want
     to import a file or folder or both, add entries in the dataset.csv file
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-data-to-files
-</code></pre>
+</code></pre></div>
 <p>QUESTION 22</p>
-<pre><code>    DRAG DROP
+<div class="highlight"><pre><span></span><code>    DRAG DROP
     You have an on-premises file server named Server1 that runs Windows Server 2016. You have an Azure
     subscription that contains an Azure file share.
     You deploy an Azure File Sync Storage Sync Service, and you create a sync group. You need to synchronize
@@ -928,9 +3339,9 @@
     with each other. A sync group must contain one cloud endpoint, which represents an Azure file share and
     one or more server endpoints. A server endpoint represents a path on registered server.
     References: https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-deployment-guide
-</code></pre>
+</code></pre></div>
 <p>QUESTION 23</p>
-<pre><code>    You create an Azure Storage account named contosostorage. You plan to create a file share named data.
+<div class="highlight"><pre><span></span><code>    You create an Azure Storage account named contosostorage. You plan to create a file share named data.
     Users need to map a drive to the data file share from home computers that run Windows 10. Which outbound
     port should you open between the home computers and the data file share?
     A. 80
@@ -943,9 +3354,9 @@
     Ensure port 445 is open: The SMB protocol requires TCP port 445 to be open; connections will fail if port
     445 is blocked.
     References: https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows
-</code></pre>
+</code></pre></div>
 <p>QUESTION 24</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have several Azure virtual machines on a virtual network named VNet1. You configure an Azure Storage
     account as shown in the following exhibit.
     Use the drop-down menus to select the answer choice that completes each statement based on the information
@@ -965,9 +3376,9 @@
     Reference: https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows
     https://azure.microsoft.com/en-us/blog/azure-backup-now-supports-storage-accounts-secured-with-azure-
     storage-firewalls-and-virtual-networks/
-</code></pre>
+</code></pre></div>
 <p>QUESTION 25</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1 that contains the resources shown in the following table.
     The status of VM1 is Running.
     You assign an Azure policy as shown in the exhibit. (Click the Exhibit tab.)
@@ -978,9 +3389,9 @@
     Correct Answer:
     Section: [none] Explanation
     Explanation/Reference:
-</code></pre>
+</code></pre></div>
 <p>QUESTION 26</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1019,9 +3430,9 @@
     drops down.
     Step 5: In Name type myshare. Click OK to create the Azure file share. References:
     https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-portal
-</code></pre>
+</code></pre></div>
 <p>QUESTION 27</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1064,9 +3475,9 @@
     read-only access to the data in the secondary location, in addition to geo-replication across two regions.
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account
     https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview
-</code></pre>
+</code></pre></div>
 <p>QUESTION 28</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1108,9 +3519,9 @@
     read-only access to the data in the secondary location, in addition to geo-replication across two regions.
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account
     https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview
-</code></pre>
+</code></pre></div>
 <p>QUESTION 29</p>
-<pre><code>    You have an Azure subscription that contains the resources in the following table.
+<div class="highlight"><pre><span></span><code>    You have an Azure subscription that contains the resources in the following table.
     Store1 contains a file share named Data. Data contains 5,000 files.
     You need to synchronize the files in Data to an on-premises server named Server1.
     Which three actions should you perform? Each correct answer presents part of the solution.
@@ -1135,9 +3546,9 @@
     with each other. A sync group must contain one cloud endpoint, which represents an Azure file share and
     one or more server endpoints. A server endpoint represents a path on registered server.
     References: https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-deployment-guide
-</code></pre>
+</code></pre></div>
 <p>QUESTION 30</p>
-<pre><code>    DRAG DROP
+<div class="highlight"><pre><span></span><code>    DRAG DROP
     You have an Azure subscription named Subscription1.
     You create an Azure Storage account named contosostorage, and then you create a file share named data.
     Which UNC path should you include in a script that references files from the data file share? To answer,
@@ -1154,9 +3565,9 @@
     Box 3: data
     The name of the file share is data. Example:
     References: https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-windows
-</code></pre>
+</code></pre></div>
 <p>QUESTION 31</p>
-<pre><code>    DRAG DROP
+<div class="highlight"><pre><span></span><code>    DRAG DROP
     You have an Azure subscription that contains a storage account.
     You have an on-premises server named Server1 that runs Windows Server 2016. Server1 has 2 TB of data.
     You need to transfer the data to the storage account by using the Azure Import/Export service.
@@ -1184,9 +3595,9 @@
     received and processed at the Azure data center.
     The drives are shipped using your carrier account to the return address provided in the import job.
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service
-</code></pre>
+</code></pre></div>
 <p>QUESTION 32</p>
-<pre><code>    You have the Azure virtual machines shown in the following table.
+<div class="highlight"><pre><span></span><code>    You have the Azure virtual machines shown in the following table.
     You have a Recovery Services vault that protects VM1 and VM2. You need to protect VM3 and VM4 by using
     Recovery Services. What should you do first?
     A. Create a new backup policy.
@@ -1200,9 +3611,9 @@
     data, or configuration information for virtual machines (VMs), workloads, servers, or workstations. You
     can use Recovery Services vaults to hold backup data for various Azure services
     References: https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication
-</code></pre>
+</code></pre></div>
 <p>QUESTION 33</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1 that is associated to an Azure Active Directory (Azure
     AD) tenant named AAD1.
     Subscription1 contains the objects in the following table.
@@ -1223,9 +3634,9 @@
     https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm#defining-a-backup-policy
     https://blogs.microsoft.com/firehose/2015/02/16/february-update-to-azure-backup-includes-data-retention-
     up-to-99-years-offline-backup-and-more/
-</code></pre>
+</code></pre></div>
 <p>QUESTION 34</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1.
     In Subscription1, you create an Azure file share named share1.
     You create a shared access signature (SAS) named SAS1 as shown in the following exhibit.
@@ -1242,9 +3653,9 @@
     The net use command is used to connect to file shares.
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1
     https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer? tabs=windows
-</code></pre>
+</code></pre></div>
 <p>QUESTION 35</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have Azure Storage accounts as shown in the following exhibit.
     Use the drop-down menus to select the answer choice that completes each statement based on the information
     presented in the graphic.
@@ -1264,9 +3675,9 @@
     General-purpose v1 (GPv1) accounts provide access to all Azure Storage services, but may not have the
     latest features or the lowest per gigabyte pricing.
     References: https://docs.microsoft.com/en-us/azure/storage/common/storage-account-options
-</code></pre>
+</code></pre></div>
 <p>QUESTION 36</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1324,9 +3735,9 @@
     C7. On the Select Retention Policy page, set it to 14 days, and click Next.
     C8. Finish the Wizard.
     References: https://docs.microsoft.com/en-us/azure/backup/backup-configure-vault
-</code></pre>
+</code></pre></div>
 <p>QUESTION 37</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1365,9 +3776,9 @@
     Set the level of public access to the container: Select anonymous access.
     Step 3: Select OK to create the container. References:
     https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal
-</code></pre>
+</code></pre></div>
 <p>QUESTION 38</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1400,9 +3811,9 @@
     Step 2: Click on add File Share button:
     Step 3: Provide Name (storagelod9272261) and Quota (250 GB).
     References: https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share
-</code></pre>
+</code></pre></div>
 <p>QUESTION 39</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1498,9 +3909,9 @@
     user named Admin1 as the service admin for the Azure subscription.
     Admin1 must receive email alerts regarding service outages.
     Ensure that a new user named User3 can create network objects for the Azure subscription.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 40</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You need to identify the storage requirements for Contoso.
     For each of the following statements, select Yes if the statement is true. Otherwise, select No.
     NOTE: Each correct selection is worth one point.
@@ -1511,9 +3922,9 @@
     Use unmanaged standard storage for the hard disks of the virtual machines. We use Page Blobs for these. Box
     2: No
     Box 3: No
-</code></pre>
+</code></pre></div>
 <p>QUESTION 41</p>
-<pre><code>    You need to move the blueprint files to Azure. What should you do?
+<div class="highlight"><pre><span></span><code>    You need to move the blueprint files to Azure. What should you do?
     A. Use Azure Storage Explorer to copy the files.
     B. Use the Azure Import/Export service.
     C. Generate a shared access signature (SAS). Map a drive, and then copy the files by using File Explorer.
@@ -1529,9 +3940,9 @@
     References:
     https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/move-data-to-azure-
     blob-using-azure-storage-explorer
-</code></pre>
+</code></pre></div>
 <p>QUESTION 42</p>
-<pre><code>    You need to implement a backup solution for App1 after the application is moved. What should you create first?
+<div class="highlight"><pre><span></span><code>    You need to implement a backup solution for App1 after the application is moved. What should you create first?
     A. a recovery plan
     B. a Recovery Services vault
     C. an Azure Backup Server
@@ -1615,9 +4026,9 @@
     Authentication Requirements
     Users in the Miami office must use Azure Active Directory Seamless Single Sign-on (Azure AD Seamless SSO)
     when accessing resources in Azure.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 43</p>
-<pre><code>    You need to prepare the environment to ensure that the web administrators can deploy the web apps as
+<div class="highlight"><pre><span></span><code>    You need to prepare the environment to ensure that the web administrators can deploy the web apps as
     quickly as possible.
     Which three actions should you perform in sequence? To answer, move the appropriate actions from the list
     of actions to the answer area and arrange them in the correct order.
@@ -1636,9 +4047,9 @@
     References: https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-quickstart-create-
     templates-use-the-portal
     Question Set 1
-</code></pre>
+</code></pre></div>
 <p>QUESTION 44</p>
-<pre><code>    You plan to automate the deployment of a virtual machine scale set that uses the Windows Server 2016
+<div class="highlight"><pre><span></span><code>    You plan to automate the deployment of a virtual machine scale set that uses the Windows Server 2016
     Datacenter image.
     You need to ensure that when the scale set virtual machines are provisioned, they have web server components
     installed.
@@ -1658,9 +4069,9 @@
     and can elastically scale in and out in response to load. DSC is used to configure the VMs as they come
     online so they are running the production software.
     References: https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-dsc
-</code></pre>
+</code></pre></div>
 <p>QUESTION 45</p>
-<pre><code>    DRAG DROP
+<div class="highlight"><pre><span></span><code>    DRAG DROP
     You have two Azure virtual machines named VM1 and VM2. VM1 has a single data disk named Disk1. You need
     to attach Disk1 to VM2. The solution must minimize downtime for both virtual machines.
     Which four actions should you perform in sequence? To answer, move the appropriate actions from the list
@@ -1689,9 +4100,9 @@
     8. The disk stays in storage but is no longer attached to a virtual machine.
     References: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk
     https://docs.microsoft.com/en-us/azure/lab-services/devtest-lab-attach-detach-data-disk
-</code></pre>
+</code></pre></div>
 <p>QUESTION 46</p>
-<pre><code>    HOTSPOT
+<div class="highlight"><pre><span></span><code>    HOTSPOT
     You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1.
     You install and configure a web server and a DNS server on VM1.
     VM1 has the effective network security rules shown in the following exhibit.
@@ -1711,9 +4122,9 @@
     that exist with lower priorities (higher numbers) that have the same attributes as rules with higher
     priorities are not processed.
     References: https://docs.microsoft.com/en-us/azure/virtual-network/security-overview
-</code></pre>
+</code></pre></div>
 <p>QUESTION 47</p>
-<pre><code>    DRAG DROP
+<div class="highlight"><pre><span></span><code>    DRAG DROP
     You have an Azure Linux virtual machine that is protected by Azure Backup. One week ago, two files were
     deleted from the virtual machine.
     You need to restore the deleted files to an on-premises computer as quickly as possible.
@@ -1736,9 +4147,9 @@
     system and a storage account, or between storage accounts.
     References: https://docs.microsoft.com/en-us/azure/backup/backup-azure-restore-files-from-vm
     https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
-</code></pre>
+</code></pre></div>
 <p>QUESTION 48</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1779,9 +4190,9 @@
     select Create new and type myResourceGroup.
     From the Location drop-down menu, choose West Europe. Click Create to create your Recovery Services vault.
     References: https://docs.microsoft.com/en-us/azure/backup/tutorial-backup-vm-at-scale
-</code></pre>
+</code></pre></div>
 <p>QUESTION 49</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1821,9 +4232,9 @@
     the virtual machine deployment.
     Repeat the procedure for the second VM and name it VM1003b. References:
     https://docs.microsoft.com/en-us/azure/virtual-machines/windows/create-vm-generalized-managed
-</code></pre>
+</code></pre></div>
 <p>QUESTION 50</p>
-<pre><code>    SIMULATION
+<div class="highlight"><pre><span></span><code>    SIMULATION
     Please wait while the virtual machine loads. Once loaded, you may proceed to the lab section. This may
     take a few minutes, and the wait time will not be deducted from your overall test time.
     When the Next button is available, click it to access the lab section. In this section, you will perform
@@ -1864,7 +4275,7 @@
     Step 7: Under Settings, make changes as necessary and select OK.
     Step 8: On the summary page, you should see your image name listed as a Private image. Select Ok to start
     the virtual machine deployment.
-</code></pre>
+</code></pre></div>
 <p>References: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/create-vm-generalized-managed</p>
 <p><br>
 <br>
@@ -1961,87 +4372,73 @@
      data-ad-slot="3808191339"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-  <a href="/consulting" class="consulting-float">
-    <span>🚀 Get Expert Consulting</span>
-  </a>
+</script>
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Copyright &copy; 2022 nightWolf</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../../js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 nightWolf
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
 </html>

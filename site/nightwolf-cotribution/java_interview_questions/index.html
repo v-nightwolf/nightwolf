@@ -1,419 +1,2767 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
         <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/java_interview_questions/">
-        <link rel="shortcut icon" href="../../img/favi.png">
+      
+      
+        <link rel="prev" href="../ansible_interview_questions/">
+      
+      
+        <link rel="next" href="../java_interview_questions-2/">
+      
+      
         
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
         <title>Java/OOPs Interview Questions - nightWolf</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../../css/brands.min.css" rel="stylesheet">
-        <link href="../../css/solid.min.css" rel="stylesheet">
-        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-          gtag('config', "G-8QN4YRWY1N");
-        </script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="../..">nightWolf</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../performance/" class="nav-link">Linux-Performance</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interview-Prep</a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Linux Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
-</li>
-            
-<li>
-    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
-</li>
-            
-<li>
-    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
-</li>
-            
-<li>
-    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
-</li>
-            
-<li>
-    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
-</li>
-            
-<li>
-    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Python Programs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../python_programs/" class="dropdown-item">Python Programs for practice</a>
-</li>
-            
-<li>
-    <a href="../python_programs_2/" class="dropdown-item">Python Programs for practice-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
-</li>
-            
-<li>
-    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active" aria-current="page">Java/OOPs Interview Questions</a>
-</li>
-            
-<li>
-    <a href="../java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../aws/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
-</li>
-            
-<li>
-    <a href="../aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../azure_questions/" class="dropdown-item">Microsoft Azure Administrator AZ-103</a>
-</li>
-            
-<li>
-    <a href="../azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
-</li>
-                                    
-<li>
-    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cheatsheets</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../cheatsheets/leetcode_java/" class="dropdown-item">Leetcode Solutions JAVA</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/http_protocols/" class="dropdown-item">HTTP Protocols</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/tls-difference/" class="dropdown-item">TLS Version key differences</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Technical</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../linux/" class="dropdown-item">Linux</a>
-</li>
-                                    
-<li>
-    <a href="../../network/" class="dropdown-item">Network</a>
-</li>
-                                    
-<li>
-    <a href="../../db/" class="dropdown-item">Database</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Cloud</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../articles/gcpdiag_intro/" class="dropdown-item">Diagnose GCP issues with gcpdiag</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/neural_networks/" class="dropdown-item">What is Neural Network ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/quantum_computing/" class="dropdown-item">Quantum Computing</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/blockchain/" class="dropdown-item">Blockchain</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/cyber_security/" class="dropdown-item">Cybersecurity</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/bard/" class="dropdown-item">What is Bard chatbot ?</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../ansible_interview_questions/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../java_interview_questions-2/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-  
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#top-100-java-interview-questions-answers" class="nav-link">Top 100 Java Interview Questions &amp; Answers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<h1 id="top-100-java-interview-questions-answers">Top 100 Java Interview Questions &amp; Answers<a class="headerlink" href="#top-100-java-interview-questions-answers" title="Permanent link"></a></h1>
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8QN4YRWY1N"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8QN4YRWY1N",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#top-100-java-interview-questions-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="nightWolf" class="md-header__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nightWolf
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Java/OOPs Interview Questions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="nightWolf" class="md-nav__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    nightWolf
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux-Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview-Prep
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview-Prep
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_interview_questions_for_freshers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers and Experienced - L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Experienced Linux Admins - L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Linux Interview Questions for Experienced Admins - L3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_questionairs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solved list of Linux interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell_scripting_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell-Scripting Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Programs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Networking Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DevOps Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jenkins Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ansible_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansible Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java/OOPs Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terraform Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 3rd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Cloud Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Google Cloud Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWS Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Azure AZ-103 Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Azure AZ-103 Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103- set 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_testing_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Testing/QA Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbms_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DBMS Interview Questions and Answers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managerial_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managerial Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/leetcode_java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leetcode Solutions JAVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/http_protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/yum_cheatsheet.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux YUM CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yum_vs_apt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yum vs APT cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/gcloud_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gcloud commands Cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/tls-difference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TLS Version key differences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud-comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Comparison between GCP, AWS, Azure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/groups/8982092/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group for Jobs postings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/gcpdiag_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnose GCP issues with gcpdiag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Artificial Intelligence(AI) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_trends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unleashing the Power of Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/machine_learning_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Machine Learning ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/neural_networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Neural Network ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/iot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Internet of Things (IoT) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/natural_language_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Natural Language Processing (NLP) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/robotics_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Robotics and Automation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/quantum_computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/blockchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blockchain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/virtual_reality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Virtual Reality (VR) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/cyber_security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cybersecurity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_chatbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is AI Chat Open Assistant Chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/bard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Bard chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="top-100-java-interview-questions-answers">Top 100 Java Interview Questions &amp; Answers<a class="headerlink" href="#top-100-java-interview-questions-answers" title="Permanent link">&para;</a></h1>
 <hr />
 <p>We have prepared a set of frequently asked Core Java interview questions to help Freshers and Experienced Java developers in their preparations for Interview.</p>
 <p>You will find these questions very helpful in your Java/OOPs interviews. Prepare well and All the very best.
@@ -435,15 +2783,15 @@
 <ol>
 <li>
 <p>What is the difference between an Inner Class and a Sub-Class?</p>
-<pre><code>Ans: An Inner class isa class which is nested within another class. An Inner class has access rights for
+<div class="highlight"><pre><span></span><code>Ans: An Inner class isa class which is nested within another class. An Inner class has access rights for
 the class which is nesting it and it can access all variables and methods defined in the outer class.
 A sub-class is a class which inherits from another class called super class. Sub-class can access all
 public and protected methods and fields of its super class.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are the various access specifiers for Java classes?</p>
-<pre><code>Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope.
+<div class="highlight"><pre><span></span><code>Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope.
 The types of access specifiers for classes are:
   1. Public: Class, Method, Field is accessible from anywhere.
   2. Protected:Method, Field can be accessed from the same class to which they belong or from the
@@ -451,35 +2799,35 @@ The types of access specifiers for classes are:
   3. Default: Method, Field,class can be accessed only from the same package and not from outside
      of it's native package.
   4. Private: Method, Field can be accessed from the same class to which they belong8.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the purpose of Static methods and static variables?</p>
-<pre><code>Ans: When there is a requirement to share a method or a variable between multiple objects of a class
+<div class="highlight"><pre><span></span><code>Ans: When there is a requirement to share a method or a variable between multiple objects of a class
 instead of creating separate copies for each object, we use static keyword to make a method or variable
 shared for all objects.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is data encapsulation and what's its significance?</p>
-<pre><code>Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a
+<div class="highlight"><pre><span></span><code>Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a
 single unit. Encapsulation helps programmers to follow a modular approach for software development as
 each object has its own set of methods and variables and serves its functions independent of other objects.
 Encapsulation also serves data hiding purpose.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is a singleton class? Give a practical example of its usage.</p>
-<pre><code>A singleton class in java can have only one instance and hence all its methods and variables belong to just
+<div class="highlight"><pre><span></span><code>A singleton class in java can have only one instance and hence all its methods and variables belong to just
 one instance. Singleton class concept is useful for the situations when there is a need to limit the number
 of objects for a class. 
 The best example of singleton usage scenario is when there is a limit of having only one connection to a
 database due to some driver limitations or because of any licensing issues.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are Loops in Java? What are three types of loops?</p>
-<pre><code>Ans: Looping is used in programming to execute a statement or a block of statement repeatedly.
+<div class="highlight"><pre><span></span><code>Ans: Looping is used in programming to execute a statement or a block of statement repeatedly.
 
 There are three types of loops in Java:
   1) For Loops : For loops are used in java to execute statements repeatedly for a given number of times.
@@ -491,11 +2839,11 @@ There are three types of loops in Java:
   3) Do While Loops: Do While Loop is same as While loop with only difference that condition is checked
                      after execution of block of statements. Hence in case of do while loop, statements are
                      executed at least once.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is an infinite Loop? How infinite loop is declared?</p>
-<pre><code>Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by
+<div class="highlight"><pre><span></span><code>Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by
 definingg any breaking logic in the body of the statement blocks.
 
 Infinite loop is declared as follows:
@@ -507,11 +2855,11 @@ Infinite loop is declared as follows:
   // Add any loop breaking logic
 
   }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the difference between continue and break statement?</p>
-<pre><code>Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop,
+<div class="highlight"><pre><span></span><code>Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop,
 loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues
 with next iteration.
 
@@ -533,17 +2881,17 @@ for (counter=0;counter&lt;10;counter++) {
     }
   system.out.println("This will not get printed when counter is 4");
 }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the difference between double and float variables in Java?</p>
-<pre><code>Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision
+<div class="highlight"><pre><span></span><code>Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision
 floating point decimal number while Double is double precision decimal number.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is Final Keyword in Java? Give an example.</p>
-<pre><code>Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after
+<div class="highlight"><pre><span></span><code>Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after
 assignment, value of a constant can't be changed.
 
 In below example, a constant with the name const_val is declared and assigned avalue:
@@ -552,11 +2900,11 @@ In below example, a constant with the name const_val is declared and assigned av
 When a method is declared as final,it can NOT be overridden by the subclasses.This method are faster than
 any other method,because they are resolved at complied time.
 When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is ternary operator? Give an example.</p>
-<pre><code>Ans: Ternary operator, also called conditional operator is used to decide which value to assign to a variable
+<div class="highlight"><pre><span></span><code>Ans: Ternary operator, also called conditional operator is used to decide which value to assign to a variable
 based on a Boolean value evaluation. It's denoted as?
 
 In the below example, if rank is 1, status is assigned a value of "Done" else "Pending".
@@ -569,20 +2917,20 @@ public class conditionTest {
     System.out.println(status);
   }
 }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How can you generate random numbers in Java?</p>
-<pre><code>Ans:
+<div class="highlight"><pre><span></span><code>Ans:
 
 - Using Math.random() you can generate random numbers in the range greater than or equal to 0.1 and less
   than 1.0
 - Using Random class in package java.util
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is default switch case? Give example.</p>
-<pre><code>Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is
+<div class="highlight"><pre><span></span><code>Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is
 an optional case. It can be declared only once all other switch cases have been coded.
 
 In the below example, when score is not 1 or 2, default case is used.
@@ -602,35 +2950,35 @@ In the below example, when score is not 1 or 2, default case is used.
         }
     }
   }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is the base class in Java from which all classes are derived?</p>
-<pre><code>Ans: java.lang.object
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: java.lang.object
+</code></pre></div>
 </li>
 <li>
 <p>Can main() method in Java can return any data?</p>
-<pre><code>Ans: In java, main() method can't return any data and hence, ite's always declared with a void return type.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: In java, main() method can't return any data and hence, ite's always declared with a void return type.
+</code></pre></div>
 </li>
 <li>
 <p>What are Java Packages? What's the significance of packages?</p>
-<pre><code>Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are
+<div class="highlight"><pre><span></span><code>Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are
 related to each other. Use of packages helps developers to modularize the code and group the code for
 proper re-use. Once code has been packaged in Packages, it can be imported in other classes and used.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can we declare a class as Abstract without having any abstract method?</p>
-<pre><code>Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn't
+<div class="highlight"><pre><span></span><code>Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn't
 have any abstract method. However, if a class has even one abstract method, it must be declared as abstract
 otherwise it will give an error.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the difference between an Abstract Class and Interface in Java?</p>
-<pre><code>Ans: The primary difference between an abstract class and interface is that an interface can only possess
+<div class="highlight"><pre><span></span><code>Ans: The primary difference between an abstract class and interface is that an interface can only possess
 declaration of public static methods with no concrete implementation while an abstract class can have
 members with any access specifiers (public, private etc) with or without concrete implementation.
 
@@ -639,21 +2987,21 @@ interface must implement all the methods of the interface while a class which in
 class doesn't require implementation of all the methods of its super class.
 
 A class can implement multiple interfaces but it can extend only one abstract class.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are the performance implications of Interfaces over abstract classes?</p>
-<pre><code>Ans: Interfaces are slower in performance as compared to abstract classes as extra indirections are required
+<div class="highlight"><pre><span></span><code>Ans: Interfaces are slower in performance as compared to abstract classes as extra indirections are required
 for interfaces. Another key factor for developers to take into consideration is that any class can extend
 only one abstract class while a class can implement many interfaces.
 
 Use of interfaces also puts an extra burden on the developers as any time an interface is implemented in a
 class; developer is forced to implement each and every method of interface.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Does Importing a package imports its sub-packages as well in Java?</p>
-<pre><code>Ans: In java, when a package is imported, its sub-packages are not imported and developer needs to import
+<div class="highlight"><pre><span></span><code>Ans: In java, when a package is imported, its sub-packages are not imported and developer needs to import
 therm separately if required.
 
 For example, if a developer imports a package university.*, all classes in the package named university are
@@ -661,54 +3009,54 @@ loaded but no classes from the sub-package are loaded. To load the classes from 
 ( say department), developer has to import it explicitly as follows:
 
 Import university.department.*
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can we declare the main method of our class as private?</p>
-<pre><code>Ans: In java, main method must be public static in order to run any application correctly. If main method
+<div class="highlight"><pre><span></span><code>Ans: In java, main method must be public static in order to run any application correctly. If main method
 is declared as private, developer will not get any compilation error however, it will not get executed and
 will give a runtime error.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How can we pass argument to a function by reference instead of pass by value?</p>
-<pre><code>Ans: In java, we can pass argument to a function only by value and not by reference.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ans: In java, we can pass argument to a function only by value and not by reference.
+</code></pre></div>
 </li>
 <li>
 <p>How an object is serialized in java?</p>
-<pre><code>Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable
+<div class="highlight"><pre><span></span><code>Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable
 is implemented by the class. All objects of a class implementing serializable interface get serialized and
 their state is saved in byte stream.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>When we should use serialization?</p>
-<pre><code>Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object's
+<div class="highlight"><pre><span></span><code>Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object's
 state is saved and converted into byte stream. The byte stream is transferred over the network and the
 object is re-created at destination.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Is it compulsory for a Try Block to be followed by a Catch Block in Java for Exception handling?</p>
-<pre><code>Ans: Try block needs to be followed by either Catch block or Finally block or both. Any exception thrown
+<div class="highlight"><pre><span></span><code>Ans: Try block needs to be followed by either Catch block or Finally block or both. Any exception thrown
 from try block needs to be either caught in the catch block or else any specific tasks to be performed
 before code abortion are put in the Finally block.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Is there any way to skip Finally block of exception even if some exception occurs in the exception block?</p>
-<pre><code>Ans: If an exception is raised in Try block, control passes to catch block if it exists otherwise to
+<div class="highlight"><pre><span></span><code>Ans: If an exception is raised in Try block, control passes to catch block if it exists otherwise to
 finally block. Finally block is always executed when an exception occurs and the only way to avoid execution
 of any statements in Finally block is by aborting the code forcibly by writing following line of code at
 the end of try block:
 
   System.exit(0);
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>When the constructor of a class is invoked?</p>
-<pre><code>Ans: The constructor of a class is invoked every time an object is created with new keyword. For example,
+<div class="highlight"><pre><span></span><code>Ans: The constructor of a class is invoked every time an object is created with new keyword. For example,
 in the following class two objects are created using new keyword and hence, constructor is invoked two times.
 
 public class const_example {
@@ -721,24 +3069,24 @@ public class const_example {
     const example c2=new const_example();
   }
 }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can a class have multiple constructors?</p>
-<pre><code>Ans: Yes, a class can have multiple constructors with different parameters. Which constructor gets used for
+<div class="highlight"><pre><span></span><code>Ans: Yes, a class can have multiple constructors with different parameters. Which constructor gets used for
 object creation depends on the arguments passed while creating the objects.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can we override static methods of a class?</p>
-<pre><code>Ans: We cannot override static methods. Static methods belong to a class and not to individual objects and
+<div class="highlight"><pre><span></span><code>Ans: We cannot override static methods. Static methods belong to a class and not to individual objects and
 are resolved at the time of compilation (not at runtime). Even if we try to override static method, we will
 not get an complitaion error,nor the impact of overriding when running the code.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>In the below example, what will be the output?</p>
-<pre><code>public class superclass { 
+<div class="highlight"><pre><span></span><code>public class superclass { 
   public void displayResult(){
     system.out.printin("Printing from superclass");
   }
@@ -755,35 +3103,35 @@ public class subclass extends superclass{
     obj.displayResuit();
   }
 }
-</code></pre>
+</code></pre></div>
 <hr />
-<pre><code>  Ans: Output will be:
+<div class="highlight"><pre><span></span><code>  Ans: Output will be:
 
       Displaying from subclass
       Displaying from superclass
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Is String a data type in java?</p>
-<pre><code>Ans: String is not a primitive data type in java. When a string is created in java, it is actually an
+<div class="highlight"><pre><span></span><code>Ans: String is not a primitive data type in java. When a string is created in java, it is actually an
 object of Java. lang.String class that gets created. After creation of this string object, all built-in
 methods of String class can be used on the string object.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>In the below example, how many String Objects are created?</p>
-<pre><code>String s1="l am Java Expert";
+<div class="highlight"><pre><span></span><code>String s1="l am Java Expert";
 String s2-"l am C Expert"; 
 String s3-"l am Java Expert"
-</code></pre>
+</code></pre></div>
 <hr />
-<pre><code>Ans: In the above example, two objects of Java.Lang.String class are created. s1 and s3 are references to
+<div class="highlight"><pre><span></span><code>Ans: In the above example, two objects of Java.Lang.String class are created. s1 and s3 are references to
 same object.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Why Strings in Java are called as Immutable?</p>
-<pre><code>Ans: In java, string objects are called immutable as once value has been assigned to a string, it can not 
+<div class="highlight"><pre><span></span><code>Ans: In java, string objects are called immutable as once value has been assigned to a string, it can not 
 be changed and if changed, a new object is created.
 
 In below example, reference str refers to a string object having value "Value one".
@@ -794,70 +3142,70 @@ When a new value is assigned to it, a new String object gets created and the ref
 object.
 
   str="New Value";
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the difference between an array and Vector?</p>
-<pre><code>Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature
+<div class="highlight"><pre><span></span><code>Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature
 and can hold data of different data types.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What is multi-threading?</p>
-<pre><code>Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single
+<div class="highlight"><pre><span></span><code>Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single
 program. Threads share same process stack and running in parallel. It helps in performance improvement of
 any program.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Why Runnable Interface is used in Java?</p>
-<pre><code>Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable
+<div class="highlight"><pre><span></span><code>Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable
 interface is implemented by a class to support multi threading.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What are the two ways of implementing multi-threading in Java?</p>
-<pre><code>Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:
+<div class="highlight"><pre><span></span><code>Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:
 
   1. By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. 
      There is a Run() method in this interface which is implemented.
 
   2. By writing a class that extend Java.Lang.Thread class.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>When a lot of changes are required in data, which one should be a preference to be used? String or StringBuffer?</p>
-<pre><code>Ans: Since StringBuffers are dynamic in nature and we can change the values of StringBuffer objects unlike
+<div class="highlight"><pre><span></span><code>Ans: Since StringBuffers are dynamic in nature and we can change the values of StringBuffer objects unlike
 String which is immutable, it is always a good choice to use StringBuffer when data is being changed too
 much. If we use String in such a case, for every data change a new String object will be created which
 will be an extra overhead.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the purpose of using Break in each case of Switch Statement?</p>
-<pre><code>Ans: Break is used after each case (except the last one) in a switch so that code breaks after the valid
+<div class="highlight"><pre><span></span><code>Ans: Break is used after each case (except the last one) in a switch so that code breaks after the valid
 case and does not flow in the proceeding cases too.
 If break is not used after each case, all cases after the valid case also get executed resulting in wrong
 results.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How garbage collection is done in Java?</p>
-<pre><code>Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is
+<div class="highlight"><pre><span></span><code>Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is
 destroyed automatically. For automatic garbage collection java calls either System.gc) method or
 Runtime.gc() method.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How we can execute any code even before main method?</p>
-<pre><code>Ans: If we want to execute any statements before even creation of objects at load time of class, we can
+<div class="highlight"><pre><span></span><code>Ans: If we want to execute any statements before even creation of objects at load time of class, we can
 use a static block of code in the class. Any statements inside this static block of code will get
 executed once at the time of loading the class even before creation of objects in the main method.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can a class be a super class and a sub-class at the same time? Give example.</p>
-<pre><code>Ans: If there is a hierarchy of inheritance used, a class can be a super class for another class and a
+<div class="highlight"><pre><span></span><code>Ans: If there is a hierarchy of inheritance used, a class can be a super class for another class and a
 sub-class for another one at the same time.
 In the example below, continent class is sub-class of world class and it's super class of country class.
 
@@ -872,38 +3220,38 @@ public class continenet extends world {
 public class country extends continent{
   ------------
 }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How objects of a class are created if no constructor is defined in the class?</p>
-<pre><code>Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a
+<div class="highlight"><pre><span></span><code>Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a
 default constructor is implicitly used for object creation. This constructor has no parameters.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>In multi-threading how can we ensure that a resource isn't used by multiple threads simultaneously?</p>
-<pre><code>Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled
+<div class="highlight"><pre><span></span><code>Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled
 by using the concept of synchronization. Using synchronized keyword, we can ensure that only one thread
 can use shared resource at a time and others can get control of the resource only once it has become free
 from the other one using it.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can we call the constructor of a class more than once for an object?</p>
-<pre><code>Ans: Constructor is called automatically when we create an object using new keyword. It is called only once
+<div class="highlight"><pre><span></span><code>Ans: Constructor is called automatically when we create an object using new keyword. It is called only once
 for an object at the time of object creation and hence, we can not invoke the constructor again for an
 object after its creation.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>There are two classes named classA and classB. Both classes are in the same package. Can a private member of classA can be accessed by an object of classB?</p>
-<pre><code>Ans: Private members of a class are not accessible outside the scope of that class and any other class even
+<div class="highlight"><pre><span></span><code>Ans: Private members of a class are not accessible outside the scope of that class and any other class even
 in the same package can not access them.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>Can we have two methods in a class with the same name?</p>
-<pre><code>Ans: We can define two methods in a class with the same name but with different number/type of parameters.
+<div class="highlight"><pre><span></span><code>Ans: We can define two methods in a class with the same name but with different number/type of parameters.
 Which method is to get invoked will depend upon the parameters passed.
 
 For example in the class below we have two print methods with same name but different parameters. Depending
@@ -925,29 +3273,29 @@ upon the parameters, appropriate one will be called:
       objl.print("xx");
     }
 }
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>How can we make copy of a java object?</p>
-<pre><code>Ans: We can use the concept of cloning to create copy of an object. Using clone, we create copies with the
+<div class="highlight"><pre><span></span><code>Ans: We can use the concept of cloning to create copy of an object. Using clone, we create copies with the
 actual state of an object.
 
 Clone() is a method of Cloneable interface and hence, Cloneable interface needs to be implemented for making
 object copies.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the benefit of using inheritance?</p>
-<pre><code>Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the
+<div class="highlight"><pre><span></span><code>Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the
 code of its super class. Polymorphism (Extensibility ) is another great benefit which allow new functionality
 to be introduced without effecting existing derived classes.
-</code></pre>
+</code></pre></div>
 </li>
 <li>
 <p>What's the default access specifier for variables and methods of a class?</p>
-<pre><code>Ans: Default access specifier for variables and method is package protected i.e variables and class is
+<div class="highlight"><pre><span></span><code>Ans: Default access specifier for variables and method is package protected i.e variables and class is
 available to any other class but in the same package,not outside the package.
-</code></pre>
+</code></pre></div>
 </li>
 </ol>
 <hr />
@@ -1045,87 +3393,73 @@ available to any other class but in the same package,not outside the package.
      data-ad-slot="3808191339"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-  <a href="/consulting" class="consulting-float">
-    <span>🚀 Get Expert Consulting</span>
-  </a>
+</script>
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Copyright &copy; 2022 nightWolf</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../../js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 nightWolf
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
 </html>

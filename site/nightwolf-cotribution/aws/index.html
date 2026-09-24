@@ -1,419 +1,2767 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
         <link rel="canonical" href="https://www.nightwolf.in/nightwolf-cotribution/aws/">
-        <link rel="shortcut icon" href="../../img/favi.png">
+      
+      
+        <link rel="prev" href="../gcp-ace-3/">
+      
+      
+        <link rel="next" href="../aws-2/">
+      
+      
         
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
         <title>AWS Certified SysOps Administrator Questions- 1st - nightWolf</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/fontawesome.min.css" rel="stylesheet">
-        <link href="../../css/brands.min.css" rel="stylesheet">
-        <link href="../../css/solid.min.css" rel="stylesheet">
-        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
 
-          gtag('config', "G-8QN4YRWY1N");
-        </script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="../..">nightWolf</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <a href="../.." class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../performance/" class="nav-link">Linux-Performance</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Interview-Prep</a>
-                                <ul class="dropdown-menu">
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Linux Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../linux_basic/" class="dropdown-item">Linux Interview Questions for Freshers</a>
-</li>
-            
-<li>
-    <a href="../linux_interview_questions_for_freshers/" class="dropdown-item">Linux Interview Questions for Freshers - 2</a>
-</li>
-            
-<li>
-    <a href="../linux_L1/" class="dropdown-item">Linux Interview Questions for Freshers and Experienced - L1</a>
-</li>
-            
-<li>
-    <a href="../linux_L2/" class="dropdown-item">Linux Interview Questions for Experienced Linux Admins - L2</a>
-</li>
-            
-<li>
-    <a href="../linux_L3/" class="dropdown-item">Advanced Linux Interview Questions for Experienced Admins - L3</a>
-</li>
-            
-<li>
-    <a href="../linux_questionairs/" class="dropdown-item">Solved list of Linux interview Questions</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../shell_scripting_interview_questions/" class="dropdown-item">Shell-Scripting Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Python Programs</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../python_programs/" class="dropdown-item">Python Programs for practice</a>
-</li>
-            
-<li>
-    <a href="../python_programs_2/" class="dropdown-item">Python Programs for practice-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../network/" class="dropdown-item">OS Networking Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">DevOps Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../devops_interview_questions/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced</a>
-</li>
-            
-<li>
-    <a href="../devops_interview_questions-2/" class="dropdown-item">DevOps Interview Questions for Freshers and Experienced-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../git/" class="dropdown-item">GIT Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../jenkins/" class="dropdown-item">Jenkins Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../docker_interview_questions/" class="dropdown-item">Docker Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_interview_questions/" class="dropdown-item">Kubernetes Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../ansible_interview_questions/" class="dropdown-item">Ansible Interview Questions</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Java/OOPs Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../java_interview_questions/" class="dropdown-item">Java/OOPs Interview Questions</a>
-</li>
-            
-<li>
-    <a href="../java_interview_questions-2/" class="dropdown-item">Java/OOPs Interview Questions-2</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Terraform Interview Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../terraform_interview_question/" class="dropdown-item">Terraform Interview Questions and Answers- 1st</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-2/" class="dropdown-item">Terraform Interview Questions and Answers- 2nd</a>
-</li>
-            
-<li>
-    <a href="../terraform_interview_question-3/" class="dropdown-item">Terraform Interview Questions and Answers- 3rd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Google Cloud Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../gcp-ace-1/" class="dropdown-item">GCP ACE Practice Questions-1</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-2/" class="dropdown-item">GCP ACE Practice Questions-2</a>
-</li>
-            
-<li>
-    <a href="../gcp-ace-3/" class="dropdown-item">GCP ACE Practice Questions-3</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">AWS Certification Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="./" class="dropdown-item active" aria-current="page">AWS Certified SysOps Administrator Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-2/" class="dropdown-item">AWS Certified SysOps Administrator Questions- 2nd</a>
-</li>
-            
-<li>
-    <a href="../aws-3/" class="dropdown-item">AWS Interview Questions- 1st</a>
-</li>
-            
-<li>
-    <a href="../aws-4/" class="dropdown-item">AWS Interview Questions- 2nd</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Azure AZ-103 Practice Questions</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../azure_questions/" class="dropdown-item">Microsoft Azure Administrator AZ-103</a>
-</li>
-            
-<li>
-    <a href="../azure_questions_2/" class="dropdown-item">Microsoft Azure Administrator AZ-103- set 2</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="../manual_testing_interview_questions/" class="dropdown-item">Manual Testing/QA Interview Questions</a>
-</li>
-                                    
-<li>
-    <a href="../dbms_interview_questions/" class="dropdown-item">DBMS Interview Questions and Answers</a>
-</li>
-                                    
-<li>
-    <a href="../managerial_interview_questions/" class="dropdown-item">Managerial Interview Questions</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cheatsheets</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../cheatsheets/leetcode_java/" class="dropdown-item">Leetcode Solutions JAVA</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/http_protocols/" class="dropdown-item">HTTP Protocols</a>
-</li>
-                                    
-<li>
-    <a href="../kubernetes_cheatsheet/" class="dropdown-item">Kubernetes CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../git_cheatsheet/" class="dropdown-item">GIT CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/yum_cheatsheet.pdf" class="dropdown-item">Linux YUM CheatSheet</a>
-</li>
-                                    
-<li>
-    <a href="../yum_vs_apt/" class="dropdown-item">Yum vs APT cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/gcloud_cheatsheet/" class="dropdown-item">gcloud commands Cheatsheet</a>
-</li>
-                                    
-<li>
-    <a href="../../cheatsheets/tls-difference/" class="dropdown-item">TLS Version key differences</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Technical</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../linux/" class="dropdown-item">Linux</a>
-</li>
-                                    
-<li>
-    <a href="../../network/" class="dropdown-item">Network</a>
-</li>
-                                    
-<li>
-    <a href="../../db/" class="dropdown-item">Database</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#" class="dropdown-item">Cloud</a>
-    <ul class="dropdown-menu">
-            
-<li>
-    <a href="../../cloud-comp/" class="dropdown-item">Service Comparison between GCP, AWS, Azure</a>
-</li>
-    </ul>
-  </li>
-                                    
-<li>
-    <a href="https://www.linkedin.com/groups/8982092/" class="dropdown-item">Group for Jobs postings</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Articles</a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../../articles/gcpdiag_intro/" class="dropdown-item">Diagnose GCP issues with gcpdiag</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_intro/" class="dropdown-item">What is Artificial Intelligence(AI) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_trends/" class="dropdown-item">Unleashing the Power of Artificial Intelligence</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/machine_learning_intro/" class="dropdown-item">What is Machine Learning ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/neural_networks/" class="dropdown-item">What is Neural Network ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/iot/" class="dropdown-item">What is Internet of Things (IoT) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/natural_language_processing/" class="dropdown-item">What is Natural Language Processing (NLP) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/robotics_automation/" class="dropdown-item">What is Robotics and Automation ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/quantum_computing/" class="dropdown-item">Quantum Computing</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/blockchain/" class="dropdown-item">Blockchain</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/virtual_reality/" class="dropdown-item">What is Virtual Reality (VR) ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/cyber_security/" class="dropdown-item">Cybersecurity</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/ai_chatbot/" class="dropdown-item">What is AI Chat Open Assistant Chatbot ?</a>
-</li>
-                                    
-<li>
-    <a href="../../articles/bard/" class="dropdown-item">What is Bard chatbot ?</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../gcp-ace-3/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../aws-2/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-  
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#aws-certified-sysops-administrator-questions-and-answers" class="nav-link">AWS Certified SysOps Administrator - Questions and Answers</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
 
-<h1 id="aws-certified-sysops-administrator-questions-and-answers">AWS Certified SysOps Administrator - Questions and Answers<a class="headerlink" href="#aws-certified-sysops-administrator-questions-and-answers" title="Permanent link"></a></h1>
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-8QN4YRWY1N"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-8QN4YRWY1N",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-8QN4YRWY1N",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aws-certified-sysops-administrator-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="nightWolf" class="md-header__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            nightWolf
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AWS Certified SysOps Administrator Questions- 1st
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="nightWolf" class="md-nav__button md-logo" aria-label="nightWolf" data-md-component="logo">
+      
+  <img src="../../img/wolf.png" alt="logo">
+
+    </a>
+    nightWolf
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux-Performance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview-Prep
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interview-Prep
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linux Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_interview_questions_for_freshers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers - 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Freshers and Experienced - L1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Interview Questions for Experienced Linux Admins - L2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_L3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Linux Interview Questions for Experienced Admins - L3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux_questionairs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solved list of Linux interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shell_scripting_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell-Scripting Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python Programs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_programs_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Programs for practice-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Networking Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DevOps Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DevOps Interview Questions for Freshers and Experienced-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jenkins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jenkins Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ansible_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ansible Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java/OOPs Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../java_interview_questions-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java/OOPs Interview Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terraform Interview Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform_interview_question-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terraform Interview Questions and Answers- 3rd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Cloud Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Google Cloud Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gcp-ace-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GCP ACE Practice Questions-3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certification Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AWS Certification Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Certified SysOps Administrator Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 1st
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aws-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AWS Interview Questions- 2nd
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_15" id="__nav_3_15_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Azure AZ-103 Practice Questions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Azure AZ-103 Practice Questions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azure_questions_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Azure Administrator AZ-103- set 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual_testing_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Testing/QA Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dbms_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DBMS Interview Questions and Answers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managerial_interview_questions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managerial Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheatsheets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cheatsheets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/leetcode_java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Leetcode Solutions JAVA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/http_protocols/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP Protocols
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kubernetes_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/yum_cheatsheet.pdf" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux YUM CheatSheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yum_vs_apt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Yum vs APT cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/gcloud_cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gcloud commands Cheatsheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cheatsheets/tls-difference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TLS Version key differences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cloud
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud-comp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Service Comparison between GCP, AWS, Azure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.linkedin.com/groups/8982092/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group for Jobs postings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Articles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Articles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/gcpdiag_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagnose GCP issues with gcpdiag
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Artificial Intelligence(AI) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_trends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unleashing the Power of Artificial Intelligence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/machine_learning_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Machine Learning ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/neural_networks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Neural Network ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/iot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Internet of Things (IoT) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/natural_language_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Natural Language Processing (NLP) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/robotics_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Robotics and Automation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/quantum_computing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quantum Computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/blockchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blockchain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/virtual_reality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Virtual Reality (VR) ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/cyber_security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cybersecurity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/ai_chatbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is AI Chat Open Assistant Chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../articles/bard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is Bard chatbot ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="aws-certified-sysops-administrator-questions-and-answers">AWS Certified SysOps Administrator - Questions and Answers<a class="headerlink" href="#aws-certified-sysops-administrator-questions-and-answers" title="Permanent link">&para;</a></h1>
 <p><br>
 These are AWS interview questions for experienced professionals.  You will find these questions very helpful in your AWS professional role interviews. Prepare well and All the very best.
 <br></p>
@@ -432,7 +2780,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 
 <hr />
 <p>QUESTION NO: 1</p>
-<pre><code>   You are currently hosting multiple applications in a VPC and have logged numerous port scans
+<div class="highlight"><pre><span></span><code>   You are currently hosting multiple applications in a VPC and have logged numerous port scans
    coming in from a specific IP address block. Your security team has requested that all access
    from the offending IP address block be denied tor the next 24 hours.
    Which of the following is the best method to quickly and temporarily deny access from
@@ -449,9 +2797,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Answer: C
    Reference:
    http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 2</p>
-<pre><code>   When preparing for a compliance assessment of your system built inside of AWS. what are three best practices
+<div class="highlight"><pre><span></span><code>   When preparing for a compliance assessment of your system built inside of AWS. what are three best practices
    for you to prepare for anaudit? Choose any 3 answers.
 
    A. Gather evidence of your IT operational controls
@@ -463,9 +2811,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    E. Schedule meetings with AWS third-party auditors to provide evidence of AWS compliance that maps to 
       your control objectives
    Answer: B,D,E
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 3</p>
-<pre><code>   You have started a new job and are reviewing your company infrastructure on AWS You notice one web
+<div class="highlight"><pre><span></span><code>   You have started a new job and are reviewing your company infrastructure on AWS You notice one web
    application where they have an Elastic Load Balancer (&amp;B) in front of web instances in an Auto Scaling Group.
    When you check the metrics for the ELB in CloudWatch you see four healthy instances In Availability Zone (AZ) A 
    and zero in AZ B There are zero unhealthy instances.
@@ -477,9 +2825,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Make sure the maximum size of the Auto Scaling Group is greater than 4
 
    Answer: B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 4</p>
-<pre><code>   You have been asked to leverage Amazon VPC BC2 and SOS to implement an application that submits and receives 
+<div class="highlight"><pre><span></span><code>   You have been asked to leverage Amazon VPC BC2 and SOS to implement an application that submits and receives 
    millions of messages per second to a message queue. You want to ensure your application has sufficient
    bandwidth between your EC2 instances and SQS Which option will provide (he most scalable solution for
    bandwidth between the application and SOS?
@@ -494,9 +2842,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Answer: C
    Reference:
    http://www.cardinalpath.com/autoscaling-your-website-with-amazon-web-services-part-2/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 5</p>
-<pre><code>   You have identified network throughput as a bottleneck on your ml small EC2 instance when uploading data 
+<div class="highlight"><pre><span></span><code>   You have identified network throughput as a bottleneck on your ml small EC2 instance when uploading data 
    into Amazon S3 In the same region. How do you remedy this situation?
 
    A. Add an additional ENI
@@ -507,9 +2855,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Answer: B
    Reference:
    https://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 6</p>
-<pre><code>   When attached to an Amazon VPC which two components provide connectivity with external networks? 
+<div class="highlight"><pre><span></span><code>   When attached to an Amazon VPC which two components provide connectivity with external networks? 
    Choose 2 answers
 
    A. Elastic IPS (EIP)
@@ -518,9 +2866,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Virtual Private Gateway (VGW)
 
    Answer: C,D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 7</p>
-<pre><code>   Your application currently leverages AWS Auto Scaling to grow and shrink as load Increases/decreases 
+<div class="highlight"><pre><span></span><code>   Your application currently leverages AWS Auto Scaling to grow and shrink as load Increases/decreases 
    and has been performing well. Your marketing team expects a steady ramp up in traffic to follow an upcoming
    campaign that will result in a 20x growth in traffic over 4 weeks. Your forecast for the approximate number
    of Amazon EC2 instances necessary to meet the peak demand is 175.
@@ -536,9 +2884,9 @@ These are AWS interview questions for experienced professionals.  You will find 
       to the marketing campaign.
 
    Answer: D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 8</p>
-<pre><code>   You have an Auto Scaling group associated with an Elastic Load Balancer (ELB). You have noticed that instances
+<div class="highlight"><pre><span></span><code>   You have an Auto Scaling group associated with an Elastic Load Balancer (ELB). You have noticed that instances
    launched via the Auto Scaling group are being marked unhealthy due to an ELB health check, but these unhealthy
    instances are not being terminated. What do you need to do to ensure trial instances marked unhealthy by the 
    ELB will be terminated and replaced?
@@ -571,9 +2919,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Balancing action returns any state other than InService, the instance is marked as unhealthy. After Auto Scaling
    marks an instance as unhealthy, it remains in that state, even if subsequent calls from other load balancers return
    an InService state for the same instance.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 9</p>
-<pre><code>   Which two AWS services provide out-of-the-box user configurable automatic backup-as-a-service and backup 
+<div class="highlight"><pre><span></span><code>   Which two AWS services provide out-of-the-box user configurable automatic backup-as-a-service and backup 
    rotation options? Choose any 2 answers.
 
    A. Amazon S3
@@ -582,9 +2930,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Amazon Red shift
 
    Answer: C,D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 10</p>
-<pre><code>   An organization has configured a VPC with an Internet Gateway (IGW). pairs of public and private subnets 
+<div class="highlight"><pre><span></span><code>   An organization has configured a VPC with an Internet Gateway (IGW). pairs of public and private subnets 
    (each with one subnet per Availability Zone), and an Elastic Load Balancer (ELB) configured to use the public
    subnets. The application web tier leverages the ELB, Auto Scaling and a mum-AZ RDS database instance.
    The Organization would like to eliminate any potential single points ft failure in this design. What step 
@@ -597,9 +2945,9 @@ These are AWS interview questions for experienced professionals.  You will find 
       a redundant database.
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 11</p>
-<pre><code>   Which of the following are characteristics of Amazon VPC subnets? Choose any 2 answers.
+<div class="highlight"><pre><span></span><code>   Which of the following are characteristics of Amazon VPC subnets? Choose any 2 answers.
 
    A. Each subnet maps to a single Availability Zone
    B. A CIDR block mask of /25 is the smallest range supported
@@ -608,9 +2956,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    E. V Each subnet spans at least 2 Availability zones to provide a high-availability environment.
 
    Answer: C,E
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 12</p>
-<pre><code>   You are creating an Auto Scaling group whose Instances need to insert a custom metric into CloudWatch.
+<div class="highlight"><pre><span></span><code>   You are creating an Auto Scaling group whose Instances need to insert a custom metric into CloudWatch.
    Which method would be the best way to authenticate your CloudWatch PUT request?
 
    A. Create an IAM role with the Put MetricData permission and modify the Auto Scaling launch configuration to
@@ -623,9 +2971,9 @@ These are AWS interview questions for experienced professionals.  You will find 
       have applications on the server pull the credentials as needed.
 
    Answer: B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 13</p>
-<pre><code>   When an EC2 instance that is backed by an S3-based AMI Is terminated, what happens to the data on me root volume?
+<div class="highlight"><pre><span></span><code>   When an EC2 instance that is backed by an S3-based AMI Is terminated, what happens to the data on me root volume?
    A. Data is automatically saved as an E8S volume.
    B. Data is automatically saved as an ESS snapshot.
    C. Data is automatically deleted.
@@ -635,9 +2983,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 14</p>
-<pre><code>   You have a web application leveraging an Elastic Load Balancer (ELB) In front of the web
+<div class="highlight"><pre><span></span><code>   You have a web application leveraging an Elastic Load Balancer (ELB) In front of the web
    servers deployed using an Auto Scaling Group Your database is running on Relational Database
    Service (RDS) The application serves out technical articles and responses to them in general
    there are more views of an article than there are responses to the article. On occasion, an article
@@ -654,9 +3002,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    E. Use Route53 health checks to fail over to an S3 bucket for an error page.
 
    Answer: A,C,E
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 15</p>
-<pre><code>   The majority of your Infrastructure is on premises and you have a small footprint on AWS Your
+<div class="highlight"><pre><span></span><code>   The majority of your Infrastructure is on premises and you have a small footprint on AWS Your
    company has decided to roll out a new application that is heavily dependent on low latency
    connectivity to LOAP for authentication Your security policy requires minimal changes to the
    company's existing application user management processes.
@@ -675,9 +3023,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://msdn.microsoft.com/en-us/library/azure/jj156090.aspx
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 16</p>
-<pre><code>   You need to design a VPC for a web-application consisting of an Elastic Load Balancer (ELB). a
+<div class="highlight"><pre><span></span><code>   You need to design a VPC for a web-application consisting of an Elastic Load Balancer (ELB). a
    fleet of web/application servers, and an RDS database The entire Infrastructure must be
    distributed over 2 availability zones.
    Which VPC configuration works while assuring the database is not available from the Internet?
@@ -692,9 +3040,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    for RDS
 
    Answer: A
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 17</p>
-<pre><code>   An application that you are managing has EC2 instances &amp; Dynamo OB tables deployed to
+<div class="highlight"><pre><span></span><code>   An application that you are managing has EC2 instances &amp; Dynamo OB tables deployed to
    several AWS Regions In order to monitor the performance of the application globally, you would
    like to see two graphs 1) Avg CPU Utilization across all EC2 instances and 2) Number of Throttled
    Requests for all DynamoDB tables.
@@ -711,9 +3059,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    configuring the agent set the appropriate application name &amp; view the graphs in CloudWatch.
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 18</p>
-<pre><code>   When assessing an organization s use of AWS API access credentials which of the following three
+<div class="highlight"><pre><span></span><code>   When assessing an organization s use of AWS API access credentials which of the following three
    credentials should be evaluated?
    Choose 3 answers
 
@@ -728,9 +3076,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://media.amazonwebservices.com/AWS_Operational_Checklists.pdf
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 19</p>
-<pre><code>   You have a Linux EC2 web server instance running inside a VPC The instance is In a public
+<div class="highlight"><pre><span></span><code>   You have a Linux EC2 web server instance running inside a VPC The instance is In a public
    subnet and has an EIP associated with it so you can connect to It over the Internet via HTTP or
    SSH The instance was also fully accessible when you last logged in via SSH. and was also
    serving web requests on port 80.
@@ -754,9 +3102,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    be working properly, causing the "impaired" system status
 
    Answer: B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 20</p>
-<pre><code>   What is a placement group?
+<div class="highlight"><pre><span></span><code>   What is a placement group?
 
    A. A collection of Auto Scaling groups in the same Region
    B. Feature that enables EC2 instances to interact with each other via nigh bandwidth, low
@@ -768,9 +3116,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/ec2/faqs/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 21</p>
-<pre><code>   Your entire AWS infrastructure lives inside of one Amazon VPC You have an Infrastructure
+<div class="highlight"><pre><span></span><code>   Your entire AWS infrastructure lives inside of one Amazon VPC You have an Infrastructure
    monitoring application running on an Amazon instance in Availability Zone (AZ) A of the region,
    and another application instance running in AZ B. The monitoring application needs to make use
    of ICMP ping to confirm network reachability of the instance hosting the application.
@@ -788,9 +3136,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    connection-oriented protocol
 
    Answer: D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 22</p>
-<pre><code>   You have two Elastic Compute Cloud (EC2) instances inside a Virtual Private Cloud (VPC) in the
+<div class="highlight"><pre><span></span><code>   You have two Elastic Compute Cloud (EC2) instances inside a Virtual Private Cloud (VPC) in the
    same Availability Zone (AZ) but in different subnets.One instance is running a database and the
    other instance an application that will interface with the database. You want to confirm that they
    can talk to each other for your application to work properly.
@@ -806,9 +3154,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    port/protocol.
 
    Answer: A,C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 23</p>
-<pre><code>   Which services allow the customer to retain full administrative privileges of the underlying
+<div class="highlight"><pre><span></span><code>   Which services allow the customer to retain full administrative privileges of the underlying
    EC2 instances?
    Choose 2 answers
 
@@ -819,9 +3167,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    E. Amazon Relational Database service
 
    Answer: B,C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 24</p>
-<pre><code>   You have a web-style application with a stateless but CPU and memory-intensive web tier running
+<div class="highlight"><pre><span></span><code>   You have a web-style application with a stateless but CPU and memory-intensive web tier running
    on a cc2 8xlarge EC2 instance inside of a VPC The instance when under load is having 134
    problems returning requests within the SLA as defined by your business The application maintains
    its state in a DynamoDB table, but the data tier is properly provisioned and responses are
@@ -836,9 +3184,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/elasticmapreduce/faqs/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 25</p>
-<pre><code>   You are managing a legacy application Inside VPC with hard coded IP addresses in its configuration.
+<div class="highlight"><pre><span></span><code>   You are managing a legacy application Inside VPC with hard coded IP addresses in its configuration.
    Which two mechanisms will allow the application to failover to new instances without the need for
    reconfiguration?
    Choose 2 answers
@@ -849,7 +3197,7 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Assign a secondary private IP address to the primary ENIO that can De moved to a failover instance
 
    Answer: A,D
-</code></pre>
+</code></pre></div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -863,7 +3211,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 </script>
 
 <p>QUESTION NO: 26</p>
-<pre><code>   You are designing a system that has a Bastion host. This component needs to be highly available
+<div class="highlight"><pre><span></span><code>   You are designing a system that has a Bastion host. This component needs to be highly available
    without human intervention.
    Which of the following approaches would you select?
 
@@ -875,9 +3223,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Configure an ELB in front of the bastion instance
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 27</p>
-<pre><code>   Which of the following statements about this S3 bucket policy is true?
+<div class="highlight"><pre><span></span><code>   Which of the following statements about this S3 bucket policy is true?
    15
 
    A. Denies the server with the IP address 192 168 100 0 full access to the "mybucket" bucket
@@ -887,9 +3235,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    bucket
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 28</p>
-<pre><code>   Which of the following requires a custom CloudWatch metric to monitor?
+<div class="highlight"><pre><span></span><code>   Which of the following requires a custom CloudWatch metric to monitor?
 
    A. Data transfer of an EC2 instance
    B. Disk usage activity of an EC2 instance
@@ -900,9 +3248,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/cloudwatch/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 29</p>
-<pre><code>   You run a web application where web servers on EC2 Instances are In an Auto Scaling group
+<div class="highlight"><pre><span></span><code>   You run a web application where web servers on EC2 Instances are In an Auto Scaling group
    Monitoring over the last 6 months shows that 6 web servers are necessary to handle the minimum
    load During the day up to 12 servers are needed Five to six days per year, the number of web
    servers required might go up to 15.
@@ -917,9 +3265,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    by Spot instances 1678
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 30</p>
-<pre><code>   You have been asked to propose a multi-region deployment of a web-facing application where a
+<div class="highlight"><pre><span></span><code>   You have been asked to propose a multi-region deployment of a web-facing application where a
    controlled portion of your traffic is being processed by an alternate region.
    Which configuration would achieve that goal?
 
@@ -932,9 +3280,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/TerminologyandKeyConcepts.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 31</p>
-<pre><code>   You have set up Individual AWS accounts for each project. You have been asked to make sure
+<div class="highlight"><pre><span></span><code>   You have set up Individual AWS accounts for each project. You have been asked to make sure
    your AWS Infrastructure costs do not exceed the budget set per project for each month.
    Which of the following approaches can help ensure that you do not exceed the budget each month?
 
@@ -948,9 +3296,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    notifications when it hits 50%. 80% and 90% of its budgeted monthly spend
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 32</p>
-<pre><code>   When creation of an EBS snapshot Is initiated but not completed the EBS volume?
+<div class="highlight"><pre><span></span><code>   When creation of an EBS snapshot Is initiated but not completed the EBS volume?
 
    A. Cannot De detached or attached to an EC2 instance until me snapshot completes
    B. Can be used in read-only mode while me snapshot is in progress
@@ -961,9 +3309,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 33</p>
-<pre><code>   You are using ElastiCache Memcached to store session state and cache database queries in your
+<div class="highlight"><pre><span></span><code>   You are using ElastiCache Memcached to store session state and cache database queries in your
    infrastructure You notice in Cloud Watch that Evictions and GetMisses are Doth very high.
    What two actions could you take to rectify this?
    Choose 2 answers
@@ -974,9 +3322,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Increase the size of the nodes in the duster
 
    Answer: B,D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 34</p>
-<pre><code>   You are running a database on an EC2 instance, with the data stored on Elastic Block Store (EBS)
+<div class="highlight"><pre><span></span><code>   You are running a database on an EC2 instance, with the data stored on Elastic Block Store (EBS)
    for persistence At times throughout the day, you are seeing large variance in the response times of
    the database queries Looking into the instance with the isolate command you see a lot of wait time
    on the disk volume that the database's data is stored on.
@@ -990,9 +3338,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Use the ephemeral storage on an m2 4xiarge Instance Instead
 
    Answer: A,B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 35</p>
-<pre><code>   Your EC2-Based Multi-tier application includes a monitoring instance that periodically makes
+<div class="highlight"><pre><span></span><code>   Your EC2-Based Multi-tier application includes a monitoring instance that periodically makes
    application -level read only requests of various application components and if any of those fail
    more than three times 30 seconds calls CloudWatch lo fire an alarm, and the alarm notifies your
    operations team by email and SMS of a possible application health problem. However, you also
@@ -1015,9 +3363,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    19
 
    Answer: D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 36</p>
-<pre><code>   You have decided to change the Instance type for instances running In your application tier that
+<div class="highlight"><pre><span></span><code>   You have decided to change the Instance type for instances running In your application tier that
    are using Auto Scaling.
    In which area below would you change the instance type definition?
 
@@ -1030,9 +3378,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/WhatIsAutoScaling.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 37</p>
-<pre><code>   You are attempting to connect to an instance in Amazon VPC without success You have already
+<div class="highlight"><pre><span></span><code>   You are attempting to connect to an instance in Amazon VPC without success You have already
    verified that the VPC has an Internet Gateway (IGW) the instance has an associated Elastic IP
    (EIP) and correct security group rules are in place.
    Which VPC component should you evaluate next?
@@ -1046,9 +3394,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/ElasticLoadBalancing/latest/DeveloperGuide/UserScenariosForVPC.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 38</p>
-<pre><code>   You are tasked with the migration of a highly trafficked Node JS application to AWS In order
+<div class="highlight"><pre><span></span><code>   You are tasked with the migration of a highly trafficked Node JS application to AWS In order
    to comply with organizational standards Chef recipes must be used to configure the
    application servers that host this application and to support application lifecycle events.
    Which deployment option meets these requirements while minimizing administrative burden?
@@ -1066,9 +3414,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deployment.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 39</p>
-<pre><code>   You have been asked to automate many routine systems administrator backup and recovery
+<div class="highlight"><pre><span></span><code>   You have been asked to automate many routine systems administrator backup and recovery
    activities Your current plan is to leverage AWS-managed solutions as much as possible and
    automate the rest with the AWS CU and scripts.
    Which task would be best accomplished with a script?
@@ -1079,9 +3427,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Automatically add Auto Scaled EC2 instances to an Amazon Elastic Load Balancer
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 40</p>
-<pre><code>   Your organization's security policy requires that all privileged users either use frequently
+<div class="highlight"><pre><span></span><code>   Your organization's security policy requires that all privileged users either use frequently
    rotated passwords or one-time access credentials in addition to username/password.
    Which two of the following options would allow an organization to enforce this policy for
    AWS users?
@@ -1094,9 +3442,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Enable the 1AM single-use password policy option for privileged users
 
    Answer: C,D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 41</p>
-<pre><code>   What are characteristics of Amazon S3?
+<div class="highlight"><pre><span></span><code>   What are characteristics of Amazon S3?
    Choose 2 answers
 
    A. Objects are directly accessible via a URL
@@ -1106,9 +3454,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    E. S3 offers Provisioned IOPS
 
    Answer: B,C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 42</p>
-<pre><code>   You receive a frantic call from a new DBA who accidentally dropped a table containing all your
+<div class="highlight"><pre><span></span><code>   You receive a frantic call from a new DBA who accidentally dropped a table containing all your
    customers.
    Which Amazon RDS feature will allow you to reliably restore your database to within 5 minutes of
    when the mistake was made?
@@ -1122,9 +3470,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.BackingUpAndRestoringAmazonRDSInstances.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 43</p>
-<pre><code>   A media company produces new video files on-premises every day with a total size of around
+<div class="highlight"><pre><span></span><code>   A media company produces new video files on-premises every day with a total size of around
    100GBS after compression All files have a size of 1 -2 GB and need to be uploaded to Amazon
    S3 every night in a fixed time window between 3am and 5am Current upload takes almost 3
    hours, although less than half of the available bandwidth is used.
@@ -1139,9 +3487,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/importexport/faqs/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 44</p>
-<pre><code>   You are running a web-application on AWS consisting of the following components an Elastic
+<div class="highlight"><pre><span></span><code>   You are running a web-application on AWS consisting of the following components an Elastic
    Load Balancer (ELB) an Auto-Scaling Group of EC2 instances running Linux/PHP/Apache, and
    Relational DataBase Service (RDS) MySQL.
    Which security measures fall into AWS's responsibility?
@@ -1153,9 +3501,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Install latest security patches on ELB. RDS and EC2 instances
 
    Answer: B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 45</p>
-<pre><code>   You use S3 to store critical data for your company Several users within your group currently have
+<div class="highlight"><pre><span></span><code>   You use S3 to store critical data for your company Several users within your group currently have
    lull permissions to your S3 buckets You need to come up with a solution mat does not impact
    your users and also protect against the accidental deletion of objects.
    Which two options will address this issue?
@@ -1168,9 +3516,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    in Glacier
 
    Answer: B,C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 46</p>
-<pre><code>   An organization's security policy requires multiple copies of all critical data to be replicated across
+<div class="highlight"><pre><span></span><code>   An organization's security policy requires multiple copies of all critical data to be replicated across
    at least a primary and backup data center. The organization has decided to store some critical
    data on Amazon S3. 245
    Which option should you implement to ensure this requirement is met?
@@ -1184,9 +3532,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    between multiple facilities within an AWS Region
 
    Answer: C
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 47</p>
-<pre><code>   You are tasked with setting up a cluster of EC2 Instances for a NoSOL database The database
+<div class="highlight"><pre><span></span><code>   You are tasked with setting up a cluster of EC2 Instances for a NoSOL database The database
    requires random read 10 disk performance up to a 100.000 IOPS at 4KB block side per node
    Which of the following EC2 instances will perform the best for this workload?
 
@@ -1201,9 +3549,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/ec2/instance-types/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 48</p>
-<pre><code>   When an EC2 EBS-backed (EBS root) instance is stopped, what happens to the data on any
+<div class="highlight"><pre><span></span><code>   When an EC2 EBS-backed (EBS root) instance is stopped, what happens to the data on any
    ephemeral store volumes?
 
    A. Data will be deleted and win no longer be accessible
@@ -1212,9 +3560,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Data is unavailable until the instance is restarted
 
    Answer: D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 49</p>
-<pre><code>   Your team Is excited about theuse of AWS because now they have access to programmable
+<div class="highlight"><pre><span></span><code>   Your team Is excited about theuse of AWS because now they have access to programmable
    Infrastructure" You have been asked to manage your AWS infrastructure In a manner similar to
    the way you might manage application code You want to be able to deploy exact copies of
    different versions of your infrastructure, stage changes into different environments, revert back to
@@ -1234,9 +3582,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://aws.amazon.com/opsworks/faqs/
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 50</p>
-<pre><code>   You have a server with a 5O0GB Amazon EBS data volume. The volume is 80% full. You need
+<div class="highlight"><pre><span></span><code>   You have a server with a 5O0GB Amazon EBS data volume. The volume is 80% full. You need
    to back up the volume at regular intervals and be able to re-create the volume in a new
    Availability Zone in the shortest time possible. All applications using the volume can be paused
    for a period of a few minutes with no discernible user impact.
@@ -1253,7 +3601,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-creating-snapshot.html
-</code></pre>
+</code></pre></div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -1267,7 +3615,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 </script>
 
 <p>QUESTION NO: 51</p>
-<pre><code>   Your company Is moving towards tracking web page users with a small tracking Image loaded
+<div class="highlight"><pre><span></span><code>   Your company Is moving towards tracking web page users with a small tracking Image loaded
    on each page Currently you are serving this image out of US-East, but are starting to get
    concerned about the time It takes to load the image for users on the west coast.
    What are the two best ways to speed up serving this image?
@@ -1280,9 +3628,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. Use EBS PIOPs to serve the image faster out of your EC2 instances
 
    Answer: A,B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 52</p>
-<pre><code>   If you want to launch Amazon Elastic Compute Cloud (EC2) Instances and assign each Instance
+<div class="highlight"><pre><span></span><code>   If you want to launch Amazon Elastic Compute Cloud (EC2) Instances and assign each Instance
    a predetermined private IP address you should:
 
    A. Assign a group or sequential Elastic IP address to the instances
@@ -1296,9 +3644,9 @@ These are AWS interview questions for experienced professionals.  You will find 
 
    Reference:
    http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-ip-addressing.html
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 53</p>
-<pre><code>   A customer has a web application that uses cookie Based sessions to track logged in users It Is
+<div class="highlight"><pre><span></span><code>   A customer has a web application that uses cookie Based sessions to track logged in users It Is
    deployed on AWS using ELB and Auto Scaling The customer observes that when load increases.
    Auto Scaling launches new Instances but the load on the easting Instances does not decrease,
    causing all existing users to have a sluggish experience.
@@ -1316,9 +3664,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    connection open to a web server for a long time.
 
    Answer: B,D
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 54</p>
-<pre><code>   What would happen to an RDS (Relational Database Service) multi-Availability Zone deployment
+<div class="highlight"><pre><span></span><code>   What would happen to an RDS (Relational Database Service) multi-Availability Zone deployment
    of the primary OB instance fails?
 
    A. The IP of the primary DB instance is switched to the standby OB instance
@@ -1327,9 +3675,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    D. The canonical name record (CNAME) is changed from primary to standby
 
    Answer: B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 55</p>
-<pre><code>   How can the domain's zone apex for example "myzoneapexdomain com" be pointed towards an
+<div class="highlight"><pre><span></span><code>   How can the domain's zone apex for example "myzoneapexdomain com" be pointed towards an
    Elastic Load Balancer?
    A. By using an AAAA record
    B. By using an A record
@@ -1341,9 +3689,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Reference:
    http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosingalias-non-alias.html
    Topic 2, Volume B
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 56</p>
-<pre><code>   An organization has created 5 IAM users. The organization wants to give them the same login ID
+<div class="highlight"><pre><span></span><code>   An organization has created 5 IAM users. The organization wants to give them the same login ID
    but different passwords. How can the organization achieve this?
 
    A. The organization should create a separate login ID but give the IAM users the same alias
@@ -1362,9 +3710,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    IAM user, there should be a unique ID for each user. It is not possible to have the same login ID
    for multiple users. The names of users,groups, roles, instance profiles must be alphanumeric,
    including the following common characters: plus(+), equal(=), comma(,), period(.), at(@), and dash (-)
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 57</p>
-<pre><code>   A user is planning to evaluate AWS for their internal use. The user does not want to incur any
+<div class="highlight"><pre><span></span><code>   A user is planning to evaluate AWS for their internal use. The user does not want to incur any
    charge on his account during the evaluation. Which of the below mentioned AWS services would
    incur a charge if used?
 
@@ -1381,9 +3729,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    a handful of AWS services as a part of this which includes 750 hours of free micro instances and
    750 hours of ELB. It includes the AWS S3 of 5 GB and AWS EBS general purpose volume upto
    30 GB. PIOPS is not part of free usage tier.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 58</p>
-<pre><code>   A user has developed an application which is required to send the data to a NoSQL database.
+<div class="highlight"><pre><span></span><code>   A user has developed an application which is required to send the data to a NoSQL database.
    The user wants to decouple the data sending such that the application keeps processing and
    sending data but does not wait for an acknowledgement of DB. Which of the below mentioned
    applications helps in this scenario?
@@ -1402,9 +3750,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    an application and sent to DB. The application can continue processing data without waiting for
    any acknowledgement from DB. The user can use SQS to transmit any volume of data without
    losing messages or requiring other services to always be available.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 59</p>
-<pre><code>   An organization has created 50 IAM users. The organization has introduced a new policy which
+<div class="highlight"><pre><span></span><code>   An organization has created 50 IAM users. The organization has introduced a new policy which
    will change the access of an IAM user. How can the organization implement this effectively so that
    there is no need to apply the policy at the individual user level?
 
@@ -1423,9 +3771,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    helps an organization manage access in a better way; instead of applying at the individual level,
    the organization can apply at the group level which is applicable to all the users who are a part
    of that group.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 60</p>
-<pre><code>   A user is planning to use AWS Cloud formation for his automatic deployment requirements. Which
+<div class="highlight"><pre><span></span><code>   A user is planning to use AWS Cloud formation for his automatic deployment requirements. Which
    of the below mentioned components are required as a part of the template?
 
    A. Parameters
@@ -1442,9 +3790,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    can have option fields, such as Template Parameters, Output, Data tables, and Template file
    format version. The only mandatory value is Resource. The user can define the AWS services
    which will be used/ created by this template inside the Resource section
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 61</p>
-<pre><code>   A user has recently started using EC2. The user launched one EC2 instance in the default subnet
+<div class="highlight"><pre><span></span><code>   A user has recently started using EC2. The user launched one EC2 instance in the default subnet
    in EC2-VPC Which of the below mentioned options is not attached or available with the EC2
    instance when it is launched?
 
@@ -1464,9 +3812,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    public IP address. These instances can communicate with the internet through an internet
    gateway. An internet gateway enables the EC2 instances to connect to the internet through the
    Amazon EC2 network edge.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 62</p>
-<pre><code>   A user has launched an EC2 instance. The user is planning to setup the CloudWatch alarm.
+<div class="highlight"><pre><span></span><code>   A user has launched an EC2 instance. The user is planning to setup the CloudWatch alarm.
    Which of the
    below mentioned actions is not supported by the CloudWatch alarm?
 
@@ -1484,9 +3832,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    of time periods. The actions could be sending a notification to an Amazon Simple Notification
    Service topic (SMS, Email, and HTTP end point.,notifying the Auto Scaling policy or changing the
    state of the instance to Stop/Terminate.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 63</p>
-<pre><code>   A user is trying to delete an Auto Scaling group from CLI. Which of the below mentioned steps are
+<div class="highlight"><pre><span></span><code>   A user is trying to delete an Auto Scaling group from CLI. Which of the below mentioned steps are
    to be performed by the user?
 
    A. Terminate the instances with the ec2-terminate-instance command
@@ -1502,9 +3850,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    minimum and desired capacity to 0. Otherwise Auto Scaling will not allow for the deletion of the
    group from CLI. While trying from the AWS console, the user need not set the values to 0 as the
    Auto Scaling console will automatically do so.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 64</p>
-<pre><code>   An organization is planning to create 5 different AWS accounts considering various security
+<div class="highlight"><pre><span></span><code>   An organization is planning to create 5 different AWS accounts considering various security
    requirements. The organization wants to use a single payee account by using the consolidated
    billing option. Which of the below mentioned statements is true with respect to the above
    information?
@@ -1526,9 +3874,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    incurred by each account as well as obtain a detailed cost report for each of the individual AWS
    accounts associated with the paying account. The payee account will not have any other
    access than billing data of linked accounts.
-</code></pre>
+</code></pre></div>
 <p>QUESTIONNO: 64-A</p>
-<pre><code>   A user has deployed an application on his private cloud. The user is using his own monitoring tool.
+<div class="highlight"><pre><span></span><code>   A user has deployed an application on his private cloud. The user is using his own monitoring tool.
    He wants to configure that whenever there is an error, the monitoring tool should notify him via
    SMS. Which of the below mentioned AWS services will help in this scenario?
 
@@ -1544,9 +3892,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Amazon SNS can deliver notifications by SMS text message or email to the Amazon Simple
    Queue Service (SQS. queues or to any HTTP endpoint. In this case user can use the SNS apis
    to send SMS.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 65</p>
-<pre><code>   A user has created a web application with Auto Scaling. The user is regularly monitoring the
+<div class="highlight"><pre><span></span><code>   A user has created a web application with Auto Scaling. The user is regularly monitoring the
    application and he observed that the traffic is highest on Thursday and Friday between 8 AM to
    6 PM. What is the best solution to handle scaling in this case?
 
@@ -1562,9 +3910,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    predictable load changes. In this case the load increases by Thursday and decreases by Friday.
    Thus, the user can setup the scaling activity based on the predictable traffic patterns of the web
    application using Auto Scaling scale by Schedule.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 66</p>
-<pre><code>   A user has setup a CloudWatch alarm on an EC2 action when the CPU utilization is above 75%.
+<div class="highlight"><pre><span></span><code>   A user has setup a CloudWatch alarm on an EC2 action when the CPU utilization is above 75%.
    The alarm sends a notification to SNS on the alarm state. If the user wants to simulate the alarm
    action how can he achieve this?
 
@@ -1581,9 +3929,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    a number of time periods.The user can test an alarm by setting it to any state using the
    SetAlarmState API (mon-set-alarm-state command.. This temporary state change lasts only until
    the next alarm comparison occurs.
-</code></pre>
+</code></pre></div>
 <p>QUESTION 13</p>
-<pre><code>   A user is trying to setup a scheduled scaling activity using Auto Scaling. The user wants to setup
+<div class="highlight"><pre><span></span><code>   A user is trying to setup a scheduled scaling activity using Auto Scaling. The user wants to setup
    the recurring schedule. Which of the below mentioned parameters is not required in this case?
 
    A. Maximum size
@@ -1598,9 +3946,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    follow the Linux cron format. If the user is setting a recurring event, it is required that the user
    specifies the Recurrence value (in a cron format., end time (not compulsory but recurrence will
    stop after this. and the Auto Scaling group for which the scaling activity is to be scheduled.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 67</p>
-<pre><code>   A user has setup a billing alarm using CloudWatch for $200. The usage of AWS exceeded $200
+<div class="highlight"><pre><span></span><code>   A user has setup a billing alarm using CloudWatch for $200. The usage of AWS exceeded $200
    after some days. The user wants to increase the limit from $200 to $400? What should the user do?
 
    A. Create a new alarm of $400 and link it with the first alarm
@@ -1616,9 +3964,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    This data will be stored for 14 days. This data also includes the estimated charges for every
    service in AWS used by the user, as well as the estimated overall AWS charges. If the user
    wants to increase the limit, the user can modify the alarm and specify a new threshold.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 68</p>
-<pre><code>   A sys admin has created the below mentioned policy and applied to an S3 object named aws.jpg.
+<div class="highlight"><pre><span></span><code>   A sys admin has created the below mentioned policy and applied to an S3 object named aws.jpg.
    The aws.jpg is inside a bucket named cloudacademy. What does this policy define?
    "Statement": [{
    "Sid": "Stmt1388811069831",
@@ -1642,9 +3990,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    inherit it and vice a versa. The bucket policy can be defined at the bucket level which allows the
    objects as well as the bucket to be public with a single policy applied to that bucket. It cannot be
    applied at the object level.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 69</p>
-<pre><code>   A user is trying to save some cost on the AWS services. Which of the below mentioned options
+<div class="highlight"><pre><span></span><code>   A user is trying to save some cost on the AWS services. Which of the below mentioned options
    will not help him save cost?
    A. Delete the unutilized EBS volumes once the instance is terminated
    B. Delete the AutoScaling launch configuration after the instances are terminated
@@ -1660,9 +4008,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    instance Delete the EBS volumes Release the unutilized Elastic IPs Delete ELB The AutoScaling launch
    configuration does not cost the user. Thus, it will not make any difference to the cost whether it is 
    deleted or not.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 70</p>
-<pre><code>   A user is trying to aggregate all the CloudWatch metric data of the last 1 week. Which of the
+<div class="highlight"><pre><span></span><code>   A user is trying to aggregate all the CloudWatch metric data of the last 1 week. Which of the
    below mentioned statistics is not available for the user as a part of data aggregation?
 
    A. Aggregate
@@ -1679,9 +4027,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Aggregations are made using the namespace, metric name, dimensions, and the data point unit
    of measure, within the time period that is specified by the user. CloudWatch supports Sum, Min,
    Max, Sample Data and Average statistics aggregation.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 71</p>
-<pre><code>   An organization is planning to use AWS for their production roll out. The organization wants to
+<div class="highlight"><pre><span></span><code>   An organization is planning to use AWS for their production roll out. The organization wants to
    implement automation for deployment such that it will automatically create a LAMP stack, download the
    latest PHP installable from S3 and setup the ELB. Which of the below mentioned AWS services meets the
    quirement for making an orderly deployment of the software?
@@ -1702,9 +4050,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Elastic Beanstalk does quite a few of the required tasks. However, it is a PAAS which uses a
    ready AMI. AWS Elastic Beanstalk provides an environment to easily develop and run
    applications in the cloud.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 72</p>
-<pre><code>   A user has created a subnet with VPC and launched an EC2 instance in that subnet with only
+<div class="highlight"><pre><span></span><code>   A user has created a subnet with VPC and launched an EC2 instance in that subnet with only
    default settings.Which of the below mentioned options is ready to use on the EC2 instance as
    soon as it is launched?
 
@@ -1722,9 +4070,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    EC2-VPC. When the user launches an instance which is not a part of the non-default subnet, it
    will only have a private IP assigned to it. The instances part of a subnet can communicate with
    each other but cannot communicate over the internet or to the AWS services, such as RDS / S3.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 73</p>
-<pre><code>   An organization is setting up programmatic billing access for their AWS account. Which of the
+<div class="highlight"><pre><span></span><code>   An organization is setting up programmatic billing access for their AWS account. Which of the
    below mentioned services is not required or enabled when the organization wants to use
    programmatic access?
 
@@ -1742,9 +4090,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    in an Amazon S3 bucket. To enable programmatic access, the user has to first enable the
    monthly billing report. Then the user needs to provide an AWS bucket name where the billing
    CSV will be uploaded. The user should also enable the Programmatic access option.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 74</p>
-<pre><code>   A user has configured the Auto Scaling group with the minimum capacity as 3 and the maximum capacity
+<div class="highlight"><pre><span></span><code>   A user has configured the Auto Scaling group with the minimum capacity as 3 and the maximum capacity
    as 5. When the user configures the AS group, how many instances will Auto Scaling launch?
 
    A. 3
@@ -1759,9 +4107,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    group will start instances by launching the minimum number (or the desired number, if specified.
    of EC2 instances. If there are no other scaling conditions attached to the Auto Scaling group, it
    will maintain the minimum number of running instances at all times.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 75</p>
-<pre><code>   An admin is planning to monitor the ELB. Which of the below mentioned services does not help
+<div class="highlight"><pre><span></span><code>   An admin is planning to monitor the ELB. Which of the below mentioned services does not help
    the admin capture the monitoring information about the ELB activity?
 
    A. ELB Access logs
@@ -1776,7 +4124,7 @@ These are AWS interview questions for experienced professionals.  You will find 
    CloudWatch Metrics ELB Logs files which are stored in the S3 bucket CloudTrail with API calls
    which can notify the user as well generate logs for each API calls The health check is
    internally performed by ELB and does not help the admin get the ELB activity.
-</code></pre>
+</code></pre></div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -1790,7 +4138,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 </script>
 
 <p>QUESTION NO: 76</p>
-<pre><code>   A user is planning to use AWS Cloudformation. Which of the below mentioned functionalities does
+<div class="highlight"><pre><span></span><code>   A user is planning to use AWS Cloudformation. Which of the below mentioned functionalities does
    not help him to correctly understand Cloudfromation?
 
    A. Cloudformation follows the DevOps model for the creation of Dev &amp; Test
@@ -1811,9 +4159,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    and only charges the user for the services created with it. The only challenge is that it does not
    follow any model, such as DevOps; instead customers can define templates and use them to
    provision and manage the AWS resources in an orderly way.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 77</p>
-<pre><code>   A user has launched 10 instances from the same AMI ID using Auto Scaling. The user is trying to
+<div class="highlight"><pre><span></span><code>   A user has launched 10 instances from the same AMI ID using Auto Scaling. The user is trying to
    see the average CPU utilization across all instances of the last 2 weeks under the CloudWatch
    console. How can the user achieve this?
 
@@ -1833,9 +4181,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    of measure, within the time period that is specified by the user. To aggregate the data across
    instances launched with AMI, the user should select the AMI ID under EC2 metrics and select the
    aggregate average to view the data.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 78</p>
-<pre><code>   A user is trying to understand AWS SNS. To which of the below mentioned end points is SNS
+<div class="highlight"><pre><span></span><code>   A user is trying to understand AWS SNS. To which of the below mentioned end points is SNS
    unable to send a notification?
 
    A. Email JSON
@@ -1851,9 +4199,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Amazon Simple Queue Service (SQS. queues or to any HTTP endpoint. The user can select one
    the following transports as part of the subscription requests: “HTTP”, “HTTPS”,”Email”, “EmailJSON”,
    “SQS”, “and SMS”.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 79</p>
-<pre><code>   A user has configured an Auto Scaling group with ELB. The user has enabled detailed
+<div class="highlight"><pre><span></span><code>   A user has configured an Auto Scaling group with ELB. The user has enabled detailed
    CloudWatch monitoring on Auto Scaling. Which of the below mentioned statements will help
    the user understand the functionality better?
 
@@ -1871,9 +4219,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    minute. Auto Scaling includes 7 metrics and 1 dimension, and sends data to CloudWatch every 5 minutes by default.
    The user can enable detailed monitoring for Auto Scaling, which sends data to CloudWatch every minute. However,
    this will have some extra-costs.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 80</p>
-<pre><code>   A system admin is planning to setup event notifications on RDS. Which of the below mentioned
+<div class="highlight"><pre><span></span><code>   A system admin is planning to setup event notifications on RDS. Which of the below mentioned
    services will help the admin setup notifications?
 
    A. AWS SES
@@ -1887,9 +4235,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Amazon RDS uses the Amazon Simple Notification Service to provide a notification when an
    Amazon RDS event occurs. These notifications can be in any notification form supported by
    Amazon SNS for an AWS region, such as an email, a text message or a call to an HTTP endpoint
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 81</p>
-<pre><code>   You are building an online store on AWS that uses SQS to process your customer orders. Your backend
+<div class="highlight"><pre><span></span><code>   You are building an online store on AWS that uses SQS to process your customer orders. Your backend
    system needs those messages in the same sequence the customer orders have been put in. How can you achieve that?
 
    A. It is not possible to do this with SQS
@@ -1906,9 +4254,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    delivered, the order is not important. If your system requires that order be preserved, you can
    place sequencing information in each message, so that you can reorder the messages when
    the queue returns them.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 82</p>
-<pre><code>   An organization wants to move to Cloud. They are looking for a secure encrypted database
+<div class="highlight"><pre><span></span><code>   An organization wants to move to Cloud. They are looking for a secure encrypted database
    storage option. Which of the below mentioned AWS functionalities helps them to achieve this?
 
    A. AWS MFA with EBS
@@ -1925,9 +4273,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    encryption occurs on the servers that host the EC2 instances, providing encryption of data as it
    moves between the EC2 instances and EBS storage. EBS encryption is based on the AES-256
    cryptographic algorithm, which is the industry standard
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 83</p>
-<pre><code>   A user wants to disable connection draining on an existing ELB. Which of the below mentioned
+<div class="highlight"><pre><span></span><code>   A user wants to disable connection draining on an existing ELB. Which of the below mentioned
    statements helps the user disable connection draining on the ELB?
 
    A. The user can only disable connection draining from CLI
@@ -1942,9 +4290,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    sending new requests to the back-end instances when the instances are deregistering or
    become unhealthy, while ensuring that inflight requests continue to be served. The user can
    enable or disable connection draining from the AWS EC2 console -&gt; ELB or using CLI.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 84</p>
-<pre><code>   A user has a refrigerator plant. The user is measuring the temperature of the plant every 15
+<div class="highlight"><pre><span></span><code>   A user has a refrigerator plant. The user is measuring the temperature of the plant every 15
    minutes. If the user wants to send the data to CloudWatch to view the data visually, which of the
    below mentioned statements is true with respect to the information given above?
 
@@ -1958,9 +4306,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    AWS CloudWatch supports the custom metrics. The user can always capture the custom data
    and upload the data to CloudWatch using CLI or APIs. While sending the data the user has to
    include the metric name, namespace and timezone as part of the request.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 85</p>
-<pre><code>   A system admin is managing buckets, objects and folders with AWS S3. Which of the below mentioned
+<div class="highlight"><pre><span></span><code>   A system admin is managing buckets, objects and folders with AWS S3. Which of the below mentioned
    statements is true and should be taken in consideration by the sysadmin?
 
    A. The folders support only ACL
@@ -1978,9 +4326,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    objects as well as the bucket to be public with a single policy applied to that bucket. It cannot be
    applied at the object level. The folders are similar to objects with no content. Thus, folders can
    have only ACL and cannot have a policy.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 86</p>
-<pre><code>   A user has created an ELB with three instances. How many security groups will ELB create by
+<div class="highlight"><pre><span></span><code>   A user has created an ELB with three instances. How many security groups will ELB create by
    default?
 
    A. 3
@@ -1998,9 +4346,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    balancer and the back-end instances, the user can add or modify a rule to the back-end security
    group which can limit the ingress traffic. Thus, it can come only from the source security group
    provided by Elastic load Balancing.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 87</p>
-<pre><code>   An organization has created 50 IAM users. The organization wants that each user can change
+<div class="highlight"><pre><span></span><code>   An organization has created 50 IAM users. The organization wants that each user can change
    their password but cannot change their access keys. How can the organization achieve this?
 
    A. The organization has to create a special password policy and attach it to each user
@@ -2017,9 +4365,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    users to manage their own passwords. If the user has selected the option which allows the IAM
    users to modify their password, he does not need to set a separate policy for the users. This
    option in the AWS console allows changing only the password.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 88</p>
-<pre><code>   A user has created a photo editing software and hosted it on EC2. The software accepts
+<div class="highlight"><pre><span></span><code>   A user has created a photo editing software and hosted it on EC2. The software accepts
    requests from the user about the photo format and resolution and sends a message to S3 to
    enhance the picture accordingly.Which of the below mentioned AWS services will help make a
    scalable software with the AWS infrastructure in this scenario?
@@ -2036,9 +4384,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    queuing service. SQS provides a simple and cost-effective way to decouple the components of
    an application. The user can configure SQS, which will decouple the call between the EC2
    application and S3. Thus, the application does not keep waiting for S3 to provide the data.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 89</p>
-<pre><code>   An application is generating a log file every 5 minutes. The log file is not critical but may be
+<div class="highlight"><pre><span></span><code>   An application is generating a log file every 5 minutes. The log file is not critical but may be
    required only for verification in case of some major issue. The file should be accessible over the
    internet whenever required. Which of the below mentioned options is a best possible storage
    solution for it?
@@ -2057,9 +4405,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    files are not available over the internet. Reduced Redundancy Storage is for less critical files.
    Reduced Redundancy is little cheaper as it provides less durability in comparison to S3. In this
    case since the log files are not mission critical files, RRS will be a better option.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 90</p>
-<pre><code>   A user has created a VPC with CIDR 20.0.0.0/24. The user has created a public subnet with
+<div class="highlight"><pre><span></span><code>   A user has created a VPC with CIDR 20.0.0.0/24. The user has created a public subnet with
    CIDR 20.0.0.0/25. The user is trying to create the private subnet with CIDR 20.0.0.128/25. Which
    of the below mentioned statements is true in this scenario?
 
@@ -2079,9 +4427,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    The user can break this CIDR block into two subnets, each supporting 128 IP addresses. One
    subnet uses the CIDR block 20.0.0.0/25 (for addresses 20.0.0.0 - 20.0.0.127. and the other uses
    the CIDR block 20.0.0.128/25 (for addresses 20.0.0.128 - 20.0.0.255..
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 91</p>
-<pre><code>   A user has created an S3 bucket which is not publicly accessible. The bucket is having thirty
+<div class="highlight"><pre><span></span><code>   A user has created an S3 bucket which is not publicly accessible. The bucket is having thirty
    objects which are also private. If the user wants to make the objects public, how can he configure
    this with minimal efforts?
 
@@ -2099,9 +4447,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    language. Generally if the user is defining the ACL on the bucket, the objects in the bucket do not
    inherit it and vice a versa. The bucket policy can be defined at the bucket level which allows the
    objects as well as the bucket to be public with a single policy applied to that bucket.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 92</p>
-<pre><code>   A sys admin is maintaining an application on AWS. The application is installed on EC2 and user
+<div class="highlight"><pre><span></span><code>   A sys admin is maintaining an application on AWS. The application is installed on EC2 and user
    has configured ELB and Auto Scaling. Considering future load increase, the user is planning to
    launch new servers proactively so that they get registered with ELB. How can the user add these
    instances with Auto Scaling?
@@ -2119,9 +4467,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Auto Scaling group is configured with ELB. If the user decreases the minimum size the instances
    will be removed from Auto Scaling. Increasing the maximum size will not add instances but only
    set the maximum instance cap.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 93</p>
-<pre><code>   An organization, which has the AWS account ID as 999988887777, has created 50 IAM users. All
+<div class="highlight"><pre><span></span><code>   An organization, which has the AWS account ID as 999988887777, has created 50 IAM users. All
    the users are added to the same group cloudacademy. If the organization has enabled that each
    IAM user can login with the AWS console, which AWS login URL will the IAM users use?
 
@@ -2138,9 +4486,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    users, they will have a separate AWS console URL to login to the AWS console. The console login
    URL for the IAM user will be https:// AWS_Account_ID.signin.aws.amazon.com/console/. It uses
    only the AWS account ID and does not depend on the group or user ID.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 94</p>
-<pre><code>   A user has setup connection draining with ELB to allow in-flight requests to continue while the
+<div class="highlight"><pre><span></span><code>   A user has setup connection draining with ELB to allow in-flight requests to continue while the
    instance is being deregistered through Auto Scaling. If the user has not specified the draining
    time, how long will ELB allow inflight requests traffic to continue?
 
@@ -2158,9 +4506,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    (3600 seconds. for the load balancer to keep the connections alive before reporting the instance as
    deregistered. If the user does not specify the maximum timeout period, by default, the load balancer
    will close the connections to the deregistering instance after 300 seconds.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 95</p>
-<pre><code>   A root AWS account owner is trying to understand various options to set the permission to AWS
+<div class="highlight"><pre><span></span><code>   A root AWS account owner is trying to understand various options to set the permission to AWS
    S3. Which of the below mentioned options is not the right option to grant permission for S3?
 
    A. User Access Policy
@@ -2178,9 +4526,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    S3 Bucket Policy: The policy is used to grant other AWS accounts or IAM users permissions for
    the bucket and the objects in it.
    User Access Policy: Define an IAM user and assign him the IAM policy which grants him access to S3.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 96</p>
-<pre><code>   A sys admin has created a shopping cart application and hosted it on EC2. The EC2 instances
+<div class="highlight"><pre><span></span><code>   A sys admin has created a shopping cart application and hosted it on EC2. The EC2 instances
    are running behind ELB. The admin wants to ensure that the end user request will always go to
    the EC2 instance where the user session has been created. How can the admin configure this?
 
@@ -2198,9 +4546,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    any of the EC2 instances. But, henceforth, all requests from the same user will be redirected to
    the same EC2 instance. This ensures that all requests coming from the user during the session
    will be sent to the same application instance.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 97</p>
-<pre><code>   A user has configured ELB with three instances. The user wants to achieve High Availabilityi as well
+<div class="highlight"><pre><span></span><code>   A user has configured ELB with three instances. The user wants to achieve High Availabilityi as well
    as redundancy with ELB. Which of the below mentioned AWS services helps the user achieve this for
    ELB?
 
@@ -2216,9 +4564,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Load Balancer by enabling the Amazon Route 53 Domain Name System (DNS. failover for the
    load balancers. Amazon Route 53 is a DNS service that provides reliable routing to the user’s
    infrastructure.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 98</p>
-<pre><code>   An organization is using AWS since a few months. The finance team wants to visualize the pattern
+<div class="highlight"><pre><span></span><code>   An organization is using AWS since a few months. The finance team wants to visualize the pattern
    of AWS spending. Which of the below AWS tool will help for this requirement?
 
    A. AWS Cost Manager
@@ -2235,9 +4583,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Consolidated Billing it helps generate report based on linked accounts. This will help organization
    to identify areas that require further inquiry. The organization can view trends and use that to
    understand spend and to predict future costs.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 99</p>
-<pre><code>   A user has launched an ELB which has 5 instances registered with it. The user deletes the ELB by
+<div class="highlight"><pre><span></span><code>   A user has launched an ELB which has 5 instances registered with it. The user deletes the ELB by
    mistake. What will happen to the instances?
 
    A. ELB will ask the user whether to delete the instances or not
@@ -2251,9 +4599,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    When the user deletes the Elastic Load Balancer, all the registered instances will be deregistered.
    However, they will continue to run. The user will incur charges if he does not take any action on
    those instances.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 100</p>
-<pre><code>   A user is planning to setup notifications on the RDS DB for a snapshot. Which of the below
+<div class="highlight"><pre><span></span><code>   A user is planning to setup notifications on the RDS DB for a snapshot. Which of the below
    mentioned event categories is not supported by RDS for this snapshot source type?
 
    A. Backup
@@ -2267,7 +4615,7 @@ These are AWS interview questions for experienced professionals.  You will find 
    Amazon RDS uses the Amazon Simple Notification Service to provide a notification when an
    Amazon RDS event occurs. Event categories for a snapshot source type include: Creation,
    Deletion, and Restoration. The Backup is a part of DB instance source type.
-</code></pre>
+</code></pre></div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -2281,7 +4629,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 </script>
 
 <p>QUESTION NO: 101</p>
-<pre><code>   A customer is using AWS for Dev and Test. The customer wants to setup the Dev environment
+<div class="highlight"><pre><span></span><code>   A customer is using AWS for Dev and Test. The customer wants to setup the Dev environment
    with Cloudformation. Which of the below mentioned steps are not required while using Cloudformation?
 
    A. Create a stack
@@ -2299,9 +4647,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    collection of AWS resources which are created and managed as a single unit when AWS
    CloudFormation instantiates a template. While creating a stack, the user uploads the template
    and provides the data for the parameters if required.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 102</p>
-<pre><code>   A user has configured the AWS CloudWatch alarm for estimated usage charges in the US East
+<div class="highlight"><pre><span></span><code>   A user has configured the AWS CloudWatch alarm for estimated usage charges in the US East
    region. Which of the below mentioned statements is not true with respect to the estimated
    charges?
 
@@ -2319,9 +4667,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    US East (Northern Virginia. Region and represents worldwide charges. This data also includes
    the estimated charges for every service in AWS used by the user, as well as the estimated overall
    AWS charges.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 103</p>
-<pre><code>   A user is accessing RDS from an application. The user has enabled the Multi AZ feature with the
+<div class="highlight"><pre><span></span><code>   A user is accessing RDS from an application. The user has enabled the Multi AZ feature with the
    MS SQL RDS DB. During a planned outage how will AWS ensure that a switch from DB to a standby replica
    will not affect access to the application?
 
@@ -2338,9 +4686,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    automatic failover mechanism simply changes the DNS record of the DB instance to point to the
    standby DB instance. As a result, the user will need to re-establish any existing connections to
    the DB instance. However, as the DNS is the same, the application can access DB seamlessly.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 104</p>
-<pre><code>   An organization is generating digital policy files which are required by the admins for verification.
+<div class="highlight"><pre><span></span><code>   An organization is generating digital policy files which are required by the admins for verification.
    Once the files are verified they may not be required in the future unless there is some compliance
    issue. If the organization wants to save them in a cost effective way, which is the best possible
    solution?
@@ -2358,9 +4706,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    durability. However, the costs are a little higher. Reduced redundancy is for less critical files.
    Glacier is for archival and the files which are accessed infrequently. It is an extremely low-cost
    storage service that provides secure and durable storage for data archiving and backup.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 105</p>
-<pre><code>   A user has launched an EBS backed instance. The user started the instance at 9 AM in the
+<div class="highlight"><pre><span></span><code>   A user has launched an EBS backed instance. The user started the instance at 9 AM in the
    morning. Between 9 AM to 10 AM, the user is testing some script. Thus, he stopped the instance
    twice and restarted it. In the same hour the user rebooted the instance once. For how many
    instance hours will AWS charge the user?
@@ -2380,9 +4728,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    cost. If the user starts and stops the instance multiple times in a single hour, AWS will charge the
    user for every start and stop. In this case, since the instance was rebooted twice, it will cost the
    user for 3 instance hours.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 106</p>
-<pre><code>   An organization has configured the custom metric upload with CloudWatch. The organization has
+<div class="highlight"><pre><span></span><code>   An organization has configured the custom metric upload with CloudWatch. The organization has
    given permission to its employees to upload data using CLI as well SDK. How can the user track
    the calls made to CloudWatch?
 
@@ -2399,9 +4747,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Management Console, Command Line Interface (CLI., and other services. When CloudTrail
    logging is turned on, CloudWatch will write log files into the Amazon S3 bucket, which is specified
    during the CloudTrail configuration.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 107</p>
-<pre><code>   A user has created a queue named “myqueue” with SQS. There are four messages published to
+<div class="highlight"><pre><span></span><code>   A user has created a queue named “myqueue” with SQS. There are four messages published to
    queue which are not received by the consumer yet. If the user tries to delete the queue, what will
    happen?
 
@@ -2419,9 +4767,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    available. The user can delete a queue at any time, whether it is empty or not. It is important to
    note that queues retain messages for a set period of time. By default, a queue retains messages
    for four days.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 108</p>
-<pre><code>   A user has launched a large EBS backed EC2 instance in the US-East-1a region. The user wants
+<div class="highlight"><pre><span></span><code>   A user has launched a large EBS backed EC2 instance in the US-East-1a region. The user wants
    to achieve Disaster Recovery (DR. for that instance by creating another small instance in Europe.
    How can the user achieve DR?
 
@@ -2436,9 +4784,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    To launch an EC2 instance it is required to have an AMI in that region. If the AMI is not available
    in that region, then create a new AMI or use the copy command to copy the AMI from one region
    to the other region.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 109</p>
-<pre><code>   A user has created numerous EBS volumes. What is the general limit for each AWS account for
+<div class="highlight"><pre><span></span><code>   A user has created numerous EBS volumes. What is the general limit for each AWS account for
    the maximum number of EBS volumes that can be created?
 
    A. 10000
@@ -2453,9 +4801,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    AWS account. Each AWS account has a limit on the number of Amazon EBS volumes that the
    user can create, and the total storage available. The default limit for the maximum number of
    volumes that can be created is 5000.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 110</p>
-<pre><code>   A user has created a VPC with CIDR 20.0.0.0/16 using the wizard. The user has created a public
+<div class="highlight"><pre><span></span><code>   A user has created a VPC with CIDR 20.0.0.0/16 using the wizard. The user has created a public
    subnet CIDR (20.0.0.0/24. and VPN only subnets CIDR (20.0.1.0/24. along with the VPN
    gateway (vgw-12345. to connect to the user’s data centre. Which of the below mentioned options
    is a valid entry for the main route table in this scenario?
@@ -2475,9 +4823,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    valid entries for the main route table in this scenario: Destination: 0.0.0.0/0 &amp; Target: vgw-12345
    (To route all internet traffic to the VPN gateway.
    Destination: 20.0.0.0/16 &amp; Target: local (To allow local routing in VPC.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 111</p>
-<pre><code>   A user has stored data on an encrypted EBS volume. The user wants to share the data with his
+<div class="highlight"><pre><span></span><code>   A user has stored data on an encrypted EBS volume. The user wants to share the data with his
    friend’s AWS account. How can user achieve this?
 
    A. Create an AMI from the volume and share the AMI
@@ -2494,9 +4842,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    encrypted volume and is trying to share it with others, he has to copy the data from the encrypted
    volume to a new unencrypted volume. Only then can the user share it as an encrypted volume
    data. Otherwise the snapshot cannot be shared.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 112</p>
-<pre><code>   A user has enabled the Multi AZ feature with the MS SQL RDS database server. Which of the
+<div class="highlight"><pre><span></span><code>   A user has enabled the Multi AZ feature with the MS SQL RDS database server. Which of the
    below mentioned statements will help the user understand the Multi AZ feature better?
 
    A. In a Multi AZ, AWS runs two DBs in parallel and copies the data asynchronously to the
@@ -2518,9 +4866,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    and help protect your databases against DB instance failure and Availability Zone disruption.Note
    that the high-availability feature is not a scaling solution for read-only scenarios; you cannot use a
    standby replica to serve read traffic. To service read-only traffic, you should use a read replica.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 113</p>
-<pre><code>   An organization is using cost allocation tags to find the cost distribution of different departments
+<div class="highlight"><pre><span></span><code>   An organization is using cost allocation tags to find the cost distribution of different departments
    and projects. One of the instances has two separate tags with the key/ value as “InstanceName/
    HR”, “CostCenter/HR”. What will AWS do in this case?
 
@@ -2539,9 +4887,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    can be applied to services, such as EC2, S3, RDS, EMR, etc. It is required that the key should be
    different for each tag. The value can be the same for different keys. In this case since the value is
    different, AWS will properly show the distribution report with the correct values.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 114</p>
-<pre><code>   A user is publishing custom metrics to CloudWatch. Which of the below mentioned statements will
+<div class="highlight"><pre><span></span><code>   A user is publishing custom metrics to CloudWatch. Which of the below mentioned statements will
    help the user understand the functionality better?
 
    A. The user can use the CloudWatch Import tool
@@ -2558,9 +4906,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    namespace as a part of the request. However, the other parameters are optional. If the user has
    uploaded data using CLI, he can view it as a graph inside the console. The data will take around
    2 minutes to upload but can be viewed only after around 15 minutes.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 115</p>
-<pre><code>   A user is launching an EC2 instance in the US East region. Which of the below mentioned options
+<div class="highlight"><pre><span></span><code>   A user is launching an EC2 instance in the US East region. Which of the below mentioned options
    is recommended by AWS with respect to the selection of the availability zone?
 
    A. Always select the US-East-1-a zone for HA
@@ -2576,9 +4924,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    enables AWS to select the best Availability Zone based on the system health and available capacity. 
    If the user launches additional instances, only then an Availability Zone should be specified. 
    This is to specify the same or different AZ from the running instances.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 116</p>
-<pre><code>   A user has created a VPC with CIDR 20.0.0.0/16 with only a private subnet and VPN connection
+<div class="highlight"><pre><span></span><code>   A user has created a VPC with CIDR 20.0.0.0/16 with only a private subnet and VPN connection
    using the VPC wizard. The user wants to connect to the instance in a private subnet over SSH.
    How should the user define the security rule for SSH?
 
@@ -2598,9 +4946,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Wizard, all network connections to the instances in the subnet will come from his data centre. The
    user has to configure the security group of the private subnet which allows the inbound traffic on
    SSH (port 22. from the data centre’s network range.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 117</p>
-<pre><code>   A user has created an ELB with the availability zone US-East-1A. The user wants to add more
+<div class="highlight"><pre><span></span><code>   A user has created an ELB with the availability zone US-East-1A. The user wants to add more
    zones to ELB to achieve High Availability. How can the user add more zones to the existing ELB?
 
    A. It is not possible to add more zones to the existing ELB
@@ -2615,9 +4963,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    zones to the existing ELB. The user can do so in two ways:
    From the console or CLI, add new zones to ELB;
    Launch instances in a separate AZ and add instances to the existing ELB.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 118</p>
-<pre><code>   A user has configured an Auto Scaling group with ELB. The user has enabled detailed
+<div class="highlight"><pre><span></span><code>   A user has configured an Auto Scaling group with ELB. The user has enabled detailed
    CloudWatch monitoring on Elastic Load balancing. Which of the below mentioned statements
    will help the user understand this functionality better?
 
@@ -2634,9 +4982,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    to CloudWatch every five minutes, while in detailed monitoring a service sends data points to
    CloudWatch every minute. Elastic Load Balancing includes 10 metrics and 2 dimensions, and
    sends data to CloudWatch every minute. This does not cost extra.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 119</p>
-<pre><code>   A user has configured ELB with two EBS backed EC2 instances. The user is trying to
+<div class="highlight"><pre><span></span><code>   A user has configured ELB with two EBS backed EC2 instances. The user is trying to
    understand the DNS access and IP support for ELB. Which of the below mentioned statements
    may not help the user understand the IP mechanism supported by ELB?
 
@@ -2654,9 +5002,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    uses only IPv4. The user can use the Dualstack-prefixed DNS name to enable IPv6 support for
    communications between the client and the load balancers. Thus, the clients are able to access
    the load balancer using either IPv4 or IPv6 as their individual connectivity needs dictate.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 120</p>
-<pre><code>   A user has received a message from the support team that an issue occurred 1 week back
+<div class="highlight"><pre><span></span><code>   A user has received a message from the support team that an issue occurred 1 week back
    between 3 AM to 4 AM and the EC2 server was not reachable. The user is checking the
    CloudWatch metrics of that instance. How can the user find the data easily using the CloudWatch
    console?
@@ -2676,9 +5024,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    values either using the relative period, such as days /hours or using the Absolute tab where the user
    can provide data with a specific date and time. The console also provides the option to search using
    the local timezone under the time range caption in the console.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 121</p>
-<pre><code>   A user has setup Auto Scaling with ELB on the EC2 instances. The user wants to configure that
+<div class="highlight"><pre><span></span><code>   A user has setup Auto Scaling with ELB on the EC2 instances. The user wants to configure that
    whenever the CPU utilization is below 10%, Auto Scaling should remove one instance. How can
    the user configure this?
 
@@ -2701,9 +5049,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    configure the Auto Scaling policy to take action for removing the instance. When the CPU
    utilization is below 10% CloudWatch will send an alarm to the Auto Scaling group to execute the
    policy.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 122</p>
-<pre><code>   A user has enabled detailed CloudWatch metric monitoring on an Auto Scaling group. Which of
+<div class="highlight"><pre><span></span><code>   A user has enabled detailed CloudWatch metric monitoring on an Auto Scaling group. Which of
    the below mentioned metrics will help the user identify the total number of instances in an Auto
    Scaling group cluding pending, terminating and running instances?
 
@@ -2721,9 +5069,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Pending, Running or Terminating instances at any moment. If the user wants to get the total
    number of Running, Pending and Terminating instances at any moment, he can use the
    GroupTotalInstances metric.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 123</p>
-<pre><code>   A user is trying to configure the CloudWatch billing alarm. Which of the below mentioned steps
+<div class="highlight"><pre><span></span><code>   A user is trying to configure the CloudWatch billing alarm. Which of the below mentioned steps
    should be performed by the user for the first time alarm creation in the AWS Account Management 
    section?
 
@@ -2739,9 +5087,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    can create an alarm on the estimated charges, he must enable monitoring of the estimated AWS
    charges, by selecting the option “Enable receiving billing alerts”. It takes about 15 minutes
    before the user can view the billing data. The user can then create the alarms.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 124</p>
-<pre><code>   A user is checking the CloudWatch metrics from the AWS console. The user notices that the
+<div class="highlight"><pre><span></span><code>   A user is checking the CloudWatch metrics from the AWS console. The user notices that the
    CloudWatch data is coming in UTC. The user wants to convert the data to a local time zone. How
    can the user perform this?
 
@@ -2761,7 +5109,7 @@ These are AWS interview questions for experienced professionals.  You will find 
    can provide data with a specific date and time. The console also provides the option to search using
    the local timezone under the time range caption in the console because the time range tab allows
    the user to change the time zone.
-</code></pre>
+</code></pre></div>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5000366982270064"
      crossorigin="anonymous"></script>
 <p><ins class="adsbygoogle"
@@ -2775,7 +5123,7 @@ These are AWS interview questions for experienced professionals.  You will find 
 </script>
 
 <p>QUESTION NO: 125</p>
-<pre><code>   An organization (Account ID 123412341234. has attached the below mentioned IAM policy to a
+<div class="highlight"><pre><span></span><code>   An organization (Account ID 123412341234. has attached the below mentioned IAM policy to a
    user. What does this policy statement entitle the user to perform?
    "Statement": [
    {
@@ -2804,9 +5152,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    "Resource": ["arn:aws:iam:: 123412341234:user/${aws:username}"]
    }
    ]
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 126</p>
-<pre><code>   A user is trying to connect to a running EC2 instance using SSH. However, the user gets a
+<div class="highlight"><pre><span></span><code>   A user is trying to connect to a running EC2 instance using SSH. However, the user gets a
    connection time out error. Which of the below mentioned options is not a possible reason for
    rejection?
 
@@ -2824,9 +5172,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    - The private key pair is not right
    - The user name to login is wrong
    - The instance CPU is heavily loaded, so it does not allow more connections
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 127</p>
-<pre><code>   A user has configured Elastic Load Balancing by enabling a Secure Socket Layer (SSL) negotiation 
+<div class="highlight"><pre><span></span><code>   A user has configured Elastic Load Balancing by enabling a Secure Socket Layer (SSL) negotiation 
    configuration known as a Security Policy. Which of the below mentioned options is not part of
    this secure policy while negotiating the SSL connection between the user and the client?
 
@@ -2842,9 +5190,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    is known as a Security Policy. It is used to negotiate the SSL connections between a client and 
    the load balancer. A security policy is a combination of SSL Protocols, SSL Ciphers, and the Server
    order Preference option.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 128</p>
-<pre><code>   A user has configured CloudWatch monitoring on an EBS backed EC2 instance. If the user has
+<div class="highlight"><pre><span></span><code>   A user has configured CloudWatch monitoring on an EBS backed EC2 instance. If the user has
    not attached any additional device, which of the below mentioned metrics will always show a 0
    value?
 
@@ -2863,9 +5211,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    DiskReadBytes and DiskWriteBytes are disk related data and available only when there is
    ephermal storage attached to an instance. For an EBS backed instance without any additional
    device, this data will be 0.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 129</p>
-<pre><code>   A user has launched an EBS backed EC2 instance. What will be the difference while performing
+<div class="highlight"><pre><span></span><code>   A user has launched an EBS backed EC2 instance. What will be the difference while performing
    the restart or stop/start options on that instance?
 
    A. For restart it does not charge for an extra hour, while every stop/start it will be charged as
@@ -2883,9 +5231,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    changed from stop to start/ running, AWS charges a full instance hour, even if these transitions
    happen multiple times within a single hour. Anyway, rebooting an instance AWS does not charge
    a new instance billing hour.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 130</p>
-<pre><code>   A user has created a queue named “myqueue” in US-East region with AWS SQS. The user’s
+<div class="highlight"><pre><span></span><code>   A user has created a queue named “myqueue” in US-East region with AWS SQS. The user’s
    AWS account ID is 123456789012. If the user wants to perform some action on this queue, which
    of the below Queue URL should he use?
 
@@ -2904,9 +5252,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    and other components that Amazon SQS determines. Whenever the user wants to perform an
    action on a queue, he must provide its queue URL. The queue URL for the account id
    123456789012 &amp; queue name “myqueue” in US-East-1 region will be http:// sqs.us-east1.amazonaws.com/123456789012/myqueue.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 131</p>
-<pre><code>   A sys admin is trying to understand the Auto Scaling activities. Which of the below mentioned
+<div class="highlight"><pre><span></span><code>   A sys admin is trying to understand the Auto Scaling activities. Which of the below mentioned
    processes is not performed by Auto Scaling?
 
    A. Reboot Instance
@@ -2920,9 +5268,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    There are two primary types of Auto Scaling processes: Launch and Terminate, which launch or
    terminate instances, respectively. Some other actions performed by Auto Scaling are: AddToLoadbalancer,
    AlarmNotification, HealthCheck, AZRebalance, ReplaceUnHealthy, and ScheduledActions.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 132</p>
-<pre><code>   A sys admin is trying to understand EBS snapshots. Which of the below mentioned statements will
+<div class="highlight"><pre><span></span><code>   A sys admin is trying to understand EBS snapshots. Which of the below mentioned statements will
    not be useful to the admin to understand the concepts about a snapshot?
 
    A. The snapshot is synchronous
@@ -2939,9 +5287,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    For a better and consistent snapshot of the root EBS volume, AWS recommends stopping the
    instance. For additional volumes it is recommended to unmount the device. The snapshots are
    asynchronous and incremental.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 133</p>
-<pre><code>   A root account owner has created an S3 bucket testmycloud. The account owner wants to allow
+<div class="highlight"><pre><span></span><code>   A root account owner has created an S3 bucket testmycloud. The account owner wants to allow
    everyone to upload the objects as well as enforce that the person who uploaded the object
    should manage the permission of those objects. Which is the easiest way to achieve this?
 
@@ -2963,9 +5311,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    specific scenarios. For example, if a bucket owner allows other AWS accounts to upload objects,
    permissions to these objects can only be managed using the object ACL by the AWS account that
    owns the object.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 134</p>
-<pre><code>   An organization has setup consolidated billing with 3 different AWS accounts. Which of the below
+<div class="highlight"><pre><span></span><code>   An organization has setup consolidated billing with 3 different AWS accounts. Which of the below
    mentioned advantages will organization receive in terms of the AWS pricing?
 
    A. The consolidated billing does not bring any cost advantage for the organization
@@ -2982,9 +5330,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    For billing purposes, AWS treats all the accounts on the consolidated bill as one account. Some
    services, such as Amazon EC2 and Amazon S3 have volume pricing tiers across certain usage
    dimensions that give the user lower prices when he uses the service more.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 135</p>
-<pre><code>   A user has launched two EBS backed EC2 instances in the US-East-1a region. The user wants
+<div class="highlight"><pre><span></span><code>   A user has launched two EBS backed EC2 instances in the US-East-1a region. The user wants
    to change the zone of one of the instances. How can the user change it?
 
    A. Stop one of the instances and change the availability zone
@@ -2999,9 +5347,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    the time of launch. If the zone is not selected, AWS selects it on behalf of the user. Once the
    instance is launched, the user cannot change the zone of that instance unless he creates an
    AMI of that instance and launches a new instance from it.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 136</p>
-<pre><code>   A user wants to make so that whenever the CPU utilization of the AWS EC2 instance is above
+<div class="highlight"><pre><span></span><code>   A user wants to make so that whenever the CPU utilization of the AWS EC2 instance is above
    90%, the redlight of his bedroom turns on. Which of the below mentioned AWS services is helpful
    for this purpose?
 
@@ -3019,9 +5367,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    sensor devices at his home which receives data on the HTTP end point (REST calls. and turn on
    the red light. The user can configure the CloudWatch alarm to send a notification to the AWS SNS
    HTTP end point (the sensor device. and it will turn the light red when there is an alarm condition.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 137</p>
-<pre><code>   An organization has added 3 of his AWS accounts to consolidated billing. One of the
+<div class="highlight"><pre><span></span><code>   An organization has added 3 of his AWS accounts to consolidated billing. One of the
    AWS accounts has purchased a Reserved Instance (RI. of a small instance size in the US-East-1a zone.
    All other AWS accounts are running instances of a small size in the same zone. What will happen in 
    this case for the RI pricing?
@@ -3045,9 +5393,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Reserved Instance has been purchased by one account. Thus, only a single instance from any of
    the accounts will get the advantage of RI. AWS will implement the blended rate for each instance
    if more than one instance is running concurrently.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 138</p>
-<pre><code>   An organization is planning to use AWS for 5 different departments. The finance department is
+<div class="highlight"><pre><span></span><code>   An organization is planning to use AWS for 5 different departments. The finance department is
    responsible to pay for all the accounts. However, they want the cost separation for each
    account to map with the right cost centre. How can the finance department achieve this?
 
@@ -3065,9 +5413,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    Consolidated billing enables the organization to see a combined view of the AWS charges
    incurred by each account as well as obtain a detailed cost report for each of the individual AWS
    accounts associated with the paying account.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 139</p>
-<pre><code>   A user has setup an EBS backed instance and a CloudWatch alarm when the CPU utilization is
+<div class="highlight"><pre><span></span><code>   A user has setup an EBS backed instance and a CloudWatch alarm when the CPU utilization is
    more than 65%. The user has setup the alarm to watch it for 5 periods of 5 minutes each. The
    CPU utilization is 60% between 9 AM to 6 PM. The user has stopped the EC2 instance for 15
    minutes between 11 AM to 11:15 AM. What will be the status of the alarm at 11:30 AM?
@@ -3084,9 +5432,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    performs one or more actions based on the value of the metric relative to a given threshold over a
    number of time periods. The state of the alarm will be OK for the whole day. When the user stops
    the instance for three periods the alarm may not receive the data
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 140</p>
-<pre><code>   A user is running one instance for only 3 hours every day. The user wants to save some cost with
+<div class="highlight"><pre><span></span><code>   A user is running one instance for only 3 hours every day. The user wants to save some cost with
    the instance. Which of the below mentioned Reserved Instance categories is advised in this case?
 
    A. The user should not use RI; instead only go with the on-demand pricing
@@ -3103,9 +5451,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    EC2 instance for more than 2200-2500 hours per year, RI will help the user save some cost.
    Here, the instance is not going to run for less than 1500 hours. Thus, it is advisable that the user
    should use the on-demand pricing.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 141</p>
-<pre><code>   A user has setup an RDS DB with Oracle. The user wants to get notifications when
+<div class="highlight"><pre><span></span><code>   A user has setup an RDS DB with Oracle. The user wants to get notifications when
    someone modifies the security group of that DB. How can the user configure that?
 
    A. It is not possible to get the notifications on a change in the security group
@@ -3121,9 +5469,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    instance, DB security group, DB snapshot and DB parameter group. If the user is subscribed to
    a Configuration Change category for a DB security group, he will be notified when the DB
    security group is changed.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 142</p>
-<pre><code>   A user is trying to setup a recurring Auto Scaling process. The user has setup one process to
+<div class="highlight"><pre><span></span><code>   A user is trying to setup a recurring Auto Scaling process. The user has setup one process to
    scale up every day at 8 am and scale down at 7 PM. The user is trying to setup another
    recurring process which scales up on the 1st of every month at 8 AM and scales down the same
    day at 7 PM. What will Auto Scaling do in this scenario?
@@ -3142,9 +5490,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    follow the Linux cron format. As per Auto Scaling, a scheduled action must have a unique time value.
    If the user attempts to schedule an activity at a time when another existing activity is already 
    scheduled, the call will be rejected with an error message noting the conflict.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 143</p>
-<pre><code>   A user is planning to setup infrastructure on AWS for the Christmas sales. The user is planning to
+<div class="highlight"><pre><span></span><code>   A user is planning to setup infrastructure on AWS for the Christmas sales. The user is planning to
    use Auto Scaling based on the schedule for proactive scaling. What advise would you give to the
    user?
 
@@ -3160,9 +5508,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    predictable load changes. The user can specify any date in the future to scale up or down during that 
    period. As per Auto Scaling the user can schedule an action for up to a month in the future. Thus, 
    it is recommended to wait until end of November before scheduling for Christmas.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 144</p>
-<pre><code>   A user is trying to understand the ACL and policy for an S3 bucket. Which of the below
+<div class="highlight"><pre><span></span><code>   A user is trying to understand the ACL and policy for an S3 bucket. Which of the below
    mentioned policy permissions is equivalent to the WRITE ACL on a bucket?
 
    A. s3:GetObjectAcl
@@ -3177,9 +5525,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    bucket can have an ACL (Access Control List. or bucket policy associated with it. The WRITE
    ACL list allows the other AWS accounts to write/modify to that bucket. The equivalent S3 bucket
    policy permission for it is s3:DeleteObject.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 145</p>
-<pre><code>   A user has created an ELB with Auto Scaling. Which of the below mentioned offerings from ELB
+<div class="highlight"><pre><span></span><code>   A user has created an ELB with Auto Scaling. Which of the below mentioned offerings from ELB
    helps the user to stop sending new requests traffic from the load balancer to the EC2 instance
    when the instance is being deregistered while continuing in-flight requests?
 
@@ -3194,9 +5542,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    The Elastic Load Balancer connection draining feature causes the load balancer to stop
    sending new requests to the back-end instances when the instances are deregistering or
    become unhealthy, while ensuring that inflight requests continue to be served.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 146</p>
-<pre><code>   A user has launched an EC2 instance from an instance store backed AMI. The infrastructure team
+<div class="highlight"><pre><span></span><code>   A user has launched an EC2 instance from an instance store backed AMI. The infrastructure team
    wants to create an AMI from the running instance. Which of the below mentioned steps will not be
    performed while creating the AMI?
 
@@ -3212,9 +5560,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    follow certain steps, such as “Bundling the root volume”, “Uploading the bundled volume” and
    “Register the AMI”. Once the AMI is created the user can setup the launch permission. However,
    it is not required to setup during the launch.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 147</p>
-<pre><code>   You are managing the AWS account of a big organization. The organization has more than 1000+
+<div class="highlight"><pre><span></span><code>   You are managing the AWS account of a big organization. The organization has more than 1000+
    employees and they want to provide access to the various services to most of the employees.
    Which of the below mentioned options is the best possible solution in this case?
 
@@ -3237,9 +5585,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    need AWS access, it may be more practical to use a proxy server to translate the user identities
    from the organization network into the temporary AWS security credentials. This proxy server will
    attach an IAM role to the user after authentication.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 148</p>
-<pre><code>   A user has configured a VPC with a new subnet. The user has created a security group. The user
+<div class="highlight"><pre><span></span><code>   A user has configured a VPC with a new subnet. The user has created a security group. The user
    wants to configure that instances of the same subnet communicate with each other. How can the
    user configure this with the security group?
 
@@ -3259,9 +5607,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    group it will have a rule which allows the instances to communicate with other. For a new security
    group the user has to specify the rule, add it to define the source as the security group itself, and
    select all the protocols and ports for that source.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 149</p>
-<pre><code>   A user is launching an instance. He is on the “Tag the instance” screen. Which of the below
+<div class="highlight"><pre><span></span><code>   A user is launching an instance. He is on the “Tag the instance” screen. Which of the below
    mentioned information will not help the user understand the functionality of an AWS tag?
 
    A. Each tag will have a key and value
@@ -3277,9 +5625,9 @@ These are AWS interview questions for experienced professionals.  You will find 
    (CSV file. with the usage and costs aggregated by those tags. Each tag will have a key-value and
    can be applied to services, such as EC2, S3, RDS, EMR, etc. The maximum size of a tag key is
    128 unicode characters.
-</code></pre>
+</code></pre></div>
 <p>QUESTION NO: 150</p>
-<pre><code>   A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and VPN only
+<div class="highlight"><pre><span></span><code>   A user has created a VPC with CIDR 20.0.0.0/16. The user has created public and VPN only
    subnets along with hardware VPN access to connect to the user’s datacenter. The user wants to
    make so that all traffic coming to the public subnet follows the organization’s proxy policy. How
    can the user make this happen?
@@ -3302,7 +5650,7 @@ These are AWS interview questions for experienced professionals.  You will find 
    is routed through the internet gateway. The user can set up the route and security group rules.
    These rules enable the traffic to come from the organization’s network over the virtual private
    gateway to the public subnet to allow proxy settings on that public subnet.
-</code></pre>
+</code></pre></div>
 <hr />
 <p><a href="../aws-2/"><h3 style="text-align: center;font-family: cursive;"> Next Page </h3></a></p>
 <hr />
@@ -3398,87 +5746,73 @@ These are AWS interview questions for experienced professionals.  You will find 
      data-ad-slot="3808191339"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-  <a href="/consulting" class="consulting-float">
-    <span>🚀 Get Expert Consulting</span>
-  </a>
+</script>
 
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
             </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>Copyright &copy; 2022 nightWolf</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="../../js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js"></script>
-        <script src="../../search/main.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 nightWolf
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
 </div>
-
-    </body>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.instant", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
 </html>
