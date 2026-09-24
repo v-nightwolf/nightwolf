@@ -1,26 +1,60 @@
 site_name: nightWolf
-site_favicon: 'img/favi.png'
 site_url: https://www.nightwolf.in
 
+extra_css:
+  - stylesheets/extra.css
+
 theme:
-    name: mkdocs 
-    nav_style: dark
-    logo: wolf.png
-    analytics:
-      gtag: G-8QN4YRWY1N
-    custom_dir: overrides
+    name: material
+    logo: img/wolf.png
+    favicon: img/favicon.png
+    palette:
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: blue
+        accent: blue
+        toggle:
+          icon: material/weather-night
+          name: Switch to dark mode
+      # Dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: indigo
+        accent: indigo
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to light mode
+    features:
+      - navigation.top
+      - navigation.instant
+      - search.suggest
+      - search.highlight
+      - content.code.copy
+      - toc.follow
+
+plugins:
+    - search
+
+extra:
+  analytics:
+    provider: google
+    property: G-8QN4YRWY1N
 
 markdown_extensions:
     - toc:
-        permalink: ""
+        permalink: true
     - markdown_include.include:
     - attr_list:
+    - admonition
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - tables
 
 # Copyright
-copyright: 'Copyright &copy; 2022 nightWolf'
-
-plugins:
-  - search
+copyright: 'Copyright &copy; 2026 nightWolf'
 
 nav:
     - Home: index.md
@@ -49,7 +83,7 @@ nav:
         - Java/OOPs Interview Questions:
             - Java/OOPs Interview Questions: 'nightwolf-cotribution/java_interview_questions.md'
             - Java/OOPs Interview Questions-2: 'nightwolf-cotribution/java_interview_questions-2.md'
-        - Terraform Interview Questions:  
+        - Terraform Interview Questions:
             - Terraform Interview Questions and Answers- 1st: 'nightwolf-cotribution/terraform_interview_question.md'
             - Terraform Interview Questions and Answers- 2nd: 'nightwolf-cotribution/terraform_interview_question-2.md'
             - Terraform Interview Questions and Answers- 3rd: 'nightwolf-cotribution/terraform_interview_question-3.md'
@@ -57,7 +91,7 @@ nav:
             - GCP ACE Practice Questions-1: 'nightwolf-cotribution/gcp-ace-1.md'
             - GCP ACE Practice Questions-2: 'nightwolf-cotribution/gcp-ace-2.md'
             - GCP ACE Practice Questions-3: 'nightwolf-cotribution/gcp-ace-3.md'
-        - AWS Certification Practice Questions: 
+        - AWS Certification Practice Questions:
             - AWS Certified SysOps Administrator Questions- 1st: 'nightwolf-cotribution/aws.md'
             - AWS Certified SysOps Administrator Questions- 2nd: 'nightwolf-cotribution/aws-2.md'
             - AWS Interview Questions- 1st: 'nightwolf-cotribution/aws-3.md'
@@ -82,7 +116,7 @@ nav:
          - Linux: linux.md
          - Network: network.md
          - Database: db/
-         - Cloud: 
+         - Cloud:
            - Service Comparison between GCP, AWS, Azure: cloud-comp.md
          - Group for Jobs postings: https://www.linkedin.com/groups/8982092/
 
@@ -101,4 +135,3 @@ nav:
         - Cybersecurity: articles/cyber_security.md
         - What is AI Chat Open Assistant Chatbot ?: articles/ai_chatbot.md
         - What is Bard chatbot ?: articles/bard.md
-

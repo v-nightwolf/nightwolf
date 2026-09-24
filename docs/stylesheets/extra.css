@@ -1,0 +1,110 @@
+/* --- Bigger logo --- */
+/* Material caps the header logo at ~24px by default. This makes it visibly larger. */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: auto;
+}
+
+/* If your theme ever shows a logo in the left nav drawer title too */
+.md-nav__title .md-logo img,
+.md-nav__title .md-logo svg {
+  height: 2rem;
+  width: auto;
+}
+
+/* --- Bigger overall text --- */
+/* Material's default body text is ~16px (0.8rem on a 20px root).
+   This bumps it to ~18px, closer to the old theme's reading size.
+   Headings, code blocks, and the table of contents scale up with it
+   since they're defined in relative (em) units. */
+.md-typeset {
+  font-size: 0.9rem;
+}
+
+/* Optional: slightly larger nav/sidebar links too, since body text
+   alone can make the sidebar look small by comparison. Comment out
+   if you'd rather keep the sidebar compact. */
+.md-nav {
+  font-size: 0.75rem;
+}
+
+/* --- Fix code blocks needing horizontal scroll --- */
+/* Wrap long lines (like wide command output, e.g. `top`) instead of
+   forcing a sideways scrollbar. Column alignment in tabular command
+   output may shift slightly when it wraps, but nothing gets cut off
+   or requires scrolling to read, which matters most on mobile. */
+.md-typeset pre > code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Code font also inherited the body text size bump above. Sizing it
+   back down independently keeps code blocks compact and reduces how
+   often wrapping kicks in, without affecting body text size. */
+.md-typeset code {
+  font-size: 0.78rem;
+}
+
+/* --- Bigger site name in the header --- */
+/* The "nightWolf" text next to the logo defaults to a small ~0.75rem. */
+.md-header__title .md-ellipsis {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Same text also appears at the top of the mobile nav drawer */
+.md-nav__title {
+  font-size: 1rem;
+}
+
+/* --- Bigger menu item names --- */
+/* Top tab bar (Home, Interview-Prep, Cheatsheets, etc.) */
+.md-tabs__link {
+  font-size: 1rem;
+}
+
+/* Left sidebar links (page names within a section) */
+.md-nav__link {
+  font-size: 0.85rem;
+}
+
+/* --- Floating "Consulting" button --- */
+/* Merged in from docs/extra.css, which was never actually wired up in
+   mkdocs.yml (old config had no extra_css entry at all, so this was
+   dormant on the live site regardless of theme). Kept as-is; remove
+   this whole block if you'd rather the button not appear. */
+.consulting-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #ff9800 0%, #e68a00 100%);
+    color: white !important;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.consulting-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #e68a00 0%, #ff9800 100%);
+}
+
+@media screen and (max-width: 600px) {
+    .consulting-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

@@ -1,8 +1,4 @@
-<h1 style="text-align: center;font-family: cursive;"><a href="https://nightwolf.in/"><img src="img/favi.png" height="70" /> nightWolf </a></h1>
-
-<br/>
-
-## [Linux System Performance](nightwolf-cotribution/performance.md)
+# [Linux System Performance](nightwolf-cotribution/performance.md)
 
 
   System performance is one of the major and reoccurring issue in IT infrastructure and Linux performance troubleshooting is one of the most tedious task in system administration. 
